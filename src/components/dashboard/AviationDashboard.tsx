@@ -10,6 +10,7 @@ import {
   DashboardErrorBoundary,
   DATA_YEAR_MAX,
   DATA_YEAR_MIN,
+  FULL_YEAR_RANGE,
   InactiveBadge,
   MonthPickerControl,
   MONTHS,
@@ -454,7 +455,7 @@ function YearlyRankingsExplorer({
   duckConn: unknown;
   duckReady: boolean;
 }) {
-  const yearRange: [number, number] = [DATA_YEAR_MIN, DATA_YEAR_MAX];
+  const yearRange = FULL_YEAR_RANGE;
   const [segment, setSegment] = useState<Segment>("international");
   const [allYears, setAllYears] = useState(false);
   const [allMonths, setAllMonths] = useState(true);
@@ -480,7 +481,7 @@ function YearlyRankingsExplorer({
     if (!yearlyTop) return null;
     const years = [selectedYear as number];
     return aggregateYearlyTopJson(yearlyTop, entityType, segment, years);
-  }, [needsPeriodData, periodRankings, yearlyTop, entityType, segment, yearRange, selectedYear, selectedMonth]);
+  }, [needsPeriodData, periodRankings, yearlyTop, entityType, segment, selectedYear, selectedMonth]);
 
   useEffect(() => {
     let cancelled = false;
@@ -511,7 +512,13 @@ function YearlyRankingsExplorer({
       const jsonRows = loadFromJson();
       if (!cancelled) {
         if (jsonRows) {
-          setEntityData(jsonRows.sort((a, b) => b.passengers - a.passengers));
+          setEntityData((prev) => {
+            const next = jsonRows.sort((a, b) => b.passengers - a.passengers);
+            if (prev.length === next.length && prev.every((r, i) => r.name === next[i]?.name && r.passengers === next[i]?.passengers)) {
+              return prev;
+            }
+            return next;
+          });
         } else if (needsPeriodData && !periodRankings) {
           setEntityData([]);
         } else if (!needsPeriodData && !yearlyTop) {
@@ -522,7 +529,7 @@ function YearlyRankingsExplorer({
 
     load();
     return () => { cancelled = true; };
-  }, [yearlyTop, periodRankings, entityType, segment, selectedYear, selectedMonth, yearRange, duckConn, duckReady, loadFromJson, needsPeriodData]);
+  }, [yearlyTop, periodRankings, entityType, segment, selectedYear, selectedMonth, duckConn, duckReady, loadFromJson, needsPeriodData]);
 
   const toggleMetric = (key: MetricKey) => {
     setMetrics((prev) => {

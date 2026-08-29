@@ -2,6 +2,7 @@ import { Component, type ReactNode } from "react";
 
 export const DATA_YEAR_MIN = 2006;
 export const DATA_YEAR_MAX = 2026;
+export const FULL_YEAR_RANGE: [number, number] = [DATA_YEAR_MIN, DATA_YEAR_MAX];
 export const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"] as const;
 
 export type Segment = "international" | "domestic" | "all";

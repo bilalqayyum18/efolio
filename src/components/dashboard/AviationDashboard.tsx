@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import {
-  Bar, BarChart, CartesianGrid, Legend, Line, LineChart,
+  Bar, BarChart, CartesianGrid, Cell, Legend, Line, LineChart,
   ResponsiveContainer, Tooltip, XAxis, YAxis,
 } from "recharts";
 
@@ -19,15 +19,24 @@ type YearlyTrend = {
   partial_year: boolean;
 };
 
+type EntityRow = { name: string; passengers: number; cargo_tons: number; flights: number };
+type YearlyTopEntities = {
+  airlines: Record<string, Record<string, EntityRow[]>>;
+  airports: Record<string, Record<string, EntityRow[]>>;
+};
+type AirlineYearRow = { year: number; airline: string; passengers: number };
 type AirportRow = { airport: string; passengers: number; cargo_tons: number };
 type AirlineRow = { airline: string; passengers: number };
 type SeasonalityRow = { year: number; month: number; segment: string; passengers: number };
 type Insight = { title: string; body: string };
 type Segment = "international" | "domestic" | "all";
+type MetricKey = "passengers" | "cargo_tons" | "flights";
+type EntityType = "airline" | "airport";
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-const CHART_COLORS = { intl: "#4a90d9", dom: "#3ddc84", cargo: "#f5a623" };
+const CHART_COLORS = { intl: "#4a90d9", dom: "#3ddc84", cargo: "#f5a623", flights: "#a78bfa" };
 const SEGMENT_ORDER: Segment[] = ["international", "domestic", "all"];
+const CAGR_COLORS = ["#4a90d9", "#3ddc84", "#f5a623", "#e879f9", "#38bdf8", "#fb7185"];
 
 function formatNum(n: number): string {
   if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
@@ -41,9 +50,27 @@ function formatCargo(n: number): string {
   return n.toLocaleString(undefined, { maximumFractionDigits: 0 });
 }
 
+function formatCompact(n: number): string {
+  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
+  if (n >= 100_000) return `${(n / 1_000).toFixed(0)}K`;
+  if (n >= 1_000) return `${(n / 1_000).toFixed(1)}K`;
+  return n > 0 ? String(Math.round(n)) : "";
+}
+
+const METRIC_OPTIONS: { key: MetricKey; label: string; color: string; format: (n: number) => string }[] = [
+  { key: "passengers", label: "Passengers", color: CHART_COLORS.intl, format: formatNum },
+  { key: "cargo_tons", label: "Cargo (MT)", color: CHART_COLORS.cargo, format: formatCargo },
+  { key: "flights", label: "Flight Legs", color: CHART_COLORS.flights, format: formatNum },
+];
+
 function tooltipFormatter(value: number, name: string) {
   const label = String(name).toLowerCase().includes("cargo") ? formatCargo(value) : formatNum(value);
   return [label, name];
+}
+
+function computeCagr(start: number, end: number, years: number): number | null {
+  if (years <= 0 || start <= 0 || end <= 0) return null;
+  return (Math.pow(end / start, 1 / years) - 1) * 100;
 }
 
 function Heatmap({
@@ -65,9 +92,7 @@ function Heatmap({
   const maxPax = Math.max(...filtered.map((d) => d.passengers), 1);
 
   const getCell = (year: number, month: number) =>
-    filtered
-      .filter((d) => d.year === year && d.month === month)
-      .reduce((sum, d) => sum + d.passengers, 0);
+    filtered.filter((d) => d.year === year && d.month === month).reduce((s, d) => s + d.passengers, 0);
 
   if (years.length === 0) {
     return <p className="font-data text-sm text-strip-muted">No data for selected filters.</p>;
@@ -75,38 +100,56 @@ function Heatmap({
 
   return (
     <div className="overflow-x-auto">
-      <div className="min-w-[700px]">
-        <div className="mb-2 flex gap-1 pl-12">
+      <div className="min-w-[780px]">
+        <div className="mb-2 flex gap-1 pl-14">
           {MONTHS.map((m) => (
             <div key={m} className="flex-1 text-center font-data text-[10px] text-strip-muted">{m}</div>
           ))}
         </div>
         {years.map((year) => (
           <div key={year} className="mb-0.5 flex items-center gap-1">
-            <div className="w-10 shrink-0 font-data text-[10px] text-strip-muted">
+            <div className="w-12 shrink-0 font-data text-[10px] text-strip-muted">
               {year}{(year === 2006 || year === 2026) ? "*" : ""}
             </div>
             {MONTHS.map((_, mi) => {
               const val = getCell(year, mi + 1);
               const intensity = val / maxPax;
               const isPartial = (year === 2006 && mi < 6) || (year === 2026 && mi >= 6);
+              const showLabel = val > 0 && !isPartial && intensity > 0.08;
+              const textColor = intensity > 0.45 ? "#0b1426" : "#e8edf2";
               return (
                 <div
                   key={mi}
-                  title={`${year}-${String(mi + 1).padStart(2, "0")}: ${formatNum(val)} pax`}
-                  className="aspect-square flex-1 rounded-sm"
+                  title={`${year}-${String(mi + 1).padStart(2, "0")}: ${formatNum(val)} passengers`}
+                  className="relative flex aspect-square flex-1 items-center justify-center rounded-sm"
                   style={{
                     backgroundColor: isPartial
                       ? "rgba(90,109,138,0.2)"
-                      : `rgba(74,144,217,${0.1 + intensity * 0.9})`,
+                      : `rgba(74,144,217,${0.12 + intensity * 0.88})`,
                     border: isPartial ? "1px dashed rgba(90,109,138,0.4)" : "none",
                   }}
-                />
+                >
+                  {showLabel && (
+                    <span className="pointer-events-none font-data text-[7px] leading-none" style={{ color: textColor }}>
+                      {formatCompact(val)}
+                    </span>
+                  )}
+                  {isPartial && val > 0 && (
+                    <span className="pointer-events-none font-data text-[6px] text-strip-partial">·</span>
+                  )}
+                </div>
               );
             })}
           </div>
         ))}
-        <p className="mt-2 font-data text-[10px] text-strip-partial">* Partial year: H2 2006 / H1 2026 (YTD)</p>
+        <div className="mt-3 flex flex-wrap items-center gap-4">
+          <p className="font-data text-[10px] text-strip-partial">* Partial year: H2 2006 / H1 2026 (YTD)</p>
+          <div className="flex items-center gap-2">
+            <span className="font-data text-[10px] text-strip-muted">Low</span>
+            <div className="h-2 w-24 rounded" style={{ background: "linear-gradient(to right, rgba(74,144,217,0.15), rgba(74,144,217,0.95))" }} />
+            <span className="font-data text-[10px] text-strip-muted">High</span>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -151,6 +194,338 @@ function RankingTable({ rows, labelKey }: { rows: (AirportRow | AirlineRow)[]; l
   );
 }
 
+function YearlyRankingsExplorer({
+  yearlyTop,
+  segment,
+  yearRange,
+}: {
+  yearlyTop: YearlyTopEntities | null;
+  segment: Segment;
+  yearRange: [number, number];
+}) {
+  const yearsInRange = useMemo(() => {
+    const ys: number[] = [];
+    for (let y = yearRange[0]; y <= yearRange[1]; y++) ys.push(y);
+    return ys;
+  }, [yearRange]);
+
+  const [selectedYear, setSelectedYear] = useState(yearRange[1]);
+  const [entityType, setEntityType] = useState<EntityType>("airline");
+  const [metrics, setMetrics] = useState<Set<MetricKey>>(new Set(["passengers", "cargo_tons", "flights"]));
+
+  useEffect(() => {
+    if (selectedYear < yearRange[0] || selectedYear > yearRange[1]) {
+      setSelectedYear(yearRange[1]);
+    }
+  }, [yearRange, selectedYear]);
+
+  const segKey = segment === "all" ? "international" : segment;
+  const entityData = useMemo(() => {
+    if (!yearlyTop) return [];
+    const bucket = entityType === "airline" ? yearlyTop.airlines : yearlyTop.airports;
+    const segData = bucket[segKey]?.[String(selectedYear)] ?? [];
+    if (segment !== "all") return segData;
+    const intl = bucket.international?.[String(selectedYear)] ?? [];
+    const dom = bucket.domestic?.[String(selectedYear)] ?? [];
+    const merged = new Map<string, EntityRow>();
+    for (const row of [...intl, ...dom]) {
+      const existing = merged.get(row.name);
+      if (existing) {
+        merged.set(row.name, {
+          name: row.name,
+          passengers: existing.passengers + row.passengers,
+          cargo_tons: existing.cargo_tons + row.cargo_tons,
+          flights: existing.flights + row.flights,
+        });
+      } else {
+        merged.set(row.name, { ...row });
+      }
+    }
+    return [...merged.values()].sort((a, b) => b.passengers - a.passengers).slice(0, 15);
+  }, [yearlyTop, entityType, segKey, selectedYear, segment]);
+
+  const toggleMetric = (key: MetricKey) => {
+    setMetrics((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) {
+        if (next.size > 1) next.delete(key);
+      } else {
+        next.add(key);
+      }
+      return next;
+    });
+  };
+
+  const activeMetrics = METRIC_OPTIONS.filter((m) => metrics.has(m.key));
+
+  return (
+    <div className="strip-card">
+      <p className="strip-label mb-2">Year-by-Year Rankings</p>
+      <h3 className="font-display text-lg font-bold">Top {entityType === "airline" ? "Airlines" : "Airports"} by Year</h3>
+      <p className="mt-1 text-sm text-strip-muted">
+        Select a year and metrics to compare. Flight legs = individual movement records per CAA reporting (one row per leg).
+      </p>
+
+      <div className="mt-6 grid gap-4 md:grid-cols-3">
+        <div>
+          <label className="font-data text-xs text-strip-muted">Year</label>
+          <select
+            value={selectedYear}
+            onChange={(e) => setSelectedYear(+e.target.value)}
+            className="mt-2 w-full rounded border border-strip-border bg-strip-bg px-3 py-2 font-data text-sm text-strip-text"
+          >
+            {yearsInRange.map((y) => (
+              <option key={y} value={y}>{y}{(y === 2006 || y === 2026) ? " *" : ""}</option>
+            ))}
+          </select>
+        </div>
+        <div>
+          <label className="font-data text-xs text-strip-muted">Entity</label>
+          <div className="mt-2 flex gap-2">
+            {(["airline", "airport"] as const).map((t) => (
+              <button
+                key={t}
+                onClick={() => setEntityType(t)}
+                className={`rounded border px-3 py-1.5 font-data text-xs capitalize ${
+                  entityType === t ? "border-strip-accent bg-strip-accent/20 text-strip-accent" : "border-strip-border text-strip-muted"
+                }`}
+              >
+                {t}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div>
+          <label className="font-data text-xs text-strip-muted">Metrics (multi-select)</label>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {METRIC_OPTIONS.map((m) => (
+              <button
+                key={m.key}
+                onClick={() => toggleMetric(m.key)}
+                className={`rounded border px-2 py-1 font-data text-[10px] ${
+                  metrics.has(m.key) ? "border-strip-signal bg-strip-signal/15 text-strip-signal" : "border-strip-border text-strip-muted"
+                }`}
+              >
+                {m.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className={`mt-8 grid gap-6 ${activeMetrics.length > 1 ? "lg:grid-cols-2" : ""}`}>
+        {activeMetrics.map((metric) => {
+          const sorted = [...entityData].sort((a, b) => b[metric.key] - a[metric.key]).slice(0, 10);
+          const chartData = sorted.map((r) => ({
+            name: r.name.length > 22 ? `${r.name.slice(0, 20)}…` : r.name,
+            fullName: r.name,
+            value: r[metric.key],
+          })).reverse();
+
+          return (
+            <div key={metric.key} className="rounded border border-strip-border bg-strip-bg/50 p-4">
+              <p className="font-data text-xs uppercase tracking-wider text-strip-muted">
+                Top 10 — {metric.label} — {selectedYear}
+              </p>
+              <ResponsiveContainer width="100%" height={Math.max(220, chartData.length * 28)}>
+                <BarChart data={chartData} layout="vertical" margin={{ left: 8, right: 24 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#1e3054" horizontal={false} />
+                  <XAxis type="number" tick={{ fill: "#8fa3bf", fontSize: 10 }} tickFormatter={metric.format} />
+                  <YAxis type="category" dataKey="name" tick={{ fill: "#8fa3bf", fontSize: 9 }} width={100} />
+                  <Tooltip
+                    contentStyle={{ background: "#121f38", border: "1px solid #1e3054", fontFamily: "JetBrains Mono", fontSize: 11 }}
+                    formatter={(v: number) => [metric.format(v), metric.label]}
+                    labelFormatter={(_, payload) => payload?.[0]?.payload?.fullName ?? ""}
+                  />
+                  <Bar dataKey="value" fill={metric.color} radius={[0, 3, 3, 0]} label={{ position: "right", fill: "#8fa3bf", fontSize: 9, formatter: (v: number) => metric.format(v) }} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function AirlineCagrChart({
+  airlineYearly,
+  yearRange,
+}: {
+  airlineYearly: { international: AirlineYearRow[]; domestic: AirlineYearRow[] } | null;
+  yearRange: [number, number];
+}) {
+  const [cagrSegment, setCagrSegment] = useState<"international" | "domestic" | "both">("both");
+  const [selectedAirlines, setSelectedAirlines] = useState<Set<string>>(new Set());
+  const [topN, setTopN] = useState(12);
+
+  const startYear = yearRange[0];
+  const endYear = yearRange[1];
+  const spanYears = endYear - startYear;
+
+  const cagrData = useMemo(() => {
+    if (!airlineYearly || spanYears <= 0) return { international: [], domestic: [] };
+
+    const calcForSeg = (rows: AirlineYearRow[]) => {
+      const byAirline = new Map<string, Map<number, number>>();
+      for (const r of rows) {
+        if (r.year < startYear || r.year > endYear) continue;
+        if (!byAirline.has(r.airline)) byAirline.set(r.airline, new Map());
+        byAirline.get(r.airline)!.set(r.year, (byAirline.get(r.airline)!.get(r.year) ?? 0) + r.passengers);
+      }
+      const results: { airline: string; cagr: number; startPax: number; endPax: number }[] = [];
+      for (const [airline, yearMap] of byAirline) {
+        const startPax = yearMap.get(startYear) ?? 0;
+        const endPax = yearMap.get(endYear) ?? 0;
+        const cagr = computeCagr(startPax, endPax, spanYears);
+        if (cagr !== null && startPax > 1000) {
+          results.push({ airline, cagr, startPax, endPax });
+        }
+      }
+      return results.sort((a, b) => b.cagr - a.cagr);
+    };
+
+    return {
+      international: calcForSeg(airlineYearly.international),
+      domestic: calcForSeg(airlineYearly.domestic),
+    };
+  }, [airlineYearly, startYear, endYear, spanYears]);
+
+  const barData = useMemo(() => {
+    const source =
+      cagrSegment === "both"
+        ? [...cagrData.international.map((d) => ({ ...d, segment: "International" })), ...cagrData.domestic.map((d) => ({ ...d, segment: "Domestic" }))]
+        : cagrSegment === "international"
+          ? cagrData.international.map((d) => ({ ...d, segment: "International" }))
+          : cagrData.domestic.map((d) => ({ ...d, segment: "Domestic" }));
+    return source.slice(0, topN).map((d) => ({
+      name: d.airline.length > 18 ? `${d.airline.slice(0, 16)}…` : d.airline,
+      fullName: d.airline,
+      cagr: Math.round(d.cagr * 10) / 10,
+      segment: d.segment,
+    })).reverse();
+  }, [cagrData, cagrSegment, topN]);
+
+  const trendData = useMemo(() => {
+    if (!airlineYearly || selectedAirlines.size === 0) return [];
+    const years: number[] = [];
+    for (let y = startYear; y <= endYear; y++) years.push(y);
+    return years.map((year) => {
+      const row: Record<string, number | string> = { year };
+      for (const airline of selectedAirlines) {
+        const intl = airlineYearly.international.find((r) => r.year === year && r.airline === airline)?.passengers ?? 0;
+        const dom = airlineYearly.domestic.find((r) => r.year === year && r.airline === airline)?.passengers ?? 0;
+        row[airline] = intl + dom;
+      }
+      return row;
+    });
+  }, [airlineYearly, selectedAirlines, startYear, endYear]);
+
+  const allAirlinesForPicker = useMemo(() => {
+    const set = new Set<string>();
+    cagrData.international.slice(0, 20).forEach((d) => set.add(d.airline));
+    cagrData.domestic.forEach((d) => set.add(d.airline));
+    return [...set];
+  }, [cagrData]);
+
+  const toggleAirline = (name: string) => {
+    setSelectedAirlines((prev) => {
+      const next = new Set(prev);
+      if (next.has(name)) next.delete(name);
+      else if (next.size < 6) next.add(name);
+      return next;
+    });
+  };
+
+  return (
+    <div className="strip-card">
+      <p className="strip-label mb-2">Growth Analysis</p>
+      <h3 className="font-display text-lg font-bold">Airline Passenger CAGR ({startYear}–{endYear})</h3>
+      <p className="mt-1 text-sm text-strip-muted">
+        Compound Annual Growth Rate (CAGR) measures average yearly passenger growth over the selected period. Positive = growth, negative = decline.
+      </p>
+
+      <div className="mt-4 flex flex-wrap gap-4">
+        <div className="flex gap-2">
+          {(["international", "domestic", "both"] as const).map((s) => (
+            <button
+              key={s}
+              onClick={() => setCagrSegment(s)}
+              className={`rounded border px-3 py-1 font-data text-xs capitalize ${
+                cagrSegment === s ? "border-strip-accent bg-strip-accent/20 text-strip-accent" : "border-strip-border text-strip-muted"
+              }`}
+            >
+              {s}
+            </button>
+          ))}
+        </div>
+        <div className="flex items-center gap-2">
+          <label className="font-data text-xs text-strip-muted">Show top</label>
+          <select
+            value={topN}
+            onChange={(e) => setTopN(+e.target.value)}
+            className="rounded border border-strip-border bg-strip-bg px-2 py-1 font-data text-xs text-strip-text"
+          >
+            {[8, 12, 15, 20].map((n) => <option key={n} value={n}>{n}</option>)}
+          </select>
+        </div>
+      </div>
+
+      <ResponsiveContainer width="100%" height={320}>
+        <BarChart data={barData} layout="vertical" margin={{ left: 8, right: 32 }}>
+          <CartesianGrid strokeDasharray="3 3" stroke="#1e3054" horizontal={false} />
+          <XAxis type="number" tick={{ fill: "#8fa3bf", fontSize: 10 }} tickFormatter={(v) => `${v}%`} />
+          <YAxis type="category" dataKey="name" tick={{ fill: "#8fa3bf", fontSize: 9 }} width={110} />
+          <Tooltip
+            contentStyle={{ background: "#121f38", border: "1px solid #1e3054", fontFamily: "JetBrains Mono", fontSize: 11 }}
+            formatter={(v: number) => [`${v}%`, "CAGR"]}
+            labelFormatter={(_, payload) => {
+              const p = payload?.[0]?.payload;
+              return p ? `${p.fullName} (${p.segment})` : "";
+            }}
+          />
+          <Bar dataKey="cagr" radius={[0, 3, 3, 0]} label={{ position: "right", fill: "#8fa3bf", fontSize: 9, formatter: (v: number) => `${v}%` }}>
+            {barData.map((entry, i) => (
+              <Cell key={i} fill={entry.cagr >= 0 ? CHART_COLORS.intl : "#fb7185"} />
+            ))}
+          </Bar>
+        </BarChart>
+      </ResponsiveContainer>
+
+      <div className="mt-6 border-t border-strip-border pt-6">
+        <p className="font-data text-xs uppercase tracking-wider text-strip-muted">Compare airlines over time (select up to 6)</p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {allAirlinesForPicker.map((name) => (
+            <button
+              key={name}
+              onClick={() => toggleAirline(name)}
+              className={`rounded border px-2 py-1 font-data text-[10px] ${
+                selectedAirlines.has(name) ? "border-strip-signal bg-strip-signal/15 text-strip-signal" : "border-strip-border text-strip-muted"
+              }`}
+            >
+              {name.length > 20 ? `${name.slice(0, 18)}…` : name}
+            </button>
+          ))}
+        </div>
+        {selectedAirlines.size > 0 && (
+          <ResponsiveContainer width="100%" height={260} className="mt-4">
+            <LineChart data={trendData}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#1e3054" />
+              <XAxis dataKey="year" tick={{ fill: "#8fa3bf", fontSize: 10 }} />
+              <YAxis tick={{ fill: "#8fa3bf", fontSize: 10 }} tickFormatter={formatNum} />
+              <Tooltip contentStyle={{ background: "#121f38", border: "1px solid #1e3054", fontFamily: "JetBrains Mono" }} formatter={tooltipFormatter} />
+              <Legend wrapperStyle={{ fontSize: 10 }} />
+              {[...selectedAirlines].map((name, i) => (
+                <Line key={name} type="monotone" dataKey={name} stroke={CAGR_COLORS[i % CAGR_COLORS.length]} dot={false} strokeWidth={2} />
+              ))}
+            </LineChart>
+          </ResponsiveContainer>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function AviationDashboard() {
   const [summary, setSummary] = useState<Summary | null>(null);
   const [trends, setTrends] = useState<YearlyTrend[]>([]);
@@ -160,6 +535,8 @@ export default function AviationDashboard() {
     international: { by_passengers: AirlineRow[] };
     domestic: { by_passengers: AirlineRow[] };
   } | null>(null);
+  const [yearlyTop, setYearlyTop] = useState<YearlyTopEntities | null>(null);
+  const [airlineYearly, setAirlineYearly] = useState<{ international: AirlineYearRow[]; domestic: AirlineYearRow[] } | null>(null);
   const [insights, setInsights] = useState<Insight[]>([]);
   const [segment, setSegment] = useState<Segment>("international");
   const [yearRange, setYearRange] = useState<[number, number]>([2006, 2026]);
@@ -178,13 +555,17 @@ export default function AviationDashboard() {
       fetch("/data/aviation/airport-traffic.json").then((r) => r.json()),
       fetch("/data/aviation/airline-rankings.json").then((r) => r.json()),
       fetch("/data/aviation/insights.json").then((r) => r.json()),
-    ]).then(([s, t, seas, apt, aln, ins]) => {
+      fetch("/data/aviation/yearly-top-entities.json").then((r) => r.json()),
+      fetch("/data/aviation/airline-yearly-passengers.json").then((r) => r.json()),
+    ]).then(([s, t, seas, apt, aln, ins, ytop, aly]) => {
       setSummary(s);
       setTrends(t);
       setSeasonality(seas);
       setAirports(apt);
       setAirlineRankings(aln);
       setInsights(ins.findings);
+      setYearlyTop(ytop);
+      setAirlineYearly(aly);
     });
   }, []);
 
@@ -204,10 +585,7 @@ export default function AviationDashboard() {
     return years.map((year) => {
       const intl = filteredTrends.find((t) => t.year === year && t.segment === "international");
       const dom = filteredTrends.find((t) => t.year === year && t.segment === "domestic");
-      const row: Record<string, number | boolean> = {
-        year,
-        partial: !!(intl?.partial_year || dom?.partial_year),
-      };
+      const row: Record<string, number | boolean> = { year, partial: !!(intl?.partial_year || dom?.partial_year) };
       if (segment === "all" || segment === "international") {
         row.intlPax = intl?.passengers ?? 0;
         row.intlCargo = intl?.cargo_tons ?? 0;
@@ -216,25 +594,14 @@ export default function AviationDashboard() {
         row.domPax = dom?.passengers ?? 0;
         row.domCargo = dom?.cargo_tons ?? 0;
       }
-      if (segment === "international") {
-        row.pax = intl?.passengers ?? 0;
-        row.cargo = intl?.cargo_tons ?? 0;
-      } else if (segment === "domestic") {
-        row.pax = dom?.passengers ?? 0;
-        row.cargo = dom?.cargo_tons ?? 0;
-      } else {
-        row.pax = (intl?.passengers ?? 0) + (dom?.passengers ?? 0);
-        row.cargo = (intl?.cargo_tons ?? 0) + (dom?.cargo_tons ?? 0);
-      }
       return row;
     });
   }, [filteredTrends, segment]);
 
-  const jsonKpis = useMemo(() => {
-    const passengers = filteredTrends.reduce((s, t) => s + t.passengers, 0);
-    const cargo = filteredTrends.reduce((s, t) => s + t.cargo_tons, 0);
-    return { passengers, cargo };
-  }, [filteredTrends]);
+  const jsonKpis = useMemo(() => ({
+    passengers: filteredTrends.reduce((s, t) => s + t.passengers, 0),
+    cargo: filteredTrends.reduce((s, t) => s + t.cargo_tons, 0),
+  }), [filteredTrends]);
 
   const staticAirports = useMemo(() => {
     if (!airports) return [];
@@ -252,19 +619,14 @@ export default function AviationDashboard() {
 
   const queryDuck = useCallback(async () => {
     if (!duckConn || !duckReady) return;
-    const conn = duckConn as {
-      query: (sql: string) => Promise<{ toArray: () => Record<string, unknown>[] }>;
-    };
+    const conn = duckConn as { query: (sql: string) => Promise<{ toArray: () => Record<string, unknown>[] }> };
 
     const kpiRes = await conn.query(
       `SELECT SUM(passengers) as passengers, SUM(cargo_tons) as cargo_tons
        FROM traffic WHERE year BETWEEN ${yearRange[0]} AND ${yearRange[1]} ${segFilter}`,
     );
     const kpiRow = kpiRes.toArray()[0];
-    setFilteredKpis({
-      passengers: Number(kpiRow.passengers ?? 0),
-      cargo: Number(kpiRow.cargo_tons ?? 0),
-    });
+    setFilteredKpis({ passengers: Number(kpiRow.passengers ?? 0), cargo: Number(kpiRow.cargo_tons ?? 0) });
 
     const airportCol = segment === "domestic" ? "dep_airport" : "pk_airport";
     const aptRes = await conn.query(
@@ -272,25 +634,18 @@ export default function AviationDashboard() {
        FROM traffic WHERE year BETWEEN ${yearRange[0]} AND ${yearRange[1]} ${segFilter}
        GROUP BY 1 ORDER BY passengers DESC LIMIT 10`,
     );
-    setDuckAirports(
-      aptRes.toArray().map((r) => ({
-        airport: String(r.airport),
-        passengers: Number(r.passengers),
-        cargo_tons: Number(r.cargo_tons),
-      })),
-    );
+    setDuckAirports(aptRes.toArray().map((r) => ({
+      airport: String(r.airport), passengers: Number(r.passengers), cargo_tons: Number(r.cargo_tons),
+    })));
 
     const alnRes = await conn.query(
       `SELECT airline, SUM(passengers) as passengers
        FROM traffic WHERE year BETWEEN ${yearRange[0]} AND ${yearRange[1]} ${segFilter}
        GROUP BY 1 ORDER BY passengers DESC LIMIT 15`,
     );
-    setDuckAirlines(
-      alnRes.toArray().map((r) => ({
-        airline: String(r.airline),
-        passengers: Number(r.passengers),
-      })),
-    );
+    setDuckAirlines(alnRes.toArray().map((r) => ({
+      airline: String(r.airline), passengers: Number(r.passengers),
+    })));
   }, [duckConn, duckReady, yearRange, segFilter, segment]);
 
   const initDuckDB = useCallback(async () => {
@@ -318,31 +673,21 @@ export default function AviationDashboard() {
   useEffect(() => {
     const el = document.getElementById("aviation-dashboard");
     if (!el) return;
-    const obs = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) initDuckDB();
-    }, { threshold: 0.1 });
+    const obs = new IntersectionObserver(([entry]) => { if (entry.isIntersecting) initDuckDB(); }, { threshold: 0.1 });
     obs.observe(el);
     return () => obs.disconnect();
   }, [initDuckDB]);
 
-  useEffect(() => {
-    if (duckReady) queryDuck();
-  }, [duckReady, queryDuck]);
+  useEffect(() => { if (duckReady) queryDuck(); }, [duckReady, queryDuck]);
 
   const exportCsv = async () => {
     if (!duckConn) return;
     const r = await (duckConn as { query: (sql: string) => Promise<{ toArray: () => Record<string, unknown>[] }> })
-      .query(
-        `SELECT year, month, airline, segment, passengers, cargo_tons
-         FROM traffic WHERE year BETWEEN ${yearRange[0]} AND ${yearRange[1]} ${segFilter}
-         LIMIT 5000`,
-      );
+      .query(`SELECT year, month, airline, segment, passengers, cargo_tons FROM traffic WHERE year BETWEEN ${yearRange[0]} AND ${yearRange[1]} ${segFilter} LIMIT 5000`);
     const rows = r.toArray();
     if (!rows.length) return;
-    const header = Object.keys(rows[0]).join(",");
-    const csv = [header, ...rows.map((row) => Object.values(row).join(","))].join("\n");
     const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv" }));
+    a.href = URL.createObjectURL(new Blob([[Object.keys(rows[0]).join(","), ...rows.map((row) => Object.values(row).join(","))].join("\n")], { type: "text/csv" }));
     a.download = "aviation-export.csv";
     a.click();
   };
@@ -350,7 +695,6 @@ export default function AviationDashboard() {
   const displayKpis = filteredKpis ?? jsonKpis;
   const displayAirports = duckReady && duckAirports.length > 0 ? duckAirports : staticAirports;
   const displayAirlines = duckReady && duckAirlines.length > 0 ? duckAirlines : staticAirlines;
-
   const segmentLabel = segment === "all" ? "Combined" : segment.charAt(0).toUpperCase() + segment.slice(1);
 
   if (!summary) {
@@ -369,11 +713,7 @@ export default function AviationDashboard() {
                 <button
                   key={s}
                   onClick={() => setSegment(s)}
-                  className={`rounded border px-3 py-1 font-data text-xs uppercase ${
-                    segment === s
-                      ? "border-strip-accent bg-strip-accent/20 text-strip-accent"
-                      : "border-strip-border text-strip-muted"
-                  }`}
+                  className={`rounded border px-3 py-1 font-data text-xs uppercase ${segment === s ? "border-strip-accent bg-strip-accent/20 text-strip-accent" : "border-strip-border text-strip-muted"}`}
                 >
                   {s}
                 </button>
@@ -381,32 +721,14 @@ export default function AviationDashboard() {
             </div>
           </div>
           <div>
-            <label className="font-data text-xs text-strip-muted">
-              Start year: {yearRange[0]} — End year: {yearRange[1]}
-            </label>
-            <input
-              type="range"
-              min={2006}
-              max={2026}
-              value={yearRange[0]}
-              onChange={(e) => setYearRange([Math.min(+e.target.value, yearRange[1]), yearRange[1]])}
-              className="mt-2 w-full"
-            />
-            <input
-              type="range"
-              min={2006}
-              max={2026}
-              value={yearRange[1]}
-              onChange={(e) => setYearRange([yearRange[0], Math.max(+e.target.value, yearRange[0])])}
-              className="mt-1 w-full"
-            />
+            <label className="font-data text-xs text-strip-muted">Start year: {yearRange[0]} — End year: {yearRange[1]}</label>
+            <input type="range" min={2006} max={2026} value={yearRange[0]} onChange={(e) => setYearRange([Math.min(+e.target.value, yearRange[1]), yearRange[1]])} className="mt-2 w-full" />
+            <input type="range" min={2006} max={2026} value={yearRange[1]} onChange={(e) => setYearRange([yearRange[0], Math.max(+e.target.value, yearRange[0])])} className="mt-1 w-full" />
           </div>
           <div className="flex items-end gap-2">
             {duckLoading && <span className="font-data text-xs text-strip-muted">Loading SQL engine...</span>}
             {duckReady && <span className="font-data text-xs text-strip-signal">DuckDB ready</span>}
-            <button onClick={exportCsv} disabled={!duckReady} className="strip-btn text-xs disabled:opacity-40">
-              Export CSV
-            </button>
+            <button onClick={exportCsv} disabled={!duckReady} className="strip-btn text-xs disabled:opacity-40">Export CSV</button>
           </div>
         </div>
       </div>
@@ -438,10 +760,7 @@ export default function AviationDashboard() {
             <CartesianGrid strokeDasharray="3 3" stroke="#1e3054" />
             <XAxis dataKey="year" tick={{ fill: "#8fa3bf", fontSize: 11 }} />
             <YAxis tick={{ fill: "#8fa3bf", fontSize: 11 }} tickFormatter={formatNum} />
-            <Tooltip
-              contentStyle={{ background: "#121f38", border: "1px solid #1e3054", fontFamily: "JetBrains Mono" }}
-              formatter={tooltipFormatter}
-            />
+            <Tooltip contentStyle={{ background: "#121f38", border: "1px solid #1e3054", fontFamily: "JetBrains Mono" }} formatter={tooltipFormatter} />
             <Legend />
             {segment === "all" && (
               <>
@@ -449,12 +768,8 @@ export default function AviationDashboard() {
                 <Line type="monotone" dataKey="domPax" name="Domestic" stroke={CHART_COLORS.dom} dot={false} strokeWidth={2} />
               </>
             )}
-            {segment === "international" && (
-              <Line type="monotone" dataKey="intlPax" name="International" stroke={CHART_COLORS.intl} dot={false} strokeWidth={2} />
-            )}
-            {segment === "domestic" && (
-              <Line type="monotone" dataKey="domPax" name="Domestic" stroke={CHART_COLORS.dom} dot={false} strokeWidth={2} />
-            )}
+            {segment === "international" && <Line type="monotone" dataKey="intlPax" name="International" stroke={CHART_COLORS.intl} dot={false} strokeWidth={2} />}
+            {segment === "domestic" && <Line type="monotone" dataKey="domPax" name="Domestic" stroke={CHART_COLORS.dom} dot={false} strokeWidth={2} />}
           </LineChart>
         </ResponsiveContainer>
       </div>
@@ -467,16 +782,14 @@ export default function AviationDashboard() {
         </div>
       </div>
 
+      <YearlyRankingsExplorer yearlyTop={yearlyTop} segment={segment} yearRange={yearRange} />
+
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="strip-card">
-          <p className="strip-label mb-4">
-            Top Airports — {segment === "domestic" ? "Domestic" : "International (PK)"}
-          </p>
+          <p className="strip-label mb-4">Top Airports — {segment === "domestic" ? "Domestic" : "International (PK)"}</p>
           <RankingTable rows={displayAirports} labelKey="Airport" />
           {segment !== "domestic" && (
-            <p className="mt-3 font-data text-[10px] text-strip-partial">
-              Islamabad merges BBIAP/Chaklala + IIAP (2018 relocation)
-            </p>
+            <p className="mt-3 font-data text-[10px] text-strip-partial">Islamabad merges BBIAP/Chaklala + IIAP (2018 relocation)</p>
           )}
         </div>
         <div className="strip-card">
@@ -485,6 +798,8 @@ export default function AviationDashboard() {
         </div>
       </div>
 
+      <AirlineCagrChart airlineYearly={airlineYearly} yearRange={yearRange} />
+
       <div className="strip-card">
         <p className="strip-label mb-4">Cargo Trends (Metric Tons) — {segmentLabel}</p>
         <ResponsiveContainer width="100%" height={250}>
@@ -492,10 +807,7 @@ export default function AviationDashboard() {
             <CartesianGrid strokeDasharray="3 3" stroke="#1e3054" />
             <XAxis dataKey="year" tick={{ fill: "#8fa3bf", fontSize: 11 }} />
             <YAxis tick={{ fill: "#8fa3bf", fontSize: 11 }} tickFormatter={formatCargo} />
-            <Tooltip
-              contentStyle={{ background: "#121f38", border: "1px solid #1e3054", fontFamily: "JetBrains Mono" }}
-              formatter={tooltipFormatter}
-            />
+            <Tooltip contentStyle={{ background: "#121f38", border: "1px solid #1e3054", fontFamily: "JetBrains Mono" }} formatter={tooltipFormatter} />
             <Legend />
             {segment === "all" && (
               <>

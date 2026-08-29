@@ -1,0 +1,5714 @@
+{
+  "airlines": {
+    "international": {
+      "2006": [
+        {
+          "name": "Pakistan International",
+          "passengers": 1110013,
+          "cargo_tons": 26577.81,
+          "flights": 1683
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 468989,
+          "cargo_tons": 25536.11,
+          "flights": 88
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 413889,
+          "cargo_tons": 10085.18,
+          "flights": 210
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 216052,
+          "cargo_tons": 7604.55,
+          "flights": 96
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 116497,
+          "cargo_tons": 1752.77,
+          "flights": 90
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 109109,
+          "cargo_tons": 3433.51,
+          "flights": 64
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 100972,
+          "cargo_tons": 5934.92,
+          "flights": 48
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 96178,
+          "cargo_tons": 644.39,
+          "flights": 96
+        },
+        {
+          "name": "Aero Asia",
+          "passengers": 83369,
+          "cargo_tons": 913.71,
+          "flights": 60
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 60313,
+          "cargo_tons": 3330.92,
+          "flights": 36
+        },
+        {
+          "name": "Kuwait Airways",
+          "passengers": 53593,
+          "cargo_tons": 1941.38,
+          "flights": 36
+        },
+        {
+          "name": "British Airways",
+          "passengers": 37413,
+          "cargo_tons": 1384.2,
+          "flights": 12
+        },
+        {
+          "name": "Malaysian Airlines",
+          "passengers": 26571,
+          "cargo_tons": 2273.23,
+          "flights": 24
+        },
+        {
+          "name": "Cathay Pacific",
+          "passengers": 26421,
+          "cargo_tons": 2491.92,
+          "flights": 32
+        },
+        {
+          "name": "China Southern",
+          "passengers": 24013,
+          "cargo_tons": 300.65,
+          "flights": 12
+        }
+      ],
+      "2007": [
+        {
+          "name": "Pakistan International",
+          "passengers": 3233336,
+          "cargo_tons": 75785.06,
+          "flights": 4221
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 1016672,
+          "cargo_tons": 46970.42,
+          "flights": 168
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 726104,
+          "cargo_tons": 18831.53,
+          "flights": 376
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 396728,
+          "cargo_tons": 13475.97,
+          "flights": 252
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 320803,
+          "cargo_tons": 12733.31,
+          "flights": 120
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 312525,
+          "cargo_tons": 947.48,
+          "flights": 142
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 237414,
+          "cargo_tons": 1063.09,
+          "flights": 212
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 222531,
+          "cargo_tons": 11790.02,
+          "flights": 156
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 194189,
+          "cargo_tons": 10759.14,
+          "flights": 92
+        },
+        {
+          "name": "Kuwait Airways",
+          "passengers": 98879,
+          "cargo_tons": 3994.44,
+          "flights": 94
+        },
+        {
+          "name": "British Airways",
+          "passengers": 81069,
+          "cargo_tons": 3040.3,
+          "flights": 24
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 64174,
+          "cargo_tons": 423.0,
+          "flights": 40
+        },
+        {
+          "name": "Cathay Pacific",
+          "passengers": 58462,
+          "cargo_tons": 5428.32,
+          "flights": 64
+        },
+        {
+          "name": "Malaysian Airlines",
+          "passengers": 52246,
+          "cargo_tons": 4682.11,
+          "flights": 48
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 44626,
+          "cargo_tons": 673.58,
+          "flights": 24
+        }
+      ],
+      "2008": [
+        {
+          "name": "Pakistan International",
+          "passengers": 3361039,
+          "cargo_tons": 76478.27,
+          "flights": 4005
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 1071238,
+          "cargo_tons": 40089.66,
+          "flights": 144
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 697225,
+          "cargo_tons": 20725.51,
+          "flights": 418
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 453272,
+          "cargo_tons": 2009.54,
+          "flights": 228
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 440204,
+          "cargo_tons": 19945.54,
+          "flights": 142
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 303490,
+          "cargo_tons": 1424.97,
+          "flights": 250
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 284830,
+          "cargo_tons": 18042.6,
+          "flights": 252
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 262812,
+          "cargo_tons": 7020.98,
+          "flights": 196
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 184544,
+          "cargo_tons": 12629.31,
+          "flights": 84
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 94150,
+          "cargo_tons": 925.53,
+          "flights": 48
+        },
+        {
+          "name": "Kuwait Airways",
+          "passengers": 75598,
+          "cargo_tons": 1357.04,
+          "flights": 84
+        },
+        {
+          "name": "Cathay Pacific",
+          "passengers": 70663,
+          "cargo_tons": 5422.32,
+          "flights": 54
+        },
+        {
+          "name": "Malaysian Airlines",
+          "passengers": 53706,
+          "cargo_tons": 4840.07,
+          "flights": 48
+        },
+        {
+          "name": "British Airways",
+          "passengers": 49858,
+          "cargo_tons": 2373.7,
+          "flights": 12
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 44321,
+          "cargo_tons": 421.44,
+          "flights": 24
+        }
+      ],
+      "2009": [
+        {
+          "name": "Pakistan International",
+          "passengers": 3426466,
+          "cargo_tons": 74578.01,
+          "flights": 4426
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 961564,
+          "cargo_tons": 46031.57,
+          "flights": 96
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 699894,
+          "cargo_tons": 18404.4,
+          "flights": 366
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 556320,
+          "cargo_tons": 4324.1,
+          "flights": 314
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 453425,
+          "cargo_tons": 926.2,
+          "flights": 310
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 402923,
+          "cargo_tons": 18329.92,
+          "flights": 138
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 326899,
+          "cargo_tons": 16765.07,
+          "flights": 294
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 272032,
+          "cargo_tons": 9436.17,
+          "flights": 256
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 241963,
+          "cargo_tons": 13197.82,
+          "flights": 98
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 103998,
+          "cargo_tons": 916.54,
+          "flights": 50
+        },
+        {
+          "name": "Kuwait Airways",
+          "passengers": 76827,
+          "cargo_tons": 833.66,
+          "flights": 52
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 68912,
+          "cargo_tons": 924.15,
+          "flights": 24
+        },
+        {
+          "name": "Cathay Pacific",
+          "passengers": 61807,
+          "cargo_tons": 5338.46,
+          "flights": 46
+        },
+        {
+          "name": "Malaysian Airlines",
+          "passengers": 49311,
+          "cargo_tons": 4126.13,
+          "flights": 48
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 44744,
+          "cargo_tons": 556.58,
+          "flights": 24
+        }
+      ],
+      "2010": [
+        {
+          "name": "Pakistan International",
+          "passengers": 3396525,
+          "cargo_tons": 74393.82,
+          "flights": 4295
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 963593,
+          "cargo_tons": 41913.07,
+          "flights": 98
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 774378,
+          "cargo_tons": 21992.31,
+          "flights": 338
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 526800,
+          "cargo_tons": 4947.58,
+          "flights": 322
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 491568,
+          "cargo_tons": 1237.43,
+          "flights": 396
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 335964,
+          "cargo_tons": 17290.06,
+          "flights": 216
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 280866,
+          "cargo_tons": 14774.52,
+          "flights": 140
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 247353,
+          "cargo_tons": 7958.52,
+          "flights": 308
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 243480,
+          "cargo_tons": 17538.06,
+          "flights": 100
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 129267,
+          "cargo_tons": 1644.53,
+          "flights": 48
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 118520,
+          "cargo_tons": 1169.21,
+          "flights": 66
+        },
+        {
+          "name": "Kuwait Airways",
+          "passengers": 89265,
+          "cargo_tons": 1277.58,
+          "flights": 82
+        },
+        {
+          "name": "Cathay Pacific",
+          "passengers": 79556,
+          "cargo_tons": 6216.81,
+          "flights": 48
+        },
+        {
+          "name": "Malaysian Airlines",
+          "passengers": 59724,
+          "cargo_tons": 4499.35,
+          "flights": 48
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 41988,
+          "cargo_tons": 744.42,
+          "flights": 24
+        }
+      ],
+      "2011": [
+        {
+          "name": "Pakistan International",
+          "passengers": 3455005,
+          "cargo_tons": 61919.25,
+          "flights": 3845
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 1106649,
+          "cargo_tons": 44678.26,
+          "flights": 100
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 898014,
+          "cargo_tons": 16799.17,
+          "flights": 352
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 559984,
+          "cargo_tons": 3098.88,
+          "flights": 370
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 553892,
+          "cargo_tons": 1674.56,
+          "flights": 450
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 403130,
+          "cargo_tons": 18450.9,
+          "flights": 146
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 369771,
+          "cargo_tons": 15666.28,
+          "flights": 198
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 263091,
+          "cargo_tons": 8681.46,
+          "flights": 266
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 243519,
+          "cargo_tons": 19449.01,
+          "flights": 96
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 184371,
+          "cargo_tons": 2727.08,
+          "flights": 72
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 99946,
+          "cargo_tons": 967.19,
+          "flights": 52
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 95363,
+          "cargo_tons": 210.82,
+          "flights": 24
+        },
+        {
+          "name": "Kuwait Airways",
+          "passengers": 84781,
+          "cargo_tons": 1297.71,
+          "flights": 34
+        },
+        {
+          "name": "Malaysian Airlines",
+          "passengers": 72259,
+          "cargo_tons": 3679.33,
+          "flights": 48
+        },
+        {
+          "name": "Cathay Pacific",
+          "passengers": 61162,
+          "cargo_tons": 6634.18,
+          "flights": 48
+        }
+      ],
+      "2012": [
+        {
+          "name": "Pakistan International",
+          "passengers": 3400188,
+          "cargo_tons": 65432.1,
+          "flights": 3801
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 1348651,
+          "cargo_tons": 59228.99,
+          "flights": 102
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 1003861,
+          "cargo_tons": 15855.94,
+          "flights": 382
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 873045,
+          "cargo_tons": 1439.41,
+          "flights": 508
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 662601,
+          "cargo_tons": 3082.5,
+          "flights": 398
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 423645,
+          "cargo_tons": 22933.06,
+          "flights": 180
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 348247,
+          "cargo_tons": 17573.83,
+          "flights": 180
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 273711,
+          "cargo_tons": 16671.99,
+          "flights": 92
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 261359,
+          "cargo_tons": 8761.27,
+          "flights": 360
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 204271,
+          "cargo_tons": 5083.63,
+          "flights": 88
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 130065,
+          "cargo_tons": 1593.69,
+          "flights": 24
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 100093,
+          "cargo_tons": 840.23,
+          "flights": 50
+        },
+        {
+          "name": "Kuwait Airways",
+          "passengers": 82286,
+          "cargo_tons": 1745.93,
+          "flights": 24
+        },
+        {
+          "name": "Srilankan Airlines",
+          "passengers": 74088,
+          "cargo_tons": 2033.96,
+          "flights": 24
+        },
+        {
+          "name": "Cathay Pacific",
+          "passengers": 62418,
+          "cargo_tons": 6863.27,
+          "flights": 48
+        }
+      ],
+      "2013": [
+        {
+          "name": "Pakistan International",
+          "passengers": 2799330,
+          "cargo_tons": 54306.08,
+          "flights": 3673
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 1557159,
+          "cargo_tons": 67590.48,
+          "flights": 100
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 1264532,
+          "cargo_tons": 6503.95,
+          "flights": 624
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 949996,
+          "cargo_tons": 14950.47,
+          "flights": 370
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 671923,
+          "cargo_tons": 4433.9,
+          "flights": 442
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 514025,
+          "cargo_tons": 22814.95,
+          "flights": 166
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 383516,
+          "cargo_tons": 15504.76,
+          "flights": 196
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 328672,
+          "cargo_tons": 19206.62,
+          "flights": 96
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 284957,
+          "cargo_tons": 7390.51,
+          "flights": 74
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 226115,
+          "cargo_tons": 5429.18,
+          "flights": 260
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 202147,
+          "cargo_tons": 2117.64,
+          "flights": 40
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 165494,
+          "cargo_tons": 1807.35,
+          "flights": 50
+        },
+        {
+          "name": "Srilankan Airlines",
+          "passengers": 80645,
+          "cargo_tons": 1820.64,
+          "flights": 24
+        },
+        {
+          "name": "Kuwait Airways",
+          "passengers": 71637,
+          "cargo_tons": 1154.66,
+          "flights": 24
+        },
+        {
+          "name": "Cathay Pacific",
+          "passengers": 67326,
+          "cargo_tons": 6434.09,
+          "flights": 48
+        }
+      ],
+      "2014": [
+        {
+          "name": "Pakistan International",
+          "passengers": 2860507,
+          "cargo_tons": 36356.33,
+          "flights": 4072
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 1977397,
+          "cargo_tons": 66341.04,
+          "flights": 124
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 1371269,
+          "cargo_tons": 6945.89,
+          "flights": 650
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 1091168,
+          "cargo_tons": 15038.4,
+          "flights": 328
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 803440,
+          "cargo_tons": 2001.84,
+          "flights": 312
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 576815,
+          "cargo_tons": 21267.32,
+          "flights": 242
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 567180,
+          "cargo_tons": 18920.97,
+          "flights": 134
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 375208,
+          "cargo_tons": 8156.73,
+          "flights": 342
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 374678,
+          "cargo_tons": 19865.93,
+          "flights": 96
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 250730,
+          "cargo_tons": 4549.07,
+          "flights": 70
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 240766,
+          "cargo_tons": 2642.21,
+          "flights": 88
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 230693,
+          "cargo_tons": 1916.04,
+          "flights": 44
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 111125,
+          "cargo_tons": 1635.01,
+          "flights": 36
+        },
+        {
+          "name": "Kuwait Airways",
+          "passengers": 93222,
+          "cargo_tons": 1578.37,
+          "flights": 42
+        },
+        {
+          "name": "Srilankan Airlines",
+          "passengers": 88310,
+          "cargo_tons": 2428.34,
+          "flights": 24
+        }
+      ],
+      "2015": [
+        {
+          "name": "Pakistan International",
+          "passengers": 2776899,
+          "cargo_tons": 25866.67,
+          "flights": 3546
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 2134163,
+          "cargo_tons": 92503.77,
+          "flights": 148
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 1430582,
+          "cargo_tons": 3953.23,
+          "flights": 690
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 1261709,
+          "cargo_tons": 4519.79,
+          "flights": 576
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 1104903,
+          "cargo_tons": 16764.74,
+          "flights": 346
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 823870,
+          "cargo_tons": 25965.12,
+          "flights": 314
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 623058,
+          "cargo_tons": 14146.94,
+          "flights": 136
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 534223,
+          "cargo_tons": 3285.51,
+          "flights": 98
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 485968,
+          "cargo_tons": 3846.26,
+          "flights": 154
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 387286,
+          "cargo_tons": 19320.27,
+          "flights": 98
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 371275,
+          "cargo_tons": 8751.66,
+          "flights": 382
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 286088,
+          "cargo_tons": 3026.42,
+          "flights": 72
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 228832,
+          "cargo_tons": 21170.13,
+          "flights": 58
+        },
+        {
+          "name": "Kuwait Airways",
+          "passengers": 111027,
+          "cargo_tons": 1824.96,
+          "flights": 48
+        },
+        {
+          "name": "Srilankan Airlines",
+          "passengers": 78557,
+          "cargo_tons": 1410.11,
+          "flights": 24
+        }
+      ],
+      "2016": [
+        {
+          "name": "Pakistan International",
+          "passengers": 3180718,
+          "cargo_tons": 24176.61,
+          "flights": 3469
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 2236747,
+          "cargo_tons": 60911.36,
+          "flights": 144
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 1454037,
+          "cargo_tons": 5480.04,
+          "flights": 698
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 1422141,
+          "cargo_tons": 4070.62,
+          "flights": 646
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 1165371,
+          "cargo_tons": 16481.72,
+          "flights": 342
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 1113456,
+          "cargo_tons": 40383.22,
+          "flights": 182
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 814165,
+          "cargo_tons": 4146.96,
+          "flights": 128
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 761662,
+          "cargo_tons": 5318.16,
+          "flights": 212
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 586049,
+          "cargo_tons": 11536.95,
+          "flights": 90
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 414266,
+          "cargo_tons": 7557.84,
+          "flights": 176
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 356729,
+          "cargo_tons": 22458.87,
+          "flights": 96
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 331453,
+          "cargo_tons": 85696.02,
+          "flights": 72
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 314052,
+          "cargo_tons": 4912.94,
+          "flights": 72
+        },
+        {
+          "name": "Kuwait Airways",
+          "passengers": 117332,
+          "cargo_tons": 2102.45,
+          "flights": 52
+        },
+        {
+          "name": "Srilankan Airlines",
+          "passengers": 71440,
+          "cargo_tons": 1817.04,
+          "flights": 38
+        }
+      ],
+      "2017": [
+        {
+          "name": "Pakistan International",
+          "passengers": 3181413,
+          "cargo_tons": 28187.99,
+          "flights": 3415
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 2298547,
+          "cargo_tons": 63009.69,
+          "flights": 144
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 1822729,
+          "cargo_tons": 9494.84,
+          "flights": 792
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 1455419,
+          "cargo_tons": 12491.02,
+          "flights": 304
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 1401093,
+          "cargo_tons": 2238.04,
+          "flights": 724
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 1093004,
+          "cargo_tons": 38995.92,
+          "flights": 180
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 924784,
+          "cargo_tons": 3744.83,
+          "flights": 128
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 828592,
+          "cargo_tons": 6634.93,
+          "flights": 220
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 601737,
+          "cargo_tons": 9862.47,
+          "flights": 74
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 418391,
+          "cargo_tons": 8082.59,
+          "flights": 192
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 416796,
+          "cargo_tons": 15727.77,
+          "flights": 72
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 407093,
+          "cargo_tons": 22071.85,
+          "flights": 96
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 364343,
+          "cargo_tons": 4917.62,
+          "flights": 72
+        },
+        {
+          "name": "Kuwait Airways",
+          "passengers": 105212,
+          "cargo_tons": 1774.18,
+          "flights": 50
+        },
+        {
+          "name": "Srilankan Airlines",
+          "passengers": 96520,
+          "cargo_tons": 2105.89,
+          "flights": 62
+        }
+      ],
+      "2018": [
+        {
+          "name": "Pakistan International",
+          "passengers": 3203646,
+          "cargo_tons": 26397.16,
+          "flights": 2951
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 2323936,
+          "cargo_tons": 67448.44,
+          "flights": 140
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 1823344,
+          "cargo_tons": 18136.21,
+          "flights": 294
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 1331507,
+          "cargo_tons": 2637.29,
+          "flights": 696
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 1028819,
+          "cargo_tons": 5038.44,
+          "flights": 130
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 993341,
+          "cargo_tons": 3384.36,
+          "flights": 514
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 977402,
+          "cargo_tons": 41791.4,
+          "flights": 168
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 844057,
+          "cargo_tons": 6224.06,
+          "flights": 220
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 622503,
+          "cargo_tons": 6747.25,
+          "flights": 72
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 485087,
+          "cargo_tons": 21811.12,
+          "flights": 72
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 478569,
+          "cargo_tons": 7915.08,
+          "flights": 168
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 417544,
+          "cargo_tons": 4306.48,
+          "flights": 72
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 414123,
+          "cargo_tons": 22721.1,
+          "flights": 96
+        },
+        {
+          "name": "Fly Nas",
+          "passengers": 155214,
+          "cargo_tons": 685.13,
+          "flights": 50
+        },
+        {
+          "name": "Salam Air",
+          "passengers": 110092,
+          "cargo_tons": 93.07,
+          "flights": 74
+        }
+      ],
+      "2019": [
+        {
+          "name": "Pakistan International",
+          "passengers": 3610576,
+          "cargo_tons": 24504.08,
+          "flights": 3109
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 2183067,
+          "cargo_tons": 78867.48,
+          "flights": 118
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 2116920,
+          "cargo_tons": 26141.81,
+          "flights": 406
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 1165065,
+          "cargo_tons": 433.17,
+          "flights": 608
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 1153742,
+          "cargo_tons": 56886.42,
+          "flights": 198
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 922030,
+          "cargo_tons": 7599.66,
+          "flights": 220
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 888347,
+          "cargo_tons": 6132.3,
+          "flights": 130
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 579080,
+          "cargo_tons": 8518.86,
+          "flights": 88
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 565629,
+          "cargo_tons": 10537.54,
+          "flights": 332
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 506387,
+          "cargo_tons": 20128.34,
+          "flights": 72
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 447546,
+          "cargo_tons": 6670.78,
+          "flights": 70
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 236422,
+          "cargo_tons": 11080.54,
+          "flights": 74
+        },
+        {
+          "name": "Fly Nas",
+          "passengers": 155457,
+          "cargo_tons": 1018.37,
+          "flights": 58
+        },
+        {
+          "name": "Salam Air",
+          "passengers": 149524,
+          "cargo_tons": 144.91,
+          "flights": 86
+        },
+        {
+          "name": "Saudia Gulf",
+          "passengers": 148469,
+          "cargo_tons": 0.0,
+          "flights": 88
+        }
+      ],
+      "2020": [
+        {
+          "name": "Pakistan International",
+          "passengers": 1757086,
+          "cargo_tons": 20209.45,
+          "flights": 2829
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 990267,
+          "cargo_tons": 54001.58,
+          "flights": 116
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 582603,
+          "cargo_tons": 10260.73,
+          "flights": 272
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 556778,
+          "cargo_tons": 36894.41,
+          "flights": 176
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 532382,
+          "cargo_tons": 0.0,
+          "flights": 412
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 388377,
+          "cargo_tons": 4354.95,
+          "flights": 172
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 364398,
+          "cargo_tons": 3163.02,
+          "flights": 116
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 308049,
+          "cargo_tons": 11541.34,
+          "flights": 56
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 270995,
+          "cargo_tons": 9545.26,
+          "flights": 92
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 146984,
+          "cargo_tons": 4348.5,
+          "flights": 180
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 112443,
+          "cargo_tons": 3370.56,
+          "flights": 60
+        },
+        {
+          "name": "Fly Nas",
+          "passengers": 85806,
+          "cargo_tons": 593.61,
+          "flights": 68
+        },
+        {
+          "name": "British Airways",
+          "passengers": 71528,
+          "cargo_tons": 2463.01,
+          "flights": 22
+        },
+        {
+          "name": "Salam Air",
+          "passengers": 64763,
+          "cargo_tons": 0.09,
+          "flights": 90
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 46186,
+          "cargo_tons": 1726.83,
+          "flights": 20
+        }
+      ],
+      "2021": [
+        {
+          "name": "Pakistan International",
+          "passengers": 1455350,
+          "cargo_tons": 20712.98,
+          "flights": 2633
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 1009939,
+          "cargo_tons": 46538.84,
+          "flights": 138
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 869204,
+          "cargo_tons": 34533.33,
+          "flights": 180
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 616842,
+          "cargo_tons": 552.95,
+          "flights": 554
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 406902,
+          "cargo_tons": 18512.2,
+          "flights": 72
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 401371,
+          "cargo_tons": 2653.53,
+          "flights": 122
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 392315,
+          "cargo_tons": 4245.48,
+          "flights": 200
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 390106,
+          "cargo_tons": 12487.0,
+          "flights": 238
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 323938,
+          "cargo_tons": 19546.9,
+          "flights": 162
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 242232,
+          "cargo_tons": 5359.35,
+          "flights": 278
+        },
+        {
+          "name": "Serene Air",
+          "passengers": 153952,
+          "cargo_tons": 0.0,
+          "flights": 142
+        },
+        {
+          "name": "Virgin Atlantic Airways",
+          "passengers": 135541,
+          "cargo_tons": 6062.73,
+          "flights": 72
+        },
+        {
+          "name": "British Airways",
+          "passengers": 123870,
+          "cargo_tons": 2903.04,
+          "flights": 48
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 86430,
+          "cargo_tons": 4209.55,
+          "flights": 96
+        },
+        {
+          "name": "Salam Air",
+          "passengers": 65403,
+          "cargo_tons": 108.63,
+          "flights": 66
+        }
+      ],
+      "2022": [
+        {
+          "name": "Pakistan International",
+          "passengers": 3071801,
+          "cargo_tons": 25449.55,
+          "flights": 3390
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 1611305,
+          "cargo_tons": 43745.17,
+          "flights": 120
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 1473624,
+          "cargo_tons": 17399.49,
+          "flights": 234
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 1379849,
+          "cargo_tons": 38243.07,
+          "flights": 280
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 1289371,
+          "cargo_tons": 0.0,
+          "flights": 642
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 958322,
+          "cargo_tons": 3980.63,
+          "flights": 122
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 766303,
+          "cargo_tons": 7333.81,
+          "flights": 218
+        },
+        {
+          "name": "Serene Air",
+          "passengers": 596912,
+          "cargo_tons": 1789.87,
+          "flights": 302
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 553389,
+          "cargo_tons": 16492.69,
+          "flights": 72
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 517087,
+          "cargo_tons": 9337.35,
+          "flights": 192
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 429368,
+          "cargo_tons": 7199.41,
+          "flights": 342
+        },
+        {
+          "name": "Virgin Atlantic Airways",
+          "passengers": 206163,
+          "cargo_tons": 6853.98,
+          "flights": 78
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 185217,
+          "cargo_tons": 7486.6,
+          "flights": 82
+        },
+        {
+          "name": "Fly Nas",
+          "passengers": 146845,
+          "cargo_tons": 835.65,
+          "flights": 78
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 143071,
+          "cargo_tons": 3012.61,
+          "flights": 92
+        }
+      ],
+      "2023": [
+        {
+          "name": "Pakistan International",
+          "passengers": 3468239,
+          "cargo_tons": 33322.93,
+          "flights": 3248
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 1967241,
+          "cargo_tons": 22697.88,
+          "flights": 276
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 1775580,
+          "cargo_tons": 57279.78,
+          "flights": 120
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 1459691,
+          "cargo_tons": 39351.68,
+          "flights": 466
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 1458313,
+          "cargo_tons": 0.0,
+          "flights": 620
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 1105648,
+          "cargo_tons": 4068.69,
+          "flights": 120
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 859023,
+          "cargo_tons": 8507.38,
+          "flights": 216
+        },
+        {
+          "name": "Serene Air",
+          "passengers": 712782,
+          "cargo_tons": 5510.06,
+          "flights": 344
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 572498,
+          "cargo_tons": 3059.98,
+          "flights": 186
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 503600,
+          "cargo_tons": 16591.42,
+          "flights": 72
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 466041,
+          "cargo_tons": 6706.81,
+          "flights": 332
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 294562,
+          "cargo_tons": 18965.78,
+          "flights": 124
+        },
+        {
+          "name": "Air Sial",
+          "passengers": 266465,
+          "cargo_tons": 542.19,
+          "flights": 140
+        },
+        {
+          "name": "Fly Nas",
+          "passengers": 244858,
+          "cargo_tons": 1352.86,
+          "flights": 98
+        },
+        {
+          "name": "Oman Air",
+          "passengers": 239346,
+          "cargo_tons": 3154.81,
+          "flights": 106
+        }
+      ],
+      "2024": [
+        {
+          "name": "Pakistan International",
+          "passengers": 2975292,
+          "cargo_tons": 34976.46,
+          "flights": 2726
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 2442661,
+          "cargo_tons": 26854.73,
+          "flights": 288
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 1825582,
+          "cargo_tons": 64557.4,
+          "flights": 120
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 1525593,
+          "cargo_tons": 37793.52,
+          "flights": 414
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 1515294,
+          "cargo_tons": 0.0,
+          "flights": 626
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 1281628,
+          "cargo_tons": 5386.01,
+          "flights": 146
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 845628,
+          "cargo_tons": 7385.11,
+          "flights": 216
+        },
+        {
+          "name": "Air Sial",
+          "passengers": 660170,
+          "cargo_tons": 1716.49,
+          "flights": 268
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 630809,
+          "cargo_tons": 2726.6,
+          "flights": 212
+        },
+        {
+          "name": "Serene Air",
+          "passengers": 602756,
+          "cargo_tons": 6520.49,
+          "flights": 335
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 557650,
+          "cargo_tons": 19071.0,
+          "flights": 72
+        },
+        {
+          "name": "Gulf Air",
+          "passengers": 433094,
+          "cargo_tons": 3743.65,
+          "flights": 270
+        },
+        {
+          "name": "Fly Jinnah",
+          "passengers": 358059,
+          "cargo_tons": 3041.46,
+          "flights": 86
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 340222,
+          "cargo_tons": 20743.3,
+          "flights": 172
+        },
+        {
+          "name": "Fly Nas",
+          "passengers": 336348,
+          "cargo_tons": 1940.5,
+          "flights": 122
+        }
+      ],
+      "2025": [
+        {
+          "name": "Pakistan International",
+          "passengers": 2767860,
+          "cargo_tons": 31219.24,
+          "flights": 2757
+        },
+        {
+          "name": "Saudi Arabian",
+          "passengers": 2658576,
+          "cargo_tons": 31739.78,
+          "flights": 288
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 1717960,
+          "cargo_tons": 63820.16,
+          "flights": 120
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 1538961,
+          "cargo_tons": 0.0,
+          "flights": 612
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 1471933,
+          "cargo_tons": 37091.69,
+          "flights": 378
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 1330225,
+          "cargo_tons": 5751.3,
+          "flights": 176
+        },
+        {
+          "name": "Air Sial",
+          "passengers": 998097,
+          "cargo_tons": 2498.61,
+          "flights": 350
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 852329,
+          "cargo_tons": 7067.52,
+          "flights": 216
+        },
+        {
+          "name": "Fly Jinnah",
+          "passengers": 765236,
+          "cargo_tons": 4367.96,
+          "flights": 224
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 746015,
+          "cargo_tons": 2275.16,
+          "flights": 202
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 697927,
+          "cargo_tons": 19786.92,
+          "flights": 78
+        },
+        {
+          "name": "Salam Air",
+          "passengers": 409789,
+          "cargo_tons": 1155.67,
+          "flights": 144
+        },
+        {
+          "name": "Fly Nas",
+          "passengers": 378347,
+          "cargo_tons": 1947.29,
+          "flights": 140
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 371622,
+          "cargo_tons": 21086.17,
+          "flights": 106
+        },
+        {
+          "name": "Serene Air",
+          "passengers": 368097,
+          "cargo_tons": 3000.39,
+          "flights": 280
+        }
+      ],
+      "2026": [
+        {
+          "name": "Saudi Arabian",
+          "passengers": 1321979,
+          "cargo_tons": 14569.95,
+          "flights": 154
+        },
+        {
+          "name": "Pakistan International",
+          "passengers": 1145849,
+          "cargo_tons": 15059.18,
+          "flights": 1153
+        },
+        {
+          "name": "Emirates Airlines",
+          "passengers": 781418,
+          "cargo_tons": 24267.66,
+          "flights": 60
+        },
+        {
+          "name": "Qatar Airways",
+          "passengers": 685278,
+          "cargo_tons": 15994.85,
+          "flights": 140
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 652704,
+          "cargo_tons": 0.0,
+          "flights": 370
+        },
+        {
+          "name": "Fly Dubai",
+          "passengers": 559865,
+          "cargo_tons": 2439.38,
+          "flights": 94
+        },
+        {
+          "name": "Air Sial",
+          "passengers": 557055,
+          "cargo_tons": 1380.11,
+          "flights": 204
+        },
+        {
+          "name": "Fly Jinnah",
+          "passengers": 472146,
+          "cargo_tons": 1653.16,
+          "flights": 136
+        },
+        {
+          "name": "Turkish Airlines",
+          "passengers": 420612,
+          "cargo_tons": 10696.98,
+          "flights": 36
+        },
+        {
+          "name": "Air Arabia",
+          "passengers": 407953,
+          "cargo_tons": 3179.15,
+          "flights": 108
+        },
+        {
+          "name": "Etihad Airways",
+          "passengers": 336093,
+          "cargo_tons": 3910.29,
+          "flights": 112
+        },
+        {
+          "name": "Salam Air",
+          "passengers": 205081,
+          "cargo_tons": 1057.93,
+          "flights": 72
+        },
+        {
+          "name": "Fly Nas",
+          "passengers": 189133,
+          "cargo_tons": 871.41,
+          "flights": 72
+        },
+        {
+          "name": "Thai Airways",
+          "passengers": 177286,
+          "cargo_tons": 9986.67,
+          "flights": 66
+        },
+        {
+          "name": "China Southern",
+          "passengers": 115504,
+          "cargo_tons": 5047.78,
+          "flights": 68
+        }
+      ]
+    },
+    "domestic": {
+      "2006": [
+        {
+          "name": "Pakistan International",
+          "passengers": 785381,
+          "cargo_tons": 13031.57,
+          "flights": 691
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 365290,
+          "cargo_tons": 5272.36,
+          "flights": 123
+        },
+        {
+          "name": "Aero Asia",
+          "passengers": 82127,
+          "cargo_tons": 1635.8,
+          "flights": 43
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 59231,
+          "cargo_tons": 328.98,
+          "flights": 28
+        }
+      ],
+      "2007": [
+        {
+          "name": "Pakistan International",
+          "passengers": 2360604,
+          "cargo_tons": 38457.61,
+          "flights": 2352
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 649617,
+          "cargo_tons": 4030.36,
+          "flights": 258
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 266261,
+          "cargo_tons": 2407.75,
+          "flights": 120
+        },
+        {
+          "name": "Aero Asia",
+          "passengers": 22463,
+          "cargo_tons": 398.84,
+          "flights": 14
+        }
+      ],
+      "2008": [
+        {
+          "name": "Pakistan International",
+          "passengers": 2430258,
+          "cargo_tons": 35605.75,
+          "flights": 2225
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 497510,
+          "cargo_tons": 3236.77,
+          "flights": 230
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 239868,
+          "cargo_tons": 2338.17,
+          "flights": 74
+        }
+      ],
+      "2009": [
+        {
+          "name": "Pakistan International",
+          "passengers": 2326475,
+          "cargo_tons": 27867.62,
+          "flights": 2474
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 486338,
+          "cargo_tons": 2772.63,
+          "flights": 139
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 404881,
+          "cargo_tons": 4019.08,
+          "flights": 72
+        }
+      ],
+      "2010": [
+        {
+          "name": "Pakistan International",
+          "passengers": 2598998,
+          "cargo_tons": 31470.31,
+          "flights": 2722
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 478920,
+          "cargo_tons": 5516.84,
+          "flights": 72
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 378723,
+          "cargo_tons": 2365.46,
+          "flights": 138
+        }
+      ],
+      "2011": [
+        {
+          "name": "Pakistan International",
+          "passengers": 2627457,
+          "cargo_tons": 28525.35,
+          "flights": 2606
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 444435,
+          "cargo_tons": 2443.98,
+          "flights": 138
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 289527,
+          "cargo_tons": 3162.59,
+          "flights": 70
+        }
+      ],
+      "2012": [
+        {
+          "name": "Pakistan International",
+          "passengers": 2484378,
+          "cargo_tons": 29802.33,
+          "flights": 2653
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 525040,
+          "cargo_tons": 3176.03,
+          "flights": 144
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 291912,
+          "cargo_tons": 2654.09,
+          "flights": 83
+        }
+      ],
+      "2013": [
+        {
+          "name": "Pakistan International",
+          "passengers": 2118032,
+          "cargo_tons": 25593.75,
+          "flights": 2390
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 613385,
+          "cargo_tons": 3656.86,
+          "flights": 139
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 551716,
+          "cargo_tons": 2601.61,
+          "flights": 152
+        },
+        {
+          "name": "Air Indus",
+          "passengers": 92667,
+          "cargo_tons": 337.23,
+          "flights": 41
+        }
+      ],
+      "2014": [
+        {
+          "name": "Pakistan International",
+          "passengers": 1702370,
+          "cargo_tons": 14066.1,
+          "flights": 2259
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 888677,
+          "cargo_tons": 6149.26,
+          "flights": 193
+        },
+        {
+          "name": "Air Indus",
+          "passengers": 465542,
+          "cargo_tons": 1804.8,
+          "flights": 214
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 374934,
+          "cargo_tons": 1472.56,
+          "flights": 73
+        }
+      ],
+      "2015": [
+        {
+          "name": "Pakistan International",
+          "passengers": 1790013,
+          "cargo_tons": 10918.22,
+          "flights": 2201
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 925005,
+          "cargo_tons": 5699.81,
+          "flights": 177
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 460172,
+          "cargo_tons": 2314.7,
+          "flights": 127
+        },
+        {
+          "name": "Air Indus",
+          "passengers": 126284,
+          "cargo_tons": 420.82,
+          "flights": 60
+        }
+      ],
+      "2016": [
+        {
+          "name": "Pakistan International",
+          "passengers": 2543487,
+          "cargo_tons": 11806.63,
+          "flights": 2297
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 654504,
+          "cargo_tons": 4422.99,
+          "flights": 116
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 502054,
+          "cargo_tons": 2347.35,
+          "flights": 146
+        }
+      ],
+      "2017": [
+        {
+          "name": "Pakistan International",
+          "passengers": 2176137,
+          "cargo_tons": 9925.84,
+          "flights": 1972
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 564179,
+          "cargo_tons": 5003.7,
+          "flights": 101
+        },
+        {
+          "name": "Serene Air",
+          "passengers": 535663,
+          "cargo_tons": 4127.92,
+          "flights": 146
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 311818,
+          "cargo_tons": 1509.75,
+          "flights": 125
+        }
+      ],
+      "2018": [
+        {
+          "name": "Pakistan International",
+          "passengers": 2016531,
+          "cargo_tons": 8834.69,
+          "flights": 1944
+        },
+        {
+          "name": "Serene Air",
+          "passengers": 738947,
+          "cargo_tons": 7434.55,
+          "flights": 168
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 367056,
+          "cargo_tons": 2256.37,
+          "flights": 109
+        },
+        {
+          "name": "Shaheen Air International",
+          "passengers": 204018,
+          "cargo_tons": 1714.42,
+          "flights": 57
+        }
+      ],
+      "2019": [
+        {
+          "name": "Pakistan International",
+          "passengers": 1725689,
+          "cargo_tons": 9456.98,
+          "flights": 1502
+        },
+        {
+          "name": "Serene Air",
+          "passengers": 940589,
+          "cargo_tons": 8153.19,
+          "flights": 168
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 196880,
+          "cargo_tons": 453.03,
+          "flights": 80
+        }
+      ],
+      "2020": [
+        {
+          "name": "Pakistan International",
+          "passengers": 847727,
+          "cargo_tons": 4316.64,
+          "flights": 664
+        },
+        {
+          "name": "Serene Air",
+          "passengers": 608620,
+          "cargo_tons": 4718.5,
+          "flights": 133
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 291863,
+          "cargo_tons": 0.0,
+          "flights": 74
+        },
+        {
+          "name": "Air Sial",
+          "passengers": 10097,
+          "cargo_tons": 0.7,
+          "flights": 6
+        }
+      ],
+      "2021": [
+        {
+          "name": "Pakistan International",
+          "passengers": 1269322,
+          "cargo_tons": 4997.51,
+          "flights": 973
+        },
+        {
+          "name": "Serene Air",
+          "passengers": 828606,
+          "cargo_tons": 6133.48,
+          "flights": 136
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 819618,
+          "cargo_tons": 1830.31,
+          "flights": 126
+        },
+        {
+          "name": "Air Sial",
+          "passengers": 627186,
+          "cargo_tons": 2659.8,
+          "flights": 94
+        }
+      ],
+      "2022": [
+        {
+          "name": "Pakistan International",
+          "passengers": 1241968,
+          "cargo_tons": 6129.97,
+          "flights": 924
+        },
+        {
+          "name": "Air Sial",
+          "passengers": 536509,
+          "cargo_tons": 3790.73,
+          "flights": 58
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 476118,
+          "cargo_tons": 0.0,
+          "flights": 132
+        },
+        {
+          "name": "Serene Air",
+          "passengers": 323146,
+          "cargo_tons": 3565.64,
+          "flights": 98
+        },
+        {
+          "name": "Fly Jinnah",
+          "passengers": 99401,
+          "cargo_tons": 65.36,
+          "flights": 17
+        }
+      ],
+      "2023": [
+        {
+          "name": "Pakistan International",
+          "passengers": 990568,
+          "cargo_tons": 5754.51,
+          "flights": 705
+        },
+        {
+          "name": "Fly Jinnah",
+          "passengers": 786218,
+          "cargo_tons": 2951.73,
+          "flights": 109
+        },
+        {
+          "name": "Air Sial",
+          "passengers": 552646,
+          "cargo_tons": 3589.67,
+          "flights": 50
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 322815,
+          "cargo_tons": 0.0,
+          "flights": 98
+        },
+        {
+          "name": "Serene Air",
+          "passengers": 258653,
+          "cargo_tons": 3109.35,
+          "flights": 168
+        }
+      ],
+      "2024": [
+        {
+          "name": "Fly Jinnah",
+          "passengers": 979502,
+          "cargo_tons": 5687.64,
+          "flights": 120
+        },
+        {
+          "name": "Pakistan International",
+          "passengers": 826754,
+          "cargo_tons": 5376.37,
+          "flights": 582
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 455676,
+          "cargo_tons": 0.0,
+          "flights": 123
+        },
+        {
+          "name": "Air Sial",
+          "passengers": 393026,
+          "cargo_tons": 3089.72,
+          "flights": 50
+        },
+        {
+          "name": "Serene Air",
+          "passengers": 251075,
+          "cargo_tons": 3550.16,
+          "flights": 173
+        }
+      ],
+      "2025": [
+        {
+          "name": "Fly Jinnah",
+          "passengers": 1016520,
+          "cargo_tons": 5685.55,
+          "flights": 126
+        },
+        {
+          "name": "Pakistan International",
+          "passengers": 965522,
+          "cargo_tons": 7123.3,
+          "flights": 598
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 594604,
+          "cargo_tons": 0.0,
+          "flights": 136
+        },
+        {
+          "name": "Air Sial",
+          "passengers": 293610,
+          "cargo_tons": 2251.7,
+          "flights": 58
+        },
+        {
+          "name": "Serene Air",
+          "passengers": 263331,
+          "cargo_tons": 2124.28,
+          "flights": 172
+        }
+      ],
+      "2026": [
+        {
+          "name": "Fly Jinnah",
+          "passengers": 626405,
+          "cargo_tons": 3326.84,
+          "flights": 104
+        },
+        {
+          "name": "Pakistan International",
+          "passengers": 435057,
+          "cargo_tons": 2609.51,
+          "flights": 278
+        },
+        {
+          "name": "Air Sial",
+          "passengers": 287703,
+          "cargo_tons": 1809.48,
+          "flights": 57
+        },
+        {
+          "name": "Air Blue",
+          "passengers": 285551,
+          "cargo_tons": 0.0,
+          "flights": 69
+        }
+      ]
+    }
+  },
+  "airports": {
+    "international": {
+      "2006": [
+        {
+          "name": "Islamabad",
+          "passengers": 1368211,
+          "cargo_tons": 39331.43,
+          "flights": 1389
+        },
+        {
+          "name": "Karachi",
+          "passengers": 1366152,
+          "cargo_tons": 56533.33,
+          "flights": 1044
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 273470,
+          "cargo_tons": 4015.02,
+          "flights": 283
+        },
+        {
+          "name": "Quetta",
+          "passengers": 13648,
+          "cargo_tons": 8.68,
+          "flights": 16
+        },
+        {
+          "name": "Multan",
+          "passengers": 3652,
+          "cargo_tons": 35.22,
+          "flights": 9
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 3333,
+          "cargo_tons": 3.16,
+          "flights": 8
+        }
+      ],
+      "2007": [
+        {
+          "name": "Islamabad",
+          "passengers": 3422937,
+          "cargo_tons": 90458.18,
+          "flights": 3209
+        },
+        {
+          "name": "Karachi",
+          "passengers": 3104688,
+          "cargo_tons": 121006.99,
+          "flights": 2394
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 704065,
+          "cargo_tons": 10153.26,
+          "flights": 674
+        },
+        {
+          "name": "Quetta",
+          "passengers": 31386,
+          "cargo_tons": 15.32,
+          "flights": 33
+        },
+        {
+          "name": "Multan",
+          "passengers": 10431,
+          "cargo_tons": 82.99,
+          "flights": 25
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 9747,
+          "cargo_tons": 6.63,
+          "flights": 25
+        },
+        {
+          "name": "Turbat",
+          "passengers": 6140,
+          "cargo_tons": 11.65,
+          "flights": 22
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 3460,
+          "cargo_tons": 8.41,
+          "flights": 22
+        },
+        {
+          "name": "Nawabshah Airport",
+          "passengers": 0,
+          "cargo_tons": 0.0,
+          "flights": 1
+        }
+      ],
+      "2008": [
+        {
+          "name": "Islamabad",
+          "passengers": 3674671,
+          "cargo_tons": 101612.8,
+          "flights": 3204
+        },
+        {
+          "name": "Karachi",
+          "passengers": 3177321,
+          "cargo_tons": 112136.33,
+          "flights": 2188
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 712842,
+          "cargo_tons": 10007.59,
+          "flights": 704
+        },
+        {
+          "name": "Quetta",
+          "passengers": 38660,
+          "cargo_tons": 64.55,
+          "flights": 34
+        },
+        {
+          "name": "Multan",
+          "passengers": 15114,
+          "cargo_tons": 149.59,
+          "flights": 25
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 15110,
+          "cargo_tons": 9.99,
+          "flights": 31
+        },
+        {
+          "name": "Turbat",
+          "passengers": 11187,
+          "cargo_tons": 20.95,
+          "flights": 39
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 11158,
+          "cargo_tons": 100.45,
+          "flights": 44
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 4652,
+          "cargo_tons": 9.59,
+          "flights": 24
+        },
+        {
+          "name": "Nawabshah Airport",
+          "passengers": 0,
+          "cargo_tons": 0.0,
+          "flights": 2
+        }
+      ],
+      "2009": [
+        {
+          "name": "Islamabad",
+          "passengers": 4118094,
+          "cargo_tons": 99714.61,
+          "flights": 3514
+        },
+        {
+          "name": "Karachi",
+          "passengers": 2908289,
+          "cargo_tons": 117620.65,
+          "flights": 2155
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 689518,
+          "cargo_tons": 5583.09,
+          "flights": 744
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 58838,
+          "cargo_tons": 329.82,
+          "flights": 135
+        },
+        {
+          "name": "Quetta",
+          "passengers": 40586,
+          "cargo_tons": 89.06,
+          "flights": 35
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 15140,
+          "cargo_tons": 7.2,
+          "flights": 40
+        },
+        {
+          "name": "Turbat",
+          "passengers": 14087,
+          "cargo_tons": 23.59,
+          "flights": 50
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 10356,
+          "cargo_tons": 3.53,
+          "flights": 16
+        },
+        {
+          "name": "Multan",
+          "passengers": 9055,
+          "cargo_tons": 40.86,
+          "flights": 12
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 4974,
+          "cargo_tons": 5.81,
+          "flights": 12
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 4210,
+          "cargo_tons": 1.37,
+          "flights": 17
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 3116,
+          "cargo_tons": 6.45,
+          "flights": 24
+        }
+      ],
+      "2010": [
+        {
+          "name": "Islamabad",
+          "passengers": 4069622,
+          "cargo_tons": 110429.27,
+          "flights": 3618
+        },
+        {
+          "name": "Karachi",
+          "passengers": 2898531,
+          "cargo_tons": 106961.73,
+          "flights": 1949
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 747593,
+          "cargo_tons": 6734.71,
+          "flights": 709
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 135255,
+          "cargo_tons": 1468.22,
+          "flights": 217
+        },
+        {
+          "name": "Quetta",
+          "passengers": 15518,
+          "cargo_tons": 46.22,
+          "flights": 24
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 15501,
+          "cargo_tons": 9.9,
+          "flights": 46
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 14259,
+          "cargo_tons": 4.29,
+          "flights": 22
+        },
+        {
+          "name": "Turbat",
+          "passengers": 12642,
+          "cargo_tons": 7.85,
+          "flights": 40
+        },
+        {
+          "name": "Multan",
+          "passengers": 10427,
+          "cargo_tons": 55.05,
+          "flights": 15
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 5993,
+          "cargo_tons": 1.52,
+          "flights": 22
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 5945,
+          "cargo_tons": 3.24,
+          "flights": 21
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 3683,
+          "cargo_tons": 11.12,
+          "flights": 24
+        }
+      ],
+      "2011": [
+        {
+          "name": "Islamabad",
+          "passengers": 4251469,
+          "cargo_tons": 96846.16,
+          "flights": 3015
+        },
+        {
+          "name": "Karachi",
+          "passengers": 3212856,
+          "cargo_tons": 106900.5,
+          "flights": 2009
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 887763,
+          "cargo_tons": 8175.62,
+          "flights": 853
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 168844,
+          "cargo_tons": 1937.11,
+          "flights": 230
+        },
+        {
+          "name": "Quetta",
+          "passengers": 48710,
+          "cargo_tons": 20.0,
+          "flights": 57
+        },
+        {
+          "name": "Multan",
+          "passengers": 21700,
+          "cargo_tons": 41.15,
+          "flights": 32
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 16551,
+          "cargo_tons": 27.73,
+          "flights": 39
+        },
+        {
+          "name": "Turbat",
+          "passengers": 15681,
+          "cargo_tons": 96.45,
+          "flights": 44
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 15165,
+          "cargo_tons": 4.65,
+          "flights": 25
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 4862,
+          "cargo_tons": 0.64,
+          "flights": 12
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 3168,
+          "cargo_tons": 8.22,
+          "flights": 24
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 241,
+          "cargo_tons": 0.15,
+          "flights": 4
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 28,
+          "cargo_tons": 0.0,
+          "flights": 1
+        }
+      ],
+      "2012": [
+        {
+          "name": "Islamabad",
+          "passengers": 4887636,
+          "cargo_tons": 111844.33,
+          "flights": 3204
+        },
+        {
+          "name": "Karachi",
+          "passengers": 3225466,
+          "cargo_tons": 120438.11,
+          "flights": 1951
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 1011050,
+          "cargo_tons": 9158.57,
+          "flights": 931
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 182749,
+          "cargo_tons": 2119.93,
+          "flights": 260
+        },
+        {
+          "name": "Quetta",
+          "passengers": 45259,
+          "cargo_tons": 19.36,
+          "flights": 61
+        },
+        {
+          "name": "Multan",
+          "passengers": 21222,
+          "cargo_tons": 24.34,
+          "flights": 31
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 17236,
+          "cargo_tons": 15.71,
+          "flights": 38
+        },
+        {
+          "name": "Turbat",
+          "passengers": 17086,
+          "cargo_tons": 10.55,
+          "flights": 48
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 4952,
+          "cargo_tons": 0.71,
+          "flights": 13
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 3915,
+          "cargo_tons": 1.16,
+          "flights": 12
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 3549,
+          "cargo_tons": 10.58,
+          "flights": 24
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 423,
+          "cargo_tons": 0.12,
+          "flights": 6
+        }
+      ],
+      "2013": [
+        {
+          "name": "Islamabad",
+          "passengers": 5277885,
+          "cargo_tons": 122053.97,
+          "flights": 3280
+        },
+        {
+          "name": "Karachi",
+          "passengers": 3050047,
+          "cargo_tons": 118123.85,
+          "flights": 1809
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 1079179,
+          "cargo_tons": 9286.65,
+          "flights": 893
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 194396,
+          "cargo_tons": 1527.87,
+          "flights": 235
+        },
+        {
+          "name": "Multan",
+          "passengers": 69220,
+          "cargo_tons": 78.93,
+          "flights": 64
+        },
+        {
+          "name": "Quetta",
+          "passengers": 28393,
+          "cargo_tons": 9.3,
+          "flights": 42
+        },
+        {
+          "name": "Turbat",
+          "passengers": 14255,
+          "cargo_tons": 7.4,
+          "flights": 49
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 6422,
+          "cargo_tons": 26.05,
+          "flights": 17
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 3297,
+          "cargo_tons": 4.64,
+          "flights": 24
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 1548,
+          "cargo_tons": 0.55,
+          "flights": 6
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 1060,
+          "cargo_tons": 0.24,
+          "flights": 3
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 53,
+          "cargo_tons": 0.0,
+          "flights": 1
+        }
+      ],
+      "2014": [
+        {
+          "name": "Islamabad",
+          "passengers": 6104672,
+          "cargo_tons": 116820.99,
+          "flights": 3493
+        },
+        {
+          "name": "Karachi",
+          "passengers": 3412684,
+          "cargo_tons": 99660.08,
+          "flights": 1775
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 1135746,
+          "cargo_tons": 8069.84,
+          "flights": 863
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 288438,
+          "cargo_tons": 4012.5,
+          "flights": 359
+        },
+        {
+          "name": "Multan",
+          "passengers": 160496,
+          "cargo_tons": 268.55,
+          "flights": 187
+        },
+        {
+          "name": "Quetta",
+          "passengers": 28651,
+          "cargo_tons": 7.64,
+          "flights": 43
+        },
+        {
+          "name": "Turbat",
+          "passengers": 14610,
+          "cargo_tons": 7.41,
+          "flights": 48
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 8467,
+          "cargo_tons": 2.53,
+          "flights": 30
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 4348,
+          "cargo_tons": 1.03,
+          "flights": 12
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 4338,
+          "cargo_tons": 0.0,
+          "flights": 6
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 2805,
+          "cargo_tons": 4.29,
+          "flights": 22
+        }
+      ],
+      "2015": [
+        {
+          "name": "Islamabad",
+          "passengers": 6737032,
+          "cargo_tons": 136507.22,
+          "flights": 3557
+        },
+        {
+          "name": "Karachi",
+          "passengers": 3742753,
+          "cargo_tons": 111480.58,
+          "flights": 1654
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 1189782,
+          "cargo_tons": 8104.29,
+          "flights": 814
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 506815,
+          "cargo_tons": 4983.2,
+          "flights": 379
+        },
+        {
+          "name": "Multan",
+          "passengers": 419212,
+          "cargo_tons": 409.33,
+          "flights": 282
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 80128,
+          "cargo_tons": 0.52,
+          "flights": 40
+        },
+        {
+          "name": "Quetta",
+          "passengers": 44607,
+          "cargo_tons": 3.92,
+          "flights": 43
+        },
+        {
+          "name": "Turbat",
+          "passengers": 17522,
+          "cargo_tons": 15.88,
+          "flights": 69
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 13025,
+          "cargo_tons": 4.1,
+          "flights": 25
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 2942,
+          "cargo_tons": 3.77,
+          "flights": 25
+        }
+      ],
+      "2016": [
+        {
+          "name": "Islamabad",
+          "passengers": 7232835,
+          "cargo_tons": 193353.56,
+          "flights": 3479
+        },
+        {
+          "name": "Karachi",
+          "passengers": 3836862,
+          "cargo_tons": 100331.98,
+          "flights": 1332
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 1347009,
+          "cargo_tons": 8380.63,
+          "flights": 733
+        },
+        {
+          "name": "Multan",
+          "passengers": 867400,
+          "cargo_tons": 2998.13,
+          "flights": 500
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 777436,
+          "cargo_tons": 7041.6,
+          "flights": 378
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 345301,
+          "cargo_tons": 24.06,
+          "flights": 162
+        },
+        {
+          "name": "Quetta",
+          "passengers": 80006,
+          "cargo_tons": 67.78,
+          "flights": 63
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 27725,
+          "cargo_tons": 6.59,
+          "flights": 25
+        },
+        {
+          "name": "Turbat",
+          "passengers": 19884,
+          "cargo_tons": 5.58,
+          "flights": 52
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 3361,
+          "cargo_tons": 2.58,
+          "flights": 25
+        }
+      ],
+      "2017": [
+        {
+          "name": "Islamabad",
+          "passengers": 7594170,
+          "cargo_tons": 126575.02,
+          "flights": 3528
+        },
+        {
+          "name": "Karachi",
+          "passengers": 4140647,
+          "cargo_tons": 103331.76,
+          "flights": 1433
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 1404472,
+          "cargo_tons": 7488.35,
+          "flights": 816
+        },
+        {
+          "name": "Multan",
+          "passengers": 1099611,
+          "cargo_tons": 5059.39,
+          "flights": 499
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 867171,
+          "cargo_tons": 7050.09,
+          "flights": 388
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 435089,
+          "cargo_tons": 10.43,
+          "flights": 165
+        },
+        {
+          "name": "Quetta",
+          "passengers": 94729,
+          "cargo_tons": 0.0,
+          "flights": 58
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 28895,
+          "cargo_tons": 4.28,
+          "flights": 24
+        },
+        {
+          "name": "Turbat",
+          "passengers": 18717,
+          "cargo_tons": 2.72,
+          "flights": 57
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 3886,
+          "cargo_tons": 2.22,
+          "flights": 27
+        }
+      ],
+      "2018": [
+        {
+          "name": "Islamabad",
+          "passengers": 7734548,
+          "cargo_tons": 136156.65,
+          "flights": 3285
+        },
+        {
+          "name": "Karachi",
+          "passengers": 4140685,
+          "cargo_tons": 105487.58,
+          "flights": 1312
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 1284179,
+          "cargo_tons": 7007.82,
+          "flights": 654
+        },
+        {
+          "name": "Multan",
+          "passengers": 1169772,
+          "cargo_tons": 8531.25,
+          "flights": 442
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 900632,
+          "cargo_tons": 8853.73,
+          "flights": 369
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 447081,
+          "cargo_tons": 10.42,
+          "flights": 192
+        },
+        {
+          "name": "Quetta",
+          "passengers": 95452,
+          "cargo_tons": 0.0,
+          "flights": 50
+        },
+        {
+          "name": "Turbat",
+          "passengers": 18196,
+          "cargo_tons": 1.97,
+          "flights": 48
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 4984,
+          "cargo_tons": 2.59,
+          "flights": 25
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 2317,
+          "cargo_tons": 0.18,
+          "flights": 2
+        }
+      ],
+      "2019": [
+        {
+          "name": "Islamabad",
+          "passengers": 7870029,
+          "cargo_tons": 150212.54,
+          "flights": 3330
+        },
+        {
+          "name": "Karachi",
+          "passengers": 3958159,
+          "cargo_tons": 103774.8,
+          "flights": 1097
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 1255123,
+          "cargo_tons": 10754.5,
+          "flights": 690
+        },
+        {
+          "name": "Multan",
+          "passengers": 1044244,
+          "cargo_tons": 5270.08,
+          "flights": 468
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 786715,
+          "cargo_tons": 8716.0,
+          "flights": 391
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 409948,
+          "cargo_tons": 10.16,
+          "flights": 154
+        },
+        {
+          "name": "Quetta",
+          "passengers": 128042,
+          "cargo_tons": 2.58,
+          "flights": 63
+        },
+        {
+          "name": "Turbat",
+          "passengers": 17854,
+          "cargo_tons": 1.7,
+          "flights": 49
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 5009,
+          "cargo_tons": 1.41,
+          "flights": 25
+        }
+      ],
+      "2020": [
+        {
+          "name": "Islamabad",
+          "passengers": 3611486,
+          "cargo_tons": 107911.28,
+          "flights": 2903
+        },
+        {
+          "name": "Karachi",
+          "passengers": 1294477,
+          "cargo_tons": 79961.1,
+          "flights": 882
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 572188,
+          "cargo_tons": 5580.6,
+          "flights": 531
+        },
+        {
+          "name": "Multan",
+          "passengers": 478265,
+          "cargo_tons": 2936.73,
+          "flights": 448
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 343297,
+          "cargo_tons": 4793.13,
+          "flights": 246
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 137946,
+          "cargo_tons": 8.89,
+          "flights": 106
+        },
+        {
+          "name": "Quetta",
+          "passengers": 37938,
+          "cargo_tons": 1.08,
+          "flights": 34
+        },
+        {
+          "name": "Turbat",
+          "passengers": 3711,
+          "cargo_tons": 0.21,
+          "flights": 9
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 555,
+          "cargo_tons": 0.12,
+          "flights": 3
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 140,
+          "cargo_tons": 0.0,
+          "flights": 1
+        }
+      ],
+      "2021": [
+        {
+          "name": "Islamabad",
+          "passengers": 3845949,
+          "cargo_tons": 124377.19,
+          "flights": 3002
+        },
+        {
+          "name": "Karachi",
+          "passengers": 1486893,
+          "cargo_tons": 76504.11,
+          "flights": 1024
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 624835,
+          "cargo_tons": 5225.62,
+          "flights": 658
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 407586,
+          "cargo_tons": 5981.84,
+          "flights": 266
+        },
+        {
+          "name": "Multan",
+          "passengers": 406791,
+          "cargo_tons": 2592.35,
+          "flights": 452
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 130147,
+          "cargo_tons": 0.49,
+          "flights": 85
+        },
+        {
+          "name": "Quetta",
+          "passengers": 26231,
+          "cargo_tons": 0.0,
+          "flights": 40
+        },
+        {
+          "name": "Turbat",
+          "passengers": 6472,
+          "cargo_tons": 0.63,
+          "flights": 21
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 158,
+          "cargo_tons": 0.26,
+          "flights": 1
+        }
+      ],
+      "2022": [
+        {
+          "name": "Islamabad",
+          "passengers": 7641531,
+          "cargo_tons": 130545.88,
+          "flights": 3798
+        },
+        {
+          "name": "Karachi",
+          "passengers": 3008773,
+          "cargo_tons": 75263.1,
+          "flights": 1270
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 1156166,
+          "cargo_tons": 6947.26,
+          "flights": 782
+        },
+        {
+          "name": "Multan",
+          "passengers": 1045391,
+          "cargo_tons": 4974.05,
+          "flights": 593
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 807904,
+          "cargo_tons": 8834.29,
+          "flights": 419
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 344159,
+          "cargo_tons": 6.05,
+          "flights": 144
+        },
+        {
+          "name": "Quetta",
+          "passengers": 67015,
+          "cargo_tons": 0.03,
+          "flights": 53
+        },
+        {
+          "name": "Turbat",
+          "passengers": 11846,
+          "cargo_tons": 1.52,
+          "flights": 41
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 282,
+          "cargo_tons": 0.04,
+          "flights": 8
+        }
+      ],
+      "2023": [
+        {
+          "name": "Islamabad",
+          "passengers": 8725421,
+          "cargo_tons": 148182.82,
+          "flights": 3938
+        },
+        {
+          "name": "Karachi",
+          "passengers": 3712182,
+          "cargo_tons": 87232.3,
+          "flights": 1437
+        },
+        {
+          "name": "Multan",
+          "passengers": 1282002,
+          "cargo_tons": 6373.96,
+          "flights": 642
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 1155934,
+          "cargo_tons": 10217.02,
+          "flights": 655
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 1041695,
+          "cargo_tons": 10122.59,
+          "flights": 573
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 397199,
+          "cargo_tons": 4.25,
+          "flights": 151
+        },
+        {
+          "name": "Quetta",
+          "passengers": 104609,
+          "cargo_tons": 0.09,
+          "flights": 54
+        },
+        {
+          "name": "Turbat",
+          "passengers": 5226,
+          "cargo_tons": 1.91,
+          "flights": 35
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 1676,
+          "cargo_tons": 0.09,
+          "flights": 11
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 953,
+          "cargo_tons": 0.06,
+          "flights": 4
+        }
+      ],
+      "2024": [
+        {
+          "name": "Islamabad",
+          "passengers": 9735555,
+          "cargo_tons": 167892.46,
+          "flights": 4114
+        },
+        {
+          "name": "Karachi",
+          "passengers": 4085297,
+          "cargo_tons": 91182.95,
+          "flights": 1450
+        },
+        {
+          "name": "Multan",
+          "passengers": 1404342,
+          "cargo_tons": 7848.43,
+          "flights": 667
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 1066105,
+          "cargo_tons": 9107.46,
+          "flights": 503
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 971558,
+          "cargo_tons": 10363.55,
+          "flights": 474
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 395663,
+          "cargo_tons": 12.4,
+          "flights": 137
+        },
+        {
+          "name": "Quetta",
+          "passengers": 108715,
+          "cargo_tons": 0.26,
+          "flights": 70
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 2636,
+          "cargo_tons": 12.46,
+          "flights": 8
+        },
+        {
+          "name": "Turbat",
+          "passengers": 1921,
+          "cargo_tons": 0.41,
+          "flights": 14
+        }
+      ],
+      "2025": [
+        {
+          "name": "Islamabad",
+          "passengers": 10743221,
+          "cargo_tons": 173439.81,
+          "flights": 4401
+        },
+        {
+          "name": "Karachi",
+          "passengers": 4260456,
+          "cargo_tons": 88431.5,
+          "flights": 1370
+        },
+        {
+          "name": "Multan",
+          "passengers": 1366840,
+          "cargo_tons": 7172.77,
+          "flights": 600
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 1049211,
+          "cargo_tons": 9449.1,
+          "flights": 482
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 927061,
+          "cargo_tons": 9144.88,
+          "flights": 475
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 398636,
+          "cargo_tons": 43.18,
+          "flights": 141
+        },
+        {
+          "name": "Quetta",
+          "passengers": 115682,
+          "cargo_tons": 0.97,
+          "flights": 85
+        },
+        {
+          "name": "Turbat",
+          "passengers": 2868,
+          "cargo_tons": 0.45,
+          "flights": 24
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 1229,
+          "cargo_tons": 0.37,
+          "flights": 10
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 323,
+          "cargo_tons": 0.11,
+          "flights": 3
+        }
+      ],
+      "2026": [
+        {
+          "name": "Islamabad",
+          "passengers": 5278416,
+          "cargo_tons": 81491.64,
+          "flights": 2073
+        },
+        {
+          "name": "Karachi",
+          "passengers": 1924635,
+          "cargo_tons": 38728.94,
+          "flights": 666
+        },
+        {
+          "name": "Multan",
+          "passengers": 652995,
+          "cargo_tons": 4053.26,
+          "flights": 296
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 415624,
+          "cargo_tons": 4099.97,
+          "flights": 171
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 351380,
+          "cargo_tons": 3290.71,
+          "flights": 163
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 178610,
+          "cargo_tons": 2.9,
+          "flights": 62
+        },
+        {
+          "name": "Quetta",
+          "passengers": 59279,
+          "cargo_tons": 0.29,
+          "flights": 55
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 169,
+          "cargo_tons": 0.25,
+          "flights": 1
+        }
+      ]
+    },
+    "domestic": {
+      "2006": [
+        {
+          "name": "Karachi",
+          "passengers": 1116056,
+          "cargo_tons": 18991.27,
+          "flights": 609
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 1057098,
+          "cargo_tons": 18691.23,
+          "flights": 535
+        },
+        {
+          "name": "Quetta",
+          "passengers": 91212,
+          "cargo_tons": 519.05,
+          "flights": 99
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 83001,
+          "cargo_tons": 1318.26,
+          "flights": 121
+        },
+        {
+          "name": "Multan",
+          "passengers": 69434,
+          "cargo_tons": 470.12,
+          "flights": 58
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 58840,
+          "cargo_tons": 353.3,
+          "flights": 52
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 22544,
+          "cargo_tons": 32.32,
+          "flights": 44
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 13865,
+          "cargo_tons": 6.03,
+          "flights": 46
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 11623,
+          "cargo_tons": 12.37,
+          "flights": 17
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 11310,
+          "cargo_tons": 51.81,
+          "flights": 8
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 10962,
+          "cargo_tons": 13.1,
+          "flights": 12
+        },
+        {
+          "name": "Chitral Airport",
+          "passengers": 8610,
+          "cargo_tons": 30.65,
+          "flights": 8
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 7675,
+          "cargo_tons": 19.06,
+          "flights": 34
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 7296,
+          "cargo_tons": 4.34,
+          "flights": 38
+        },
+        {
+          "name": "Turbat",
+          "passengers": 6360,
+          "cargo_tons": 20.84,
+          "flights": 20
+        }
+      ],
+      "2007": [
+        {
+          "name": "Karachi",
+          "passengers": 2727007,
+          "cargo_tons": 42102.88,
+          "flights": 1705
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 2619387,
+          "cargo_tons": 42777.99,
+          "flights": 1680
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 255105,
+          "cargo_tons": 1637.66,
+          "flights": 345
+        },
+        {
+          "name": "Quetta",
+          "passengers": 251482,
+          "cargo_tons": 1704.67,
+          "flights": 374
+        },
+        {
+          "name": "Multan",
+          "passengers": 219843,
+          "cargo_tons": 948.61,
+          "flights": 203
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 146233,
+          "cargo_tons": 836.08,
+          "flights": 186
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 76935,
+          "cargo_tons": 97.85,
+          "flights": 115
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 45918,
+          "cargo_tons": 48.27,
+          "flights": 29
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 43505,
+          "cargo_tons": 16.93,
+          "flights": 124
+        },
+        {
+          "name": "Chitral Airport",
+          "passengers": 38314,
+          "cargo_tons": 115.36,
+          "flights": 42
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 38288,
+          "cargo_tons": 122.79,
+          "flights": 28
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 35911,
+          "cargo_tons": 27.82,
+          "flights": 101
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 28687,
+          "cargo_tons": 11.78,
+          "flights": 116
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 22606,
+          "cargo_tons": 55.25,
+          "flights": 106
+        },
+        {
+          "name": "Turbat",
+          "passengers": 21482,
+          "cargo_tons": 65.92,
+          "flights": 88
+        }
+      ],
+      "2008": [
+        {
+          "name": "Karachi",
+          "passengers": 2606730,
+          "cargo_tons": 38206.49,
+          "flights": 1498
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 2480127,
+          "cargo_tons": 38055.92,
+          "flights": 1561
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 259600,
+          "cargo_tons": 1890.2,
+          "flights": 321
+        },
+        {
+          "name": "Quetta",
+          "passengers": 240875,
+          "cargo_tons": 1950.6,
+          "flights": 325
+        },
+        {
+          "name": "Multan",
+          "passengers": 215879,
+          "cargo_tons": 860.69,
+          "flights": 196
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 137272,
+          "cargo_tons": 871.47,
+          "flights": 180
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 81227,
+          "cargo_tons": 86.5,
+          "flights": 122
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 50369,
+          "cargo_tons": 11.37,
+          "flights": 66
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 42310,
+          "cargo_tons": 36.31,
+          "flights": 30
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 36543,
+          "cargo_tons": 124.01,
+          "flights": 34
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 33117,
+          "cargo_tons": 11.44,
+          "flights": 98
+        },
+        {
+          "name": "Chitral Airport",
+          "passengers": 29587,
+          "cargo_tons": 101.74,
+          "flights": 42
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 29168,
+          "cargo_tons": 5.59,
+          "flights": 90
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 26721,
+          "cargo_tons": 20.12,
+          "flights": 57
+        },
+        {
+          "name": "Turbat",
+          "passengers": 19878,
+          "cargo_tons": 67.92,
+          "flights": 113
+        }
+      ],
+      "2009": [
+        {
+          "name": "Karachi",
+          "passengers": 2700412,
+          "cargo_tons": 31971.95,
+          "flights": 1454
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 2583785,
+          "cargo_tons": 32487.8,
+          "flights": 1677
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 246495,
+          "cargo_tons": 1556.19,
+          "flights": 366
+        },
+        {
+          "name": "Quetta",
+          "passengers": 210622,
+          "cargo_tons": 1795.43,
+          "flights": 326
+        },
+        {
+          "name": "Multan",
+          "passengers": 175727,
+          "cargo_tons": 405.5,
+          "flights": 161
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 100033,
+          "cargo_tons": 598.98,
+          "flights": 147
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 86764,
+          "cargo_tons": 67.65,
+          "flights": 171
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 50091,
+          "cargo_tons": 14.67,
+          "flights": 127
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 42726,
+          "cargo_tons": 9.66,
+          "flights": 104
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 41973,
+          "cargo_tons": 164.87,
+          "flights": 30
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 39360,
+          "cargo_tons": 36.18,
+          "flights": 29
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 35936,
+          "cargo_tons": 10.9,
+          "flights": 96
+        },
+        {
+          "name": "Chitral Airport",
+          "passengers": 25476,
+          "cargo_tons": 71.5,
+          "flights": 55
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 23839,
+          "cargo_tons": 33.95,
+          "flights": 50
+        },
+        {
+          "name": "Turbat",
+          "passengers": 19419,
+          "cargo_tons": 53.2,
+          "flights": 119
+        }
+      ],
+      "2010": [
+        {
+          "name": "Karachi",
+          "passengers": 2848631,
+          "cargo_tons": 36372.9,
+          "flights": 1494
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 2813759,
+          "cargo_tons": 37418.86,
+          "flights": 1738
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 249857,
+          "cargo_tons": 1631.38,
+          "flights": 414
+        },
+        {
+          "name": "Quetta",
+          "passengers": 242786,
+          "cargo_tons": 1642.47,
+          "flights": 376
+        },
+        {
+          "name": "Multan",
+          "passengers": 173005,
+          "cargo_tons": 325.53,
+          "flights": 197
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 117672,
+          "cargo_tons": 655.3,
+          "flights": 126
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 90351,
+          "cargo_tons": 72.77,
+          "flights": 188
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 55294,
+          "cargo_tons": 242.7,
+          "flights": 53
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 49490,
+          "cargo_tons": 15.91,
+          "flights": 108
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 48717,
+          "cargo_tons": 16.21,
+          "flights": 122
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 43877,
+          "cargo_tons": 44.6,
+          "flights": 44
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 38223,
+          "cargo_tons": 17.77,
+          "flights": 108
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 35359,
+          "cargo_tons": 120.92,
+          "flights": 100
+        },
+        {
+          "name": "Turbat",
+          "passengers": 21047,
+          "cargo_tons": 55.22,
+          "flights": 98
+        },
+        {
+          "name": "Chitral Airport",
+          "passengers": 18420,
+          "cargo_tons": 36.33,
+          "flights": 48
+        }
+      ],
+      "2011": [
+        {
+          "name": "Islamabad",
+          "passengers": 2708388,
+          "cargo_tons": 32259.88,
+          "flights": 1611
+        },
+        {
+          "name": "Karachi",
+          "passengers": 2708046,
+          "cargo_tons": 31664.8,
+          "flights": 1437
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 274371,
+          "cargo_tons": 1399.11,
+          "flights": 415
+        },
+        {
+          "name": "Quetta",
+          "passengers": 263434,
+          "cargo_tons": 1324.77,
+          "flights": 311
+        },
+        {
+          "name": "Multan",
+          "passengers": 186992,
+          "cargo_tons": 424.66,
+          "flights": 228
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 111996,
+          "cargo_tons": 563.78,
+          "flights": 136
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 87394,
+          "cargo_tons": 51.85,
+          "flights": 192
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 55072,
+          "cargo_tons": 124.44,
+          "flights": 189
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 47782,
+          "cargo_tons": 10.55,
+          "flights": 118
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 43721,
+          "cargo_tons": 12.72,
+          "flights": 101
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 42510,
+          "cargo_tons": 159.47,
+          "flights": 27
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 34350,
+          "cargo_tons": 22.84,
+          "flights": 81
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 33674,
+          "cargo_tons": 32.11,
+          "flights": 25
+        },
+        {
+          "name": "Turbat",
+          "passengers": 24819,
+          "cargo_tons": 129.09,
+          "flights": 103
+        },
+        {
+          "name": "Chitral Airport",
+          "passengers": 15535,
+          "cargo_tons": 27.5,
+          "flights": 48
+        }
+      ],
+      "2012": [
+        {
+          "name": "Karachi",
+          "passengers": 2646745,
+          "cargo_tons": 31429.4,
+          "flights": 1439
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 2632478,
+          "cargo_tons": 34304.7,
+          "flights": 1674
+        },
+        {
+          "name": "Quetta",
+          "passengers": 271956,
+          "cargo_tons": 1330.4,
+          "flights": 343
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 268719,
+          "cargo_tons": 2581.39,
+          "flights": 449
+        },
+        {
+          "name": "Multan",
+          "passengers": 195624,
+          "cargo_tons": 381.33,
+          "flights": 223
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 96053,
+          "cargo_tons": 37.18,
+          "flights": 198
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 92263,
+          "cargo_tons": 327.56,
+          "flights": 161
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 55622,
+          "cargo_tons": 17.26,
+          "flights": 134
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 51530,
+          "cargo_tons": 575.14,
+          "flights": 210
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 47341,
+          "cargo_tons": 11.94,
+          "flights": 109
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 34305,
+          "cargo_tons": 119.07,
+          "flights": 28
+        },
+        {
+          "name": "Turbat",
+          "passengers": 29757,
+          "cargo_tons": 43.7,
+          "flights": 103
+        },
+        {
+          "name": "Mohenjodaro Airport",
+          "passengers": 27960,
+          "cargo_tons": 10.29,
+          "flights": 69
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 27185,
+          "cargo_tons": 14.63,
+          "flights": 60
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 19022,
+          "cargo_tons": 18.24,
+          "flights": 24
+        }
+      ],
+      "2013": [
+        {
+          "name": "Islamabad",
+          "passengers": 2796504,
+          "cargo_tons": 30938.01,
+          "flights": 1579
+        },
+        {
+          "name": "Karachi",
+          "passengers": 2775903,
+          "cargo_tons": 29020.04,
+          "flights": 1492
+        },
+        {
+          "name": "Quetta",
+          "passengers": 304675,
+          "cargo_tons": 1090.65,
+          "flights": 347
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 226892,
+          "cargo_tons": 2411.93,
+          "flights": 395
+        },
+        {
+          "name": "Multan",
+          "passengers": 174482,
+          "cargo_tons": 253.5,
+          "flights": 252
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 85586,
+          "cargo_tons": 19.81,
+          "flights": 168
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 61389,
+          "cargo_tons": 202.86,
+          "flights": 132
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 48004,
+          "cargo_tons": 7.79,
+          "flights": 96
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 39505,
+          "cargo_tons": 17.95,
+          "flights": 105
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 30502,
+          "cargo_tons": 22.84,
+          "flights": 32
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 29218,
+          "cargo_tons": 40.9,
+          "flights": 24
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 28529,
+          "cargo_tons": 290.52,
+          "flights": 150
+        },
+        {
+          "name": "Turbat",
+          "passengers": 23798,
+          "cargo_tons": 23.53,
+          "flights": 76
+        },
+        {
+          "name": "Mohenjodaro Airport",
+          "passengers": 22897,
+          "cargo_tons": 2.26,
+          "flights": 80
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 22366,
+          "cargo_tons": 5.84,
+          "flights": 63
+        }
+      ],
+      "2014": [
+        {
+          "name": "Karachi",
+          "passengers": 2892503,
+          "cargo_tons": 21991.74,
+          "flights": 1587
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 2737932,
+          "cargo_tons": 22880.85,
+          "flights": 1639
+        },
+        {
+          "name": "Quetta",
+          "passengers": 392766,
+          "cargo_tons": 840.33,
+          "flights": 410
+        },
+        {
+          "name": "Multan",
+          "passengers": 218411,
+          "cargo_tons": 319.43,
+          "flights": 310
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 207857,
+          "cargo_tons": 703.02,
+          "flights": 307
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 86421,
+          "cargo_tons": 11.35,
+          "flights": 174
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 80265,
+          "cargo_tons": 162.37,
+          "flights": 123
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 42075,
+          "cargo_tons": 4.43,
+          "flights": 114
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 35654,
+          "cargo_tons": 2.6,
+          "flights": 150
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 28024,
+          "cargo_tons": 3.79,
+          "flights": 24
+        },
+        {
+          "name": "Turbat",
+          "passengers": 23969,
+          "cargo_tons": 20.16,
+          "flights": 72
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 21421,
+          "cargo_tons": 7.04,
+          "flights": 24
+        },
+        {
+          "name": "Mohenjodaro Airport",
+          "passengers": 17579,
+          "cargo_tons": 0.46,
+          "flights": 84
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 14414,
+          "cargo_tons": 2.05,
+          "flights": 42
+        },
+        {
+          "name": "Bhit Airstrip",
+          "passengers": 8743,
+          "cargo_tons": 0.0,
+          "flights": 24
+        }
+      ],
+      "2015": [
+        {
+          "name": "Karachi",
+          "passengers": 2778543,
+          "cargo_tons": 18495.51,
+          "flights": 1545
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 2702730,
+          "cargo_tons": 18832.1,
+          "flights": 1533
+        },
+        {
+          "name": "Quetta",
+          "passengers": 356261,
+          "cargo_tons": 701.11,
+          "flights": 286
+        },
+        {
+          "name": "Multan",
+          "passengers": 196890,
+          "cargo_tons": 184.76,
+          "flights": 273
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 159983,
+          "cargo_tons": 305.43,
+          "flights": 186
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 91382,
+          "cargo_tons": 13.21,
+          "flights": 193
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 60587,
+          "cargo_tons": 74.18,
+          "flights": 91
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 48643,
+          "cargo_tons": 2.92,
+          "flights": 127
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 30672,
+          "cargo_tons": 14.43,
+          "flights": 28
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 28349,
+          "cargo_tons": 4.03,
+          "flights": 117
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 27270,
+          "cargo_tons": 10.81,
+          "flights": 37
+        },
+        {
+          "name": "Turbat",
+          "passengers": 22446,
+          "cargo_tons": 20.41,
+          "flights": 96
+        },
+        {
+          "name": "Mohenjodaro Airport",
+          "passengers": 19488,
+          "cargo_tons": 3.87,
+          "flights": 86
+        },
+        {
+          "name": "D.G. Khan Airport",
+          "passengers": 16162,
+          "cargo_tons": 17.28,
+          "flights": 57
+        },
+        {
+          "name": "Panjgur Airport",
+          "passengers": 10027,
+          "cargo_tons": 2.73,
+          "flights": 31
+        }
+      ],
+      "2016": [
+        {
+          "name": "Karachi",
+          "passengers": 3042099,
+          "cargo_tons": 17583.96,
+          "flights": 1595
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 3037147,
+          "cargo_tons": 18171.8,
+          "flights": 1514
+        },
+        {
+          "name": "Quetta",
+          "passengers": 310169,
+          "cargo_tons": 656.17,
+          "flights": 234
+        },
+        {
+          "name": "Multan",
+          "passengers": 223088,
+          "cargo_tons": 162.11,
+          "flights": 306
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 209034,
+          "cargo_tons": 380.41,
+          "flights": 201
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 106364,
+          "cargo_tons": 14.21,
+          "flights": 178
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 74259,
+          "cargo_tons": 80.18,
+          "flights": 81
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 65699,
+          "cargo_tons": 6.99,
+          "flights": 140
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 59503,
+          "cargo_tons": 11.8,
+          "flights": 64
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 54202,
+          "cargo_tons": 16.62,
+          "flights": 42
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 35829,
+          "cargo_tons": 0.81,
+          "flights": 116
+        },
+        {
+          "name": "Turbat",
+          "passengers": 35058,
+          "cargo_tons": 23.73,
+          "flights": 57
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 30453,
+          "cargo_tons": 21.45,
+          "flights": 76
+        },
+        {
+          "name": "Mohenjodaro Airport",
+          "passengers": 26413,
+          "cargo_tons": 0.32,
+          "flights": 67
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 20762,
+          "cargo_tons": 5.33,
+          "flights": 72
+        }
+      ],
+      "2017": [
+        {
+          "name": "Karachi",
+          "passengers": 3030839,
+          "cargo_tons": 19879.11,
+          "flights": 1528
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 2908411,
+          "cargo_tons": 19931.62,
+          "flights": 1343
+        },
+        {
+          "name": "Quetta",
+          "passengers": 332555,
+          "cargo_tons": 615.77,
+          "flights": 233
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 198247,
+          "cargo_tons": 375.39,
+          "flights": 169
+        },
+        {
+          "name": "Multan",
+          "passengers": 173686,
+          "cargo_tons": 89.07,
+          "flights": 262
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 103873,
+          "cargo_tons": 2.91,
+          "flights": 179
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 96125,
+          "cargo_tons": 149.55,
+          "flights": 101
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 57350,
+          "cargo_tons": 16.53,
+          "flights": 40
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 55541,
+          "cargo_tons": 4.68,
+          "flights": 113
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 42527,
+          "cargo_tons": 34.65,
+          "flights": 68
+        },
+        {
+          "name": "Turbat",
+          "passengers": 33008,
+          "cargo_tons": 23.48,
+          "flights": 80
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 30716,
+          "cargo_tons": 0.58,
+          "flights": 116
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 29979,
+          "cargo_tons": 3.79,
+          "flights": 30
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 27481,
+          "cargo_tons": 3.27,
+          "flights": 72
+        },
+        {
+          "name": "Mohenjodaro Airport",
+          "passengers": 13314,
+          "cargo_tons": 0.05,
+          "flights": 84
+        }
+      ],
+      "2018": [
+        {
+          "name": "Karachi",
+          "passengers": 2783366,
+          "cargo_tons": 19698.6,
+          "flights": 1411
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 2637055,
+          "cargo_tons": 19035.1,
+          "flights": 1335
+        },
+        {
+          "name": "Quetta",
+          "passengers": 329903,
+          "cargo_tons": 638.59,
+          "flights": 212
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 199696,
+          "cargo_tons": 570.1,
+          "flights": 168
+        },
+        {
+          "name": "Multan",
+          "passengers": 142710,
+          "cargo_tons": 48.55,
+          "flights": 218
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 110379,
+          "cargo_tons": 1.91,
+          "flights": 194
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 107189,
+          "cargo_tons": 396.79,
+          "flights": 98
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 64179,
+          "cargo_tons": 7.36,
+          "flights": 143
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 54340,
+          "cargo_tons": 20.04,
+          "flights": 29
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 45224,
+          "cargo_tons": 2.9,
+          "flights": 27
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 37971,
+          "cargo_tons": 34.85,
+          "flights": 73
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 31408,
+          "cargo_tons": 0.45,
+          "flights": 131
+        },
+        {
+          "name": "Turbat",
+          "passengers": 30522,
+          "cargo_tons": 14.04,
+          "flights": 62
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 24796,
+          "cargo_tons": 1.88,
+          "flights": 72
+        },
+        {
+          "name": "Mohenjodaro Airport",
+          "passengers": 12850,
+          "cargo_tons": 0.0,
+          "flights": 97
+        }
+      ],
+      "2019": [
+        {
+          "name": "Karachi",
+          "passengers": 2392164,
+          "cargo_tons": 17487.1,
+          "flights": 1132
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 2235437,
+          "cargo_tons": 16838.47,
+          "flights": 1084
+        },
+        {
+          "name": "Quetta",
+          "passengers": 347381,
+          "cargo_tons": 855.85,
+          "flights": 169
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 171864,
+          "cargo_tons": 408.52,
+          "flights": 110
+        },
+        {
+          "name": "Multan",
+          "passengers": 111481,
+          "cargo_tons": 32.48,
+          "flights": 165
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 108834,
+          "cargo_tons": 432.45,
+          "flights": 80
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 90099,
+          "cargo_tons": 1.21,
+          "flights": 139
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 55404,
+          "cargo_tons": 12.57,
+          "flights": 44
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 50124,
+          "cargo_tons": 1.56,
+          "flights": 24
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 47869,
+          "cargo_tons": 0.39,
+          "flights": 112
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 29915,
+          "cargo_tons": 39.57,
+          "flights": 41
+        },
+        {
+          "name": "Turbat",
+          "passengers": 26884,
+          "cargo_tons": 7.61,
+          "flights": 53
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 20436,
+          "cargo_tons": 0.07,
+          "flights": 67
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 18325,
+          "cargo_tons": 3.55,
+          "flights": 69
+        },
+        {
+          "name": "Panjgur Airport",
+          "passengers": 4636,
+          "cargo_tons": 4.65,
+          "flights": 36
+        }
+      ],
+      "2020": [
+        {
+          "name": "Karachi",
+          "passengers": 1502427,
+          "cargo_tons": 8625.36,
+          "flights": 573
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 1488221,
+          "cargo_tons": 8475.55,
+          "flights": 588
+        },
+        {
+          "name": "Quetta",
+          "passengers": 201023,
+          "cargo_tons": 503.16,
+          "flights": 150
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 83692,
+          "cargo_tons": 313.51,
+          "flights": 47
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 51288,
+          "cargo_tons": 19.54,
+          "flights": 39
+        },
+        {
+          "name": "Multan",
+          "passengers": 40172,
+          "cargo_tons": 30.88,
+          "flights": 81
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 37792,
+          "cargo_tons": 4.93,
+          "flights": 24
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 36164,
+          "cargo_tons": 83.08,
+          "flights": 36
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 28750,
+          "cargo_tons": 0.84,
+          "flights": 60
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 12109,
+          "cargo_tons": 10.65,
+          "flights": 23
+        },
+        {
+          "name": "Turbat",
+          "passengers": 10875,
+          "cargo_tons": 3.29,
+          "flights": 25
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 9987,
+          "cargo_tons": 0.15,
+          "flights": 24
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 7567,
+          "cargo_tons": 0.43,
+          "flights": 27
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 2880,
+          "cargo_tons": 0.03,
+          "flights": 12
+        },
+        {
+          "name": "Sui Airport",
+          "passengers": 1452,
+          "cargo_tons": 0.0,
+          "flights": 18
+        }
+      ],
+      "2021": [
+        {
+          "name": "Karachi",
+          "passengers": 3106020,
+          "cargo_tons": 14971.41,
+          "flights": 922
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 3053725,
+          "cargo_tons": 14880.24,
+          "flights": 755
+        },
+        {
+          "name": "Quetta",
+          "passengers": 354869,
+          "cargo_tons": 662.14,
+          "flights": 218
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 165165,
+          "cargo_tons": 262.77,
+          "flights": 106
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 134108,
+          "cargo_tons": 54.38,
+          "flights": 70
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 63314,
+          "cargo_tons": 10.63,
+          "flights": 40
+        },
+        {
+          "name": "Multan",
+          "passengers": 59191,
+          "cargo_tons": 250.97,
+          "flights": 137
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 58056,
+          "cargo_tons": 97.76,
+          "flights": 48
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 28965,
+          "cargo_tons": 18.85,
+          "flights": 74
+        },
+        {
+          "name": "Turbat",
+          "passengers": 18947,
+          "cargo_tons": 15.26,
+          "flights": 73
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 16126,
+          "cargo_tons": 9.71,
+          "flights": 37
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 15042,
+          "cargo_tons": 6.63,
+          "flights": 50
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 4801,
+          "cargo_tons": 0.47,
+          "flights": 28
+        },
+        {
+          "name": "Chitral Airport",
+          "passengers": 3812,
+          "cargo_tons": 0.6,
+          "flights": 19
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 3327,
+          "cargo_tons": 0.29,
+          "flights": 19
+        }
+      ],
+      "2022": [
+        {
+          "name": "Karachi",
+          "passengers": 2339779,
+          "cargo_tons": 12601.85,
+          "flights": 824
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 2275614,
+          "cargo_tons": 12801.38,
+          "flights": 703
+        },
+        {
+          "name": "Quetta",
+          "passengers": 248957,
+          "cargo_tons": 973.74,
+          "flights": 159
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 126497,
+          "cargo_tons": 376.69,
+          "flights": 110
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 113778,
+          "cargo_tons": 49.5,
+          "flights": 73
+        },
+        {
+          "name": "Multan",
+          "passengers": 63021,
+          "cargo_tons": 133.47,
+          "flights": 139
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 48746,
+          "cargo_tons": 25.56,
+          "flights": 40
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 48236,
+          "cargo_tons": 121.41,
+          "flights": 35
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 37987,
+          "cargo_tons": 9.96,
+          "flights": 79
+        },
+        {
+          "name": "Turbat",
+          "passengers": 19377,
+          "cargo_tons": 5.04,
+          "flights": 89
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 13655,
+          "cargo_tons": 0.94,
+          "flights": 63
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 6504,
+          "cargo_tons": 0.95,
+          "flights": 28
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 6406,
+          "cargo_tons": 1.21,
+          "flights": 35
+        },
+        {
+          "name": "Sui Airport",
+          "passengers": 1506,
+          "cargo_tons": 0.0,
+          "flights": 30
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 1420,
+          "cargo_tons": 1.58,
+          "flights": 11
+        }
+      ],
+      "2023": [
+        {
+          "name": "Karachi",
+          "passengers": 2574494,
+          "cargo_tons": 14605.88,
+          "flights": 787
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 2468834,
+          "cargo_tons": 14389.94,
+          "flights": 766
+        },
+        {
+          "name": "Quetta",
+          "passengers": 299120,
+          "cargo_tons": 980.62,
+          "flights": 136
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 159503,
+          "cargo_tons": 540.93,
+          "flights": 103
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 112948,
+          "cargo_tons": 65.83,
+          "flights": 52
+        },
+        {
+          "name": "Multan",
+          "passengers": 57015,
+          "cargo_tons": 95.58,
+          "flights": 73
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 38759,
+          "cargo_tons": 4.94,
+          "flights": 25
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 37512,
+          "cargo_tons": 89.65,
+          "flights": 24
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 34185,
+          "cargo_tons": 9.44,
+          "flights": 57
+        },
+        {
+          "name": "Turbat",
+          "passengers": 12644,
+          "cargo_tons": 17.2,
+          "flights": 58
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 7982,
+          "cargo_tons": 0.46,
+          "flights": 38
+        },
+        {
+          "name": "R.Y. Khan (S.Z) Airport",
+          "passengers": 5268,
+          "cargo_tons": 6.31,
+          "flights": 24
+        },
+        {
+          "name": "Bahawalpur Airport",
+          "passengers": 3953,
+          "cargo_tons": 0.42,
+          "flights": 21
+        },
+        {
+          "name": "Islamkot Airport",
+          "passengers": 2532,
+          "cargo_tons": 0.0,
+          "flights": 25
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 2449,
+          "cargo_tons": 3.09,
+          "flights": 13
+        }
+      ],
+      "2024": [
+        {
+          "name": "Karachi",
+          "passengers": 2514291,
+          "cargo_tons": 16453.5,
+          "flights": 744
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 2509570,
+          "cargo_tons": 16884.96,
+          "flights": 752
+        },
+        {
+          "name": "Quetta",
+          "passengers": 352174,
+          "cargo_tons": 1434.43,
+          "flights": 152
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 153274,
+          "cargo_tons": 216.27,
+          "flights": 65
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 133234,
+          "cargo_tons": 309.88,
+          "flights": 71
+        },
+        {
+          "name": "Multan",
+          "passengers": 54631,
+          "cargo_tons": 78.51,
+          "flights": 51
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 31238,
+          "cargo_tons": 3.13,
+          "flights": 34
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 23015,
+          "cargo_tons": 5.99,
+          "flights": 58
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 19913,
+          "cargo_tons": 19.46,
+          "flights": 16
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 5705,
+          "cargo_tons": 0.33,
+          "flights": 25
+        },
+        {
+          "name": "Turbat",
+          "passengers": 5675,
+          "cargo_tons": 0.97,
+          "flights": 22
+        },
+        {
+          "name": "Islamkot Airport",
+          "passengers": 3271,
+          "cargo_tons": 0.07,
+          "flights": 24
+        },
+        {
+          "name": "Sui Airport",
+          "passengers": 2045,
+          "cargo_tons": 0.0,
+          "flights": 28
+        },
+        {
+          "name": "Juzzak Airstrip",
+          "passengers": 1923,
+          "cargo_tons": 0.0,
+          "flights": 26
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 1570,
+          "cargo_tons": 0.26,
+          "flights": 13
+        }
+      ],
+      "2025": [
+        {
+          "name": "Karachi",
+          "passengers": 2654261,
+          "cargo_tons": 14762.84,
+          "flights": 780
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 2646796,
+          "cargo_tons": 16207.74,
+          "flights": 750
+        },
+        {
+          "name": "Quetta",
+          "passengers": 429105,
+          "cargo_tons": 1760.27,
+          "flights": 175
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 206864,
+          "cargo_tons": 323.25,
+          "flights": 94
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 146472,
+          "cargo_tons": 235.27,
+          "flights": 78
+        },
+        {
+          "name": "Multan",
+          "passengers": 58348,
+          "cargo_tons": 105.39,
+          "flights": 46
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 36657,
+          "cargo_tons": 61.68,
+          "flights": 27
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 28322,
+          "cargo_tons": 876.16,
+          "flights": 29
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 24207,
+          "cargo_tons": 2.25,
+          "flights": 48
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 10912,
+          "cargo_tons": 22.27,
+          "flights": 27
+        },
+        {
+          "name": "Turbat",
+          "passengers": 9174,
+          "cargo_tons": 3.32,
+          "flights": 25
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 8568,
+          "cargo_tons": 9.21,
+          "flights": 26
+        },
+        {
+          "name": "Islamkot Airport",
+          "passengers": 3308,
+          "cargo_tons": 0.0,
+          "flights": 24
+        },
+        {
+          "name": "Juzzak Airstrip",
+          "passengers": 2135,
+          "cargo_tons": 0.03,
+          "flights": 24
+        },
+        {
+          "name": "Sui Airport",
+          "passengers": 2011,
+          "cargo_tons": 0.0,
+          "flights": 26
+        }
+      ],
+      "2026": [
+        {
+          "name": "Karachi",
+          "passengers": 1394978,
+          "cargo_tons": 7065.95,
+          "flights": 381
+        },
+        {
+          "name": "Islamabad",
+          "passengers": 1316477,
+          "cargo_tons": 7089.27,
+          "flights": 292
+        },
+        {
+          "name": "Quetta",
+          "passengers": 202119,
+          "cargo_tons": 817.14,
+          "flights": 77
+        },
+        {
+          "name": "Skardu Airport",
+          "passengers": 116193,
+          "cargo_tons": 141.82,
+          "flights": 57
+        },
+        {
+          "name": "Peshawar",
+          "passengers": 77401,
+          "cargo_tons": 134.83,
+          "flights": 26
+        },
+        {
+          "name": "Multan",
+          "passengers": 54563,
+          "cargo_tons": 88.03,
+          "flights": 30
+        },
+        {
+          "name": "Faisalabad",
+          "passengers": 48450,
+          "cargo_tons": 67.27,
+          "flights": 26
+        },
+        {
+          "name": "Sialkot",
+          "passengers": 31967,
+          "cargo_tons": 61.92,
+          "flights": 22
+        },
+        {
+          "name": "Sukkur (B.N.B) Airport",
+          "passengers": 10160,
+          "cargo_tons": 1.56,
+          "flights": 30
+        },
+        {
+          "name": "Gilgit Airport",
+          "passengers": 7491,
+          "cargo_tons": 13.96,
+          "flights": 13
+        },
+        {
+          "name": "Gwadar",
+          "passengers": 3452,
+          "cargo_tons": 4.29,
+          "flights": 12
+        },
+        {
+          "name": "Turbat",
+          "passengers": 2858,
+          "cargo_tons": 5.62,
+          "flights": 12
+        },
+        {
+          "name": "Islamkot Airport",
+          "passengers": 1277,
+          "cargo_tons": 0.0,
+          "flights": 13
+        },
+        {
+          "name": "Sui Airport",
+          "passengers": 1031,
+          "cargo_tons": 0.0,
+          "flights": 12
+        },
+        {
+          "name": "Juzzak Airstrip",
+          "passengers": 1015,
+          "cargo_tons": 0.0,
+          "flights": 13
+        }
+      ]
+    }
+  }
+}

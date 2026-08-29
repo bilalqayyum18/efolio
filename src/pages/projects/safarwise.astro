@@ -1,7 +1,9 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
-const screenshots = Array.from({ length: 12 }, (_, i) => `/assets/safarwise/${String(i + 1).padStart(2, "0")}.png`);
+const screenshots = Array.from({ length: 12 }, (_, i) =>
+  `/assets/safarwise/${String(12 - i).padStart(2, "0")}.png`
+);
 ---
 
 <BaseLayout title="SafarWise — Case Study" description="AI-assisted visa research platform with layered quality control for Pakistani travelers">

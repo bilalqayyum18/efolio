@@ -1,0 +1,3586 @@
+{
+  "international": [
+    {
+      "year": 2006,
+      "airline": "Aero Asia",
+      "passengers": 83369
+    },
+    {
+      "year": 2006,
+      "airline": "Air Blue",
+      "passengers": 116497
+    },
+    {
+      "year": 2006,
+      "airline": "Air China",
+      "passengers": 8066
+    },
+    {
+      "year": 2006,
+      "airline": "Ariana Afghan",
+      "passengers": 356
+    },
+    {
+      "year": 2006,
+      "airline": "Biman Bangladesh",
+      "passengers": 9353
+    },
+    {
+      "year": 2006,
+      "airline": "British Airways",
+      "passengers": 37413
+    },
+    {
+      "year": 2006,
+      "airline": "Cargolux Airlines",
+      "passengers": 0
+    },
+    {
+      "year": 2006,
+      "airline": "Cathay Pacific",
+      "passengers": 26421
+    },
+    {
+      "year": 2006,
+      "airline": "China Southern",
+      "passengers": 24013
+    },
+    {
+      "year": 2006,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2006,
+      "airline": "Emirates Airlines",
+      "passengers": 468989
+    },
+    {
+      "year": 2006,
+      "airline": "Etihad Airways",
+      "passengers": 60313
+    },
+    {
+      "year": 2006,
+      "airline": "Gulf Air",
+      "passengers": 216052
+    },
+    {
+      "year": 2006,
+      "airline": "Iran Air",
+      "passengers": 6700
+    },
+    {
+      "year": 2006,
+      "airline": "Kuwait Airways",
+      "passengers": 53593
+    },
+    {
+      "year": 2006,
+      "airline": "Malaysian Airlines",
+      "passengers": 26571
+    },
+    {
+      "year": 2006,
+      "airline": "Pakistan International",
+      "passengers": 1110013
+    },
+    {
+      "year": 2006,
+      "airline": "Qatar Airways",
+      "passengers": 109109
+    },
+    {
+      "year": 2006,
+      "airline": "Saudi Arabian",
+      "passengers": 413889
+    },
+    {
+      "year": 2006,
+      "airline": "Shaheen Air International",
+      "passengers": 96178
+    },
+    {
+      "year": 2006,
+      "airline": "Singapore Airlines",
+      "passengers": 12122
+    },
+    {
+      "year": 2006,
+      "airline": "Srilankan Airlines",
+      "passengers": 13410
+    },
+    {
+      "year": 2006,
+      "airline": "Syrian Arab",
+      "passengers": 9293
+    },
+    {
+      "year": 2006,
+      "airline": "Thai Airways",
+      "passengers": 100972
+    },
+    {
+      "year": 2006,
+      "airline": "Turkish Airlines",
+      "passengers": 20536
+    },
+    {
+      "year": 2006,
+      "airline": "Uzbekistan Airways",
+      "passengers": 5238
+    },
+    {
+      "year": 2007,
+      "airline": "Aero Asia",
+      "passengers": 27672
+    },
+    {
+      "year": 2007,
+      "airline": "Air Arabia",
+      "passengers": 64174
+    },
+    {
+      "year": 2007,
+      "airline": "Air Blue",
+      "passengers": 312525
+    },
+    {
+      "year": 2007,
+      "airline": "Air China",
+      "passengers": 15055
+    },
+    {
+      "year": 2007,
+      "airline": "Ariana Afghan",
+      "passengers": 192
+    },
+    {
+      "year": 2007,
+      "airline": "Biman Bangladesh",
+      "passengers": 20020
+    },
+    {
+      "year": 2007,
+      "airline": "British Airways",
+      "passengers": 81069
+    },
+    {
+      "year": 2007,
+      "airline": "Cargolux Airlines",
+      "passengers": 0
+    },
+    {
+      "year": 2007,
+      "airline": "Cathay Pacific",
+      "passengers": 58462
+    },
+    {
+      "year": 2007,
+      "airline": "China Southern",
+      "passengers": 39627
+    },
+    {
+      "year": 2007,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2007,
+      "airline": "Emirates Airlines",
+      "passengers": 1016672
+    },
+    {
+      "year": 2007,
+      "airline": "Etihad Airways",
+      "passengers": 320803
+    },
+    {
+      "year": 2007,
+      "airline": "Gulf Air",
+      "passengers": 396728
+    },
+    {
+      "year": 2007,
+      "airline": "Iran Air",
+      "passengers": 12158
+    },
+    {
+      "year": 2007,
+      "airline": "Kuwait Airways",
+      "passengers": 98879
+    },
+    {
+      "year": 2007,
+      "airline": "Mahan Air",
+      "passengers": 10262
+    },
+    {
+      "year": 2007,
+      "airline": "Malaysian Airlines",
+      "passengers": 52246
+    },
+    {
+      "year": 2007,
+      "airline": "Oman Air",
+      "passengers": 6338
+    },
+    {
+      "year": 2007,
+      "airline": "Pakistan International",
+      "passengers": 3233336
+    },
+    {
+      "year": 2007,
+      "airline": "Qatar Airways",
+      "passengers": 222531
+    },
+    {
+      "year": 2007,
+      "airline": "Saudi Arabian",
+      "passengers": 726104
+    },
+    {
+      "year": 2007,
+      "airline": "Shaheen Air International",
+      "passengers": 237414
+    },
+    {
+      "year": 2007,
+      "airline": "Singapore Airlines",
+      "passengers": 32411
+    },
+    {
+      "year": 2007,
+      "airline": "Srilankan Airlines",
+      "passengers": 29791
+    },
+    {
+      "year": 2007,
+      "airline": "Syrian Arab",
+      "passengers": 16055
+    },
+    {
+      "year": 2007,
+      "airline": "Thai Airways",
+      "passengers": 194189
+    },
+    {
+      "year": 2007,
+      "airline": "Turkish Airlines",
+      "passengers": 44626
+    },
+    {
+      "year": 2007,
+      "airline": "Uzbekistan Airways",
+      "passengers": 23515
+    },
+    {
+      "year": 2008,
+      "airline": "Air Arabia",
+      "passengers": 94150
+    },
+    {
+      "year": 2008,
+      "airline": "Air Blue",
+      "passengers": 453272
+    },
+    {
+      "year": 2008,
+      "airline": "Air China",
+      "passengers": 13337
+    },
+    {
+      "year": 2008,
+      "airline": "Biman Bangladesh",
+      "passengers": 26719
+    },
+    {
+      "year": 2008,
+      "airline": "British Airways",
+      "passengers": 49858
+    },
+    {
+      "year": 2008,
+      "airline": "Cargolux Airlines",
+      "passengers": 0
+    },
+    {
+      "year": 2008,
+      "airline": "Cathay Pacific",
+      "passengers": 70663
+    },
+    {
+      "year": 2008,
+      "airline": "China Southern",
+      "passengers": 32045
+    },
+    {
+      "year": 2008,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2008,
+      "airline": "Emirates Airlines",
+      "passengers": 1071238
+    },
+    {
+      "year": 2008,
+      "airline": "Etihad Airways",
+      "passengers": 440204
+    },
+    {
+      "year": 2008,
+      "airline": "Gulf Air",
+      "passengers": 262812
+    },
+    {
+      "year": 2008,
+      "airline": "Iran Air",
+      "passengers": 16511
+    },
+    {
+      "year": 2008,
+      "airline": "Kuwait Airways",
+      "passengers": 75598
+    },
+    {
+      "year": 2008,
+      "airline": "Mahan Air",
+      "passengers": 4855
+    },
+    {
+      "year": 2008,
+      "airline": "Malaysian Airlines",
+      "passengers": 53706
+    },
+    {
+      "year": 2008,
+      "airline": "Oman Air",
+      "passengers": 44321
+    },
+    {
+      "year": 2008,
+      "airline": "Pakistan International",
+      "passengers": 3361039
+    },
+    {
+      "year": 2008,
+      "airline": "Qatar Airways",
+      "passengers": 284830
+    },
+    {
+      "year": 2008,
+      "airline": "Saudi Arabian",
+      "passengers": 697225
+    },
+    {
+      "year": 2008,
+      "airline": "Shaheen Air International",
+      "passengers": 303490
+    },
+    {
+      "year": 2008,
+      "airline": "Singapore Airlines",
+      "passengers": 19349
+    },
+    {
+      "year": 2008,
+      "airline": "Srilankan Airlines",
+      "passengers": 32386
+    },
+    {
+      "year": 2008,
+      "airline": "Syrian Arab",
+      "passengers": 5359
+    },
+    {
+      "year": 2008,
+      "airline": "Thai Airways",
+      "passengers": 184544
+    },
+    {
+      "year": 2008,
+      "airline": "Turkish Airlines",
+      "passengers": 41153
+    },
+    {
+      "year": 2008,
+      "airline": "Uzbekistan Airways",
+      "passengers": 22051
+    },
+    {
+      "year": 2009,
+      "airline": "Air Arabia",
+      "passengers": 103998
+    },
+    {
+      "year": 2009,
+      "airline": "Air Blue",
+      "passengers": 556320
+    },
+    {
+      "year": 2009,
+      "airline": "Air China",
+      "passengers": 16696
+    },
+    {
+      "year": 2009,
+      "airline": "Biman Bangladesh",
+      "passengers": 15374
+    },
+    {
+      "year": 2009,
+      "airline": "Cargolux Airlines",
+      "passengers": 0
+    },
+    {
+      "year": 2009,
+      "airline": "Cathay Pacific",
+      "passengers": 61807
+    },
+    {
+      "year": 2009,
+      "airline": "China Southern",
+      "passengers": 24850
+    },
+    {
+      "year": 2009,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2009,
+      "airline": "Emirates Airlines",
+      "passengers": 961564
+    },
+    {
+      "year": 2009,
+      "airline": "Etihad Airways",
+      "passengers": 402923
+    },
+    {
+      "year": 2009,
+      "airline": "Gulf Air",
+      "passengers": 272032
+    },
+    {
+      "year": 2009,
+      "airline": "Iran Air",
+      "passengers": 15379
+    },
+    {
+      "year": 2009,
+      "airline": "Kuwait Airways",
+      "passengers": 76827
+    },
+    {
+      "year": 2009,
+      "airline": "Malaysian Airlines",
+      "passengers": 49311
+    },
+    {
+      "year": 2009,
+      "airline": "Oman Air",
+      "passengers": 68912
+    },
+    {
+      "year": 2009,
+      "airline": "Pakistan International",
+      "passengers": 3426466
+    },
+    {
+      "year": 2009,
+      "airline": "Qatar Airways",
+      "passengers": 326899
+    },
+    {
+      "year": 2009,
+      "airline": "Saudi Arabian",
+      "passengers": 699894
+    },
+    {
+      "year": 2009,
+      "airline": "Shaheen Air International",
+      "passengers": 453425
+    },
+    {
+      "year": 2009,
+      "airline": "Singapore Airlines",
+      "passengers": 7658
+    },
+    {
+      "year": 2009,
+      "airline": "Srilankan Airlines",
+      "passengers": 25369
+    },
+    {
+      "year": 2009,
+      "airline": "Thai Airways",
+      "passengers": 241963
+    },
+    {
+      "year": 2009,
+      "airline": "Turkish Airlines",
+      "passengers": 44744
+    },
+    {
+      "year": 2009,
+      "airline": "Uzbekistan Airways",
+      "passengers": 23852
+    },
+    {
+      "year": 2010,
+      "airline": "Air Arabia",
+      "passengers": 118520
+    },
+    {
+      "year": 2010,
+      "airline": "Air Blue",
+      "passengers": 526800
+    },
+    {
+      "year": 2010,
+      "airline": "Air China",
+      "passengers": 23434
+    },
+    {
+      "year": 2010,
+      "airline": "Biman Bangladesh",
+      "passengers": 15842
+    },
+    {
+      "year": 2010,
+      "airline": "Cargolux Airlines",
+      "passengers": 0
+    },
+    {
+      "year": 2010,
+      "airline": "Cathay Pacific",
+      "passengers": 79556
+    },
+    {
+      "year": 2010,
+      "airline": "China Southern",
+      "passengers": 26507
+    },
+    {
+      "year": 2010,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2010,
+      "airline": "Emirates Airlines",
+      "passengers": 963593
+    },
+    {
+      "year": 2010,
+      "airline": "Etihad Airways",
+      "passengers": 280866
+    },
+    {
+      "year": 2010,
+      "airline": "Fly Dubai",
+      "passengers": 33269
+    },
+    {
+      "year": 2010,
+      "airline": "Gulf Air",
+      "passengers": 247353
+    },
+    {
+      "year": 2010,
+      "airline": "Iran Air",
+      "passengers": 11524
+    },
+    {
+      "year": 2010,
+      "airline": "Kuwait Airways",
+      "passengers": 89265
+    },
+    {
+      "year": 2010,
+      "airline": "Malaysian Airlines",
+      "passengers": 59724
+    },
+    {
+      "year": 2010,
+      "airline": "Oman Air",
+      "passengers": 129267
+    },
+    {
+      "year": 2010,
+      "airline": "Pakistan International",
+      "passengers": 3396525
+    },
+    {
+      "year": 2010,
+      "airline": "Qatar Airways",
+      "passengers": 335964
+    },
+    {
+      "year": 2010,
+      "airline": "Saudi Arabian",
+      "passengers": 774378
+    },
+    {
+      "year": 2010,
+      "airline": "Shaheen Air International",
+      "passengers": 491568
+    },
+    {
+      "year": 2010,
+      "airline": "Srilankan Airlines",
+      "passengers": 39258
+    },
+    {
+      "year": 2010,
+      "airline": "Thai Airways",
+      "passengers": 243480
+    },
+    {
+      "year": 2010,
+      "airline": "Turkish Airlines",
+      "passengers": 41988
+    },
+    {
+      "year": 2010,
+      "airline": "Uzbekistan Airways",
+      "passengers": 6288
+    },
+    {
+      "year": 2011,
+      "airline": "Air Arabia",
+      "passengers": 99946
+    },
+    {
+      "year": 2011,
+      "airline": "Air Blue",
+      "passengers": 559984
+    },
+    {
+      "year": 2011,
+      "airline": "Air China",
+      "passengers": 25454
+    },
+    {
+      "year": 2011,
+      "airline": "Biman Bangladesh",
+      "passengers": 14448
+    },
+    {
+      "year": 2011,
+      "airline": "Cargolux Airlines",
+      "passengers": 0
+    },
+    {
+      "year": 2011,
+      "airline": "Cathay Pacific",
+      "passengers": 61162
+    },
+    {
+      "year": 2011,
+      "airline": "China Southern",
+      "passengers": 35837
+    },
+    {
+      "year": 2011,
+      "airline": "Emirates Airlines",
+      "passengers": 1106649
+    },
+    {
+      "year": 2011,
+      "airline": "Etihad Airways",
+      "passengers": 403130
+    },
+    {
+      "year": 2011,
+      "airline": "Fly Dubai",
+      "passengers": 95363
+    },
+    {
+      "year": 2011,
+      "airline": "Fly Nas",
+      "passengers": 0
+    },
+    {
+      "year": 2011,
+      "airline": "Gulf Air",
+      "passengers": 263091
+    },
+    {
+      "year": 2011,
+      "airline": "Iran Air",
+      "passengers": 12945
+    },
+    {
+      "year": 2011,
+      "airline": "Kuwait Airways",
+      "passengers": 84781
+    },
+    {
+      "year": 2011,
+      "airline": "Malaysian Airlines",
+      "passengers": 72259
+    },
+    {
+      "year": 2011,
+      "airline": "Oman Air",
+      "passengers": 184371
+    },
+    {
+      "year": 2011,
+      "airline": "Pakistan International",
+      "passengers": 3455005
+    },
+    {
+      "year": 2011,
+      "airline": "Qatar Airways",
+      "passengers": 369771
+    },
+    {
+      "year": 2011,
+      "airline": "Rak Airways",
+      "passengers": 2959
+    },
+    {
+      "year": 2011,
+      "airline": "Saudi Arabian",
+      "passengers": 898014
+    },
+    {
+      "year": 2011,
+      "airline": "Shaheen Air International",
+      "passengers": 553892
+    },
+    {
+      "year": 2011,
+      "airline": "Srilankan Airlines",
+      "passengers": 60334
+    },
+    {
+      "year": 2011,
+      "airline": "Thai Airways",
+      "passengers": 243519
+    },
+    {
+      "year": 2011,
+      "airline": "Turkish Airlines",
+      "passengers": 44124
+    },
+    {
+      "year": 2012,
+      "airline": "Air Arabia",
+      "passengers": 100093
+    },
+    {
+      "year": 2012,
+      "airline": "Air Blue",
+      "passengers": 662601
+    },
+    {
+      "year": 2012,
+      "airline": "Air China",
+      "passengers": 27314
+    },
+    {
+      "year": 2012,
+      "airline": "Biman Bangladesh",
+      "passengers": 13563
+    },
+    {
+      "year": 2012,
+      "airline": "Cargolux Airlines",
+      "passengers": 0
+    },
+    {
+      "year": 2012,
+      "airline": "Cathay Pacific",
+      "passengers": 62418
+    },
+    {
+      "year": 2012,
+      "airline": "China Southern",
+      "passengers": 39677
+    },
+    {
+      "year": 2012,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2012,
+      "airline": "Emirates Airlines",
+      "passengers": 1348651
+    },
+    {
+      "year": 2012,
+      "airline": "Etihad Airways",
+      "passengers": 423645
+    },
+    {
+      "year": 2012,
+      "airline": "Fly Dubai",
+      "passengers": 130065
+    },
+    {
+      "year": 2012,
+      "airline": "Fly Nas",
+      "passengers": 0
+    },
+    {
+      "year": 2012,
+      "airline": "Gulf Air",
+      "passengers": 261359
+    },
+    {
+      "year": 2012,
+      "airline": "Iran Air",
+      "passengers": 13751
+    },
+    {
+      "year": 2012,
+      "airline": "Kuwait Airways",
+      "passengers": 82286
+    },
+    {
+      "year": 2012,
+      "airline": "Malaysian Airlines",
+      "passengers": 1830
+    },
+    {
+      "year": 2012,
+      "airline": "Oman Air",
+      "passengers": 204271
+    },
+    {
+      "year": 2012,
+      "airline": "Pakistan International",
+      "passengers": 3400188
+    },
+    {
+      "year": 2012,
+      "airline": "Qatar Airways",
+      "passengers": 348247
+    },
+    {
+      "year": 2012,
+      "airline": "Rak Airways",
+      "passengers": 30995
+    },
+    {
+      "year": 2012,
+      "airline": "Saudi Arabian",
+      "passengers": 1003861
+    },
+    {
+      "year": 2012,
+      "airline": "Shaheen Air International",
+      "passengers": 873045
+    },
+    {
+      "year": 2012,
+      "airline": "Srilankan Airlines",
+      "passengers": 74088
+    },
+    {
+      "year": 2012,
+      "airline": "Thai Airways",
+      "passengers": 273711
+    },
+    {
+      "year": 2012,
+      "airline": "Turkish Airlines",
+      "passengers": 44884
+    },
+    {
+      "year": 2013,
+      "airline": "Air Arabia",
+      "passengers": 165494
+    },
+    {
+      "year": 2013,
+      "airline": "Air Blue",
+      "passengers": 671923
+    },
+    {
+      "year": 2013,
+      "airline": "Air China",
+      "passengers": 19843
+    },
+    {
+      "year": 2013,
+      "airline": "Cargolux Airlines",
+      "passengers": 0
+    },
+    {
+      "year": 2013,
+      "airline": "Cathay Pacific",
+      "passengers": 67326
+    },
+    {
+      "year": 2013,
+      "airline": "China Southern",
+      "passengers": 41266
+    },
+    {
+      "year": 2013,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2013,
+      "airline": "Emirates Airlines",
+      "passengers": 1557159
+    },
+    {
+      "year": 2013,
+      "airline": "Etihad Airways",
+      "passengers": 514025
+    },
+    {
+      "year": 2013,
+      "airline": "Fly Dubai",
+      "passengers": 202147
+    },
+    {
+      "year": 2013,
+      "airline": "Fly Nas",
+      "passengers": 0
+    },
+    {
+      "year": 2013,
+      "airline": "Gulf Air",
+      "passengers": 226115
+    },
+    {
+      "year": 2013,
+      "airline": "Iran Air",
+      "passengers": 14313
+    },
+    {
+      "year": 2013,
+      "airline": "Kuwait Airways",
+      "passengers": 71637
+    },
+    {
+      "year": 2013,
+      "airline": "Oman Air",
+      "passengers": 284957
+    },
+    {
+      "year": 2013,
+      "airline": "Pakistan International",
+      "passengers": 2799330
+    },
+    {
+      "year": 2013,
+      "airline": "Qatar Airways",
+      "passengers": 383516
+    },
+    {
+      "year": 2013,
+      "airline": "Rak Airways",
+      "passengers": 33562
+    },
+    {
+      "year": 2013,
+      "airline": "Saudi Arabian",
+      "passengers": 949996
+    },
+    {
+      "year": 2013,
+      "airline": "Shaheen Air International",
+      "passengers": 1264532
+    },
+    {
+      "year": 2013,
+      "airline": "Srilankan Airlines",
+      "passengers": 80645
+    },
+    {
+      "year": 2013,
+      "airline": "Thai Airways",
+      "passengers": 328672
+    },
+    {
+      "year": 2013,
+      "airline": "Turkish Airlines",
+      "passengers": 49297
+    },
+    {
+      "year": 2014,
+      "airline": "Air Arabia",
+      "passengers": 240766
+    },
+    {
+      "year": 2014,
+      "airline": "Air Blue",
+      "passengers": 803440
+    },
+    {
+      "year": 2014,
+      "airline": "Air China",
+      "passengers": 20119
+    },
+    {
+      "year": 2014,
+      "airline": "Cargolux Airlines",
+      "passengers": 0
+    },
+    {
+      "year": 2014,
+      "airline": "Cathay Pacific",
+      "passengers": 34478
+    },
+    {
+      "year": 2014,
+      "airline": "China Southern",
+      "passengers": 42778
+    },
+    {
+      "year": 2014,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2014,
+      "airline": "Emirates Airlines",
+      "passengers": 1977397
+    },
+    {
+      "year": 2014,
+      "airline": "Etihad Airways",
+      "passengers": 567180
+    },
+    {
+      "year": 2014,
+      "airline": "Fly Dubai",
+      "passengers": 230693
+    },
+    {
+      "year": 2014,
+      "airline": "Fly Nas",
+      "passengers": 35645
+    },
+    {
+      "year": 2014,
+      "airline": "Gulf Air",
+      "passengers": 375208
+    },
+    {
+      "year": 2014,
+      "airline": "Iran Air",
+      "passengers": 13225
+    },
+    {
+      "year": 2014,
+      "airline": "Kuwait Airways",
+      "passengers": 93222
+    },
+    {
+      "year": 2014,
+      "airline": "Oman Air",
+      "passengers": 250730
+    },
+    {
+      "year": 2014,
+      "airline": "Pakistan International",
+      "passengers": 2860507
+    },
+    {
+      "year": 2014,
+      "airline": "Qatar Airways",
+      "passengers": 576815
+    },
+    {
+      "year": 2014,
+      "airline": "Safi Airways",
+      "passengers": 6502
+    },
+    {
+      "year": 2014,
+      "airline": "Saudi Arabian",
+      "passengers": 1091168
+    },
+    {
+      "year": 2014,
+      "airline": "Shaheen Air International",
+      "passengers": 1371269
+    },
+    {
+      "year": 2014,
+      "airline": "Srilankan Airlines",
+      "passengers": 88310
+    },
+    {
+      "year": 2014,
+      "airline": "Thai Airways",
+      "passengers": 374678
+    },
+    {
+      "year": 2014,
+      "airline": "Turkish Airlines",
+      "passengers": 111125
+    },
+    {
+      "year": 2015,
+      "airline": "Air Arabia",
+      "passengers": 485968
+    },
+    {
+      "year": 2015,
+      "airline": "Air Blue",
+      "passengers": 1261709
+    },
+    {
+      "year": 2015,
+      "airline": "Air China",
+      "passengers": 26378
+    },
+    {
+      "year": 2015,
+      "airline": "Cargolux Airlines",
+      "passengers": 0
+    },
+    {
+      "year": 2015,
+      "airline": "China Southern",
+      "passengers": 52287
+    },
+    {
+      "year": 2015,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2015,
+      "airline": "Emirates Airlines",
+      "passengers": 2134163
+    },
+    {
+      "year": 2015,
+      "airline": "Etihad Airways",
+      "passengers": 623058
+    },
+    {
+      "year": 2015,
+      "airline": "Fly Dubai",
+      "passengers": 534223
+    },
+    {
+      "year": 2015,
+      "airline": "Gulf Air",
+      "passengers": 371275
+    },
+    {
+      "year": 2015,
+      "airline": "Iran Air",
+      "passengers": 15306
+    },
+    {
+      "year": 2015,
+      "airline": "Kuwait Airways",
+      "passengers": 111027
+    },
+    {
+      "year": 2015,
+      "airline": "Oman Air",
+      "passengers": 286088
+    },
+    {
+      "year": 2015,
+      "airline": "Pakistan International",
+      "passengers": 2776899
+    },
+    {
+      "year": 2015,
+      "airline": "Qatar Airways",
+      "passengers": 823870
+    },
+    {
+      "year": 2015,
+      "airline": "Safi Airways",
+      "passengers": 13363
+    },
+    {
+      "year": 2015,
+      "airline": "Saudi Arabian",
+      "passengers": 1104903
+    },
+    {
+      "year": 2015,
+      "airline": "Shaheen Air International",
+      "passengers": 1430582
+    },
+    {
+      "year": 2015,
+      "airline": "Srilankan Airlines",
+      "passengers": 78557
+    },
+    {
+      "year": 2015,
+      "airline": "Taban Airlines",
+      "passengers": 8044
+    },
+    {
+      "year": 2015,
+      "airline": "Thai Airways",
+      "passengers": 387286
+    },
+    {
+      "year": 2015,
+      "airline": "Turkish Airlines",
+      "passengers": 228832
+    },
+    {
+      "year": 2016,
+      "airline": "Air Arabia",
+      "passengers": 761662
+    },
+    {
+      "year": 2016,
+      "airline": "Air Blue",
+      "passengers": 1422141
+    },
+    {
+      "year": 2016,
+      "airline": "Air China",
+      "passengers": 50032
+    },
+    {
+      "year": 2016,
+      "airline": "China Southern",
+      "passengers": 47766
+    },
+    {
+      "year": 2016,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2016,
+      "airline": "Emirates Airlines",
+      "passengers": 2236747
+    },
+    {
+      "year": 2016,
+      "airline": "Etihad Airways",
+      "passengers": 586049
+    },
+    {
+      "year": 2016,
+      "airline": "Fly Dubai",
+      "passengers": 814165
+    },
+    {
+      "year": 2016,
+      "airline": "Gulf Air",
+      "passengers": 414266
+    },
+    {
+      "year": 2016,
+      "airline": "Iran Air",
+      "passengers": 15284
+    },
+    {
+      "year": 2016,
+      "airline": "Kam Air",
+      "passengers": 362
+    },
+    {
+      "year": 2016,
+      "airline": "Kish Air",
+      "passengers": 67
+    },
+    {
+      "year": 2016,
+      "airline": "Kuwait Airways",
+      "passengers": 117332
+    },
+    {
+      "year": 2016,
+      "airline": "Malindo Air",
+      "passengers": 55192
+    },
+    {
+      "year": 2016,
+      "airline": "Mihin Lanka",
+      "passengers": 6143
+    },
+    {
+      "year": 2016,
+      "airline": "Oman Air",
+      "passengers": 314052
+    },
+    {
+      "year": 2016,
+      "airline": "Pakistan International",
+      "passengers": 3180718
+    },
+    {
+      "year": 2016,
+      "airline": "Qatar Airways",
+      "passengers": 1113456
+    },
+    {
+      "year": 2016,
+      "airline": "Safi Airways",
+      "passengers": 10140
+    },
+    {
+      "year": 2016,
+      "airline": "Saudi Arabian",
+      "passengers": 1165371
+    },
+    {
+      "year": 2016,
+      "airline": "Shaheen Air International",
+      "passengers": 1454037
+    },
+    {
+      "year": 2016,
+      "airline": "Srilankan Airlines",
+      "passengers": 71440
+    },
+    {
+      "year": 2016,
+      "airline": "Taban Airline",
+      "passengers": 7200
+    },
+    {
+      "year": 2016,
+      "airline": "Taban Airlines",
+      "passengers": 6015
+    },
+    {
+      "year": 2016,
+      "airline": "Thai Airways",
+      "passengers": 356729
+    },
+    {
+      "year": 2016,
+      "airline": "Turkish Airlines",
+      "passengers": 331453
+    },
+    {
+      "year": 2017,
+      "airline": "Air Arabia",
+      "passengers": 828592
+    },
+    {
+      "year": 2017,
+      "airline": "Air Blue",
+      "passengers": 1401093
+    },
+    {
+      "year": 2017,
+      "airline": "Air China",
+      "passengers": 77314
+    },
+    {
+      "year": 2017,
+      "airline": "Azerbaijan Airlines",
+      "passengers": 157
+    },
+    {
+      "year": 2017,
+      "airline": "China Southern",
+      "passengers": 49560
+    },
+    {
+      "year": 2017,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2017,
+      "airline": "Emirates Airlines",
+      "passengers": 2298547
+    },
+    {
+      "year": 2017,
+      "airline": "Etihad Airways",
+      "passengers": 601737
+    },
+    {
+      "year": 2017,
+      "airline": "Fly Dubai",
+      "passengers": 924784
+    },
+    {
+      "year": 2017,
+      "airline": "Gulf Air",
+      "passengers": 418391
+    },
+    {
+      "year": 2017,
+      "airline": "Iran Air",
+      "passengers": 10818
+    },
+    {
+      "year": 2017,
+      "airline": "Kam Air",
+      "passengers": 15916
+    },
+    {
+      "year": 2017,
+      "airline": "Kish Air",
+      "passengers": 1358
+    },
+    {
+      "year": 2017,
+      "airline": "Kuwait Airways",
+      "passengers": 105212
+    },
+    {
+      "year": 2017,
+      "airline": "Mahan Air",
+      "passengers": 3049
+    },
+    {
+      "year": 2017,
+      "airline": "Malindo Air",
+      "passengers": 58414
+    },
+    {
+      "year": 2017,
+      "airline": "Oman Air",
+      "passengers": 364343
+    },
+    {
+      "year": 2017,
+      "airline": "Pakistan International",
+      "passengers": 3181413
+    },
+    {
+      "year": 2017,
+      "airline": "Pegasus Airlines",
+      "passengers": 0
+    },
+    {
+      "year": 2017,
+      "airline": "Qatar Airways",
+      "passengers": 1093004
+    },
+    {
+      "year": 2017,
+      "airline": "Salam Air",
+      "passengers": 30298
+    },
+    {
+      "year": 2017,
+      "airline": "Saudi Arabian",
+      "passengers": 1455419
+    },
+    {
+      "year": 2017,
+      "airline": "Shaheen Air International",
+      "passengers": 1822729
+    },
+    {
+      "year": 2017,
+      "airline": "Srilankan Airlines",
+      "passengers": 96520
+    },
+    {
+      "year": 2017,
+      "airline": "Taban Airline",
+      "passengers": 12657
+    },
+    {
+      "year": 2017,
+      "airline": "Thai Airways",
+      "passengers": 407093
+    },
+    {
+      "year": 2017,
+      "airline": "Turkish Airlines",
+      "passengers": 416796
+    },
+    {
+      "year": 2017,
+      "airline": "Uzbekistan Airways",
+      "passengers": 12173
+    },
+    {
+      "year": 2018,
+      "airline": "Air Arabia",
+      "passengers": 844057
+    },
+    {
+      "year": 2018,
+      "airline": "Air Blue",
+      "passengers": 1331507
+    },
+    {
+      "year": 2018,
+      "airline": "Air China",
+      "passengers": 96326
+    },
+    {
+      "year": 2018,
+      "airline": "Azerbaijan Airlines",
+      "passengers": 192
+    },
+    {
+      "year": 2018,
+      "airline": "China Southern",
+      "passengers": 79128
+    },
+    {
+      "year": 2018,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2018,
+      "airline": "Emirates Airlines",
+      "passengers": 2323936
+    },
+    {
+      "year": 2018,
+      "airline": "Etihad Airways",
+      "passengers": 622503
+    },
+    {
+      "year": 2018,
+      "airline": "Fly Dubai",
+      "passengers": 1028819
+    },
+    {
+      "year": 2018,
+      "airline": "Fly Nas",
+      "passengers": 155214
+    },
+    {
+      "year": 2018,
+      "airline": "Gulf Air",
+      "passengers": 478569
+    },
+    {
+      "year": 2018,
+      "airline": "Iran Air",
+      "passengers": 12708
+    },
+    {
+      "year": 2018,
+      "airline": "Iraqi Airways",
+      "passengers": 11440
+    },
+    {
+      "year": 2018,
+      "airline": "Jazeera Airways",
+      "passengers": 17934
+    },
+    {
+      "year": 2018,
+      "airline": "Kam Air",
+      "passengers": 12506
+    },
+    {
+      "year": 2018,
+      "airline": "Kish Air",
+      "passengers": 3359
+    },
+    {
+      "year": 2018,
+      "airline": "Kuwait Airways",
+      "passengers": 87630
+    },
+    {
+      "year": 2018,
+      "airline": "Mahan Air",
+      "passengers": 31515
+    },
+    {
+      "year": 2018,
+      "airline": "Malindo Air",
+      "passengers": 69960
+    },
+    {
+      "year": 2018,
+      "airline": "Oman Air",
+      "passengers": 417544
+    },
+    {
+      "year": 2018,
+      "airline": "Pakistan International",
+      "passengers": 3203646
+    },
+    {
+      "year": 2018,
+      "airline": "Qatar Airways",
+      "passengers": 977402
+    },
+    {
+      "year": 2018,
+      "airline": "Salam Air",
+      "passengers": 110092
+    },
+    {
+      "year": 2018,
+      "airline": "Saudi Arabian",
+      "passengers": 1823344
+    },
+    {
+      "year": 2018,
+      "airline": "Saudia Gulf",
+      "passengers": 35069
+    },
+    {
+      "year": 2018,
+      "airline": "Shaheen Air International",
+      "passengers": 993341
+    },
+    {
+      "year": 2018,
+      "airline": "Srilankan Airlines",
+      "passengers": 105362
+    },
+    {
+      "year": 2018,
+      "airline": "Taban Airline",
+      "passengers": 7054
+    },
+    {
+      "year": 2018,
+      "airline": "Thai Airways",
+      "passengers": 414123
+    },
+    {
+      "year": 2018,
+      "airline": "Turkish Airlines",
+      "passengers": 485087
+    },
+    {
+      "year": 2018,
+      "airline": "Uzbekistan Airways",
+      "passengers": 18479
+    },
+    {
+      "year": 2019,
+      "airline": "Air Arabia",
+      "passengers": 922030
+    },
+    {
+      "year": 2019,
+      "airline": "Air Blue",
+      "passengers": 1165065
+    },
+    {
+      "year": 2019,
+      "airline": "Air China",
+      "passengers": 121400
+    },
+    {
+      "year": 2019,
+      "airline": "Azerbaijan Airlines",
+      "passengers": 16
+    },
+    {
+      "year": 2019,
+      "airline": "British Airways",
+      "passengers": 35488
+    },
+    {
+      "year": 2019,
+      "airline": "China Southern",
+      "passengers": 89100
+    },
+    {
+      "year": 2019,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2019,
+      "airline": "Emirates Airlines",
+      "passengers": 2183067
+    },
+    {
+      "year": 2019,
+      "airline": "Etihad Airways",
+      "passengers": 579080
+    },
+    {
+      "year": 2019,
+      "airline": "Fly Dubai",
+      "passengers": 888347
+    },
+    {
+      "year": 2019,
+      "airline": "Fly Nas",
+      "passengers": 155457
+    },
+    {
+      "year": 2019,
+      "airline": "Gulf Air",
+      "passengers": 565629
+    },
+    {
+      "year": 2019,
+      "airline": "Iran Air",
+      "passengers": 19495
+    },
+    {
+      "year": 2019,
+      "airline": "Iraqi Airways",
+      "passengers": 26831
+    },
+    {
+      "year": 2019,
+      "airline": "Jazeera Airways",
+      "passengers": 45092
+    },
+    {
+      "year": 2019,
+      "airline": "Kam Air",
+      "passengers": 15747
+    },
+    {
+      "year": 2019,
+      "airline": "Kuwait Airways",
+      "passengers": 96448
+    },
+    {
+      "year": 2019,
+      "airline": "Mahan Air",
+      "passengers": 61598
+    },
+    {
+      "year": 2019,
+      "airline": "Malindo Air",
+      "passengers": 39714
+    },
+    {
+      "year": 2019,
+      "airline": "Oman Air",
+      "passengers": 447546
+    },
+    {
+      "year": 2019,
+      "airline": "Pakistan International",
+      "passengers": 3610576
+    },
+    {
+      "year": 2019,
+      "airline": "Qatar Airways",
+      "passengers": 1153742
+    },
+    {
+      "year": 2019,
+      "airline": "Salam Air",
+      "passengers": 149524
+    },
+    {
+      "year": 2019,
+      "airline": "Saudi Arabian",
+      "passengers": 2116920
+    },
+    {
+      "year": 2019,
+      "airline": "Saudia Gulf",
+      "passengers": 148469
+    },
+    {
+      "year": 2019,
+      "airline": "Srilankan Airlines",
+      "passengers": 73221
+    },
+    {
+      "year": 2019,
+      "airline": "Taban Airline",
+      "passengers": 3100
+    },
+    {
+      "year": 2019,
+      "airline": "Thai Airways",
+      "passengers": 236422
+    },
+    {
+      "year": 2019,
+      "airline": "Turkish Airlines",
+      "passengers": 506387
+    },
+    {
+      "year": 2019,
+      "airline": "Uzbekistan Airways",
+      "passengers": 19612
+    },
+    {
+      "year": 2020,
+      "airline": "Air Arabia",
+      "passengers": 388377
+    },
+    {
+      "year": 2020,
+      "airline": "Air Blue",
+      "passengers": 532382
+    },
+    {
+      "year": 2020,
+      "airline": "Air China",
+      "passengers": 23158
+    },
+    {
+      "year": 2020,
+      "airline": "Azerbaijan Airlines",
+      "passengers": 262
+    },
+    {
+      "year": 2020,
+      "airline": "British Airways",
+      "passengers": 71528
+    },
+    {
+      "year": 2020,
+      "airline": "China Southern",
+      "passengers": 17917
+    },
+    {
+      "year": 2020,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2020,
+      "airline": "Emirates Airlines",
+      "passengers": 990267
+    },
+    {
+      "year": 2020,
+      "airline": "Etihad Airways",
+      "passengers": 270995
+    },
+    {
+      "year": 2020,
+      "airline": "Fly Dubai",
+      "passengers": 364398
+    },
+    {
+      "year": 2020,
+      "airline": "Fly Nas",
+      "passengers": 85806
+    },
+    {
+      "year": 2020,
+      "airline": "Gulf Air",
+      "passengers": 146984
+    },
+    {
+      "year": 2020,
+      "airline": "Iran Air",
+      "passengers": 6639
+    },
+    {
+      "year": 2020,
+      "airline": "Iraqi Airways",
+      "passengers": 4728
+    },
+    {
+      "year": 2020,
+      "airline": "Jazeera Airways",
+      "passengers": 13424
+    },
+    {
+      "year": 2020,
+      "airline": "Kam Air",
+      "passengers": 17430
+    },
+    {
+      "year": 2020,
+      "airline": "Kuwait Airways",
+      "passengers": 30908
+    },
+    {
+      "year": 2020,
+      "airline": "Mahan Air",
+      "passengers": 7413
+    },
+    {
+      "year": 2020,
+      "airline": "Malindo Air",
+      "passengers": 15149
+    },
+    {
+      "year": 2020,
+      "airline": "Oman Air",
+      "passengers": 112443
+    },
+    {
+      "year": 2020,
+      "airline": "Pakistan International",
+      "passengers": 1757086
+    },
+    {
+      "year": 2020,
+      "airline": "Pegasus Airlines",
+      "passengers": 11451
+    },
+    {
+      "year": 2020,
+      "airline": "Qatar Airways",
+      "passengers": 556778
+    },
+    {
+      "year": 2020,
+      "airline": "Salam Air",
+      "passengers": 64763
+    },
+    {
+      "year": 2020,
+      "airline": "Saudi Arabian",
+      "passengers": 582603
+    },
+    {
+      "year": 2020,
+      "airline": "Saudia Gulf",
+      "passengers": 14695
+    },
+    {
+      "year": 2020,
+      "airline": "Serene Air",
+      "passengers": 5643
+    },
+    {
+      "year": 2020,
+      "airline": "Srilankan Airlines",
+      "passengers": 22529
+    },
+    {
+      "year": 2020,
+      "airline": "Taban Airline",
+      "passengers": 1566
+    },
+    {
+      "year": 2020,
+      "airline": "Thai Airways",
+      "passengers": 46186
+    },
+    {
+      "year": 2020,
+      "airline": "Turkish Airlines",
+      "passengers": 308049
+    },
+    {
+      "year": 2020,
+      "airline": "Uzbekistan Airways",
+      "passengers": 2302
+    },
+    {
+      "year": 2020,
+      "airline": "Virgin Atlantic Airways",
+      "passengers": 6144
+    },
+    {
+      "year": 2021,
+      "airline": "Air Arabia",
+      "passengers": 392315
+    },
+    {
+      "year": 2021,
+      "airline": "Air Arabia Abu Dhabi",
+      "passengers": 19050
+    },
+    {
+      "year": 2021,
+      "airline": "Air Blue",
+      "passengers": 616842
+    },
+    {
+      "year": 2021,
+      "airline": "Air China",
+      "passengers": 14317
+    },
+    {
+      "year": 2021,
+      "airline": "Air Sial",
+      "passengers": 157
+    },
+    {
+      "year": 2021,
+      "airline": "Ariana Afghan",
+      "passengers": 689
+    },
+    {
+      "year": 2021,
+      "airline": "Azerbaijan Airlines",
+      "passengers": 220
+    },
+    {
+      "year": 2021,
+      "airline": "British Airways",
+      "passengers": 123870
+    },
+    {
+      "year": 2021,
+      "airline": "Chamwing Airlines",
+      "passengers": 452
+    },
+    {
+      "year": 2021,
+      "airline": "China Southern",
+      "passengers": 19068
+    },
+    {
+      "year": 2021,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2021,
+      "airline": "Emirates Airlines",
+      "passengers": 1009939
+    },
+    {
+      "year": 2021,
+      "airline": "Etihad Airways",
+      "passengers": 323938
+    },
+    {
+      "year": 2021,
+      "airline": "Fly Baghdad",
+      "passengers": 19102
+    },
+    {
+      "year": 2021,
+      "airline": "Fly Dubai",
+      "passengers": 401371
+    },
+    {
+      "year": 2021,
+      "airline": "Fly Nas",
+      "passengers": 37485
+    },
+    {
+      "year": 2021,
+      "airline": "Gulf Air",
+      "passengers": 242232
+    },
+    {
+      "year": 2021,
+      "airline": "Iran Air",
+      "passengers": 6949
+    },
+    {
+      "year": 2021,
+      "airline": "Iraqi Airways",
+      "passengers": 1987
+    },
+    {
+      "year": 2021,
+      "airline": "Jazeera Airways",
+      "passengers": 13328
+    },
+    {
+      "year": 2021,
+      "airline": "Kam Air",
+      "passengers": 39015
+    },
+    {
+      "year": 2021,
+      "airline": "Kuwait Airways",
+      "passengers": 33284
+    },
+    {
+      "year": 2021,
+      "airline": "Mahan Air",
+      "passengers": 190
+    },
+    {
+      "year": 2021,
+      "airline": "Oman Air",
+      "passengers": 86430
+    },
+    {
+      "year": 2021,
+      "airline": "Pakistan International",
+      "passengers": 1455350
+    },
+    {
+      "year": 2021,
+      "airline": "Pegasus Airlines",
+      "passengers": 30345
+    },
+    {
+      "year": 2021,
+      "airline": "Qatar Airways",
+      "passengers": 869204
+    },
+    {
+      "year": 2021,
+      "airline": "Salam Air",
+      "passengers": 65403
+    },
+    {
+      "year": 2021,
+      "airline": "Saudi Arabian",
+      "passengers": 390106
+    },
+    {
+      "year": 2021,
+      "airline": "Serene Air",
+      "passengers": 153952
+    },
+    {
+      "year": 2021,
+      "airline": "Srilankan Airlines",
+      "passengers": 22436
+    },
+    {
+      "year": 2021,
+      "airline": "Taban Airline",
+      "passengers": 416
+    },
+    {
+      "year": 2021,
+      "airline": "Thai Airways",
+      "passengers": 0
+    },
+    {
+      "year": 2021,
+      "airline": "Turkish Airlines",
+      "passengers": 406902
+    },
+    {
+      "year": 2021,
+      "airline": "Uzbekistan Airways",
+      "passengers": 3177
+    },
+    {
+      "year": 2021,
+      "airline": "Virgin Atlantic Airways",
+      "passengers": 135541
+    },
+    {
+      "year": 2022,
+      "airline": "Air Arabia",
+      "passengers": 766303
+    },
+    {
+      "year": 2022,
+      "airline": "Air Arabia Abu Dhabi",
+      "passengers": 54607
+    },
+    {
+      "year": 2022,
+      "airline": "Air Blue",
+      "passengers": 1289371
+    },
+    {
+      "year": 2022,
+      "airline": "Air China",
+      "passengers": 13718
+    },
+    {
+      "year": 2022,
+      "airline": "Ariana Afghan",
+      "passengers": 1733
+    },
+    {
+      "year": 2022,
+      "airline": "British Airways",
+      "passengers": 82255
+    },
+    {
+      "year": 2022,
+      "airline": "Chamwing Airlines",
+      "passengers": 6935
+    },
+    {
+      "year": 2022,
+      "airline": "China Southern",
+      "passengers": 18536
+    },
+    {
+      "year": 2022,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2022,
+      "airline": "Emirates Airlines",
+      "passengers": 1611305
+    },
+    {
+      "year": 2022,
+      "airline": "Etihad Airways",
+      "passengers": 517087
+    },
+    {
+      "year": 2022,
+      "airline": "Fly Baghdad",
+      "passengers": 46216
+    },
+    {
+      "year": 2022,
+      "airline": "Fly Dubai",
+      "passengers": 958322
+    },
+    {
+      "year": 2022,
+      "airline": "Fly Nas",
+      "passengers": 146845
+    },
+    {
+      "year": 2022,
+      "airline": "Gulf Air",
+      "passengers": 429368
+    },
+    {
+      "year": 2022,
+      "airline": "Iran Air",
+      "passengers": 16168
+    },
+    {
+      "year": 2022,
+      "airline": "Iraqi Airways",
+      "passengers": 6862
+    },
+    {
+      "year": 2022,
+      "airline": "Jazeera Airways",
+      "passengers": 45705
+    },
+    {
+      "year": 2022,
+      "airline": "Kam Air",
+      "passengers": 38682
+    },
+    {
+      "year": 2022,
+      "airline": "Kish Air",
+      "passengers": 1110
+    },
+    {
+      "year": 2022,
+      "airline": "Kuwait Airways",
+      "passengers": 76244
+    },
+    {
+      "year": 2022,
+      "airline": "Mahan Air",
+      "passengers": 21772
+    },
+    {
+      "year": 2022,
+      "airline": "Malindo Air",
+      "passengers": 49154
+    },
+    {
+      "year": 2022,
+      "airline": "Oman Air",
+      "passengers": 143071
+    },
+    {
+      "year": 2022,
+      "airline": "Pakistan International",
+      "passengers": 3071801
+    },
+    {
+      "year": 2022,
+      "airline": "Pegasus Airlines",
+      "passengers": 57515
+    },
+    {
+      "year": 2022,
+      "airline": "Qatar Airways",
+      "passengers": 1379849
+    },
+    {
+      "year": 2022,
+      "airline": "Salam Air",
+      "passengers": 136735
+    },
+    {
+      "year": 2022,
+      "airline": "Saudi Arabian",
+      "passengers": 1473624
+    },
+    {
+      "year": 2022,
+      "airline": "Serene Air",
+      "passengers": 596912
+    },
+    {
+      "year": 2022,
+      "airline": "Srilankan Airlines",
+      "passengers": 76431
+    },
+    {
+      "year": 2022,
+      "airline": "Taban Airline",
+      "passengers": 3307
+    },
+    {
+      "year": 2022,
+      "airline": "Thai Airways",
+      "passengers": 185217
+    },
+    {
+      "year": 2022,
+      "airline": "Turkish Airlines",
+      "passengers": 553389
+    },
+    {
+      "year": 2022,
+      "airline": "Uzbekistan Airways",
+      "passengers": 755
+    },
+    {
+      "year": 2022,
+      "airline": "Virgin Atlantic Airways",
+      "passengers": 206163
+    },
+    {
+      "year": 2023,
+      "airline": "Aero Nomad Airlines",
+      "passengers": 3292
+    },
+    {
+      "year": 2023,
+      "airline": "Air Arabia",
+      "passengers": 859023
+    },
+    {
+      "year": 2023,
+      "airline": "Air Arabia Abu Dhabi",
+      "passengers": 58270
+    },
+    {
+      "year": 2023,
+      "airline": "Air Blue",
+      "passengers": 1458313
+    },
+    {
+      "year": 2023,
+      "airline": "Air China",
+      "passengers": 32608
+    },
+    {
+      "year": 2023,
+      "airline": "Air Sial",
+      "passengers": 266465
+    },
+    {
+      "year": 2023,
+      "airline": "Ariana Afghan",
+      "passengers": 734
+    },
+    {
+      "year": 2023,
+      "airline": "Azerbaijan Airlines",
+      "passengers": 6086
+    },
+    {
+      "year": 2023,
+      "airline": "British Airways",
+      "passengers": 59552
+    },
+    {
+      "year": 2023,
+      "airline": "Chamwing Airlines",
+      "passengers": 6279
+    },
+    {
+      "year": 2023,
+      "airline": "China Southern",
+      "passengers": 46695
+    },
+    {
+      "year": 2023,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2023,
+      "airline": "Emirates Airlines",
+      "passengers": 1775580
+    },
+    {
+      "year": 2023,
+      "airline": "Ethiopian Airlines Corporation",
+      "passengers": 18739
+    },
+    {
+      "year": 2023,
+      "airline": "Etihad Airways",
+      "passengers": 572498
+    },
+    {
+      "year": 2023,
+      "airline": "Fly Baghdad",
+      "passengers": 46929
+    },
+    {
+      "year": 2023,
+      "airline": "Fly Dubai",
+      "passengers": 1105648
+    },
+    {
+      "year": 2023,
+      "airline": "Fly Nas",
+      "passengers": 244858
+    },
+    {
+      "year": 2023,
+      "airline": "Gulf Air",
+      "passengers": 466041
+    },
+    {
+      "year": 2023,
+      "airline": "Iran Air",
+      "passengers": 13754
+    },
+    {
+      "year": 2023,
+      "airline": "Iraqi Airways",
+      "passengers": 35916
+    },
+    {
+      "year": 2023,
+      "airline": "Jazeera Airways",
+      "passengers": 64929
+    },
+    {
+      "year": 2023,
+      "airline": "Kam Air",
+      "passengers": 34833
+    },
+    {
+      "year": 2023,
+      "airline": "Kuwait Airways",
+      "passengers": 87113
+    },
+    {
+      "year": 2023,
+      "airline": "Mahan Air",
+      "passengers": 18698
+    },
+    {
+      "year": 2023,
+      "airline": "Malindo Air",
+      "passengers": 83633
+    },
+    {
+      "year": 2023,
+      "airline": "Oman Air",
+      "passengers": 239346
+    },
+    {
+      "year": 2023,
+      "airline": "Pakistan International",
+      "passengers": 3468239
+    },
+    {
+      "year": 2023,
+      "airline": "Pegasus Airlines",
+      "passengers": 60527
+    },
+    {
+      "year": 2023,
+      "airline": "Qatar Airways",
+      "passengers": 1459691
+    },
+    {
+      "year": 2023,
+      "airline": "Salam Air",
+      "passengers": 177482
+    },
+    {
+      "year": 2023,
+      "airline": "Saudi Arabian",
+      "passengers": 1967241
+    },
+    {
+      "year": 2023,
+      "airline": "Scat Airlines",
+      "passengers": 5258
+    },
+    {
+      "year": 2023,
+      "airline": "Serene Air",
+      "passengers": 712782
+    },
+    {
+      "year": 2023,
+      "airline": "Srilankan Airlines",
+      "passengers": 88780
+    },
+    {
+      "year": 2023,
+      "airline": "Taban Airline",
+      "passengers": 12891
+    },
+    {
+      "year": 2023,
+      "airline": "Thai Airways",
+      "passengers": 294562
+    },
+    {
+      "year": 2023,
+      "airline": "Turkish Airlines",
+      "passengers": 503600
+    },
+    {
+      "year": 2023,
+      "airline": "Uzbekistan Airways",
+      "passengers": 647
+    },
+    {
+      "year": 2023,
+      "airline": "Virgin Atlantic Airways",
+      "passengers": 69365
+    },
+    {
+      "year": 2024,
+      "airline": "Aero Nomad Airlines",
+      "passengers": 32327
+    },
+    {
+      "year": 2024,
+      "airline": "Air Arabia",
+      "passengers": 845628
+    },
+    {
+      "year": 2024,
+      "airline": "Air Arabia Abu Dhabi",
+      "passengers": 55459
+    },
+    {
+      "year": 2024,
+      "airline": "Air Blue",
+      "passengers": 1515294
+    },
+    {
+      "year": 2024,
+      "airline": "Air China",
+      "passengers": 41649
+    },
+    {
+      "year": 2024,
+      "airline": "Air Sial",
+      "passengers": 660170
+    },
+    {
+      "year": 2024,
+      "airline": "Ariana Afghan",
+      "passengers": 66
+    },
+    {
+      "year": 2024,
+      "airline": "Azerbaijan Airlines",
+      "passengers": 38277
+    },
+    {
+      "year": 2024,
+      "airline": "British Airways",
+      "passengers": 63632
+    },
+    {
+      "year": 2024,
+      "airline": "Chamwing Airlines",
+      "passengers": 12848
+    },
+    {
+      "year": 2024,
+      "airline": "China Southern",
+      "passengers": 122994
+    },
+    {
+      "year": 2024,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2024,
+      "airline": "Emirates Airlines",
+      "passengers": 1825582
+    },
+    {
+      "year": 2024,
+      "airline": "Ethiopian Airlines Corporation",
+      "passengers": 37159
+    },
+    {
+      "year": 2024,
+      "airline": "Etihad Airways",
+      "passengers": 630809
+    },
+    {
+      "year": 2024,
+      "airline": "Fly Baghdad",
+      "passengers": 1876
+    },
+    {
+      "year": 2024,
+      "airline": "Fly Dubai",
+      "passengers": 1281628
+    },
+    {
+      "year": 2024,
+      "airline": "Fly Jinnah",
+      "passengers": 358059
+    },
+    {
+      "year": 2024,
+      "airline": "Fly Nas",
+      "passengers": 336348
+    },
+    {
+      "year": 2024,
+      "airline": "Gulf Air",
+      "passengers": 433094
+    },
+    {
+      "year": 2024,
+      "airline": "Iran Air",
+      "passengers": 6674
+    },
+    {
+      "year": 2024,
+      "airline": "Iraqi Airways",
+      "passengers": 81952
+    },
+    {
+      "year": 2024,
+      "airline": "Jazeera Airways",
+      "passengers": 82792
+    },
+    {
+      "year": 2024,
+      "airline": "Kam Air",
+      "passengers": 37155
+    },
+    {
+      "year": 2024,
+      "airline": "Kuwait Airways",
+      "passengers": 92969
+    },
+    {
+      "year": 2024,
+      "airline": "Mahan Air",
+      "passengers": 15987
+    },
+    {
+      "year": 2024,
+      "airline": "Malindo Air",
+      "passengers": 118569
+    },
+    {
+      "year": 2024,
+      "airline": "Oman Air",
+      "passengers": 94921
+    },
+    {
+      "year": 2024,
+      "airline": "Pakistan International",
+      "passengers": 2975292
+    },
+    {
+      "year": 2024,
+      "airline": "Pegasus Airlines",
+      "passengers": 61734
+    },
+    {
+      "year": 2024,
+      "airline": "Qatar Airways",
+      "passengers": 1525593
+    },
+    {
+      "year": 2024,
+      "airline": "Royal Jordanian",
+      "passengers": 0
+    },
+    {
+      "year": 2024,
+      "airline": "Salam Air",
+      "passengers": 333700
+    },
+    {
+      "year": 2024,
+      "airline": "Saudi Arabian",
+      "passengers": 2442661
+    },
+    {
+      "year": 2024,
+      "airline": "Scat Airlines",
+      "passengers": 123
+    },
+    {
+      "year": 2024,
+      "airline": "Serene Air",
+      "passengers": 602756
+    },
+    {
+      "year": 2024,
+      "airline": "Somon Air",
+      "passengers": 2496
+    },
+    {
+      "year": 2024,
+      "airline": "Srilankan Airlines",
+      "passengers": 89510
+    },
+    {
+      "year": 2024,
+      "airline": "Taban Airline",
+      "passengers": 14712
+    },
+    {
+      "year": 2024,
+      "airline": "Thai Airways",
+      "passengers": 340222
+    },
+    {
+      "year": 2024,
+      "airline": "Turkish Airlines",
+      "passengers": 557650
+    },
+    {
+      "year": 2024,
+      "airline": "Uzbekistan Airways",
+      "passengers": 1425
+    },
+    {
+      "year": 2025,
+      "airline": "Aero Nomad Airlines",
+      "passengers": 25742
+    },
+    {
+      "year": 2025,
+      "airline": "Air Arabia",
+      "passengers": 852329
+    },
+    {
+      "year": 2025,
+      "airline": "Air Arabia Abu Dhabi",
+      "passengers": 92233
+    },
+    {
+      "year": 2025,
+      "airline": "Air Blue",
+      "passengers": 1538961
+    },
+    {
+      "year": 2025,
+      "airline": "Air China",
+      "passengers": 29476
+    },
+    {
+      "year": 2025,
+      "airline": "Air Sial",
+      "passengers": 998097
+    },
+    {
+      "year": 2025,
+      "airline": "Airasiax",
+      "passengers": 51079
+    },
+    {
+      "year": 2025,
+      "airline": "Ariana Afghan",
+      "passengers": 9408
+    },
+    {
+      "year": 2025,
+      "airline": "Azerbaijan Airlines",
+      "passengers": 39846
+    },
+    {
+      "year": 2025,
+      "airline": "British Airways",
+      "passengers": 82243
+    },
+    {
+      "year": 2025,
+      "airline": "China Southern",
+      "passengers": 178539
+    },
+    {
+      "year": 2025,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2025,
+      "airline": "Emirates Airlines",
+      "passengers": 1717960
+    },
+    {
+      "year": 2025,
+      "airline": "Ethiopian Airlines Corporation",
+      "passengers": 37186
+    },
+    {
+      "year": 2025,
+      "airline": "Etihad Airways",
+      "passengers": 746015
+    },
+    {
+      "year": 2025,
+      "airline": "Fly Adeal Airlines",
+      "passengers": 131954
+    },
+    {
+      "year": 2025,
+      "airline": "Fly Dubai",
+      "passengers": 1330225
+    },
+    {
+      "year": 2025,
+      "airline": "Fly Jinnah",
+      "passengers": 765236
+    },
+    {
+      "year": 2025,
+      "airline": "Fly Nas",
+      "passengers": 378347
+    },
+    {
+      "year": 2025,
+      "airline": "Gulf Air",
+      "passengers": 251865
+    },
+    {
+      "year": 2025,
+      "airline": "Iran Air",
+      "passengers": 10122
+    },
+    {
+      "year": 2025,
+      "airline": "Iranair Tours Co.",
+      "passengers": 8049
+    },
+    {
+      "year": 2025,
+      "airline": "Iraqi Airways",
+      "passengers": 111789
+    },
+    {
+      "year": 2025,
+      "airline": "Jazeera Airways",
+      "passengers": 85928
+    },
+    {
+      "year": 2025,
+      "airline": "Kam Air",
+      "passengers": 86923
+    },
+    {
+      "year": 2025,
+      "airline": "Kish Air",
+      "passengers": 2009
+    },
+    {
+      "year": 2025,
+      "airline": "Kuwait Airways",
+      "passengers": 100640
+    },
+    {
+      "year": 2025,
+      "airline": "Mahan Air",
+      "passengers": 16331
+    },
+    {
+      "year": 2025,
+      "airline": "Malindo Air",
+      "passengers": 145545
+    },
+    {
+      "year": 2025,
+      "airline": "Oman Air",
+      "passengers": 46136
+    },
+    {
+      "year": 2025,
+      "airline": "Pakistan International",
+      "passengers": 2767860
+    },
+    {
+      "year": 2025,
+      "airline": "Pegasus Airlines",
+      "passengers": 90328
+    },
+    {
+      "year": 2025,
+      "airline": "Qatar Airways",
+      "passengers": 1471933
+    },
+    {
+      "year": 2025,
+      "airline": "Royal Jordanian",
+      "passengers": 0
+    },
+    {
+      "year": 2025,
+      "airline": "Salam Air",
+      "passengers": 409789
+    },
+    {
+      "year": 2025,
+      "airline": "Saudi Arabian",
+      "passengers": 2658576
+    },
+    {
+      "year": 2025,
+      "airline": "Serene Air",
+      "passengers": 368097
+    },
+    {
+      "year": 2025,
+      "airline": "Sf Airline",
+      "passengers": 0
+    },
+    {
+      "year": 2025,
+      "airline": "Somon Air",
+      "passengers": 579
+    },
+    {
+      "year": 2025,
+      "airline": "Srilankan Airlines",
+      "passengers": 107595
+    },
+    {
+      "year": 2025,
+      "airline": "Taban Airline",
+      "passengers": 20600
+    },
+    {
+      "year": 2025,
+      "airline": "Thai Airways",
+      "passengers": 371622
+    },
+    {
+      "year": 2025,
+      "airline": "Turkish Airlines",
+      "passengers": 697927
+    },
+    {
+      "year": 2025,
+      "airline": "Uzbekistan Airways",
+      "passengers": 30408
+    },
+    {
+      "year": 2026,
+      "airline": "Aero Nomad Airlines",
+      "passengers": 13074
+    },
+    {
+      "year": 2026,
+      "airline": "Air Arabia",
+      "passengers": 407953
+    },
+    {
+      "year": 2026,
+      "airline": "Air Arabia Abu Dhabi",
+      "passengers": 88964
+    },
+    {
+      "year": 2026,
+      "airline": "Air Blue",
+      "passengers": 652704
+    },
+    {
+      "year": 2026,
+      "airline": "Air China",
+      "passengers": 29229
+    },
+    {
+      "year": 2026,
+      "airline": "Air Sial",
+      "passengers": 557055
+    },
+    {
+      "year": 2026,
+      "airline": "Airasiax",
+      "passengers": 22704
+    },
+    {
+      "year": 2026,
+      "airline": "Azerbaijan Airlines",
+      "passengers": 31398
+    },
+    {
+      "year": 2026,
+      "airline": "Biman Bangladesh",
+      "passengers": 10945
+    },
+    {
+      "year": 2026,
+      "airline": "British Airways",
+      "passengers": 41872
+    },
+    {
+      "year": 2026,
+      "airline": "China Southern",
+      "passengers": 115504
+    },
+    {
+      "year": 2026,
+      "airline": "Dhl Aviation",
+      "passengers": 0
+    },
+    {
+      "year": 2026,
+      "airline": "Emirates Airlines",
+      "passengers": 781418
+    },
+    {
+      "year": 2026,
+      "airline": "Ethiopian Airlines Corporation",
+      "passengers": 19427
+    },
+    {
+      "year": 2026,
+      "airline": "Etihad Airways",
+      "passengers": 336093
+    },
+    {
+      "year": 2026,
+      "airline": "Fly Adeal Airlines",
+      "passengers": 105127
+    },
+    {
+      "year": 2026,
+      "airline": "Fly Dubai",
+      "passengers": 559865
+    },
+    {
+      "year": 2026,
+      "airline": "Fly Jinnah",
+      "passengers": 472146
+    },
+    {
+      "year": 2026,
+      "airline": "Fly Nas",
+      "passengers": 189133
+    },
+    {
+      "year": 2026,
+      "airline": "Gulf Air",
+      "passengers": 86728
+    },
+    {
+      "year": 2026,
+      "airline": "Iran Air",
+      "passengers": 2370
+    },
+    {
+      "year": 2026,
+      "airline": "Iranair Tours Co.",
+      "passengers": 6306
+    },
+    {
+      "year": 2026,
+      "airline": "Iraqi Airways",
+      "passengers": 22540
+    },
+    {
+      "year": 2026,
+      "airline": "Jazeera Airways",
+      "passengers": 35278
+    },
+    {
+      "year": 2026,
+      "airline": "Kam Air",
+      "passengers": 44691
+    },
+    {
+      "year": 2026,
+      "airline": "Kish Air",
+      "passengers": 347
+    },
+    {
+      "year": 2026,
+      "airline": "Kuwait Airways",
+      "passengers": 36993
+    },
+    {
+      "year": 2026,
+      "airline": "Mahan Air",
+      "passengers": 4131
+    },
+    {
+      "year": 2026,
+      "airline": "Malindo Air",
+      "passengers": 87616
+    },
+    {
+      "year": 2026,
+      "airline": "Oman Air",
+      "passengers": 20856
+    },
+    {
+      "year": 2026,
+      "airline": "Pakistan International",
+      "passengers": 1145849
+    },
+    {
+      "year": 2026,
+      "airline": "Pegasus Airlines",
+      "passengers": 40537
+    },
+    {
+      "year": 2026,
+      "airline": "Qatar Airways",
+      "passengers": 685278
+    },
+    {
+      "year": 2026,
+      "airline": "Royal Jordanian",
+      "passengers": 0
+    },
+    {
+      "year": 2026,
+      "airline": "Salam Air",
+      "passengers": 205081
+    },
+    {
+      "year": 2026,
+      "airline": "Saudi Arabian",
+      "passengers": 1321979
+    },
+    {
+      "year": 2026,
+      "airline": "Sf Airline",
+      "passengers": 0
+    },
+    {
+      "year": 2026,
+      "airline": "Srilankan Airlines",
+      "passengers": 54277
+    },
+    {
+      "year": 2026,
+      "airline": "Taban Airline",
+      "passengers": 3039
+    },
+    {
+      "year": 2026,
+      "airline": "Thai Airways",
+      "passengers": 177286
+    },
+    {
+      "year": 2026,
+      "airline": "Turkish Airlines",
+      "passengers": 420612
+    },
+    {
+      "year": 2026,
+      "airline": "Uzbekistan Airways",
+      "passengers": 24703
+    }
+  ],
+  "domestic": [
+    {
+      "year": 2006,
+      "airline": "Aero Asia",
+      "passengers": 82127
+    },
+    {
+      "year": 2006,
+      "airline": "Air Blue",
+      "passengers": 365290
+    },
+    {
+      "year": 2006,
+      "airline": "Pakistan International",
+      "passengers": 785381
+    },
+    {
+      "year": 2006,
+      "airline": "Shaheen Air International",
+      "passengers": 59231
+    },
+    {
+      "year": 2007,
+      "airline": "Aero Asia",
+      "passengers": 22463
+    },
+    {
+      "year": 2007,
+      "airline": "Air Blue",
+      "passengers": 649617
+    },
+    {
+      "year": 2007,
+      "airline": "Pakistan International",
+      "passengers": 2360604
+    },
+    {
+      "year": 2007,
+      "airline": "Shaheen Air International",
+      "passengers": 266261
+    },
+    {
+      "year": 2008,
+      "airline": "Air Blue",
+      "passengers": 497510
+    },
+    {
+      "year": 2008,
+      "airline": "Pakistan International",
+      "passengers": 2430258
+    },
+    {
+      "year": 2008,
+      "airline": "Shaheen Air International",
+      "passengers": 239868
+    },
+    {
+      "year": 2009,
+      "airline": "Air Blue",
+      "passengers": 486338
+    },
+    {
+      "year": 2009,
+      "airline": "Pakistan International",
+      "passengers": 2326475
+    },
+    {
+      "year": 2009,
+      "airline": "Shaheen Air International",
+      "passengers": 404881
+    },
+    {
+      "year": 2010,
+      "airline": "Air Blue",
+      "passengers": 378723
+    },
+    {
+      "year": 2010,
+      "airline": "Pakistan International",
+      "passengers": 2598998
+    },
+    {
+      "year": 2010,
+      "airline": "Shaheen Air International",
+      "passengers": 478920
+    },
+    {
+      "year": 2011,
+      "airline": "Air Blue",
+      "passengers": 444435
+    },
+    {
+      "year": 2011,
+      "airline": "Pakistan International",
+      "passengers": 2627457
+    },
+    {
+      "year": 2011,
+      "airline": "Shaheen Air International",
+      "passengers": 289527
+    },
+    {
+      "year": 2012,
+      "airline": "Air Blue",
+      "passengers": 525040
+    },
+    {
+      "year": 2012,
+      "airline": "Pakistan International",
+      "passengers": 2484378
+    },
+    {
+      "year": 2012,
+      "airline": "Shaheen Air International",
+      "passengers": 291912
+    },
+    {
+      "year": 2013,
+      "airline": "Air Blue",
+      "passengers": 551716
+    },
+    {
+      "year": 2013,
+      "airline": "Air Indus",
+      "passengers": 92667
+    },
+    {
+      "year": 2013,
+      "airline": "Pakistan International",
+      "passengers": 2118032
+    },
+    {
+      "year": 2013,
+      "airline": "Shaheen Air International",
+      "passengers": 613385
+    },
+    {
+      "year": 2014,
+      "airline": "Air Blue",
+      "passengers": 374934
+    },
+    {
+      "year": 2014,
+      "airline": "Air Indus",
+      "passengers": 465542
+    },
+    {
+      "year": 2014,
+      "airline": "Pakistan International",
+      "passengers": 1702370
+    },
+    {
+      "year": 2014,
+      "airline": "Shaheen Air International",
+      "passengers": 888677
+    },
+    {
+      "year": 2015,
+      "airline": "Air Blue",
+      "passengers": 460172
+    },
+    {
+      "year": 2015,
+      "airline": "Air Indus",
+      "passengers": 126284
+    },
+    {
+      "year": 2015,
+      "airline": "Pakistan International",
+      "passengers": 1790013
+    },
+    {
+      "year": 2015,
+      "airline": "Shaheen Air International",
+      "passengers": 925005
+    },
+    {
+      "year": 2016,
+      "airline": "Air Blue",
+      "passengers": 502054
+    },
+    {
+      "year": 2016,
+      "airline": "Pakistan International",
+      "passengers": 2543487
+    },
+    {
+      "year": 2016,
+      "airline": "Shaheen Air International",
+      "passengers": 654504
+    },
+    {
+      "year": 2017,
+      "airline": "Air Blue",
+      "passengers": 311818
+    },
+    {
+      "year": 2017,
+      "airline": "Pakistan International",
+      "passengers": 2176137
+    },
+    {
+      "year": 2017,
+      "airline": "Serene Air",
+      "passengers": 535663
+    },
+    {
+      "year": 2017,
+      "airline": "Shaheen Air International",
+      "passengers": 564179
+    },
+    {
+      "year": 2018,
+      "airline": "Air Blue",
+      "passengers": 367056
+    },
+    {
+      "year": 2018,
+      "airline": "Pakistan International",
+      "passengers": 2016531
+    },
+    {
+      "year": 2018,
+      "airline": "Serene Air",
+      "passengers": 738947
+    },
+    {
+      "year": 2018,
+      "airline": "Shaheen Air International",
+      "passengers": 204018
+    },
+    {
+      "year": 2019,
+      "airline": "Air Blue",
+      "passengers": 196880
+    },
+    {
+      "year": 2019,
+      "airline": "Pakistan International",
+      "passengers": 1725689
+    },
+    {
+      "year": 2019,
+      "airline": "Serene Air",
+      "passengers": 940589
+    },
+    {
+      "year": 2020,
+      "airline": "Air Blue",
+      "passengers": 291863
+    },
+    {
+      "year": 2020,
+      "airline": "Air Sial",
+      "passengers": 10097
+    },
+    {
+      "year": 2020,
+      "airline": "Pakistan International",
+      "passengers": 847727
+    },
+    {
+      "year": 2020,
+      "airline": "Serene Air",
+      "passengers": 608620
+    },
+    {
+      "year": 2021,
+      "airline": "Air Blue",
+      "passengers": 819618
+    },
+    {
+      "year": 2021,
+      "airline": "Air Sial",
+      "passengers": 627186
+    },
+    {
+      "year": 2021,
+      "airline": "Pakistan International",
+      "passengers": 1269322
+    },
+    {
+      "year": 2021,
+      "airline": "Serene Air",
+      "passengers": 828606
+    },
+    {
+      "year": 2022,
+      "airline": "Air Blue",
+      "passengers": 476118
+    },
+    {
+      "year": 2022,
+      "airline": "Air Sial",
+      "passengers": 536509
+    },
+    {
+      "year": 2022,
+      "airline": "Fly Jinnah",
+      "passengers": 99401
+    },
+    {
+      "year": 2022,
+      "airline": "Pakistan International",
+      "passengers": 1241968
+    },
+    {
+      "year": 2022,
+      "airline": "Serene Air",
+      "passengers": 323146
+    },
+    {
+      "year": 2023,
+      "airline": "Air Blue",
+      "passengers": 322815
+    },
+    {
+      "year": 2023,
+      "airline": "Air Sial",
+      "passengers": 552646
+    },
+    {
+      "year": 2023,
+      "airline": "Fly Jinnah",
+      "passengers": 786218
+    },
+    {
+      "year": 2023,
+      "airline": "Pakistan International",
+      "passengers": 990568
+    },
+    {
+      "year": 2023,
+      "airline": "Serene Air",
+      "passengers": 258653
+    },
+    {
+      "year": 2024,
+      "airline": "Air Blue",
+      "passengers": 455676
+    },
+    {
+      "year": 2024,
+      "airline": "Air Sial",
+      "passengers": 393026
+    },
+    {
+      "year": 2024,
+      "airline": "Fly Jinnah",
+      "passengers": 979502
+    },
+    {
+      "year": 2024,
+      "airline": "Pakistan International",
+      "passengers": 826754
+    },
+    {
+      "year": 2024,
+      "airline": "Serene Air",
+      "passengers": 251075
+    },
+    {
+      "year": 2025,
+      "airline": "Air Blue",
+      "passengers": 594604
+    },
+    {
+      "year": 2025,
+      "airline": "Air Sial",
+      "passengers": 293610
+    },
+    {
+      "year": 2025,
+      "airline": "Fly Jinnah",
+      "passengers": 1016520
+    },
+    {
+      "year": 2025,
+      "airline": "Pakistan International",
+      "passengers": 965522
+    },
+    {
+      "year": 2025,
+      "airline": "Serene Air",
+      "passengers": 263331
+    },
+    {
+      "year": 2026,
+      "airline": "Air Blue",
+      "passengers": 285551
+    },
+    {
+      "year": 2026,
+      "airline": "Air Sial",
+      "passengers": 287703
+    },
+    {
+      "year": 2026,
+      "airline": "Fly Jinnah",
+      "passengers": 626405
+    },
+    {
+      "year": 2026,
+      "airline": "Pakistan International",
+      "passengers": 435057
+    }
+  ]
+}

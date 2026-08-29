@@ -196,6 +196,80 @@ def carriers_per_year(df: pd.DataFrame) -> list[dict]:
     ], key=lambda r: r["year"])
 
 
+def yearly_top_entities(df: pd.DataFrame, top_n: int = 15) -> dict:
+    """Per-year top airlines and airports by passengers, cargo, and flight-leg count."""
+    result: dict = {"airlines": {}, "airports": {}}
+
+    for segment in ("international", "domestic"):
+        seg = df[df["segment"] == segment]
+        result["airlines"][segment] = {}
+        result["airports"][segment] = {}
+
+        for year, ygrp in seg.groupby("year"):
+            year = int(year)
+            # Airlines
+            aln = (
+                ygrp.groupby("airline")
+                .agg(passengers=("passengers", "sum"), cargo_tons=("cargo_tons", "sum"), flights=("passengers", "count"))
+                .sort_values("passengers", ascending=False)
+                .head(top_n)
+            )
+            result["airlines"][segment][str(year)] = [
+                {
+                    "name": k,
+                    "passengers": int(r.passengers),
+                    "cargo_tons": round(float(r.cargo_tons), 2),
+                    "flights": int(r.flights),
+                }
+                for k, r in aln.iterrows()
+            ]
+
+            # Airports
+            if segment == "international":
+                apt = (
+                    ygrp.groupby("pk_airport")
+                    .agg(passengers=("passengers", "sum"), cargo_tons=("cargo_tons", "sum"), flights=("passengers", "count"))
+                    .sort_values("passengers", ascending=False)
+                    .head(top_n)
+                )
+            else:
+                dep = ygrp.groupby("dep_airport").agg(
+                    passengers=("passengers", "sum"), cargo_tons=("cargo_tons", "sum"), flights=("passengers", "count")
+                )
+                arr = ygrp.groupby("arr_airport").agg(
+                    passengers=("passengers", "sum"), cargo_tons=("cargo_tons", "sum"), flights=("passengers", "count")
+                )
+                apt = dep.add(arr, fill_value=0).groupby(level=0).sum().sort_values("passengers", ascending=False).head(top_n)
+
+            result["airports"][segment][str(year)] = [
+                {
+                    "name": k,
+                    "passengers": int(r.passengers),
+                    "cargo_tons": round(float(r.cargo_tons), 2),
+                    "flights": int(r.flights),
+                }
+                for k, r in apt.iterrows()
+            ]
+
+    return result
+
+
+def airline_yearly_passengers(df: pd.DataFrame) -> dict:
+    """Yearly passenger totals per airline — used for CAGR calculations in the dashboard."""
+    result: dict = {"international": [], "domestic": []}
+    for segment in ("international", "domestic"):
+        seg = df[df["segment"] == segment]
+        for (year, airline), grp in seg.groupby(["year", "airline"]):
+            result[segment].append({
+                "year": int(year),
+                "airline": airline,
+                "passengers": int(grp["passengers"].sum()),
+            })
+    for seg in result:
+        result[seg].sort(key=lambda r: (r["year"], r["airline"]))
+    return result
+
+
 def write_json(path: Path, data) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as f:
@@ -295,6 +369,8 @@ def main() -> None:
     write_json(OUTPUT_DIR / "metadata.json", metadata)
     write_json(OUTPUT_DIR / "data_dictionary.json", data_dictionary)
     write_json(OUTPUT_DIR / "insights.json", insights)
+    write_json(OUTPUT_DIR / "yearly-top-entities.json", yearly_top_entities(combined))
+    write_json(OUTPUT_DIR / "airline-yearly-passengers.json", airline_yearly_passengers(combined))
     combined[export_cols].to_parquet(OUTPUT_DIR / "traffic.parquet", compression="zstd", index=False)
 
     manifest = {

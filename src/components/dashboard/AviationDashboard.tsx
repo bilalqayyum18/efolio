@@ -10,7 +10,6 @@ import {
   DashboardErrorBoundary,
   DATA_YEAR_MAX,
   DATA_YEAR_MIN,
-  FilterTargetToggle,
   FULL_YEAR_RANGE,
   HeatmapFilterControls,
   InactiveBadge,
@@ -51,8 +50,6 @@ type PeriodEntityRankings = {
   airports: Record<string, Record<string, EntityRow[]>>;
 };
 type AirlineYearRow = { year: number; airline: string; passengers: number };
-type AirportRow = { airport: string; passengers: number; cargo_tons: number };
-type AirlineRow = { airline: string; passengers: number };
 type SeasonalityRow = { year: number; month: number; segment: string; passengers: number };
 type MonthlyCell = {
   year: number; month: number; segment: string; passengers: number;
@@ -347,50 +344,6 @@ function Heatmap({
   );
 }
 
-function RankingTable({ rows, labelKey, metaMap }: { rows: (AirportRow | AirlineRow)[]; labelKey: string; metaMap?: Map<string, AirlineMeta> }) {
-  if (rows.length === 0) {
-    return <p className="font-data text-sm text-strip-muted">No data for selected filters.</p>;
-  }
-  const max = Math.max(...rows.map((r) => r.passengers), 1);
-  return (
-    <div className="overflow-x-auto">
-      <table className="w-full font-data text-sm">
-        <thead>
-          <tr className="border-b border-strip-border text-left text-xs uppercase tracking-wider text-strip-muted">
-            <th className="pb-2 pr-4">#</th>
-            <th className="pb-2 pr-4">{labelKey}</th>
-            <th className="pb-2">Passengers</th>
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((row, i) => {
-            const label = labelKey === "Airport" ? (row as AirportRow).airport : (row as AirlineRow).airline;
-            return (
-              <tr key={`${label}-${i}`} className="border-b border-strip-border/50">
-                <td className="py-2 pr-4 text-strip-muted">{i + 1}</td>
-                <td className="py-2 pr-4">
-                  <span className="flex items-center gap-1">
-                    {label}
-                    {labelKey === "Airline" && metaMap?.get(label)?.inactive && <InactiveBadge />}
-                  </span>
-                </td>
-                <td className="py-2">
-                  <div className="flex items-center gap-2">
-                    <div className="h-2 max-w-[120px] flex-1 rounded bg-strip-border">
-                      <div className="h-full rounded bg-strip-accent" style={{ width: `${(row.passengers / max) * 100}%` }} />
-                    </div>
-                    <span className="text-strip-muted">{formatNum(row.passengers)}</span>
-                  </div>
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
 function entityRowsEqual(a: EntityRow[], b: EntityRow[]): boolean {
   if (a.length !== b.length) return false;
   return a.every((r, i) => {
@@ -537,56 +490,6 @@ async function queryEntityRankings(
   if (segment === "domestic") return toRows(await runDomAirportQuery());
   const [intl, dom] = await Promise.all([runIntlAirportQuery(), runDomAirportQuery()]);
   return mergeEntityRows([...toRows(intl), ...toRows(dom)]).sort((a, b) => b.passengers - a.passengers);
-}
-
-async function queryAirportRankings(
-  conn: DuckConn,
-  segment: Segment,
-  period: PeriodSelection,
-): Promise<AirportRow[]> {
-  const where = sqlPeriodWhere(period);
-  const segFilter = segment === "all" ? "" : `AND segment = '${segment}'`;
-  const airportCol = segment === "domestic" ? "dep_airport" : "pk_airport";
-  const res = await conn.query(
-    `SELECT ${airportCol} as airport, SUM(passengers) as passengers, SUM(cargo_tons) as cargo_tons
-     FROM traffic WHERE ${where} ${segFilter}
-     GROUP BY 1 ORDER BY passengers DESC LIMIT 10`,
-  );
-  return res.toArray().map((r) => ({
-    airport: String(r.airport),
-    passengers: Number(r.passengers),
-    cargo_tons: Number(r.cargo_tons),
-  }));
-}
-
-async function queryAirlineRankings(
-  conn: DuckConn,
-  segment: Segment,
-  period: PeriodSelection,
-): Promise<AirlineRow[]> {
-  const where = sqlPeriodWhere(period);
-  const segFilter = segment === "all" ? "" : `AND segment = '${segment}'`;
-  const res = await conn.query(
-    `SELECT airline, SUM(passengers) as passengers
-     FROM traffic WHERE ${where} ${segFilter}
-     GROUP BY 1 ORDER BY passengers DESC LIMIT 15`,
-  );
-  return res.toArray().map((r) => ({
-    airline: String(r.airline),
-    passengers: Number(r.passengers),
-  }));
-}
-
-function aggregateRankingsFromPeriod(
-  periodRankings: PeriodEntityRankings,
-  entityType: EntityType,
-  segment: Segment,
-  period: PeriodSelection,
-  limit: number,
-): EntityRow[] {
-  return aggregatePeriodRankingsJson(
-    periodRankings, entityType, segment, FULL_YEAR_RANGE, period.selectedYear, period.selectedMonth,
-  ).slice(0, limit);
 }
 
 function YearlyRankingsExplorer({
@@ -1193,11 +1096,6 @@ function AviationDashboardInner() {
   const [summary, setSummary] = useState<Summary | null>(null);
   const [trends, setTrends] = useState<YearlyTrend[]>([]);
   const [seasonality, setSeasonality] = useState<SeasonalityRow[]>([]);
-  const [airports, setAirports] = useState<{ international: AirportRow[]; domestic: AirportRow[] } | null>(null);
-  const [airlineRankings, setAirlineRankings] = useState<{
-    international: { by_passengers: AirlineRow[] };
-    domestic: { by_passengers: AirlineRow[] };
-  } | null>(null);
   const [yearlyTop, setYearlyTop] = useState<YearlyTopEntities | null>(null);
   const [periodRankings, setPeriodRankings] = useState<PeriodEntityRankings | null>(null);
   const [airlineYearly, setAirlineYearly] = useState<{ international: AirlineYearRow[]; domestic: AirlineYearRow[] } | null>(null);
@@ -1210,17 +1108,6 @@ function AviationDashboardInner() {
   const [heatmapAllYears, setHeatmapAllYears] = useState(true);
   const [heatmapPickerYear, setHeatmapPickerYear] = useState(DATA_YEAR_MAX - 1);
   const heatmapSelectedYear: number | "all" = heatmapAllYears ? "all" : heatmapPickerYear;
-  const [rankingsSegment, setRankingsSegment] = useState<Segment>("international");
-  const [rankingsAllYears, setRankingsAllYears] = useState(true);
-  const [rankingsAllMonths, setRankingsAllMonths] = useState(true);
-  const [rankingsPickerYear, setRankingsPickerYear] = useState(DATA_YEAR_MAX - 1);
-  const [rankingsPickerMonth, setRankingsPickerMonth] = useState(1);
-  const [filterAirports, setFilterAirports] = useState(true);
-  const [filterAirlines, setFilterAirlines] = useState(true);
-  const rankingsPeriod = useMemo((): PeriodSelection => ({
-    selectedYear: rankingsAllYears ? "all" : rankingsPickerYear,
-    selectedMonth: rankingsAllMonths ? "all" : rankingsPickerMonth,
-  }), [rankingsAllYears, rankingsPickerYear, rankingsAllMonths, rankingsPickerMonth]);
   const [cargoSegment, setCargoSegment] = useState<Segment>("international");
   const [cargoAllYears, setCargoAllYears] = useState(true);
   const [cargoAllMonths, setCargoAllMonths] = useState(true);
@@ -1233,8 +1120,6 @@ function AviationDashboardInner() {
   const [duckReady, setDuckReady] = useState(false);
   const [duckLoading, setDuckLoading] = useState(false);
   const [duckConn, setDuckConn] = useState<unknown>(null);
-  const [sectionAirports, setSectionAirports] = useState<AirportRow[]>([]);
-  const [sectionAirlines, setSectionAirlines] = useState<AirlineRow[]>([]);
   const [trendsKpis, setTrendsKpis] = useState<{ passengers: number; cargo: number } | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [duckError, setDuckError] = useState<string | null>(null);
@@ -1282,20 +1167,16 @@ function AviationDashboardInner() {
       fetch("/data/aviation/summary.json").then((r) => r.json()),
       fetch("/data/aviation/yearly-trends.json").then((r) => r.json()),
       fetch("/data/aviation/monthly-seasonality.json").then((r) => r.json()),
-      fetch("/data/aviation/airport-traffic.json").then((r) => r.json()),
-      fetch("/data/aviation/airline-rankings.json").then((r) => r.json()),
       fetch("/data/aviation/insights.json").then((r) => r.json()),
       fetch("/data/aviation/yearly-top-entities.json").then((r) => r.json()),
       fetch("/data/aviation/period-entity-rankings.json").then((r) => r.json()),
       fetch("/data/aviation/airline-yearly-passengers.json").then((r) => r.json()),
       fetch("/data/aviation/monthly-airline-breakdown.json").then((r) => r.json()),
       fetch("/data/aviation/airline-metadata.json").then((r) => r.json()),
-    ]).then(([s, t, seas, apt, aln, ins, ytop, period, aly, monthly, meta]) => {
+    ]).then(([s, t, seas, ins, ytop, period, aly, monthly, meta]) => {
       setSummary(s);
       setTrends(t);
       setSeasonality(seas);
-      setAirports(apt);
-      setAirlineRankings(aln);
       setInsights(ins.findings);
       setYearlyTop(ytop);
       setPeriodRankings(period);
@@ -1309,90 +1190,26 @@ function AviationDashboardInner() {
     });
   }, []);
 
-  const staticAirports = useMemo(() => {
-    if (!airports) return [];
-    if (rankingsSegment === "domestic") return airports.domestic.slice(0, 10);
-    if (rankingsSegment === "all") {
-      return [...airports.international, ...airports.domestic]
-        .sort((a, b) => b.passengers - a.passengers)
-        .slice(0, 10);
-    }
-    return airports.international.slice(0, 10);
-  }, [airports, rankingsSegment]);
-
-  const staticAirlines = useMemo(() => {
-    if (!airlineRankings) return [];
-    if (rankingsSegment === "domestic") return airlineRankings.domestic.by_passengers.slice(0, 15);
-    if (rankingsSegment === "all") {
-      const merged = new Map<string, number>();
-      for (const r of airlineRankings.international.by_passengers) {
-        merged.set(r.airline, (merged.get(r.airline) ?? 0) + r.passengers);
-      }
-      for (const r of airlineRankings.domestic.by_passengers) {
-        merged.set(r.airline, (merged.get(r.airline) ?? 0) + r.passengers);
-      }
-      return [...merged.entries()]
-        .map(([airline, passengers]) => ({ airline, passengers }))
-        .sort((a, b) => b.passengers - a.passengers)
-        .slice(0, 15);
-    }
-    return airlineRankings.international.by_passengers.slice(0, 15);
-  }, [airlineRankings, rankingsSegment]);
-
-  const filteredAirportsJson = useMemo(() => {
-    if (!periodRankings || !filterAirports) return null;
-    return aggregateRankingsFromPeriod(periodRankings, "airport", rankingsSegment, rankingsPeriod, 10)
-      .map((r) => ({ airport: r.name, passengers: r.passengers, cargo_tons: r.cargo_tons }));
-  }, [periodRankings, filterAirports, rankingsSegment, rankingsPeriod]);
-
-  const filteredAirlinesJson = useMemo(() => {
-    if (!periodRankings || !filterAirlines) return null;
-    return aggregateRankingsFromPeriod(periodRankings, "airline", rankingsSegment, rankingsPeriod, 15)
-      .map((r) => ({ airline: r.name, passengers: r.passengers }));
-  }, [periodRankings, filterAirlines, rankingsSegment, rankingsPeriod]);
-
   const runDuckQuery = useCallback((task: () => Promise<void>) => {
     duckQueryLock.current = duckQueryLock.current
       .then(task)
       .catch((err) => console.error("DuckDB query failed:", err));
   }, []);
 
-  const querySection = useCallback(async (
+  const queryTrendsKpis = useCallback(async (
     segment: Segment,
     yearRange: [number, number],
     onKpis: (k: { passengers: number; cargo: number }) => void,
-    onAirports: (r: AirportRow[]) => void,
-    onAirlines: (r: AirlineRow[]) => void,
   ) => {
     if (!duckConn || !duckReady) return;
     const conn = duckConn as { query: (sql: string) => Promise<{ toArray: () => Record<string, unknown>[] }> };
     const segFilter = segment === "all" ? "" : `AND segment = '${segment}'`;
-
     const kpiRes = await conn.query(
       `SELECT SUM(passengers) as passengers, SUM(cargo_tons) as cargo_tons
        FROM traffic WHERE year BETWEEN ${yearRange[0]} AND ${yearRange[1]} ${segFilter}`,
     );
     const kpiRow = kpiRes.toArray()[0];
     onKpis({ passengers: Number(kpiRow.passengers ?? 0), cargo: Number(kpiRow.cargo_tons ?? 0) });
-
-    const airportCol = segment === "domestic" ? "dep_airport" : "pk_airport";
-    const aptRes = await conn.query(
-      `SELECT ${airportCol} as airport, SUM(passengers) as passengers, SUM(cargo_tons) as cargo_tons
-       FROM traffic WHERE year BETWEEN ${yearRange[0]} AND ${yearRange[1]} ${segFilter}
-       GROUP BY 1 ORDER BY passengers DESC LIMIT 10`,
-    );
-    onAirports(aptRes.toArray().map((r) => ({
-      airport: String(r.airport), passengers: Number(r.passengers), cargo_tons: Number(r.cargo_tons),
-    })));
-
-    const alnRes = await conn.query(
-      `SELECT airline, SUM(passengers) as passengers
-       FROM traffic WHERE year BETWEEN ${yearRange[0]} AND ${yearRange[1]} ${segFilter}
-       GROUP BY 1 ORDER BY passengers DESC LIMIT 15`,
-    );
-    onAirlines(alnRes.toArray().map((r) => ({
-      airline: String(r.airline), passengers: Number(r.passengers),
-    })));
   }, [duckConn, duckReady]);
 
   const initDuckDB = useCallback(async () => {
@@ -1431,24 +1248,8 @@ function AviationDashboardInner() {
 
   useEffect(() => {
     if (!duckReady) return;
-    runDuckQuery(() => querySection(trendsSegment, trendsYearRange, setTrendsKpis, () => {}, () => {}));
-  }, [duckReady, querySection, trendsSegment, trendsYearRange, runDuckQuery]);
-
-  useEffect(() => {
-    if (!duckReady) return;
-    let cancelled = false;
-    runDuckQuery(async () => {
-      if (filterAirports) {
-        const rows = await queryAirportRankings(duckConn as DuckConn, rankingsSegment, rankingsPeriod);
-        if (!cancelled) setSectionAirports(rows);
-      }
-      if (filterAirlines) {
-        const rows = await queryAirlineRankings(duckConn as DuckConn, rankingsSegment, rankingsPeriod);
-        if (!cancelled) setSectionAirlines(rows);
-      }
-    });
-    return () => { cancelled = true; };
-  }, [duckReady, duckConn, runDuckQuery, filterAirports, filterAirlines, rankingsSegment, rankingsPeriod]);
+    runDuckQuery(() => queryTrendsKpis(trendsSegment, trendsYearRange, setTrendsKpis));
+  }, [duckReady, queryTrendsKpis, trendsSegment, trendsYearRange, runDuckQuery]);
 
   const exportCsv = async (segment: Segment, yearRange: [number, number]) => {
     if (!duckConn) return;
@@ -1464,14 +1265,7 @@ function AviationDashboardInner() {
   };
 
   const displayTrendsKpis = trendsKpis ?? trendsJsonKpis;
-  const displayAirports = filterAirports
-    ? (duckReady && sectionAirports.length > 0 ? sectionAirports : filteredAirportsJson ?? staticAirports)
-    : staticAirports;
-  const displayAirlines = filterAirlines
-    ? (duckReady && sectionAirlines.length > 0 ? sectionAirlines : filteredAirlinesJson ?? staticAirlines)
-    : staticAirlines;
   const metaMap = useMemo(() => buildMetaMap(airlineMeta), [airlineMeta]);
-  const rankingsPeriodLabel = formatPeriodLabel(rankingsPeriod);
   const cargoPeriodLabel = formatPeriodLabel(cargoPeriod);
 
   const trendsChartFilters = (
@@ -1579,56 +1373,6 @@ function AviationDashboardInner() {
         duckConn={duckConn}
         duckReady={duckReady}
       />
-
-      <DashCard
-        label="Rankings"
-        title="Top Airports & Airlines"
-        filters={
-          <div className="space-y-4">
-            <div>
-              <p className="mb-2 font-data text-[10px] uppercase tracking-wider text-strip-muted">Apply period filter to</p>
-              <FilterTargetToggle
-                airports={filterAirports}
-                airlines={filterAirlines}
-                onAirportsChange={setFilterAirports}
-                onAirlinesChange={setFilterAirlines}
-              />
-            </div>
-            <PeriodFilterControls
-              segment={rankingsSegment}
-              onSegmentChange={setRankingsSegment}
-              allYears={rankingsAllYears}
-              onAllYearsChange={setRankingsAllYears}
-              year={rankingsPickerYear}
-              onYearChange={setRankingsPickerYear}
-              allMonths={rankingsAllMonths}
-              onAllMonthsChange={setRankingsAllMonths}
-              month={rankingsPickerMonth}
-              onMonthChange={setRankingsPickerMonth}
-            />
-          </div>
-        }
-      >
-        <div className="grid gap-6 lg:grid-cols-2">
-          <div>
-            <p className="mb-3 font-data text-xs uppercase tracking-wider text-strip-muted">
-              Top Airports — {rankingsSegment === "domestic" ? "Domestic" : rankingsSegment === "all" ? "Combined" : "International (PK)"}
-              {filterAirports && <span className="ml-2 text-strip-accent">· {rankingsPeriodLabel}</span>}
-            </p>
-            <RankingTable rows={displayAirports} labelKey="Airport" />
-            {rankingsSegment !== "domestic" && (
-              <p className="mt-3 font-data text-[10px] text-strip-partial">Islamabad merges BBIAP/Chaklala + IIAP (2018 relocation)</p>
-            )}
-          </div>
-          <div>
-            <p className="mb-3 font-data text-xs uppercase tracking-wider text-strip-muted">
-              Top Airlines — {segmentLabel(rankingsSegment)}
-              {filterAirlines && <span className="ml-2 text-strip-accent">· {rankingsPeriodLabel}</span>}
-            </p>
-            <RankingTable rows={displayAirlines} labelKey="Airline" metaMap={metaMap} />
-          </div>
-        </div>
-      </DashCard>
 
       <DashCard
         label="Cargo"

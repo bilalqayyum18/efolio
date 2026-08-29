@@ -1,4 +1,4 @@
-import { Component, type ReactNode } from "react";
+import { Component, memo, useEffect, useRef, useState, type ReactNode } from "react";
 
 export const DATA_YEAR_MIN = 2006;
 export const DATA_YEAR_MAX = 2026;
@@ -6,6 +6,11 @@ export const FULL_YEAR_RANGE: [number, number] = [DATA_YEAR_MIN, DATA_YEAR_MAX];
 export const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"] as const;
 
 export type Segment = "international" | "domestic" | "all";
+
+export type PeriodSelection = {
+  selectedYear: number | "all";
+  selectedMonth: number | "all";
+};
 
 export const SEGMENT_ORDER: Segment[] = ["international", "domestic", "all"];
 
@@ -20,6 +25,41 @@ export const CHART_TOOLTIP_STYLE = {
 
 export function segmentLabel(segment: Segment): string {
   return segment === "all" ? "Combined" : segment.charAt(0).toUpperCase() + segment.slice(1);
+}
+
+/** Avoids Recharts ResponsiveContainer measurement feedback loops (React #185). */
+export function StableChartContainer({
+  height,
+  className,
+  children,
+}: {
+  height: number;
+  className?: string;
+  children: (size: { width: number; height: number }) => ReactNode;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const update = () => {
+      const next = Math.round(el.getBoundingClientRect().width);
+      setWidth((prev) => (Math.abs(prev - next) <= 1 ? prev : next));
+    };
+
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
+  return (
+    <div ref={ref} className={className} style={{ width: "100%", height }}>
+      {width > 0 ? children({ width, height }) : null}
+    </div>
+  );
 }
 
 export class DashboardErrorBoundary extends Component<
@@ -111,6 +151,136 @@ export function SegmentToggle({ value, onChange }: { value: Segment; onChange: (
           {s}
         </button>
       ))}
+    </div>
+  );
+}
+
+export function FilterTargetToggle({
+  airports,
+  airlines,
+  onAirportsChange,
+  onAirlinesChange,
+}: {
+  airports: boolean;
+  airlines: boolean;
+  onAirportsChange: (v: boolean) => void;
+  onAirlinesChange: (v: boolean) => void;
+}) {
+  const toggle = (target: "airports" | "airlines") => {
+    if (target === "airports") {
+      if (airports && !airlines) return;
+      onAirportsChange(!airports);
+    } else {
+      if (airlines && !airports) return;
+      onAirlinesChange(!airlines);
+    }
+  };
+
+  return (
+    <div className="flex gap-1.5">
+      <button
+        type="button"
+        onClick={() => toggle("airports")}
+        className={`segment-btn flex-1 ${airports ? "segment-btn-active" : ""}`}
+      >
+        Airports
+      </button>
+      <button
+        type="button"
+        onClick={() => toggle("airlines")}
+        className={`segment-btn flex-1 ${airlines ? "segment-btn-active" : ""}`}
+      >
+        Airlines
+      </button>
+    </div>
+  );
+}
+
+export function PeriodFilterControls({
+  segment,
+  onSegmentChange,
+  allYears,
+  onAllYearsChange,
+  year,
+  onYearChange,
+  allMonths,
+  onAllMonthsChange,
+  month,
+  onMonthChange,
+  showSegment = true,
+}: {
+  segment: Segment;
+  onSegmentChange: (s: Segment) => void;
+  allYears: boolean;
+  onAllYearsChange: (v: boolean) => void;
+  year: number;
+  onYearChange: (y: number) => void;
+  allMonths: boolean;
+  onAllMonthsChange: (v: boolean) => void;
+  month: number;
+  onMonthChange: (m: number) => void;
+  showSegment?: boolean;
+}) {
+  return (
+    <div className={`grid gap-4 ${showSegment ? "sm:grid-cols-2 lg:grid-cols-3" : "sm:grid-cols-2"}`}>
+      {showSegment && (
+        <div>
+          <p className="mb-2 font-data text-[10px] uppercase tracking-wider text-strip-muted">Segment</p>
+          <SegmentToggle value={segment} onChange={onSegmentChange} />
+        </div>
+      )}
+      <div>
+        <p className="mb-2 font-data text-[10px] uppercase tracking-wider text-strip-muted">Year</p>
+        <YearPickerControl
+          allYears={allYears}
+          onAllYearsChange={onAllYearsChange}
+          year={year}
+          onYearChange={onYearChange}
+        />
+      </div>
+      <div>
+        <p className="mb-2 font-data text-[10px] uppercase tracking-wider text-strip-muted">Month</p>
+        <MonthPickerControl
+          allMonths={allMonths}
+          onAllMonthsChange={onAllMonthsChange}
+          month={month}
+          onMonthChange={onMonthChange}
+        />
+      </div>
+    </div>
+  );
+}
+
+export function HeatmapFilterControls({
+  segment,
+  onSegmentChange,
+  allYears,
+  onAllYearsChange,
+  year,
+  onYearChange,
+}: {
+  segment: Segment;
+  onSegmentChange: (s: Segment) => void;
+  allYears: boolean;
+  onAllYearsChange: (v: boolean) => void;
+  year: number;
+  onYearChange: (y: number) => void;
+}) {
+  return (
+    <div className="grid gap-4 sm:grid-cols-2">
+      <div>
+        <p className="mb-2 font-data text-[10px] uppercase tracking-wider text-strip-muted">Segment</p>
+        <SegmentToggle value={segment} onChange={onSegmentChange} />
+      </div>
+      <div>
+        <p className="mb-2 font-data text-[10px] uppercase tracking-wider text-strip-muted">Year</p>
+        <YearPickerControl
+          allYears={allYears}
+          onAllYearsChange={onAllYearsChange}
+          year={year}
+          onYearChange={onYearChange}
+        />
+      </div>
     </div>
   );
 }
@@ -266,7 +436,7 @@ export function MonthPickerControl({
 
 type AxisItem = { fullName: string; name: string };
 
-export function AirlineYAxisTick({
+export const AirlineYAxisTick = memo(function AirlineYAxisTick({
   x = 0,
   y = 0,
   payload,
@@ -307,4 +477,4 @@ export function AirlineYAxisTick({
       </text>
     </g>
   );
-}
+});

@@ -1,0 +1,10 @@
+{
+  "source": "Pakistan Civil Aviation Authority (CAA) — Government traffic statistics",
+  "file": "Traffic Data 2006-26.xlsx",
+  "methodology": "International Pakistani airport traffic uses direction-aware aggregation. Islamabad BBIAP/Chaklala and IIAP merged with 2018 relocation footnote.",
+  "partial_years": {
+    "2006": "July–December (H2)",
+    "2026": "January–June (H1 YTD)"
+  },
+  "generated_at": "2026-08-29T01:59:59.348800+00:00"
+}

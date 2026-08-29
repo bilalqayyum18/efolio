@@ -1,0 +1,12 @@
+{
+  "direction": {
+    "Arr": "Arrival in Pakistan — Pakistani airport is arr_airport",
+    "Dep": "Departure from Pakistan — Pakistani airport is dep_airport"
+  },
+  "passenger_convention": "Passenger counts are directional flight-leg movements per CAA reporting, not unique travelers.",
+  "islamabad_merge": "Islamabad BBIAP/Chaklala and IIAP merged into 'Islamabad' (IIAP opened 2018).",
+  "partial_years": {
+    "2006": "July–December (H2)",
+    "2026": "January–June (H1 YTD)"
+  }
+}

@@ -1,0 +1,69 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+  jsonLd?: Record<string, unknown>;
+}
+
+const { title, description = "Portfolio of Bilal Qayyum — Data, Business & Systems Analyst", jsonLd } = Astro.props;
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Bilal Qayyum",
+  url: "https://devpak.ovh",
+  jobTitle: "Data Analyst · Business Analyst · Systems Analyst",
+  email: "bqk2015@gmail.com",
+  sameAs: [
+    "https://www.linkedin.com/in/bilal-qayyum-khan-703a44145",
+    "https://github.com/bilalqayyum18",
+    "https://safarwise.app",
+  ],
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content="https://devpak.ovh" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd ?? personSchema)} />
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 border-b border-strip-border bg-strip-bg/90 backdrop-blur">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+        <a href="/" class="font-display text-lg font-bold tracking-tight">BQ<span class="text-strip-accent">.</span></a>
+        <div class="flex gap-6 font-data text-xs uppercase tracking-wider">
+          <a href="/projects/aviation" class="text-strip-muted hover:text-strip-text">Aviation</a>
+          <a href="/about" class="text-strip-muted hover:text-strip-text">About</a>
+          <a href="/contact" class="text-strip-muted hover:text-strip-text">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="border-t border-strip-border py-8">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 text-center text-sm text-strip-muted md:flex-row md:text-left">
+        <p class="font-data text-xs uppercase tracking-wider">© {new Date().getFullYear()} Bilal Qayyum</p>
+        <div class="flex gap-4">
+          <a href="https://www.linkedin.com/in/bilal-qayyum-khan-703a44145" class="hover:text-strip-text" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:bqk2015@gmail.com" class="hover:text-strip-text">Email</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

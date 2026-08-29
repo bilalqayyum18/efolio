@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AnalystLens from "../../components/AnalystLens.astro";
+import AviationDashboard from "../../components/dashboard/AviationDashboard";
+---
+
+<BaseLayout title="Pakistan Aviation Analytics" description="Interactive BI dashboard — 20 years of CAA traffic data (2006-2026)">
+  <article class="mx-auto max-w-6xl px-4 py-16">
+    <p class="strip-label">Data Flagship</p>
+    <h1 class="font-display text-4xl font-bold">Pakistan Aviation Analytics</h1>
+    <p class="mt-2 max-w-2xl text-strip-muted">
+      Twenty years of Civil Aviation Authority traffic data — ~300M passengers, ~5.4M tonnes cargo — transformed from a single Excel workbook into an interactive BI dashboard with cross-filtering.
+    </p>
+
+    <div class="mt-6 flex flex-wrap gap-2">
+      {["Python ETL", "DuckDB-WASM", "Recharts", "KPI Design", "Data Validation"].map((t) => <span class="tag">{t}</span>)}
+    </div>
+
+    <section class="mt-12">
+      <AviationDashboard client:visible />
+    </section>
+
+    <AnalystLens title="Data Analyst Lens">
+      <div class="space-y-6 text-sm text-strip-muted">
+        <div>
+          <h3 class="font-data text-xs uppercase tracking-widest text-strip-accent">Context</h3>
+          <p class="mt-2">Pakistan CAA publishes monthly airline, airport, passenger, and cargo statistics. The raw Excel file contains 173K+ rows across international and domestic sheets — unusable for stakeholders without ETL and visualisation.</p>
+        </div>
+        <div>
+          <h3 class="font-data text-xs uppercase tracking-widest text-strip-accent">Approach</h3>
+          <p class="mt-2">Python ETL with position-based column renaming, direction-aware Pakistani airport aggregation, Islamabad merge logic, and a CI data-validation gate. Pre-aggregated JSON for instant load + DuckDB-WASM for client-side SQL cross-filtering.</p>
+        </div>
+        <div>
+          <h3 class="font-data text-xs uppercase tracking-widest text-strip-accent">Limitations</h3>
+          <ul class="mt-2 list-inside list-disc space-y-1">
+            <li>2006 = H2 only; 2026 = H1 YTD — flagged on all yearly views</li>
+            <li>Passenger counts are flight-leg movements, not unique travelers</li>
+            <li>COVID-19 creates an anomaly in 2020–2021 trends</li>
+            <li>Islamabad BBIAP and IIAP merged with 2018 relocation footnote</li>
+          </ul>
+        </div>
+      </div>
+    </AnalystLens>
+  </article>
+</BaseLayout>

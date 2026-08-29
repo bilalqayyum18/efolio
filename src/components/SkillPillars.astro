@@ -1,0 +1,31 @@
+---
+interface Props {
+  skills: {
+    data: readonly string[];
+    business: readonly string[];
+    systems: readonly string[];
+  };
+}
+
+const { skills } = Astro.props;
+const pillars = [
+  { key: "data", label: "Data Analysis", items: skills.data, color: "text-strip-accent" },
+  { key: "business", label: "Business Analysis", items: skills.business, color: "text-strip-signal" },
+  { key: "systems", label: "Systems Analysis", items: skills.systems, color: "text-strip-warn" },
+] as const;
+---
+
+<div>
+  <p class="strip-label mb-2">Skillset</p>
+  <h2 class="font-display text-2xl font-bold md:text-3xl">Three Pillars</h2>
+  <div class="mt-8 grid gap-6 md:grid-cols-3">
+    {pillars.map((p) => (
+      <div class="strip-card">
+        <h3 class={`font-data text-sm uppercase tracking-widest ${p.color}`}>{p.label}</h3>
+        <ul class="mt-4 flex flex-wrap gap-2">
+          {p.items.map((s) => <li class="tag">{s}</li>)}
+        </ul>
+      </div>
+    ))}
+  </div>
+</div>

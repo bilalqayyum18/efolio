@@ -1,0 +1,39 @@
+---
+interface Project {
+  slug: string;
+  title: string;
+  subtitle: string;
+  problem: string;
+  outcome: string;
+  tags: readonly string[];
+  liveUrl: string;
+  repoUrl?: string;
+  metric: string;
+}
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+---
+
+<article class="strip-card flex flex-col">
+  <p class="strip-label">{project.metric}</p>
+  <h3 class="mt-2 font-display text-xl font-bold">{project.title}</h3>
+  <p class="mt-1 text-sm text-strip-accent">{project.subtitle}</p>
+  <p class="mt-4 flex-1 text-sm text-strip-muted"><strong class="text-strip-text">Problem:</strong> {project.problem}</p>
+  <p class="mt-2 text-sm text-strip-muted"><strong class="text-strip-text">Outcome:</strong> {project.outcome}</p>
+  <div class="mt-4 flex flex-wrap gap-1.5">
+    {project.tags.map((tag) => <span class="tag">{tag}</span>)}
+  </div>
+  <div class="mt-6 flex flex-wrap gap-2">
+    <a href={project.liveUrl} class="strip-btn strip-btn-primary text-xs" target={project.liveUrl.startsWith("http") ? "_blank" : undefined} rel={project.liveUrl.startsWith("http") ? "noopener noreferrer" : undefined}>
+      {project.slug === "aviation" ? "Open Dashboard" : "Live Demo"}
+    </a>
+    {project.repoUrl && (
+      <a href={project.repoUrl} class="strip-btn text-xs" target="_blank" rel="noopener noreferrer">GitHub</a>
+    )}
+    <a href={`/projects/${project.slug}`} class="strip-btn text-xs">Case Study</a>
+  </div>
+</article>

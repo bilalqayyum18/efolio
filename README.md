@@ -1,43 +1,43 @@
-# Astro Starter Kit: Minimal
+# DevPak E-Folio
 
-```sh
-npm create astro@latest -- --template minimal
+Portfolio site for **Bilal Qayyum** — Data, Business & Systems Analyst.
+
+Live at [devpak.ovh](https://devpak.ovh)
+
+## Projects showcased
+
+- **SafarWise** — AI-powered visa platform ([safarwise.app](https://safarwise.app))
+- **Kababish Restaurant** — Production Android ordering app ([Play Store](https://play.google.com/store/apps/details?id=com.kababish.restaurant))
+- **Pakistan Aviation Analytics** — BI dashboard over 20 years of CAA traffic data
+
+## Stack
+
+- Astro 5 + React islands + Tailwind CSS
+- Recharts + DuckDB-WASM for aviation dashboard
+- Python ETL with data validation gate
+- Cloudflare Pages deployment
+
+## Local development
+
+```bash
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Aviation data pipeline
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+pip install -r scripts/requirements.txt
+python scripts/etl_aviation.py      # reads local Excel via AVIATION_DATA_PATH
+python scripts/validate_aviation_data.py
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Set `AVIATION_DATA_PATH` to your local Excel file if not at the default path.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Resume
 
-Any static assets, like images, can be placed in the `public/` directory.
+Drop your resume at `public/assets/resume.pdf` — the download button activates automatically.
 
-## 🧞 Commands
+## Deploy
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Push to `main` → GitHub Actions validates data + builds → deploy `dist/` to Cloudflare Pages.

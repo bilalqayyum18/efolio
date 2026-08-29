@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../data/site";
+
+const resumeExists = false;
+---
+
+<BaseLayout title={`Contact — ${site.name}`}>
+  <article class="mx-auto max-w-2xl px-4 py-16">
+    <p class="strip-label">Contact</p>
+    <h1 class="font-display text-4xl font-bold">Get in Touch</h1>
+    <p class="mt-4 text-strip-muted">Open to data analyst, business analyst, and systems analyst roles.</p>
+
+    <div class="mt-10 space-y-4">
+      <a href={`mailto:${site.email}`} class="strip-card flex items-center gap-4 hover:border-strip-accent">
+        <span class="strip-label w-20">Email</span>
+        <span class="font-data text-strip-text">{site.email}</span>
+      </a>
+      <a href={`mailto:${site.emailSecondary}`} class="strip-card flex items-center gap-4 hover:border-strip-accent">
+        <span class="strip-label w-20">Work</span>
+        <span class="font-data text-strip-text">{site.emailSecondary}</span>
+      </a>
+      <a href={site.linkedin} class="strip-card flex items-center gap-4 hover:border-strip-accent" target="_blank" rel="noopener noreferrer">
+        <span class="strip-label w-20">LinkedIn</span>
+        <span class="font-data text-strip-text">bilal-qayyum-khan</span>
+      </a>
+      {resumeExists ? (
+        <a href={site.resumePath} class="strip-card flex items-center gap-4 hover:border-strip-accent" download>
+          <span class="strip-label w-20">Resume</span>
+          <span class="font-data text-strip-text">Download PDF</span>
+        </a>
+      ) : (
+        <div class="strip-card flex items-center gap-4 opacity-60">
+          <span class="strip-label w-20">Resume</span>
+          <span class="font-data text-strip-muted">Coming soon — email me in the meantime</span>
+        </div>
+      )}
+    </div>
+  </article>
+</BaseLayout>

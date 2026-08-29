@@ -1,0 +1,229 @@
+{
+  "findings": [
+    {
+      "title": "Post-COVID recovery",
+      "body": "International passenger volumes recovered strongly after 2020–2021, with partial-year flags on 2006 and 2026."
+    },
+    {
+      "title": "Domestic market liberalization",
+      "body": "Distinct domestic carriers rose from 3–4 through the 2010s to 5 by 2022–2025 as AirSial and Fly Jinnah entered."
+    },
+    {
+      "title": "Karachi hub dominance",
+      "body": "Karachi leads Pakistani airport passenger traffic with direction-aware international aggregation."
+    },
+    {
+      "title": "Passenger-led growth",
+      "body": "2007→2025: international passengers grew ~2.6×, cargo ~1.3× — cargo intensity per passenger declined."
+    }
+  ],
+  "carriers_per_year": [
+    {
+      "year": 2006,
+      "carrier_count": 4,
+      "carriers": [
+        "Aero Asia",
+        "Air Blue",
+        "Pakistan International",
+        "Shaheen Air International"
+      ]
+    },
+    {
+      "year": 2007,
+      "carrier_count": 4,
+      "carriers": [
+        "Aero Asia",
+        "Air Blue",
+        "Pakistan International",
+        "Shaheen Air International"
+      ]
+    },
+    {
+      "year": 2008,
+      "carrier_count": 3,
+      "carriers": [
+        "Air Blue",
+        "Pakistan International",
+        "Shaheen Air International"
+      ]
+    },
+    {
+      "year": 2009,
+      "carrier_count": 3,
+      "carriers": [
+        "Air Blue",
+        "Pakistan International",
+        "Shaheen Air International"
+      ]
+    },
+    {
+      "year": 2010,
+      "carrier_count": 3,
+      "carriers": [
+        "Air Blue",
+        "Pakistan International",
+        "Shaheen Air International"
+      ]
+    },
+    {
+      "year": 2011,
+      "carrier_count": 3,
+      "carriers": [
+        "Air Blue",
+        "Pakistan International",
+        "Shaheen Air International"
+      ]
+    },
+    {
+      "year": 2012,
+      "carrier_count": 3,
+      "carriers": [
+        "Air Blue",
+        "Pakistan International",
+        "Shaheen Air International"
+      ]
+    },
+    {
+      "year": 2013,
+      "carrier_count": 4,
+      "carriers": [
+        "Air Blue",
+        "Air Indus",
+        "Pakistan International",
+        "Shaheen Air International"
+      ]
+    },
+    {
+      "year": 2014,
+      "carrier_count": 4,
+      "carriers": [
+        "Air Blue",
+        "Air Indus",
+        "Pakistan International",
+        "Shaheen Air International"
+      ]
+    },
+    {
+      "year": 2015,
+      "carrier_count": 4,
+      "carriers": [
+        "Air Blue",
+        "Air Indus",
+        "Pakistan International",
+        "Shaheen Air International"
+      ]
+    },
+    {
+      "year": 2016,
+      "carrier_count": 3,
+      "carriers": [
+        "Air Blue",
+        "Pakistan International",
+        "Shaheen Air International"
+      ]
+    },
+    {
+      "year": 2017,
+      "carrier_count": 4,
+      "carriers": [
+        "Air Blue",
+        "Pakistan International",
+        "Serene Air",
+        "Shaheen Air International"
+      ]
+    },
+    {
+      "year": 2018,
+      "carrier_count": 4,
+      "carriers": [
+        "Air Blue",
+        "Pakistan International",
+        "Serene Air",
+        "Shaheen Air International"
+      ]
+    },
+    {
+      "year": 2019,
+      "carrier_count": 3,
+      "carriers": [
+        "Air Blue",
+        "Pakistan International",
+        "Serene Air"
+      ]
+    },
+    {
+      "year": 2020,
+      "carrier_count": 4,
+      "carriers": [
+        "Air Blue",
+        "Air Sial",
+        "Pakistan International",
+        "Serene Air"
+      ]
+    },
+    {
+      "year": 2021,
+      "carrier_count": 4,
+      "carriers": [
+        "Air Blue",
+        "Air Sial",
+        "Pakistan International",
+        "Serene Air"
+      ]
+    },
+    {
+      "year": 2022,
+      "carrier_count": 5,
+      "carriers": [
+        "Air Blue",
+        "Air Sial",
+        "Fly Jinnah",
+        "Pakistan International",
+        "Serene Air"
+      ]
+    },
+    {
+      "year": 2023,
+      "carrier_count": 5,
+      "carriers": [
+        "Air Blue",
+        "Air Sial",
+        "Fly Jinnah",
+        "Pakistan International",
+        "Serene Air"
+      ]
+    },
+    {
+      "year": 2024,
+      "carrier_count": 5,
+      "carriers": [
+        "Air Blue",
+        "Air Sial",
+        "Fly Jinnah",
+        "Pakistan International",
+        "Serene Air"
+      ]
+    },
+    {
+      "year": 2025,
+      "carrier_count": 5,
+      "carriers": [
+        "Air Blue",
+        "Air Sial",
+        "Fly Jinnah",
+        "Pakistan International",
+        "Serene Air"
+      ]
+    },
+    {
+      "year": 2026,
+      "carrier_count": 4,
+      "carriers": [
+        "Air Blue",
+        "Air Sial",
+        "Fly Jinnah",
+        "Pakistan International"
+      ]
+    }
+  ]
+}

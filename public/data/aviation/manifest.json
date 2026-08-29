@@ -1,0 +1,23 @@
+{
+  "row_counts": {
+    "international": 132208,
+    "domestic": 41637,
+    "combined": 173845
+  },
+  "totals": {
+    "international_passengers": 236427307,
+    "domestic_passengers": 63247460,
+    "international_cargo": 4911017.36,
+    "domestic_cargo": 499251.89
+  },
+  "validated_against": {
+    "international": {
+      "passengers": 236427307,
+      "cargo_tons": 4911017.0
+    },
+    "domestic": {
+      "passengers": 63247460,
+      "cargo_tons": 499252.0
+    }
+  }
+}

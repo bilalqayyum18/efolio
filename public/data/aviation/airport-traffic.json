@@ -1,0 +1,181 @@
+{
+  "international": [
+    {
+      "airport": "Islamabad",
+      "passengers": 123925390,
+      "cargo_tons": 2565757.83
+    },
+    {
+      "airport": "Karachi",
+      "passengers": 65947853,
+      "cargo_tons": 2021092.28
+    },
+    {
+      "airport": "Peshawar",
+      "passengers": 19697610,
+      "cargo_tons": 162737.71
+    },
+    {
+      "airport": "Multan",
+      "passengers": 11558182,
+      "cargo_tons": 58996.39
+    },
+    {
+      "airport": "Sialkot",
+      "passengers": 9793172,
+      "cargo_tons": 101480.8
+    },
+    {
+      "airport": "Faisalabad",
+      "passengers": 3803285,
+      "cargo_tons": 240.09
+    },
+    {
+      "airport": "Quetta",
+      "passengers": 1253116,
+      "cargo_tons": 357.12
+    },
+    {
+      "airport": "Turbat",
+      "passengers": 229905,
+      "cargo_tons": 218.82
+    },
+    {
+      "airport": "R.Y. Khan (S.Z) Airport",
+      "passengers": 101506,
+      "cargo_tons": 22.14
+    },
+    {
+      "airport": "Gwadar",
+      "passengers": 51812,
+      "cargo_tons": 76.75
+    },
+    {
+      "airport": "D.G. Khan Airport",
+      "passengers": 49591,
+      "cargo_tons": 15.22
+    },
+    {
+      "airport": "Bahawalpur Airport",
+      "passengers": 11636,
+      "cargo_tons": 9.32
+    },
+    {
+      "airport": "Skardu Airport",
+      "passengers": 4081,
+      "cargo_tons": 12.88
+    },
+    {
+      "airport": "Sukkur (B.N.B) Airport",
+      "passengers": 168,
+      "cargo_tons": 0.0
+    },
+    {
+      "airport": "Nawabshah Airport",
+      "passengers": 0,
+      "cargo_tons": 0.0
+    }
+  ],
+  "domestic": [
+    {
+      "airport": "Karachi",
+      "passengers": 53135294,
+      "cargo_tons": 463982.55
+    },
+    {
+      "airport": "Islamabad",
+      "passengers": 51709475,
+      "cargo_tons": 473353.4
+    },
+    {
+      "airport": "Quetta",
+      "passengers": 6033444,
+      "cargo_tons": 22797.34
+    },
+    {
+      "airport": "Peshawar",
+      "passengers": 3902685,
+      "cargo_tons": 19342.87
+    },
+    {
+      "airport": "Multan",
+      "passengers": 2864193,
+      "cargo_tons": 5689.18
+    },
+    {
+      "airport": "Faisalabad",
+      "passengers": 1637945,
+      "cargo_tons": 6245.15
+    },
+    {
+      "airport": "Skardu Airport",
+      "passengers": 1461069,
+      "cargo_tons": 1953.7
+    },
+    {
+      "airport": "Sukkur (B.N.B) Airport",
+      "passengers": 1402641,
+      "cargo_tons": 559.61
+    },
+    {
+      "airport": "Gilgit Airport",
+      "passengers": 751625,
+      "cargo_tons": 1255.38
+    },
+    {
+      "airport": "R.Y. Khan (S.Z) Airport",
+      "passengers": 696952,
+      "cargo_tons": 131.99
+    },
+    {
+      "airport": "Bahawalpur Airport",
+      "passengers": 498461,
+      "cargo_tons": 103.82
+    },
+    {
+      "airport": "Sialkot",
+      "passengers": 454730,
+      "cargo_tons": 1440.17
+    },
+    {
+      "airport": "Turbat",
+      "passengers": 417997,
+      "cargo_tons": 619.55
+    },
+    {
+      "airport": "D.G. Khan Airport",
+      "passengers": 312552,
+      "cargo_tons": 145.44
+    },
+    {
+      "airport": "Gwadar",
+      "passengers": 274410,
+      "cargo_tons": 259.14
+    },
+    {
+      "airport": "Chitral Airport",
+      "passengers": 206356,
+      "cargo_tons": 440.49
+    },
+    {
+      "airport": "Mohenjodaro Airport",
+      "passengers": 193928,
+      "cargo_tons": 54.03
+    },
+    {
+      "airport": "Panjgur Airport",
+      "passengers": 113897,
+      "cargo_tons": 85.01
+    },
+    {
+      "airport": "Zhob Airport",
+      "passengers": 69935,
+      "cargo_tons": 4.47
+    },
+    {
+      "airport": "Sawan Airstrip",
+      "passengers": 63430,
+      "cargo_tons": 0.11
+    }
+  ]
+}

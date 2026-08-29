@@ -1,17 +1,50 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site, projects, skills } from "../data/site";
+import ProjectCard from "../components/ProjectCard.astro";
+import SkillPillars from "../components/SkillPillars.astro";
 
+const resumeExists = false; // checked at build — user adds resume.pdf later
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title={`${site.name} — Portfolio`}>
+  <section class="mx-auto max-w-6xl px-4 py-16 md:py-24">
+    <div class="grid items-center gap-12 md:grid-cols-[1fr_280px]">
+      <div>
+        <p class="strip-label mb-4">Portfolio / devpak.ovh</p>
+        <h1 class="font-display text-4xl font-bold tracking-tight md:text-6xl">{site.name}</h1>
+        <p class="mt-3 font-data text-sm uppercase tracking-widest text-strip-accent">{site.title}</p>
+        <p class="mt-6 max-w-xl text-lg text-strip-muted">{site.tagline}</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="/projects/aviation" class="strip-btn strip-btn-primary">View Aviation Dashboard</a>
+          {resumeExists ? (
+            <a href={site.resumePath} class="strip-btn" download>Download Resume</a>
+          ) : (
+            <span class="strip-btn cursor-not-allowed opacity-50" title="Resume coming soon">Resume Coming Soon</span>
+          )}
+          <a href={site.linkedin} class="strip-btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <div class="mx-auto w-56 overflow-hidden rounded-lg border border-strip-border md:w-64">
+        <img src="/assets/headshot.jpg" alt={site.name} class="aspect-square w-full object-cover" width="256" height="256" />
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t border-strip-border bg-strip-surface/50 py-16">
+    <div class="mx-auto max-w-6xl px-4">
+      <p class="strip-label mb-2">Projects</p>
+      <h2 class="font-display text-2xl font-bold md:text-3xl">Selected Work</h2>
+      <p class="mt-2 text-strip-muted">Three projects across data, business, and systems analysis.</p>
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        {projects.map((p) => <ProjectCard project={p} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="mx-auto max-w-6xl px-4">
+      <SkillPillars skills={skills} />
+    </div>
+  </section>
+</BaseLayout>

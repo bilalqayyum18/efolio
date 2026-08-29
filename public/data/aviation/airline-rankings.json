@@ -1,0 +1,278 @@
+{
+  "international": {
+    "by_passengers": [
+      {
+        "airline": "Pakistan International",
+        "passengers": 59637138
+      },
+      {
+        "airline": "Emirates Airlines",
+        "passengers": 31360423
+      },
+      {
+        "airline": "Saudi Arabian",
+        "passengers": 25757276
+      },
+      {
+        "airline": "Air Blue",
+        "passengers": 18848744
+      },
+      {
+        "airline": "Qatar Airways",
+        "passengers": 16067482
+      },
+      {
+        "airline": "Shaheen Air International",
+        "passengers": 11345502
+      },
+      {
+        "airline": "Fly Dubai",
+        "passengers": 10883332
+      },
+      {
+        "airline": "Etihad Airways",
+        "passengers": 9822951
+      },
+      {
+        "airline": "Air Arabia",
+        "passengers": 9341378
+      },
+      {
+        "airline": "Gulf Air",
+        "passengers": 6825192
+      },
+      {
+        "airline": "Turkish Airlines",
+        "passengers": 5859161
+      },
+      {
+        "airline": "Thai Airways",
+        "passengers": 5402476
+      },
+      {
+        "airline": "Oman Air",
+        "passengers": 3745943
+      },
+      {
+        "airline": "Air Sial",
+        "passengers": 2481944
+      },
+      {
+        "airline": "Serene Air",
+        "passengers": 2440142
+      },
+      {
+        "airline": "Fly Nas",
+        "passengers": 1765138
+      },
+      {
+        "airline": "Kuwait Airways",
+        "passengers": 1701888
+      },
+      {
+        "airline": "Salam Air",
+        "passengers": 1682867
+      },
+      {
+        "airline": "Fly Jinnah",
+        "passengers": 1595441
+      },
+      {
+        "airline": "Srilankan Airlines",
+        "passengers": 1330249
+      },
+      {
+        "airline": "China Southern",
+        "passengers": 1143694
+      },
+      {
+        "airline": "British Airways",
+        "passengers": 728780
+      },
+      {
+        "airline": "Air China",
+        "passengers": 724923
+      },
+      {
+        "airline": "Malindo Air",
+        "passengers": 722946
+      },
+      {
+        "airline": "Cathay Pacific",
+        "passengers": 522293
+      }
+    ],
+    "by_cargo": [
+      {
+        "airline": "Emirates Airlines",
+        "cargo_tons": 1155330.94
+      },
+      {
+        "airline": "Pakistan International",
+        "cargo_tons": 855909.03
+      },
+      {
+        "airline": "Qatar Airways",
+        "cargo_tons": 581258.08
+      },
+      {
+        "airline": "Saudi Arabian",
+        "cargo_tons": 378707.96
+      },
+      {
+        "airline": "Thai Airways",
+        "cargo_tons": 312905.05
+      },
+      {
+        "airline": "Turkish Airlines",
+        "cargo_tons": 284294.66
+      },
+      {
+        "airline": "Etihad Airways",
+        "cargo_tons": 253448.09
+      },
+      {
+        "airline": "Dhl Aviation",
+        "cargo_tons": 247385.68
+      },
+      {
+        "airline": "Gulf Air",
+        "cargo_tons": 149258.35
+      },
+      {
+        "airline": "Air Arabia",
+        "cargo_tons": 81387.73
+      },
+      {
+        "airline": "Oman Air",
+        "cargo_tons": 63574.25
+      },
+      {
+        "airline": "Fly Dubai",
+        "cargo_tons": 55628.79
+      },
+      {
+        "airline": "Kuwait Airways",
+        "cargo_tons": 51602.37
+      },
+      {
+        "airline": "Srilankan Airlines",
+        "cargo_tons": 50568.8
+      },
+      {
+        "airline": "Cathay Pacific",
+        "cargo_tons": 47819.7
+      },
+      {
+        "airline": "Shaheen Air International",
+        "cargo_tons": 44172.35
+      },
+      {
+        "airline": "Cargolux Airlines",
+        "cargo_tons": 43166.18
+      },
+      {
+        "airline": "Air Blue",
+        "cargo_tons": 41050.46
+      },
+      {
+        "airline": "Air China",
+        "cargo_tons": 38075.44
+      },
+      {
+        "airline": "China Southern",
+        "cargo_tons": 26524.86
+      },
+      {
+        "airline": "Malaysian Airlines",
+        "cargo_tons": 24185.42
+      },
+      {
+        "airline": "British Airways",
+        "cargo_tons": 19353.69
+      },
+      {
+        "airline": "Serene Air",
+        "cargo_tons": 16820.81
+      },
+      {
+        "airline": "Virgin Atlantic Airways",
+        "cargo_tons": 15058.52
+      },
+      {
+        "airline": "Fly Nas",
+        "cargo_tons": 11636.85
+      }
+    ]
+  },
+  "domestic": {
+    "by_passengers": [
+      {
+        "airline": "Pakistan International",
+        "passengers": 36262728
+      },
+      {
+        "airline": "Air Blue",
+        "passengers": 9357828
+      },
+      {
+        "airline": "Shaheen Air International",
+        "passengers": 5880368
+      },
+      {
+        "airline": "Serene Air",
+        "passengers": 4748630
+      },
+      {
+        "airline": "Fly Jinnah",
+        "passengers": 3508046
+      },
+      {
+        "airline": "Air Sial",
+        "passengers": 2700777
+      },
+      {
+        "airline": "Air Indus",
+        "passengers": 684493
+      },
+      {
+        "airline": "Aero Asia",
+        "passengers": 104590
+      }
+    ],
+    "by_cargo": [
+      {
+        "airline": "Pakistan International",
+        "cargo_tons": 331670.56
+      },
+      {
+        "airline": "Shaheen Air International",
+        "cargo_tons": 47074.56
+      },
+      {
+        "airline": "Serene Air",
+        "cargo_tons": 42917.08
+      },
+      {
+        "airline": "Air Blue",
+        "cargo_tons": 38083.27
+      },
+      {
+        "airline": "Fly Jinnah",
+        "cargo_tons": 17717.12
+      },
+      {
+        "airline": "Air Sial",
+        "cargo_tons": 17191.81
+      },
+      {
+        "airline": "Air Indus",
+        "cargo_tons": 2562.84
+      },
+      {
+        "airline": "Aero Asia",
+        "cargo_tons": 2034.64
+      }
+    ]
+  }
+}

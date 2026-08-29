@@ -1,0 +1,3362 @@
+[
+  {
+    "year": 2006,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 90979,
+    "cargo_tons": 824.42
+  },
+  {
+    "year": 2006,
+    "month": 7,
+    "segment": "international",
+    "passengers": 353926,
+    "cargo_tons": 14663.59
+  },
+  {
+    "year": 2006,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 100818,
+    "cargo_tons": 1800.97
+  },
+  {
+    "year": 2006,
+    "month": 8,
+    "segment": "international",
+    "passengers": 342848,
+    "cargo_tons": 12113.0
+  },
+  {
+    "year": 2006,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 279411,
+    "cargo_tons": 4657.64
+  },
+  {
+    "year": 2006,
+    "month": 9,
+    "segment": "international",
+    "passengers": 596102,
+    "cargo_tons": 19821.49
+  },
+  {
+    "year": 2006,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 228946,
+    "cargo_tons": 4046.84
+  },
+  {
+    "year": 2006,
+    "month": 10,
+    "segment": "international",
+    "passengers": 528712,
+    "cargo_tons": 18483.85
+  },
+  {
+    "year": 2006,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 282359,
+    "cargo_tons": 4284.74
+  },
+  {
+    "year": 2006,
+    "month": 11,
+    "segment": "international",
+    "passengers": 540488,
+    "cargo_tons": 16567.8
+  },
+  {
+    "year": 2006,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 309516,
+    "cargo_tons": 4654.11
+  },
+  {
+    "year": 2006,
+    "month": 12,
+    "segment": "international",
+    "passengers": 666390,
+    "cargo_tons": 18277.11
+  },
+  {
+    "year": 2007,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 302424,
+    "cargo_tons": 3509.19
+  },
+  {
+    "year": 2007,
+    "month": 1,
+    "segment": "international",
+    "passengers": 717648,
+    "cargo_tons": 14652.55
+  },
+  {
+    "year": 2007,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 251851,
+    "cargo_tons": 3676.48
+  },
+  {
+    "year": 2007,
+    "month": 2,
+    "segment": "international",
+    "passengers": 490195,
+    "cargo_tons": 15002.74
+  },
+  {
+    "year": 2007,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 287112,
+    "cargo_tons": 3669.35
+  },
+  {
+    "year": 2007,
+    "month": 3,
+    "segment": "international",
+    "passengers": 542699,
+    "cargo_tons": 16710.26
+  },
+  {
+    "year": 2007,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 287785,
+    "cargo_tons": 3305.57
+  },
+  {
+    "year": 2007,
+    "month": 4,
+    "segment": "international",
+    "passengers": 546464,
+    "cargo_tons": 15054.15
+  },
+  {
+    "year": 2007,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 268872,
+    "cargo_tons": 3457.43
+  },
+  {
+    "year": 2007,
+    "month": 5,
+    "segment": "international",
+    "passengers": 573588,
+    "cargo_tons": 16168.62
+  },
+  {
+    "year": 2007,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 286281,
+    "cargo_tons": 4517.78
+  },
+  {
+    "year": 2007,
+    "month": 6,
+    "segment": "international",
+    "passengers": 617913,
+    "cargo_tons": 21733.49
+  },
+  {
+    "year": 2007,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 305607,
+    "cargo_tons": 4786.3
+  },
+  {
+    "year": 2007,
+    "month": 7,
+    "segment": "international",
+    "passengers": 696551,
+    "cargo_tons": 24005.82
+  },
+  {
+    "year": 2007,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 304950,
+    "cargo_tons": 4232.16
+  },
+  {
+    "year": 2007,
+    "month": 8,
+    "segment": "international",
+    "passengers": 728199,
+    "cargo_tons": 23110.99
+  },
+  {
+    "year": 2007,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 230436,
+    "cargo_tons": 3804.39
+  },
+  {
+    "year": 2007,
+    "month": 9,
+    "segment": "international",
+    "passengers": 603534,
+    "cargo_tons": 21570.67
+  },
+  {
+    "year": 2007,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 242794,
+    "cargo_tons": 3434.06
+  },
+  {
+    "year": 2007,
+    "month": 10,
+    "segment": "international",
+    "passengers": 527505,
+    "cargo_tons": 18706.1
+  },
+  {
+    "year": 2007,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 258346,
+    "cargo_tons": 3377.99
+  },
+  {
+    "year": 2007,
+    "month": 11,
+    "segment": "international",
+    "passengers": 588256,
+    "cargo_tons": 17493.71
+  },
+  {
+    "year": 2007,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 272487,
+    "cargo_tons": 3523.86
+  },
+  {
+    "year": 2007,
+    "month": 12,
+    "segment": "international",
+    "passengers": 660302,
+    "cargo_tons": 17534.32
+  },
+  {
+    "year": 2008,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 286313,
+    "cargo_tons": 3856.8
+  },
+  {
+    "year": 2008,
+    "month": 1,
+    "segment": "international",
+    "passengers": 667824,
+    "cargo_tons": 15661.27
+  },
+  {
+    "year": 2008,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 234942,
+    "cargo_tons": 3215.81
+  },
+  {
+    "year": 2008,
+    "month": 2,
+    "segment": "international",
+    "passengers": 491232,
+    "cargo_tons": 15751.15
+  },
+  {
+    "year": 2008,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 300235,
+    "cargo_tons": 3774.05
+  },
+  {
+    "year": 2008,
+    "month": 3,
+    "segment": "international",
+    "passengers": 569834,
+    "cargo_tons": 17753.68
+  },
+  {
+    "year": 2008,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 278373,
+    "cargo_tons": 3346.8
+  },
+  {
+    "year": 2008,
+    "month": 4,
+    "segment": "international",
+    "passengers": 582954,
+    "cargo_tons": 17405.05
+  },
+  {
+    "year": 2008,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 271154,
+    "cargo_tons": 3277.62
+  },
+  {
+    "year": 2008,
+    "month": 5,
+    "segment": "international",
+    "passengers": 633447,
+    "cargo_tons": 18710.4
+  },
+  {
+    "year": 2008,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 274148,
+    "cargo_tons": 4118.5
+  },
+  {
+    "year": 2008,
+    "month": 6,
+    "segment": "international",
+    "passengers": 642778,
+    "cargo_tons": 21659.58
+  },
+  {
+    "year": 2008,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 274231,
+    "cargo_tons": 4298.06
+  },
+  {
+    "year": 2008,
+    "month": 7,
+    "segment": "international",
+    "passengers": 722685,
+    "cargo_tons": 24398.25
+  },
+  {
+    "year": 2008,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 270350,
+    "cargo_tons": 3716.88
+  },
+  {
+    "year": 2008,
+    "month": 8,
+    "segment": "international",
+    "passengers": 708988,
+    "cargo_tons": 22483.51
+  },
+  {
+    "year": 2008,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 197756,
+    "cargo_tons": 3501.39
+  },
+  {
+    "year": 2008,
+    "month": 9,
+    "segment": "international",
+    "passengers": 583055,
+    "cargo_tons": 21059.08
+  },
+  {
+    "year": 2008,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 245040,
+    "cargo_tons": 2316.4
+  },
+  {
+    "year": 2008,
+    "month": 10,
+    "segment": "international",
+    "passengers": 635780,
+    "cargo_tons": 16364.79
+  },
+  {
+    "year": 2008,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 262157,
+    "cargo_tons": 3169.12
+  },
+  {
+    "year": 2008,
+    "month": 11,
+    "segment": "international",
+    "passengers": 704519,
+    "cargo_tons": 18105.66
+  },
+  {
+    "year": 2008,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 272937,
+    "cargo_tons": 2589.26
+  },
+  {
+    "year": 2008,
+    "month": 12,
+    "segment": "international",
+    "passengers": 717619,
+    "cargo_tons": 14759.41
+  },
+  {
+    "year": 2009,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 247125,
+    "cargo_tons": 2617.82
+  },
+  {
+    "year": 2009,
+    "month": 1,
+    "segment": "international",
+    "passengers": 635469,
+    "cargo_tons": 14578.87
+  },
+  {
+    "year": 2009,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 232946,
+    "cargo_tons": 2181.76
+  },
+  {
+    "year": 2009,
+    "month": 2,
+    "segment": "international",
+    "passengers": 522260,
+    "cargo_tons": 13566.49
+  },
+  {
+    "year": 2009,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 264866,
+    "cargo_tons": 2411.24
+  },
+  {
+    "year": 2009,
+    "month": 3,
+    "segment": "international",
+    "passengers": 600143,
+    "cargo_tons": 14501.9
+  },
+  {
+    "year": 2009,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 276953,
+    "cargo_tons": 2364.77
+  },
+  {
+    "year": 2009,
+    "month": 4,
+    "segment": "international",
+    "passengers": 642200,
+    "cargo_tons": 25102.6
+  },
+  {
+    "year": 2009,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 268434,
+    "cargo_tons": 2971.7
+  },
+  {
+    "year": 2009,
+    "month": 5,
+    "segment": "international",
+    "passengers": 630515,
+    "cargo_tons": 14973.16
+  },
+  {
+    "year": 2009,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 274076,
+    "cargo_tons": 2754.83
+  },
+  {
+    "year": 2009,
+    "month": 6,
+    "segment": "international",
+    "passengers": 683148,
+    "cargo_tons": 16857.08
+  },
+  {
+    "year": 2009,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 312514,
+    "cargo_tons": 3801.28
+  },
+  {
+    "year": 2009,
+    "month": 7,
+    "segment": "international",
+    "passengers": 718071,
+    "cargo_tons": 22375.68
+  },
+  {
+    "year": 2009,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 291378,
+    "cargo_tons": 3878.42
+  },
+  {
+    "year": 2009,
+    "month": 8,
+    "segment": "international",
+    "passengers": 761277,
+    "cargo_tons": 21741.77
+  },
+  {
+    "year": 2009,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 224849,
+    "cargo_tons": 3021.3
+  },
+  {
+    "year": 2009,
+    "month": 9,
+    "segment": "international",
+    "passengers": 566648,
+    "cargo_tons": 19589.78
+  },
+  {
+    "year": 2009,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 286643,
+    "cargo_tons": 3034.51
+  },
+  {
+    "year": 2009,
+    "month": 10,
+    "segment": "international",
+    "passengers": 648549,
+    "cargo_tons": 18276.69
+  },
+  {
+    "year": 2009,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 256246,
+    "cargo_tons": 3043.77
+  },
+  {
+    "year": 2009,
+    "month": 11,
+    "segment": "international",
+    "passengers": 697782,
+    "cargo_tons": 25559.28
+  },
+  {
+    "year": 2009,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 281664,
+    "cargo_tons": 2577.95
+  },
+  {
+    "year": 2009,
+    "month": 12,
+    "segment": "international",
+    "passengers": 770201,
+    "cargo_tons": 16302.71
+  },
+  {
+    "year": 2010,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 255880,
+    "cargo_tons": 2604.61
+  },
+  {
+    "year": 2010,
+    "month": 1,
+    "segment": "international",
+    "passengers": 621973,
+    "cargo_tons": 16845.18
+  },
+  {
+    "year": 2010,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 253498,
+    "cargo_tons": 2459.26
+  },
+  {
+    "year": 2010,
+    "month": 2,
+    "segment": "international",
+    "passengers": 567514,
+    "cargo_tons": 14979.75
+  },
+  {
+    "year": 2010,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 304413,
+    "cargo_tons": 2913.5
+  },
+  {
+    "year": 2010,
+    "month": 3,
+    "segment": "international",
+    "passengers": 671899,
+    "cargo_tons": 18230.86
+  },
+  {
+    "year": 2010,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 295732,
+    "cargo_tons": 2834.51
+  },
+  {
+    "year": 2010,
+    "month": 4,
+    "segment": "international",
+    "passengers": 710969,
+    "cargo_tons": 16930.82
+  },
+  {
+    "year": 2010,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 288279,
+    "cargo_tons": 3226.88
+  },
+  {
+    "year": 2010,
+    "month": 5,
+    "segment": "international",
+    "passengers": 677702,
+    "cargo_tons": 18220.02
+  },
+  {
+    "year": 2010,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 303945,
+    "cargo_tons": 4176.69
+  },
+  {
+    "year": 2010,
+    "month": 6,
+    "segment": "international",
+    "passengers": 698335,
+    "cargo_tons": 21422.13
+  },
+  {
+    "year": 2010,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 339035,
+    "cargo_tons": 4168.23
+  },
+  {
+    "year": 2010,
+    "month": 7,
+    "segment": "international",
+    "passengers": 747485,
+    "cargo_tons": 24409.77
+  },
+  {
+    "year": 2010,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 253372,
+    "cargo_tons": 4306.52
+  },
+  {
+    "year": 2010,
+    "month": 8,
+    "segment": "international",
+    "passengers": 665445,
+    "cargo_tons": 22816.56
+  },
+  {
+    "year": 2010,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 262657,
+    "cargo_tons": 3624.86
+  },
+  {
+    "year": 2010,
+    "month": 9,
+    "segment": "international",
+    "passengers": 628936,
+    "cargo_tons": 20399.6
+  },
+  {
+    "year": 2010,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 307604,
+    "cargo_tons": 3554.71
+  },
+  {
+    "year": 2010,
+    "month": 10,
+    "segment": "international",
+    "passengers": 665682,
+    "cargo_tons": 19986.81
+  },
+  {
+    "year": 2010,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 291299,
+    "cargo_tons": 2753.5
+  },
+  {
+    "year": 2010,
+    "month": 11,
+    "segment": "international",
+    "passengers": 635330,
+    "cargo_tons": 16042.06
+  },
+  {
+    "year": 2010,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 300927,
+    "cargo_tons": 2729.35
+  },
+  {
+    "year": 2010,
+    "month": 12,
+    "segment": "international",
+    "passengers": 643699,
+    "cargo_tons": 15449.59
+  },
+  {
+    "year": 2011,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 289991,
+    "cargo_tons": 2924.29
+  },
+  {
+    "year": 2011,
+    "month": 1,
+    "segment": "international",
+    "passengers": 649074,
+    "cargo_tons": 16127.99
+  },
+  {
+    "year": 2011,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 254116,
+    "cargo_tons": 2489.11
+  },
+  {
+    "year": 2011,
+    "month": 2,
+    "segment": "international",
+    "passengers": 576566,
+    "cargo_tons": 13977.3
+  },
+  {
+    "year": 2011,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 314381,
+    "cargo_tons": 2870.45
+  },
+  {
+    "year": 2011,
+    "month": 3,
+    "segment": "international",
+    "passengers": 768420,
+    "cargo_tons": 16009.41
+  },
+  {
+    "year": 2011,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 326858,
+    "cargo_tons": 2466.95
+  },
+  {
+    "year": 2011,
+    "month": 4,
+    "segment": "international",
+    "passengers": 802052,
+    "cargo_tons": 16077.73
+  },
+  {
+    "year": 2011,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 284377,
+    "cargo_tons": 2794.18
+  },
+  {
+    "year": 2011,
+    "month": 5,
+    "segment": "international",
+    "passengers": 697497,
+    "cargo_tons": 16668.65
+  },
+  {
+    "year": 2011,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 297550,
+    "cargo_tons": 3436.99
+  },
+  {
+    "year": 2011,
+    "month": 6,
+    "segment": "international",
+    "passengers": 720655,
+    "cargo_tons": 21178.2
+  },
+  {
+    "year": 2011,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 323153,
+    "cargo_tons": 4170.7
+  },
+  {
+    "year": 2011,
+    "month": 7,
+    "segment": "international",
+    "passengers": 818447,
+    "cargo_tons": 22865.66
+  },
+  {
+    "year": 2011,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 227542,
+    "cargo_tons": 3346.33
+  },
+  {
+    "year": 2011,
+    "month": 8,
+    "segment": "international",
+    "passengers": 661741,
+    "cargo_tons": 22779.11
+  },
+  {
+    "year": 2011,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 273814,
+    "cargo_tons": 2517.67
+  },
+  {
+    "year": 2011,
+    "month": 9,
+    "segment": "international",
+    "passengers": 689486,
+    "cargo_tons": 16311.54
+  },
+  {
+    "year": 2011,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 280136,
+    "cargo_tons": 2818.86
+  },
+  {
+    "year": 2011,
+    "month": 10,
+    "segment": "international",
+    "passengers": 784762,
+    "cargo_tons": 18794.66
+  },
+  {
+    "year": 2011,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 254911,
+    "cargo_tons": 2106.86
+  },
+  {
+    "year": 2011,
+    "month": 11,
+    "segment": "international",
+    "passengers": 740536,
+    "cargo_tons": 16554.35
+  },
+  {
+    "year": 2011,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 234590,
+    "cargo_tons": 2189.52
+  },
+  {
+    "year": 2011,
+    "month": 12,
+    "segment": "international",
+    "passengers": 737802,
+    "cargo_tons": 16713.79
+  },
+  {
+    "year": 2012,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 275032,
+    "cargo_tons": 2816.39
+  },
+  {
+    "year": 2012,
+    "month": 1,
+    "segment": "international",
+    "passengers": 704668,
+    "cargo_tons": 15998.66
+  },
+  {
+    "year": 2012,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 264306,
+    "cargo_tons": 2545.23
+  },
+  {
+    "year": 2012,
+    "month": 2,
+    "segment": "international",
+    "passengers": 738104,
+    "cargo_tons": 16043.16
+  },
+  {
+    "year": 2012,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 338574,
+    "cargo_tons": 2907.92
+  },
+  {
+    "year": 2012,
+    "month": 3,
+    "segment": "international",
+    "passengers": 911995,
+    "cargo_tons": 18117.41
+  },
+  {
+    "year": 2012,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 264180,
+    "cargo_tons": 2363.88
+  },
+  {
+    "year": 2012,
+    "month": 4,
+    "segment": "international",
+    "passengers": 822983,
+    "cargo_tons": 17399.14
+  },
+  {
+    "year": 2012,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 246156,
+    "cargo_tons": 2862.04
+  },
+  {
+    "year": 2012,
+    "month": 5,
+    "segment": "international",
+    "passengers": 746560,
+    "cargo_tons": 18917.47
+  },
+  {
+    "year": 2012,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 265968,
+    "cargo_tons": 3652.77
+  },
+  {
+    "year": 2012,
+    "month": 6,
+    "segment": "international",
+    "passengers": 799956,
+    "cargo_tons": 22795.05
+  },
+  {
+    "year": 2012,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 269463,
+    "cargo_tons": 3776.41
+  },
+  {
+    "year": 2012,
+    "month": 7,
+    "segment": "international",
+    "passengers": 808014,
+    "cargo_tons": 25208.12
+  },
+  {
+    "year": 2012,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 242308,
+    "cargo_tons": 3288.11
+  },
+  {
+    "year": 2012,
+    "month": 8,
+    "segment": "international",
+    "passengers": 716780,
+    "cargo_tons": 25112.06
+  },
+  {
+    "year": 2012,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 282099,
+    "cargo_tons": 3531.21
+  },
+  {
+    "year": 2012,
+    "month": 9,
+    "segment": "international",
+    "passengers": 789052,
+    "cargo_tons": 22397.76
+  },
+  {
+    "year": 2012,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 282257,
+    "cargo_tons": 2665.86
+  },
+  {
+    "year": 2012,
+    "month": 10,
+    "segment": "international",
+    "passengers": 803615,
+    "cargo_tons": 22280.17
+  },
+  {
+    "year": 2012,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 261896,
+    "cargo_tons": 2422.04
+  },
+  {
+    "year": 2012,
+    "month": 11,
+    "segment": "international",
+    "passengers": 813181,
+    "cargo_tons": 18138.01
+  },
+  {
+    "year": 2012,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 309091,
+    "cargo_tons": 2800.59
+  },
+  {
+    "year": 2012,
+    "month": 12,
+    "segment": "international",
+    "passengers": 765635,
+    "cargo_tons": 21236.47
+  },
+  {
+    "year": 2013,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 286515,
+    "cargo_tons": 2806.83
+  },
+  {
+    "year": 2013,
+    "month": 1,
+    "segment": "international",
+    "passengers": 793844,
+    "cargo_tons": 19827.92
+  },
+  {
+    "year": 2013,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 259974,
+    "cargo_tons": 2215.98
+  },
+  {
+    "year": 2013,
+    "month": 2,
+    "segment": "international",
+    "passengers": 805321,
+    "cargo_tons": 17799.01
+  },
+  {
+    "year": 2013,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 302186,
+    "cargo_tons": 2662.06
+  },
+  {
+    "year": 2013,
+    "month": 3,
+    "segment": "international",
+    "passengers": 938398,
+    "cargo_tons": 20422.31
+  },
+  {
+    "year": 2013,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 296416,
+    "cargo_tons": 2563.31
+  },
+  {
+    "year": 2013,
+    "month": 4,
+    "segment": "international",
+    "passengers": 818388,
+    "cargo_tons": 18754.42
+  },
+  {
+    "year": 2013,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 260596,
+    "cargo_tons": 2508.02
+  },
+  {
+    "year": 2013,
+    "month": 5,
+    "segment": "international",
+    "passengers": 720205,
+    "cargo_tons": 18682.67
+  },
+  {
+    "year": 2013,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 303722,
+    "cargo_tons": 4388.53
+  },
+  {
+    "year": 2013,
+    "month": 6,
+    "segment": "international",
+    "passengers": 804562,
+    "cargo_tons": 23805.5
+  },
+  {
+    "year": 2013,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 251690,
+    "cargo_tons": 3710.35
+  },
+  {
+    "year": 2013,
+    "month": 7,
+    "segment": "international",
+    "passengers": 734306,
+    "cargo_tons": 27934.94
+  },
+  {
+    "year": 2013,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 280581,
+    "cargo_tons": 2759.56
+  },
+  {
+    "year": 2013,
+    "month": 8,
+    "segment": "international",
+    "passengers": 751958,
+    "cargo_tons": 20805.53
+  },
+  {
+    "year": 2013,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 269694,
+    "cargo_tons": 3143.05
+  },
+  {
+    "year": 2013,
+    "month": 9,
+    "segment": "international",
+    "passengers": 805040,
+    "cargo_tons": 21695.76
+  },
+  {
+    "year": 2013,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 283100,
+    "cargo_tons": 2090.57
+  },
+  {
+    "year": 2013,
+    "month": 10,
+    "segment": "international",
+    "passengers": 886450,
+    "cargo_tons": 20227.99
+  },
+  {
+    "year": 2013,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 260594,
+    "cargo_tons": 1668.89
+  },
+  {
+    "year": 2013,
+    "month": 11,
+    "segment": "international",
+    "passengers": 799667,
+    "cargo_tons": 19603.78
+  },
+  {
+    "year": 2013,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 320732,
+    "cargo_tons": 1672.29
+  },
+  {
+    "year": 2013,
+    "month": 12,
+    "segment": "international",
+    "passengers": 867616,
+    "cargo_tons": 21559.65
+  },
+  {
+    "year": 2014,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 324877,
+    "cargo_tons": 2015.43
+  },
+  {
+    "year": 2014,
+    "month": 1,
+    "segment": "international",
+    "passengers": 1031776,
+    "cargo_tons": 19100.75
+  },
+  {
+    "year": 2014,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 313061,
+    "cargo_tons": 2080.89
+  },
+  {
+    "year": 2014,
+    "month": 2,
+    "segment": "international",
+    "passengers": 956054,
+    "cargo_tons": 16834.26
+  },
+  {
+    "year": 2014,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 352869,
+    "cargo_tons": 2080.01
+  },
+  {
+    "year": 2014,
+    "month": 3,
+    "segment": "international",
+    "passengers": 1086415,
+    "cargo_tons": 19878.92
+  },
+  {
+    "year": 2014,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 330077,
+    "cargo_tons": 2092.31
+  },
+  {
+    "year": 2014,
+    "month": 4,
+    "segment": "international",
+    "passengers": 1011867,
+    "cargo_tons": 19130.54
+  },
+  {
+    "year": 2014,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 300821,
+    "cargo_tons": 1931.25
+  },
+  {
+    "year": 2014,
+    "month": 5,
+    "segment": "international",
+    "passengers": 939253,
+    "cargo_tons": 15418.19
+  },
+  {
+    "year": 2014,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 302117,
+    "cargo_tons": 3352.79
+  },
+  {
+    "year": 2014,
+    "month": 6,
+    "segment": "international",
+    "passengers": 897998,
+    "cargo_tons": 19802.88
+  },
+  {
+    "year": 2014,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 208592,
+    "cargo_tons": 2557.8
+  },
+  {
+    "year": 2014,
+    "month": 7,
+    "segment": "international",
+    "passengers": 760278,
+    "cargo_tons": 21917.64
+  },
+  {
+    "year": 2014,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 253523,
+    "cargo_tons": 1422.44
+  },
+  {
+    "year": 2014,
+    "month": 8,
+    "segment": "international",
+    "passengers": 892882,
+    "cargo_tons": 17302.93
+  },
+  {
+    "year": 2014,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 232371,
+    "cargo_tons": 1715.26
+  },
+  {
+    "year": 2014,
+    "month": 9,
+    "segment": "international",
+    "passengers": 902091,
+    "cargo_tons": 20977.19
+  },
+  {
+    "year": 2014,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 263492,
+    "cargo_tons": 1370.17
+  },
+  {
+    "year": 2014,
+    "month": 10,
+    "segment": "international",
+    "passengers": 943559,
+    "cargo_tons": 19048.03
+  },
+  {
+    "year": 2014,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 255425,
+    "cargo_tons": 1391.74
+  },
+  {
+    "year": 2014,
+    "month": 11,
+    "segment": "international",
+    "passengers": 806549,
+    "cargo_tons": 19157.56
+  },
+  {
+    "year": 2014,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 294298,
+    "cargo_tons": 1482.61
+  },
+  {
+    "year": 2014,
+    "month": 12,
+    "segment": "international",
+    "passengers": 936533,
+    "cargo_tons": 20285.97
+  },
+  {
+    "year": 2015,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 293578,
+    "cargo_tons": 1692.82
+  },
+  {
+    "year": 2015,
+    "month": 1,
+    "segment": "international",
+    "passengers": 1128836,
+    "cargo_tons": 18386.38
+  },
+  {
+    "year": 2015,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 268645,
+    "cargo_tons": 1481.78
+  },
+  {
+    "year": 2015,
+    "month": 2,
+    "segment": "international",
+    "passengers": 1009201,
+    "cargo_tons": 17228.37
+  },
+  {
+    "year": 2015,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 304866,
+    "cargo_tons": 1344.91
+  },
+  {
+    "year": 2015,
+    "month": 3,
+    "segment": "international",
+    "passengers": 1144667,
+    "cargo_tons": 16584.97
+  },
+  {
+    "year": 2015,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 290455,
+    "cargo_tons": 1495.32
+  },
+  {
+    "year": 2015,
+    "month": 4,
+    "segment": "international",
+    "passengers": 1100269,
+    "cargo_tons": 16838.47
+  },
+  {
+    "year": 2015,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 268996,
+    "cargo_tons": 1645.31
+  },
+  {
+    "year": 2015,
+    "month": 5,
+    "segment": "international",
+    "passengers": 1034654,
+    "cargo_tons": 18752.89
+  },
+  {
+    "year": 2015,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 226161,
+    "cargo_tons": 1731.57
+  },
+  {
+    "year": 2015,
+    "month": 6,
+    "segment": "international",
+    "passengers": 983582,
+    "cargo_tons": 25864.68
+  },
+  {
+    "year": 2015,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 259429,
+    "cargo_tons": 1854.78
+  },
+  {
+    "year": 2015,
+    "month": 7,
+    "segment": "international",
+    "passengers": 947957,
+    "cargo_tons": 23927.01
+  },
+  {
+    "year": 2015,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 297441,
+    "cargo_tons": 1772.46
+  },
+  {
+    "year": 2015,
+    "month": 8,
+    "segment": "international",
+    "passengers": 1092353,
+    "cargo_tons": 21881.38
+  },
+  {
+    "year": 2015,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 263410,
+    "cargo_tons": 1708.01
+  },
+  {
+    "year": 2015,
+    "month": 9,
+    "segment": "international",
+    "passengers": 1078961,
+    "cargo_tons": 19744.28
+  },
+  {
+    "year": 2015,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 264596,
+    "cargo_tons": 1432.8
+  },
+  {
+    "year": 2015,
+    "month": 10,
+    "segment": "international",
+    "passengers": 1071784,
+    "cargo_tons": 23324.73
+  },
+  {
+    "year": 2015,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 261294,
+    "cargo_tons": 1625.82
+  },
+  {
+    "year": 2015,
+    "month": 11,
+    "segment": "international",
+    "passengers": 911399,
+    "cargo_tons": 32432.35
+  },
+  {
+    "year": 2015,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 302603,
+    "cargo_tons": 1567.94
+  },
+  {
+    "year": 2015,
+    "month": 12,
+    "segment": "international",
+    "passengers": 1250155,
+    "cargo_tons": 26547.31
+  },
+  {
+    "year": 2016,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 309539,
+    "cargo_tons": 1366.99
+  },
+  {
+    "year": 2016,
+    "month": 1,
+    "segment": "international",
+    "passengers": 1321059,
+    "cargo_tons": 24945.48
+  },
+  {
+    "year": 2016,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 243422,
+    "cargo_tons": 985.49
+  },
+  {
+    "year": 2016,
+    "month": 2,
+    "segment": "international",
+    "passengers": 1145765,
+    "cargo_tons": 23968.76
+  },
+  {
+    "year": 2016,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 335379,
+    "cargo_tons": 1255.74
+  },
+  {
+    "year": 2016,
+    "month": 3,
+    "segment": "international",
+    "passengers": 1355773,
+    "cargo_tons": 30251.07
+  },
+  {
+    "year": 2016,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 345447,
+    "cargo_tons": 1395.88
+  },
+  {
+    "year": 2016,
+    "month": 4,
+    "segment": "international",
+    "passengers": 1313675,
+    "cargo_tons": 34599.39
+  },
+  {
+    "year": 2016,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 334666,
+    "cargo_tons": 1973.33
+  },
+  {
+    "year": 2016,
+    "month": 5,
+    "segment": "international",
+    "passengers": 1209336,
+    "cargo_tons": 24491.91
+  },
+  {
+    "year": 2016,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 248826,
+    "cargo_tons": 1834.22
+  },
+  {
+    "year": 2016,
+    "month": 6,
+    "segment": "international",
+    "passengers": 1046281,
+    "cargo_tons": 25352.91
+  },
+  {
+    "year": 2016,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 336138,
+    "cargo_tons": 1612.85
+  },
+  {
+    "year": 2016,
+    "month": 7,
+    "segment": "international",
+    "passengers": 1094588,
+    "cargo_tons": 24678.55
+  },
+  {
+    "year": 2016,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 338864,
+    "cargo_tons": 1971.81
+  },
+  {
+    "year": 2016,
+    "month": 8,
+    "segment": "international",
+    "passengers": 1208478,
+    "cargo_tons": 29545.2
+  },
+  {
+    "year": 2016,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 299623,
+    "cargo_tons": 1276.55
+  },
+  {
+    "year": 2016,
+    "month": 9,
+    "segment": "international",
+    "passengers": 1208789,
+    "cargo_tons": 26293.85
+  },
+  {
+    "year": 2016,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 292930,
+    "cargo_tons": 1522.03
+  },
+  {
+    "year": 2016,
+    "month": 10,
+    "segment": "international",
+    "passengers": 1040519,
+    "cargo_tons": 26432.73
+  },
+  {
+    "year": 2016,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 301898,
+    "cargo_tons": 1557.86
+  },
+  {
+    "year": 2016,
+    "month": 11,
+    "segment": "international",
+    "passengers": 1123660,
+    "cargo_tons": 20650.09
+  },
+  {
+    "year": 2016,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 313313,
+    "cargo_tons": 1824.23
+  },
+  {
+    "year": 2016,
+    "month": 12,
+    "segment": "international",
+    "passengers": 1469896,
+    "cargo_tons": 21002.53
+  },
+  {
+    "year": 2017,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 292916,
+    "cargo_tons": 1683.38
+  },
+  {
+    "year": 2017,
+    "month": 1,
+    "segment": "international",
+    "passengers": 1455895,
+    "cargo_tons": 17536.15
+  },
+  {
+    "year": 2017,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 296796,
+    "cargo_tons": 1403.44
+  },
+  {
+    "year": 2017,
+    "month": 2,
+    "segment": "international",
+    "passengers": 1265508,
+    "cargo_tons": 15199.13
+  },
+  {
+    "year": 2017,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 315857,
+    "cargo_tons": 1654.15
+  },
+  {
+    "year": 2017,
+    "month": 3,
+    "segment": "international",
+    "passengers": 1439388,
+    "cargo_tons": 18372.36
+  },
+  {
+    "year": 2017,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 299746,
+    "cargo_tons": 1614.02
+  },
+  {
+    "year": 2017,
+    "month": 4,
+    "segment": "international",
+    "passengers": 1388635,
+    "cargo_tons": 18257.1
+  },
+  {
+    "year": 2017,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 279727,
+    "cargo_tons": 1578.11
+  },
+  {
+    "year": 2017,
+    "month": 5,
+    "segment": "international",
+    "passengers": 1292143,
+    "cargo_tons": 20150.39
+  },
+  {
+    "year": 2017,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 206107,
+    "cargo_tons": 1672.2
+  },
+  {
+    "year": 2017,
+    "month": 6,
+    "segment": "international",
+    "passengers": 1137968,
+    "cargo_tons": 23470.08
+  },
+  {
+    "year": 2017,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 338495,
+    "cargo_tons": 1908.46
+  },
+  {
+    "year": 2017,
+    "month": 7,
+    "segment": "international",
+    "passengers": 1287410,
+    "cargo_tons": 22792.44
+  },
+  {
+    "year": 2017,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 318271,
+    "cargo_tons": 2189.46
+  },
+  {
+    "year": 2017,
+    "month": 8,
+    "segment": "international",
+    "passengers": 1247505,
+    "cargo_tons": 26048.42
+  },
+  {
+    "year": 2017,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 293267,
+    "cargo_tons": 1462.51
+  },
+  {
+    "year": 2017,
+    "month": 9,
+    "segment": "international",
+    "passengers": 1207454,
+    "cargo_tons": 19732.84
+  },
+  {
+    "year": 2017,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 308822,
+    "cargo_tons": 1743.38
+  },
+  {
+    "year": 2017,
+    "month": 10,
+    "segment": "international",
+    "passengers": 1101966,
+    "cargo_tons": 23288.04
+  },
+  {
+    "year": 2017,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 289041,
+    "cargo_tons": 1956.67
+  },
+  {
+    "year": 2017,
+    "month": 11,
+    "segment": "international",
+    "passengers": 1327075,
+    "cargo_tons": 22449.29
+  },
+  {
+    "year": 2017,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 348752,
+    "cargo_tons": 1701.43
+  },
+  {
+    "year": 2017,
+    "month": 12,
+    "segment": "international",
+    "passengers": 1536440,
+    "cargo_tons": 22228.02
+  },
+  {
+    "year": 2018,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 341956,
+    "cargo_tons": 1906.98
+  },
+  {
+    "year": 2018,
+    "month": 1,
+    "segment": "international",
+    "passengers": 1488547,
+    "cargo_tons": 21221.29
+  },
+  {
+    "year": 2018,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 283453,
+    "cargo_tons": 1524.18
+  },
+  {
+    "year": 2018,
+    "month": 2,
+    "segment": "international",
+    "passengers": 1239687,
+    "cargo_tons": 18857.58
+  },
+  {
+    "year": 2018,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 332843,
+    "cargo_tons": 1981.61
+  },
+  {
+    "year": 2018,
+    "month": 3,
+    "segment": "international",
+    "passengers": 1499019,
+    "cargo_tons": 19893.69
+  },
+  {
+    "year": 2018,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 315336,
+    "cargo_tons": 1954.16
+  },
+  {
+    "year": 2018,
+    "month": 4,
+    "segment": "international",
+    "passengers": 1394275,
+    "cargo_tons": 20204.85
+  },
+  {
+    "year": 2018,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 242074,
+    "cargo_tons": 1787.68
+  },
+  {
+    "year": 2018,
+    "month": 5,
+    "segment": "international",
+    "passengers": 1249911,
+    "cargo_tons": 21998.87
+  },
+  {
+    "year": 2018,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 234181,
+    "cargo_tons": 1453.14
+  },
+  {
+    "year": 2018,
+    "month": 6,
+    "segment": "international",
+    "passengers": 1245616,
+    "cargo_tons": 23750.65
+  },
+  {
+    "year": 2018,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 280528,
+    "cargo_tons": 2062.54
+  },
+  {
+    "year": 2018,
+    "month": 7,
+    "segment": "international",
+    "passengers": 1247753,
+    "cargo_tons": 25460.37
+  },
+  {
+    "year": 2018,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 259709,
+    "cargo_tons": 1649.94
+  },
+  {
+    "year": 2018,
+    "month": 8,
+    "segment": "international",
+    "passengers": 1294073,
+    "cargo_tons": 25028.59
+  },
+  {
+    "year": 2018,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 225283,
+    "cargo_tons": 1287.89
+  },
+  {
+    "year": 2018,
+    "month": 9,
+    "segment": "international",
+    "passengers": 1189358,
+    "cargo_tons": 20584.27
+  },
+  {
+    "year": 2018,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 241732,
+    "cargo_tons": 1609.52
+  },
+  {
+    "year": 2018,
+    "month": 10,
+    "segment": "international",
+    "passengers": 1227564,
+    "cargo_tons": 23935.9
+  },
+  {
+    "year": 2018,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 269589,
+    "cargo_tons": 1566.69
+  },
+  {
+    "year": 2018,
+    "month": 11,
+    "segment": "international",
+    "passengers": 1324931,
+    "cargo_tons": 22008.46
+  },
+  {
+    "year": 2018,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 299868,
+    "cargo_tons": 1455.71
+  },
+  {
+    "year": 2018,
+    "month": 12,
+    "segment": "international",
+    "passengers": 1397112,
+    "cargo_tons": 23107.68
+  },
+  {
+    "year": 2019,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 290908,
+    "cargo_tons": 1559.07
+  },
+  {
+    "year": 2019,
+    "month": 1,
+    "segment": "international",
+    "passengers": 1470154,
+    "cargo_tons": 20570.15
+  },
+  {
+    "year": 2019,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 229458,
+    "cargo_tons": 1113.19
+  },
+  {
+    "year": 2019,
+    "month": 2,
+    "segment": "international",
+    "passengers": 1201369,
+    "cargo_tons": 18966.09
+  },
+  {
+    "year": 2019,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 235445,
+    "cargo_tons": 1393.78
+  },
+  {
+    "year": 2019,
+    "month": 3,
+    "segment": "international",
+    "passengers": 1505288,
+    "cargo_tons": 22980.22
+  },
+  {
+    "year": 2019,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 258967,
+    "cargo_tons": 2124.67
+  },
+  {
+    "year": 2019,
+    "month": 4,
+    "segment": "international",
+    "passengers": 1352794,
+    "cargo_tons": 21252.93
+  },
+  {
+    "year": 2019,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 173329,
+    "cargo_tons": 1463.54
+  },
+  {
+    "year": 2019,
+    "month": 5,
+    "segment": "international",
+    "passengers": 1212077,
+    "cargo_tons": 25882.15
+  },
+  {
+    "year": 2019,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 237117,
+    "cargo_tons": 1437.59
+  },
+  {
+    "year": 2019,
+    "month": 6,
+    "segment": "international",
+    "passengers": 1243882,
+    "cargo_tons": 21631.44
+  },
+  {
+    "year": 2019,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 249860,
+    "cargo_tons": 1921.79
+  },
+  {
+    "year": 2019,
+    "month": 7,
+    "segment": "international",
+    "passengers": 1236796,
+    "cargo_tons": 28404.17
+  },
+  {
+    "year": 2019,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 243840,
+    "cargo_tons": 1405.35
+  },
+  {
+    "year": 2019,
+    "month": 8,
+    "segment": "international",
+    "passengers": 1262119,
+    "cargo_tons": 24504.44
+  },
+  {
+    "year": 2019,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 219057,
+    "cargo_tons": 1336.95
+  },
+  {
+    "year": 2019,
+    "month": 9,
+    "segment": "international",
+    "passengers": 1065811,
+    "cargo_tons": 25574.24
+  },
+  {
+    "year": 2019,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 238439,
+    "cargo_tons": 1617.04
+  },
+  {
+    "year": 2019,
+    "month": 10,
+    "segment": "international",
+    "passengers": 1205935,
+    "cargo_tons": 24867.54
+  },
+  {
+    "year": 2019,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 238220,
+    "cargo_tons": 1536.48
+  },
+  {
+    "year": 2019,
+    "month": 11,
+    "segment": "international",
+    "passengers": 1297898,
+    "cargo_tons": 22516.68
+  },
+  {
+    "year": 2019,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 248518,
+    "cargo_tons": 1153.75
+  },
+  {
+    "year": 2019,
+    "month": 12,
+    "segment": "international",
+    "passengers": 1421000,
+    "cargo_tons": 21593.7
+  },
+  {
+    "year": 2020,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 242206,
+    "cargo_tons": 1285.11
+  },
+  {
+    "year": 2020,
+    "month": 1,
+    "segment": "international",
+    "passengers": 1424573,
+    "cargo_tons": 20672.06
+  },
+  {
+    "year": 2020,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 220384,
+    "cargo_tons": 1039.7
+  },
+  {
+    "year": 2020,
+    "month": 2,
+    "segment": "international",
+    "passengers": 1267288,
+    "cargo_tons": 20060.55
+  },
+  {
+    "year": 2020,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 153314,
+    "cargo_tons": 744.45
+  },
+  {
+    "year": 2020,
+    "month": 3,
+    "segment": "international",
+    "passengers": 712005,
+    "cargo_tons": 13971.32
+  },
+  {
+    "year": 2020,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 4652,
+    "cargo_tons": 2.67
+  },
+  {
+    "year": 2020,
+    "month": 4,
+    "segment": "international",
+    "passengers": 39518,
+    "cargo_tons": 3938.64
+  },
+  {
+    "year": 2020,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 16960,
+    "cargo_tons": 112.12
+  },
+  {
+    "year": 2020,
+    "month": 5,
+    "segment": "international",
+    "passengers": 54152,
+    "cargo_tons": 6873.17
+  },
+  {
+    "year": 2020,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 36028,
+    "cargo_tons": 433.8
+  },
+  {
+    "year": 2020,
+    "month": 6,
+    "segment": "international",
+    "passengers": 157671,
+    "cargo_tons": 14028.01
+  },
+  {
+    "year": 2020,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 90171,
+    "cargo_tons": 633.08
+  },
+  {
+    "year": 2020,
+    "month": 7,
+    "segment": "international",
+    "passengers": 298608,
+    "cargo_tons": 25592.27
+  },
+  {
+    "year": 2020,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 142532,
+    "cargo_tons": 631.8
+  },
+  {
+    "year": 2020,
+    "month": 8,
+    "segment": "international",
+    "passengers": 354081,
+    "cargo_tons": 17182.53
+  },
+  {
+    "year": 2020,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 231129,
+    "cargo_tons": 1003.73
+  },
+  {
+    "year": 2020,
+    "month": 9,
+    "segment": "international",
+    "passengers": 478101,
+    "cargo_tons": 18762.22
+  },
+  {
+    "year": 2020,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 205806,
+    "cargo_tons": 1082.05
+  },
+  {
+    "year": 2020,
+    "month": 10,
+    "segment": "international",
+    "passengers": 605609,
+    "cargo_tons": 20879.18
+  },
+  {
+    "year": 2020,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 193620,
+    "cargo_tons": 1011.93
+  },
+  {
+    "year": 2020,
+    "month": 11,
+    "segment": "international",
+    "passengers": 559329,
+    "cargo_tons": 17288.15
+  },
+  {
+    "year": 2020,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 221505,
+    "cargo_tons": 1055.41
+  },
+  {
+    "year": 2020,
+    "month": 12,
+    "segment": "international",
+    "passengers": 529068,
+    "cargo_tons": 21945.04
+  },
+  {
+    "year": 2021,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 263253,
+    "cargo_tons": 1067.54
+  },
+  {
+    "year": 2021,
+    "month": 1,
+    "segment": "international",
+    "passengers": 639771,
+    "cargo_tons": 17113.41
+  },
+  {
+    "year": 2021,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 238696,
+    "cargo_tons": 888.37
+  },
+  {
+    "year": 2021,
+    "month": 2,
+    "segment": "international",
+    "passengers": 548802,
+    "cargo_tons": 16835.68
+  },
+  {
+    "year": 2021,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 307274,
+    "cargo_tons": 1005.06
+  },
+  {
+    "year": 2021,
+    "month": 3,
+    "segment": "international",
+    "passengers": 635457,
+    "cargo_tons": 19037.02
+  },
+  {
+    "year": 2021,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 207867,
+    "cargo_tons": 1001.25
+  },
+  {
+    "year": 2021,
+    "month": 4,
+    "segment": "international",
+    "passengers": 469435,
+    "cargo_tons": 18227.58
+  },
+  {
+    "year": 2021,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 247713,
+    "cargo_tons": 918.97
+  },
+  {
+    "year": 2021,
+    "month": 5,
+    "segment": "international",
+    "passengers": 255005,
+    "cargo_tons": 13763.56
+  },
+  {
+    "year": 2021,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 324912,
+    "cargo_tons": 1222.67
+  },
+  {
+    "year": 2021,
+    "month": 6,
+    "segment": "international",
+    "passengers": 236614,
+    "cargo_tons": 17331.53
+  },
+  {
+    "year": 2021,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 385347,
+    "cargo_tons": 1161.47
+  },
+  {
+    "year": 2021,
+    "month": 7,
+    "segment": "international",
+    "passengers": 325996,
+    "cargo_tons": 19456.82
+  },
+  {
+    "year": 2021,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 358291,
+    "cargo_tons": 2065.48
+  },
+  {
+    "year": 2021,
+    "month": 8,
+    "segment": "international",
+    "passengers": 414845,
+    "cargo_tons": 19172.85
+  },
+  {
+    "year": 2021,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 354665,
+    "cargo_tons": 1787.2
+  },
+  {
+    "year": 2021,
+    "month": 9,
+    "segment": "international",
+    "passengers": 590872,
+    "cargo_tons": 18178.85
+  },
+  {
+    "year": 2021,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 296119,
+    "cargo_tons": 1799.57
+  },
+  {
+    "year": 2021,
+    "month": 10,
+    "segment": "international",
+    "passengers": 784240,
+    "cargo_tons": 18709.02
+  },
+  {
+    "year": 2021,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 277868,
+    "cargo_tons": 1375.66
+  },
+  {
+    "year": 2021,
+    "month": 11,
+    "segment": "international",
+    "passengers": 921432,
+    "cargo_tons": 18293.62
+  },
+  {
+    "year": 2021,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 282727,
+    "cargo_tons": 1327.86
+  },
+  {
+    "year": 2021,
+    "month": 12,
+    "segment": "international",
+    "passengers": 1112593,
+    "cargo_tons": 18562.55
+  },
+  {
+    "year": 2022,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 226670,
+    "cargo_tons": 1018.05
+  },
+  {
+    "year": 2022,
+    "month": 1,
+    "segment": "international",
+    "passengers": 1027567,
+    "cargo_tons": 18011.6
+  },
+  {
+    "year": 2022,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 212202,
+    "cargo_tons": 850.24
+  },
+  {
+    "year": 2022,
+    "month": 2,
+    "segment": "international",
+    "passengers": 956323,
+    "cargo_tons": 16856.19
+  },
+  {
+    "year": 2022,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 272392,
+    "cargo_tons": 1167.03
+  },
+  {
+    "year": 2022,
+    "month": 3,
+    "segment": "international",
+    "passengers": 1230998,
+    "cargo_tons": 19778.97
+  },
+  {
+    "year": 2022,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 137865,
+    "cargo_tons": 1001.0
+  },
+  {
+    "year": 2022,
+    "month": 4,
+    "segment": "international",
+    "passengers": 1048381,
+    "cargo_tons": 20074.75
+  },
+  {
+    "year": 2022,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 200417,
+    "cargo_tons": 872.46
+  },
+  {
+    "year": 2022,
+    "month": 5,
+    "segment": "international",
+    "passengers": 1119351,
+    "cargo_tons": 15994.85
+  },
+  {
+    "year": 2022,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 207670,
+    "cargo_tons": 1175.2
+  },
+  {
+    "year": 2022,
+    "month": 6,
+    "segment": "international",
+    "passengers": 1101058,
+    "cargo_tons": 22691.82
+  },
+  {
+    "year": 2022,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 212414,
+    "cargo_tons": 884.03
+  },
+  {
+    "year": 2022,
+    "month": 7,
+    "segment": "international",
+    "passengers": 1196491,
+    "cargo_tons": 19808.75
+  },
+  {
+    "year": 2022,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 206527,
+    "cargo_tons": 1047.8
+  },
+  {
+    "year": 2022,
+    "month": 8,
+    "segment": "international",
+    "passengers": 1160491,
+    "cargo_tons": 20143.65
+  },
+  {
+    "year": 2022,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 233559,
+    "cargo_tons": 1903.69
+  },
+  {
+    "year": 2022,
+    "month": 9,
+    "segment": "international",
+    "passengers": 1229107,
+    "cargo_tons": 19641.53
+  },
+  {
+    "year": 2022,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 236031,
+    "cargo_tons": 1261.54
+  },
+  {
+    "year": 2022,
+    "month": 10,
+    "segment": "international",
+    "passengers": 1334822,
+    "cargo_tons": 19085.66
+  },
+  {
+    "year": 2022,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 238297,
+    "cargo_tons": 1148.41
+  },
+  {
+    "year": 2022,
+    "month": 11,
+    "segment": "international",
+    "passengers": 1274407,
+    "cargo_tons": 17084.92
+  },
+  {
+    "year": 2022,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 293098,
+    "cargo_tons": 1222.26
+  },
+  {
+    "year": 2022,
+    "month": 12,
+    "segment": "international",
+    "passengers": 1404071,
+    "cargo_tons": 17399.54
+  },
+  {
+    "year": 2023,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 267766,
+    "cargo_tons": 1171.97
+  },
+  {
+    "year": 2023,
+    "month": 1,
+    "segment": "international",
+    "passengers": 1449716,
+    "cargo_tons": 17266.35
+  },
+  {
+    "year": 2023,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 250754,
+    "cargo_tons": 1107.02
+  },
+  {
+    "year": 2023,
+    "month": 2,
+    "segment": "international",
+    "passengers": 1350596,
+    "cargo_tons": 17888.25
+  },
+  {
+    "year": 2023,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 237015,
+    "cargo_tons": 1273.31
+  },
+  {
+    "year": 2023,
+    "month": 3,
+    "segment": "international",
+    "passengers": 1368258,
+    "cargo_tons": 22772.76
+  },
+  {
+    "year": 2023,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 167235,
+    "cargo_tons": 910.96
+  },
+  {
+    "year": 2023,
+    "month": 4,
+    "segment": "international",
+    "passengers": 1177137,
+    "cargo_tons": 19391.74
+  },
+  {
+    "year": 2023,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 228023,
+    "cargo_tons": 1312.11
+  },
+  {
+    "year": 2023,
+    "month": 5,
+    "segment": "international",
+    "passengers": 1231876,
+    "cargo_tons": 21092.84
+  },
+  {
+    "year": 2023,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 268725,
+    "cargo_tons": 1414.43
+  },
+  {
+    "year": 2023,
+    "month": 6,
+    "segment": "international",
+    "passengers": 1249223,
+    "cargo_tons": 25409.52
+  },
+  {
+    "year": 2023,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 307569,
+    "cargo_tons": 1245.43
+  },
+  {
+    "year": 2023,
+    "month": 7,
+    "segment": "international",
+    "passengers": 1370532,
+    "cargo_tons": 20897.02
+  },
+  {
+    "year": 2023,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 263751,
+    "cargo_tons": 1359.06
+  },
+  {
+    "year": 2023,
+    "month": 8,
+    "segment": "international",
+    "passengers": 1402546,
+    "cargo_tons": 23188.26
+  },
+  {
+    "year": 2023,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 228198,
+    "cargo_tons": 1088.0
+  },
+  {
+    "year": 2023,
+    "month": 9,
+    "segment": "international",
+    "passengers": 1359964,
+    "cargo_tons": 22614.09
+  },
+  {
+    "year": 2023,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 231867,
+    "cargo_tons": 1468.66
+  },
+  {
+    "year": 2023,
+    "month": 10,
+    "segment": "international",
+    "passengers": 1434873,
+    "cargo_tons": 23978.55
+  },
+  {
+    "year": 2023,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 225281,
+    "cargo_tons": 1599.69
+  },
+  {
+    "year": 2023,
+    "month": 11,
+    "segment": "international",
+    "passengers": 1470527,
+    "cargo_tons": 22135.75
+  },
+  {
+    "year": 2023,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 234716,
+    "cargo_tons": 1454.64
+  },
+  {
+    "year": 2023,
+    "month": 12,
+    "segment": "international",
+    "passengers": 1561649,
+    "cargo_tons": 25499.95
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 210329,
+    "cargo_tons": 1258.8
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "segment": "international",
+    "passengers": 1544011,
+    "cargo_tons": 22428.63
+  },
+  {
+    "year": 2024,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 221758,
+    "cargo_tons": 1282.57
+  },
+  {
+    "year": 2024,
+    "month": 2,
+    "segment": "international",
+    "passengers": 1471313,
+    "cargo_tons": 21904.22
+  },
+  {
+    "year": 2024,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 191031,
+    "cargo_tons": 1366.7
+  },
+  {
+    "year": 2024,
+    "month": 3,
+    "segment": "international",
+    "passengers": 1441709,
+    "cargo_tons": 25636.17
+  },
+  {
+    "year": 2024,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 223946,
+    "cargo_tons": 1202.55
+  },
+  {
+    "year": 2024,
+    "month": 4,
+    "segment": "international",
+    "passengers": 1441501,
+    "cargo_tons": 20657.4
+  },
+  {
+    "year": 2024,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 246880,
+    "cargo_tons": 2134.59
+  },
+  {
+    "year": 2024,
+    "month": 5,
+    "segment": "international",
+    "passengers": 1314284,
+    "cargo_tons": 23154.5
+  },
+  {
+    "year": 2024,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 253817,
+    "cargo_tons": 1536.61
+  },
+  {
+    "year": 2024,
+    "month": 6,
+    "segment": "international",
+    "passengers": 1406284,
+    "cargo_tons": 23077.29
+  },
+  {
+    "year": 2024,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 289935,
+    "cargo_tons": 1547.11
+  },
+  {
+    "year": 2024,
+    "month": 7,
+    "segment": "international",
+    "passengers": 1503408,
+    "cargo_tons": 29127.07
+  },
+  {
+    "year": 2024,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 255234,
+    "cargo_tons": 1486.85
+  },
+  {
+    "year": 2024,
+    "month": 8,
+    "segment": "international",
+    "passengers": 1495066,
+    "cargo_tons": 26041.79
+  },
+  {
+    "year": 2024,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 246454,
+    "cargo_tons": 1320.19
+  },
+  {
+    "year": 2024,
+    "month": 9,
+    "segment": "international",
+    "passengers": 1380489,
+    "cargo_tons": 25139.47
+  },
+  {
+    "year": 2024,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 257605,
+    "cargo_tons": 1378.48
+  },
+  {
+    "year": 2024,
+    "month": 10,
+    "segment": "international",
+    "passengers": 1557526,
+    "cargo_tons": 25054.13
+  },
+  {
+    "year": 2024,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 241930,
+    "cargo_tons": 1626.99
+  },
+  {
+    "year": 2024,
+    "month": 11,
+    "segment": "international",
+    "passengers": 1556676,
+    "cargo_tons": 22040.22
+  },
+  {
+    "year": 2024,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 267114,
+    "cargo_tons": 1562.46
+  },
+  {
+    "year": 2024,
+    "month": 12,
+    "segment": "international",
+    "passengers": 1659525,
+    "cargo_tons": 22159.47
+  },
+  {
+    "year": 2025,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 275070,
+    "cargo_tons": 1125.19
+  },
+  {
+    "year": 2025,
+    "month": 1,
+    "segment": "international",
+    "passengers": 1662881,
+    "cargo_tons": 21075.71
+  },
+  {
+    "year": 2025,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 262983,
+    "cargo_tons": 1273.73
+  },
+  {
+    "year": 2025,
+    "month": 2,
+    "segment": "international",
+    "passengers": 1534605,
+    "cargo_tons": 22088.83
+  },
+  {
+    "year": 2025,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 189541,
+    "cargo_tons": 1351.46
+  },
+  {
+    "year": 2025,
+    "month": 3,
+    "segment": "international",
+    "passengers": 1433358,
+    "cargo_tons": 25353.37
+  },
+  {
+    "year": 2025,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 293768,
+    "cargo_tons": 1572.26
+  },
+  {
+    "year": 2025,
+    "month": 4,
+    "segment": "international",
+    "passengers": 1544605,
+    "cargo_tons": 18245.6
+  },
+  {
+    "year": 2025,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 256507,
+    "cargo_tons": 1465.42
+  },
+  {
+    "year": 2025,
+    "month": 5,
+    "segment": "international",
+    "passengers": 1250897,
+    "cargo_tons": 24707.5
+  },
+  {
+    "year": 2025,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 305804,
+    "cargo_tons": 1641.3
+  },
+  {
+    "year": 2025,
+    "month": 6,
+    "segment": "international",
+    "passengers": 1393303,
+    "cargo_tons": 22910.68
+  },
+  {
+    "year": 2025,
+    "month": 7,
+    "segment": "domestic",
+    "passengers": 288869,
+    "cargo_tons": 1536.31
+  },
+  {
+    "year": 2025,
+    "month": 7,
+    "segment": "international",
+    "passengers": 1620855,
+    "cargo_tons": 27060.19
+  },
+  {
+    "year": 2025,
+    "month": 8,
+    "segment": "domestic",
+    "passengers": 251614,
+    "cargo_tons": 1279.66
+  },
+  {
+    "year": 2025,
+    "month": 8,
+    "segment": "international",
+    "passengers": 1695735,
+    "cargo_tons": 26636.13
+  },
+  {
+    "year": 2025,
+    "month": 9,
+    "segment": "domestic",
+    "passengers": 228994,
+    "cargo_tons": 1165.35
+  },
+  {
+    "year": 2025,
+    "month": 9,
+    "segment": "international",
+    "passengers": 1486379,
+    "cargo_tons": 25434.75
+  },
+  {
+    "year": 2025,
+    "month": 10,
+    "segment": "domestic",
+    "passengers": 250303,
+    "cargo_tons": 1518.29
+  },
+  {
+    "year": 2025,
+    "month": 10,
+    "segment": "international",
+    "passengers": 1634321,
+    "cargo_tons": 26106.34
+  },
+  {
+    "year": 2025,
+    "month": 11,
+    "segment": "domestic",
+    "passengers": 258772,
+    "cargo_tons": 1885.09
+  },
+  {
+    "year": 2025,
+    "month": 11,
+    "segment": "international",
+    "passengers": 1747111,
+    "cargo_tons": 25002.42
+  },
+  {
+    "year": 2025,
+    "month": 12,
+    "segment": "domestic",
+    "passengers": 271362,
+    "cargo_tons": 1370.79
+  },
+  {
+    "year": 2025,
+    "month": 12,
+    "segment": "international",
+    "passengers": 1861477,
+    "cargo_tons": 23061.63
+  },
+  {
+    "year": 2026,
+    "month": 1,
+    "segment": "domestic",
+    "passengers": 287000,
+    "cargo_tons": 1265.35
+  },
+  {
+    "year": 2026,
+    "month": 1,
+    "segment": "international",
+    "passengers": 1888622,
+    "cargo_tons": 24478.42
+  },
+  {
+    "year": 2026,
+    "month": 2,
+    "segment": "domestic",
+    "passengers": 239187,
+    "cargo_tons": 1186.14
+  },
+  {
+    "year": 2026,
+    "month": 2,
+    "segment": "international",
+    "passengers": 1500151,
+    "cargo_tons": 23835.63
+  },
+  {
+    "year": 2026,
+    "month": 3,
+    "segment": "domestic",
+    "passengers": 221081,
+    "cargo_tons": 1163.88
+  },
+  {
+    "year": 2026,
+    "month": 3,
+    "segment": "international",
+    "passengers": 1311809,
+    "cargo_tons": 18066.17
+  },
+  {
+    "year": 2026,
+    "month": 4,
+    "segment": "domestic",
+    "passengers": 262424,
+    "cargo_tons": 1279.55
+  },
+  {
+    "year": 2026,
+    "month": 4,
+    "segment": "international",
+    "passengers": 1433960,
+    "cargo_tons": 20038.81
+  },
+  {
+    "year": 2026,
+    "month": 5,
+    "segment": "domestic",
+    "passengers": 292410,
+    "cargo_tons": 1371.31
+  },
+  {
+    "year": 2026,
+    "month": 5,
+    "segment": "international",
+    "passengers": 1293384,
+    "cargo_tons": 23011.78
+  },
+  {
+    "year": 2026,
+    "month": 6,
+    "segment": "domestic",
+    "passengers": 332614,
+    "cargo_tons": 1479.6
+  },
+  {
+    "year": 2026,
+    "month": 6,
+    "segment": "international",
+    "passengers": 1433182,
+    "cargo_tons": 22237.16
+  }
+]

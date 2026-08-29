@@ -1,0 +1,80 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AnalystLens from "../../components/AnalystLens.astro";
+
+const screenshots = Array.from({ length: 10 }, (_, i) => `/assets/kababish/${String(i + 1).padStart(2, "0")}.jpg`);
+---
+
+<BaseLayout title="Kababish Restaurant — Case Study" description="Production Android ordering platform for a live restaurant">
+  <article class="mx-auto max-w-3xl px-4 py-16">
+    <div class="flex items-center gap-4">
+      <img src="/assets/kababish/logo.png" alt="Kababish" class="h-16 w-16 rounded-xl border border-strip-border object-cover" width="64" height="64" />
+      <div>
+        <p class="strip-label">Case Study</p>
+        <h1 class="font-display text-4xl font-bold">Kababish Restaurant</h1>
+        <p class="mt-1 text-strip-accent">Production Android ordering platform — v3.0.4</p>
+      </div>
+    </div>
+
+    <div class="mt-6 flex flex-wrap gap-2">
+      {["Kotlin", "Jetpack Compose", "Supabase Realtime", "Firebase FCM", "MVVM"].map((t) => <span class="tag">{t}</span>)}
+    </div>
+
+    <a href="https://play.google.com/store/apps/details?id=com.kababish.restaurant" class="strip-btn strip-btn-primary mt-6" target="_blank" rel="noopener noreferrer">View on Play Store</a>
+
+    <section class="mt-12 space-y-8">
+      <div class="strip-card">
+        <h2 class="font-display text-lg font-bold text-strip-signal">Context</h2>
+        <p class="mt-3 text-strip-muted">Kababish, a restaurant brand, needed a single native app serving both customers (menu browsing, ordering, loyalty) and kitchen staff (realtime order management, inventory, pricing configuration).</p>
+      </div>
+      <div class="strip-card">
+        <h2 class="font-display text-lg font-bold text-strip-accent">Approach</h2>
+        <p class="mt-3 text-strip-muted">Kotlin + Jetpack Compose single-activity architecture with MVVM, Supabase for auth/data/realtime, Firebase for push notifications, and PostHog for analytics. Dual-mode navigation: customer flow and role-gated admin dashboard.</p>
+      </div>
+      <div class="strip-card">
+        <h2 class="font-display text-lg font-bold text-strip-warn">Solution</h2>
+        <ul class="mt-3 space-y-2 font-data text-sm text-strip-muted">
+          <li>Customer: menu, cart, delivery/pickup checkout, vouchers, loyalty points, guest checkout</li>
+          <li>Admin: realtime order dashboard, inventory, support tickets, UI customization, fee settings</li>
+          <li>Realtime sync via Supabase subscriptions — kitchen screen stays live</li>
+          <li>Published v3.0.4 (versionCode 20) on Google Play</li>
+        </ul>
+      </div>
+      <div class="strip-card">
+        <h2 class="font-display text-lg font-bold text-strip-text">Effect</h2>
+        <p class="mt-3 text-strip-muted">End-to-end restaurant operations in one app — customers order from home, staff manage orders in realtime without a separate POS system, and the owner configures pricing and homepage content without app updates.</p>
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="font-display text-xl font-bold">Screenshots</h2>
+      <div class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
+        {screenshots.map((src, i) => (
+          <div class="overflow-hidden rounded-lg border border-strip-border">
+            <img src={src} alt={`Kababish screenshot ${i + 1}`} class="aspect-[9/19] w-full object-cover object-top" loading="lazy" />
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <AnalystLens title="Operations & Business Analyst Lens">
+      <div class="space-y-6 text-sm text-strip-muted">
+        <div>
+          <h3 class="font-data text-xs uppercase tracking-widest text-strip-accent">Order Lifecycle</h3>
+          <p class="mt-2 font-data">Customer Browse → Cart → Checkout → Kitchen Notification → Status Update → Delivery/Pickup → Loyalty Points</p>
+        </div>
+        <div>
+          <h3 class="font-data text-xs uppercase tracking-widest text-strip-accent">Operational KPIs</h3>
+          <p class="mt-2">Daily order volume, revenue by period, loyalty redemption rate, average delivery fee, active vs completed orders.</p>
+        </div>
+        <div>
+          <h3 class="font-data text-xs uppercase tracking-widest text-strip-accent">MoSCoW Prioritisation</h3>
+          <p class="mt-2"><strong class="text-strip-text">Must:</strong> Menu, checkout, realtime orders.<br />
+          <strong class="text-strip-text">Should:</strong> Loyalty, push notifications, guest checkout.<br />
+          <strong class="text-strip-text">Could:</strong> UI customization, support tickets.<br />
+          <strong class="text-strip-text">Won't (v1):</strong> Multi-branch, third-party delivery integration.</p>
+        </div>
+      </div>
+    </AnalystLens>
+  </article>
+</BaseLayout>

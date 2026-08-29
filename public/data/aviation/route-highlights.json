@@ -1,0 +1,126 @@
+{
+  "international": [
+    {
+      "route": "Karachi → Dubai",
+      "passengers": 12749302
+    },
+    {
+      "route": "Islamabad → Dubai",
+      "passengers": 11964101
+    },
+    {
+      "route": "Dubai → Islamabad",
+      "passengers": 11528257
+    },
+    {
+      "route": "Dubai → Karachi",
+      "passengers": 11219059
+    },
+    {
+      "route": "Jeddah/King A.A. → Islamabad",
+      "passengers": 10967038
+    },
+    {
+      "route": "Islamabad → Jeddah/King A.A.",
+      "passengers": 10950806
+    },
+    {
+      "route": "Karachi → Jeddah/King A.A.",
+      "passengers": 5768870
+    },
+    {
+      "route": "Jeddah/King A.A. → Karachi",
+      "passengers": 5718643
+    },
+    {
+      "route": "Islamabad → Abu Dhabi",
+      "passengers": 5681193
+    },
+    {
+      "route": "Abu Dhabi → Islamabad",
+      "passengers": 5602656
+    },
+    {
+      "route": "Islamabad → Hamad",
+      "passengers": 5195082
+    },
+    {
+      "route": "Hamad → Islamabad",
+      "passengers": 5071087
+    },
+    {
+      "route": "Islamabad → Riyadh K.K",
+      "passengers": 4769001
+    },
+    {
+      "route": "Riyadh K.K → Islamabad",
+      "passengers": 4644714
+    },
+    {
+      "route": "Peshawar → Dubai",
+      "passengers": 2753133
+    }
+  ],
+  "domestic": [
+    {
+      "route": "Karachi → Islamabad",
+      "passengers": 20200298
+    },
+    {
+      "route": "Islamabad → Karachi",
+      "passengers": 19936451
+    },
+    {
+      "route": "Islamabad → Islamabad",
+      "passengers": 1972746
+    },
+    {
+      "route": "Quetta → Islamabad",
+      "passengers": 1760017
+    },
+    {
+      "route": "Peshawar → Karachi",
+      "passengers": 1747481
+    },
+    {
+      "route": "Karachi → Peshawar",
+      "passengers": 1708488
+    },
+    {
+      "route": "Islamabad → Quetta",
+      "passengers": 1706230
+    },
+    {
+      "route": "Quetta → Karachi",
+      "passengers": 1235560
+    },
+    {
+      "route": "Karachi → Quetta",
+      "passengers": 1225755
+    },
+    {
+      "route": "Karachi → Multan",
+      "passengers": 1075658
+    },
+    {
+      "route": "Multan → Karachi",
+      "passengers": 1033762
+    },
+    {
+      "route": "Faisalabad → Karachi",
+      "passengers": 791537
+    },
+    {
+      "route": "Karachi → Faisalabad",
+      "passengers": 789809
+    },
+    {
+      "route": "Skardu Airport → Islamabad",
+      "passengers": 682691
+    },
+    {
+      "route": "Islamabad → Skardu Airport",
+      "passengers": 667608
+    }
+  ]
+}

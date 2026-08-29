@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-strip-bg: #0b1426;
+  --color-strip-surface: #121f38;
+  --color-strip-border: #1e3054;
+  --color-strip-text: #e8edf2;
+  --color-strip-muted: #8fa3bf;
+  --color-strip-accent: #4a90d9;
+  --color-strip-signal: #3ddc84;
+  --color-strip-warn: #f5a623;
+  --color-strip-partial: #5a6d8a;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-data: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-strip-bg text-strip-text font-body antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-strip-signal;
+  }
+}
+
+@layer components {
+  .strip-label {
+    @apply font-data text-xs uppercase tracking-[0.2em] text-strip-muted;
+  }
+
+  .strip-card {
+    @apply rounded-lg border border-strip-border bg-strip-surface p-6;
+  }
+
+  .strip-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-strip-accent bg-strip-accent/10 px-5 py-2.5 font-data text-sm uppercase tracking-wider text-strip-accent transition hover:bg-strip-accent/20;
+  }
+
+  .strip-btn-primary {
+    @apply border-strip-signal bg-strip-signal/15 text-strip-signal hover:bg-strip-signal/25;
+  }
+
+  .tag {
+    @apply rounded border border-strip-border bg-strip-bg px-2 py-0.5 font-data text-xs text-strip-muted;
+  }
+}

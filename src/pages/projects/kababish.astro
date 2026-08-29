@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import AnalystLens from "../../components/AnalystLens.astro";
 
 const screenshots = Array.from({ length: 10 }, (_, i) => `/assets/kababish/${String(i + 1).padStart(2, "0")}.jpg`);
 ---
@@ -25,24 +24,47 @@ const screenshots = Array.from({ length: 10 }, (_, i) => `/assets/kababish/${Str
     <section class="mt-12 space-y-8">
       <div class="strip-card">
         <h2 class="font-display text-lg font-bold text-strip-signal">Context</h2>
-        <p class="mt-3 text-strip-muted">Kababish, a restaurant brand, needed a single native app serving both customers (menu browsing, ordering, loyalty) and kitchen staff (realtime order management, inventory, pricing configuration).</p>
+        <p class="mt-3 text-strip-muted">
+          Kababish, a live restaurant brand, needed a single native Android app that serves customers ordering from home and staff running kitchen operations — without juggling separate POS, delivery, and loyalty systems.
+        </p>
       </div>
+
       <div class="strip-card">
         <h2 class="font-display text-lg font-bold text-strip-accent">Approach</h2>
-        <p class="mt-3 text-strip-muted">Kotlin + Jetpack Compose single-activity architecture with MVVM, Supabase for auth/data/realtime, Firebase for push notifications, and PostHog for analytics. Dual-mode navigation: customer flow and role-gated admin dashboard.</p>
+        <p class="mt-3 text-strip-muted">
+          Built with Kotlin and Jetpack Compose using MVVM architecture (a pattern that separates UI from business logic, making the app easier to test and maintain). Supabase handles authentication, database, and realtime subscriptions; Firebase delivers push notifications; PostHog tracks user behaviour. One codebase, two modes: customer ordering and role-gated admin operations.
+        </p>
       </div>
+
       <div class="strip-card">
-        <h2 class="font-display text-lg font-bold text-strip-warn">Solution</h2>
+        <h2 class="font-display text-lg font-bold text-strip-warn">Solution — Customer App</h2>
         <ul class="mt-3 space-y-2 font-data text-sm text-strip-muted">
-          <li>Customer: menu, cart, delivery/pickup checkout, vouchers, loyalty points, guest checkout</li>
-          <li>Admin: realtime order dashboard, inventory, support tickets, UI customization, fee settings</li>
-          <li>Realtime sync via Supabase subscriptions — kitchen screen stays live</li>
-          <li>Published v3.0.4 (versionCode 20) on Google Play</li>
+          <li><strong class="text-strip-text">Full ordering system:</strong> Browse menu by category, customise items, add to cart, checkout for delivery or pickup</li>
+          <li><strong class="text-strip-text">Order tracking:</strong> Real-time status updates from kitchen to doorstep</li>
+          <li><strong class="text-strip-text">Loyalty & rewards:</strong> Earn points on orders, redeem for discounts (100 points = Rs. 50 off)</li>
+          <li><strong class="text-strip-text">Push notifications:</strong> Order confirmations and status changes via Firebase Cloud Messaging (FCM)</li>
+          <li><strong class="text-strip-text">Guest checkout:</strong> Order without creating an account — name, phone, and address only</li>
+          <li>Voucher codes, member discounts, and offline cart persistence</li>
+        </ul>
+
+        <p class="mt-6 text-sm font-semibold text-strip-accent">Admin Command Centre</p>
+        <ul class="mt-2 space-y-2 font-data text-sm text-strip-muted">
+          <li><strong class="text-strip-text">Realtime order dashboard:</strong> Live order feed with status filters (Active, Today, Yesterday, Last 7 Days), daily revenue stats, and one-tap status updates — kitchen screen stays awake</li>
+          <li><strong class="text-strip-text">Menu management:</strong> Toggle item availability and manage inventory without redeploying the app</li>
+          <li><strong class="text-strip-text">Discount management:</strong> Configure global discount rules and member pricing from the admin panel</li>
+          <li><strong class="text-strip-text">Delivery management:</strong> Global delivery on/off toggle, area-based delivery fees, and per-zone pricing control</li>
+          <li><strong class="text-strip-text">Notifications panel:</strong> Push new orders to kitchen devices instantly; tap a notification to jump directly to the relevant order</li>
+          <li><strong class="text-strip-text">UI customisation:</strong> Update homepage carousel images and category visuals at runtime — no app store update needed</li>
+          <li><strong class="text-strip-text">Support tickets:</strong> Handle customer issues from within the admin shell</li>
+          <li><strong class="text-strip-text">Realtime sync:</strong> Supabase subscriptions push order changes to every connected admin and customer device within seconds</li>
         </ul>
       </div>
+
       <div class="strip-card">
         <h2 class="font-display text-lg font-bold text-strip-text">Effect</h2>
-        <p class="mt-3 text-strip-muted">End-to-end restaurant operations in one app — customers order from home, staff manage orders in realtime without a separate POS system, and the owner configures pricing and homepage content without app updates.</p>
+        <p class="mt-3 text-strip-muted">
+          A live Android application (v3.0.4 on Google Play) that replaces fragmented restaurant tooling with one end-to-end system. Customers order, track, and earn rewards from their phone; staff manage the full order lifecycle in realtime from a dedicated admin dashboard — menu, pricing, delivery, and notifications all configurable without code changes.
+        </p>
       </div>
     </section>
 
@@ -56,25 +78,5 @@ const screenshots = Array.from({ length: 10 }, (_, i) => `/assets/kababish/${Str
         ))}
       </div>
     </section>
-
-    <AnalystLens title="Operations & Business Analyst Lens">
-      <div class="space-y-6 text-sm text-strip-muted">
-        <div>
-          <h3 class="font-data text-xs uppercase tracking-widest text-strip-accent">Order Lifecycle</h3>
-          <p class="mt-2 font-data">Customer Browse → Cart → Checkout → Kitchen Notification → Status Update → Delivery/Pickup → Loyalty Points</p>
-        </div>
-        <div>
-          <h3 class="font-data text-xs uppercase tracking-widest text-strip-accent">Operational KPIs</h3>
-          <p class="mt-2">Daily order volume, revenue by period, loyalty redemption rate, average delivery fee, active vs completed orders.</p>
-        </div>
-        <div>
-          <h3 class="font-data text-xs uppercase tracking-widest text-strip-accent">MoSCoW Prioritisation</h3>
-          <p class="mt-2"><strong class="text-strip-text">Must:</strong> Menu, checkout, realtime orders.<br />
-          <strong class="text-strip-text">Should:</strong> Loyalty, push notifications, guest checkout.<br />
-          <strong class="text-strip-text">Could:</strong> UI customization, support tickets.<br />
-          <strong class="text-strip-text">Won't (v1):</strong> Multi-branch, third-party delivery integration.</p>
-        </div>
-      </div>
-    </AnalystLens>
   </article>
 </BaseLayout>

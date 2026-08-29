@@ -1,16 +1,22 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import AnalystLens from "../../components/AnalystLens.astro";
+
+const screenshots = Array.from({ length: 12 }, (_, i) => `/assets/safarwise/${String(i + 1).padStart(2, "0")}.png`);
 ---
 
-<BaseLayout title="SafarWise — Case Study" description="Full-stack AI visa platform for Pakistani travelers">
+<BaseLayout title="SafarWise — Case Study" description="AI-assisted visa research platform with layered quality control for Pakistani travelers">
   <article class="mx-auto max-w-3xl px-4 py-16">
-    <p class="strip-label">Case Study</p>
-    <h1 class="font-display text-4xl font-bold">SafarWise</h1>
-    <p class="mt-2 text-strip-accent">AI-powered visa intelligence for Pakistani passport holders</p>
+    <div class="flex items-center gap-4">
+      <img src="/assets/safarwise/logo.png" alt="SafarWise" class="h-16 w-16 rounded-xl border border-strip-border object-contain bg-white p-1" width="64" height="64" />
+      <div>
+        <p class="strip-label">Case Study</p>
+        <h1 class="font-display text-4xl font-bold">SafarWise</h1>
+        <p class="mt-1 text-strip-accent">AI-powered visa intelligence for Pakistani passport holders</p>
+      </div>
+    </div>
 
     <div class="mt-6 flex flex-wrap gap-2">
-      {["Next.js 15", "FastAPI", "Supabase", "Gemini AI", "Systems Design"].map((t) => <span class="tag">{t}</span>)}
+      {["Next.js 15", "FastAPI", "Supabase", "Gemini AI", "Exa Search", "Systems Design"].map((t) => <span class="tag">{t}</span>)}
     </div>
 
     <div class="mt-8 flex gap-3">
@@ -21,43 +27,62 @@ import AnalystLens from "../../components/AnalystLens.astro";
     <section class="mt-12 space-y-8">
       <div class="strip-card">
         <h2 class="font-display text-lg font-bold text-strip-signal">Context</h2>
-        <p class="mt-3 text-strip-muted">Pakistani passport holders face fragmented visa guidance — conflicting sources, changing regulations, and document checklists that vary by destination and travel purpose. A simple oversight can delay or derail a visa application.</p>
+        <p class="mt-3 text-strip-muted">
+          Pakistani passport holders face fragmented visa guidance — conflicting embassy advice, outdated blog posts, and document checklists that change by destination and travel purpose. A single missed requirement can delay or derail an application.
+        </p>
       </div>
+
       <div class="strip-card">
         <h2 class="font-display text-lg font-bold text-strip-accent">Approach</h2>
-        <p class="mt-3 text-strip-muted">Built a mobile-first platform combining AI-assisted visa research (Gemini + Exa grounding), SEO-indexable per-country guides, a multi-step visa search wizard, partner booking integrations, and a secure Application Portal for document uploads and status tracking.</p>
-      </div>
-      <div class="strip-card">
-        <h2 class="font-display text-lg font-bold text-strip-warn">Solution</h2>
-        <ul class="mt-3 space-y-2 font-data text-sm text-strip-muted">
-          <li>42 pages, 114+ components, 64 database migrations</li>
-          <li>AI visa intel with publish-gate QA pipeline and 25+ backend tests</li>
-          <li>Admin ops console: CRM, invoicing, SEO analytics, content CMS</li>
-          <li>Production deployment on Vercel + Render + Supabase</li>
+        <p class="mt-3 text-strip-muted">
+          Built a smart automated research system that uses AI (Google Gemini) to generate profile-specific visa guides, grounded by multiple layers of quality control — not a single prompt-and-publish pipeline.
+        </p>
+        <ul class="mt-4 space-y-3 text-sm text-strip-muted">
+          <li><strong class="text-strip-text">External grounding (Exa):</strong> Live web retrieval ensures guides reference current embassy and immigration sources, not stale training data.</li>
+          <li><strong class="text-strip-text">Internal rules (YAML & pathway files):</strong> Structured configuration files encode visa pathways, document requirements, and country-specific logic — giving the AI a verified rulebook to follow.</li>
+          <li><strong class="text-strip-text">Automated publish gate:</strong> Backend QA checks run before any guide goes live, catching inconsistencies before users see them.</li>
+          <li><strong class="text-strip-text">Human oversight:</strong> Operations team can review, flag, and manage content through the admin console when edge cases need a human decision.</li>
         </ul>
       </div>
+
+      <div class="strip-card">
+        <h2 class="font-display text-lg font-bold text-strip-warn">Solution</h2>
+        <p class="mt-3 text-strip-muted">
+          A full-stack platform — not just a content site — with a traveller-facing experience and a sophisticated internal operations layer.
+        </p>
+        <ul class="mt-4 space-y-2 font-data text-sm text-strip-muted">
+          <li><strong class="text-strip-text">300+ visa guides</strong> published and indexed — searchable by country, purpose, and travel profile</li>
+          <li>Multi-step visa search wizard with personalised document checklists</li>
+          <li>Application Portal: secure document uploads, status tracking, admin-assigned cases</li>
+          <li>Partner integrations: flights, hotels, eSIM providers with enquiry workflows</li>
+        </ul>
+        <p class="mt-4 text-sm font-semibold text-strip-accent">Admin Operations Console</p>
+        <ul class="mt-2 space-y-2 font-data text-sm text-strip-muted">
+          <li><strong class="text-strip-text">CRM:</strong> Internally built customer relationship module — track enquiries, partners, and application pipelines</li>
+          <li><strong class="text-strip-text">Analytics & insights:</strong> SEO performance, guide engagement, conversion funnels, and content flagging</li>
+          <li><strong class="text-strip-text">Invoicing:</strong> Generate trip and service invoices with PDF export</li>
+          <li><strong class="text-strip-text">Applications management:</strong> Assign, review, and progress visa application files</li>
+          <li><strong class="text-strip-text">Support & content CMS:</strong> Manage guides, alerts, ratings, and partner listings from one shell</li>
+        </ul>
+      </div>
+
       <div class="strip-card">
         <h2 class="font-display text-lg font-bold text-strip-text">Effect</h2>
-        <p class="mt-3 text-strip-muted">Live platform at safarwise.app serving Pakistani travelers with profile-specific visa guides, travel alerts, and end-to-end application workflows — reducing research time from hours of scattered searching to a single guided experience.</p>
+        <p class="mt-3 text-strip-muted">
+          Live at <a href="https://safarwise.app" class="text-strip-accent hover:underline">safarwise.app</a> — Pakistani travellers get profile-specific visa intelligence in minutes instead of hours of scattered research. The layered QA system means content is machine-generated but not machine-trusted: every guide passes external grounding, internal rule checks, and optional human review before publication.
+        </p>
       </div>
     </section>
 
-    <AnalystLens title="Systems & Business Analyst Lens">
-      <div class="space-y-6 text-sm text-strip-muted">
-        <div>
-          <h3 class="font-data text-xs uppercase tracking-widest text-strip-accent">Stakeholder Map</h3>
-          <p class="mt-2">Travelers (primary), admin operations team, booking partners (Trip.com, Saily, RedteaGO), content editors.</p>
-        </div>
-        <div>
-          <h3 class="font-data text-xs uppercase tracking-widest text-strip-accent">Requirements Traceability</h3>
-          <p class="mt-2 font-data">Visa Search → Personalized Guide → Document Checklist → Application Portal (optional) → Status Tracking</p>
-        </div>
-        <div>
-          <h3 class="font-data text-xs uppercase tracking-widest text-strip-accent">Process: As-Is → To-Be</h3>
-          <p class="mt-2"><strong class="text-strip-text">As-Is:</strong> Scattered Google searches, embassy websites, agent consultations.<br />
-          <strong class="text-strip-text">To-Be:</strong> Single platform with AI-grounded guides, structured checklists, and optional hands-on application support.</p>
-        </div>
+    <section class="mt-12">
+      <h2 class="font-display text-xl font-bold">Screenshots</h2>
+      <div class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
+        {screenshots.map((src, i) => (
+          <div class="overflow-hidden rounded-lg border border-strip-border">
+            <img src={src} alt={`SafarWise screenshot ${i + 1}`} class="w-full object-cover" loading="lazy" />
+          </div>
+        ))}
       </div>
-    </AnalystLens>
+    </section>
   </article>
 </BaseLayout>

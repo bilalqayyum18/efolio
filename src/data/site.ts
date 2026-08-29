@@ -9,7 +9,7 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/bilal-qayyum-khan-703a44145",
   github: "https://github.com/bilalqayyum18",
   resumePath: "/assets/resume.pdf",
-  hasResume: false, // set true when resume.pdf is added
+  hasResume: false,
 } as const;
 
 export const projects = [
@@ -17,19 +17,21 @@ export const projects = [
     slug: "safarwise",
     title: "SafarWise",
     subtitle: "AI-powered visa intelligence for Pakistani travelers",
-    problem: "Pakistani travelers face fragmented visa and document guidance across dozens of sources.",
-    outcome: "Production platform — 42 pages, 64 DB migrations, live at safarwise.app",
+    problem: "Pakistani travelers face fragmented visa and document guidance across dozens of conflicting sources.",
+    outcome:
+      "Smart automated visa research system with layered QA — 300+ published guides, full admin operations suite, live at safarwise.app",
     tags: ["Next.js 15", "FastAPI", "Supabase", "Gemini AI", "Systems Design"],
     liveUrl: "https://safarwise.app",
     repoUrl: "https://github.com/bilalqayyum18/travelbuddy-web-app",
-    metric: "236M+ visa queries served",
+    metric: "300+ Visa Guides Generated",
   },
   {
     slug: "kababish",
     title: "Kababish Restaurant",
     subtitle: "Production Android ordering platform",
-    problem: "Restaurant needed end-to-end ordering and kitchen operations in one native app.",
-    outcome: "v3.0.4 on Play Store — realtime orders, loyalty, admin dashboard",
+    problem: "A live restaurant needed one native app for customer ordering and back-of-house operations — not separate tools.",
+    outcome:
+      "End-to-end Android app on Play Store — ordering, tracking, loyalty, push notifications, and a full admin command centre",
     tags: ["Kotlin", "Jetpack Compose", "Supabase Realtime", "Firebase FCM", "MVVM"],
     liveUrl: "https://play.google.com/store/apps/details?id=com.kababish.restaurant",
     metric: "Realtime order sync",
@@ -38,8 +40,10 @@ export const projects = [
     slug: "aviation",
     title: "Pakistan Aviation Analytics",
     subtitle: "20 years of CAA traffic data",
-    problem: "Two decades of government aviation data trapped in a single Excel workbook.",
-    outcome: "~300M passengers, ~5.4M tonnes cargo — interactive BI dashboard",
+    problem:
+      "Pakistan CAA releases yearly aviation statistics as unstructured PDFs — difficult to search, compare, or analyse across two decades.",
+    outcome:
+      "Pakistan's most comprehensive public aviation data dashboard — two decades of traffic data, exclusively interactive here",
     tags: ["Python ETL", "DuckDB-WASM", "Recharts", "KPI Design"],
     liveUrl: "/projects/aviation",
     metric: "173K+ flight legs analysed",

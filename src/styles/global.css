@@ -59,4 +59,53 @@
   .tag {
     @apply rounded border border-strip-border bg-strip-bg px-2 py-0.5 font-data text-xs text-strip-muted;
   }
+
+  .dash-card {
+    @apply relative overflow-hidden rounded-xl border border-strip-border/80 bg-strip-surface p-6 shadow-lg shadow-black/20 transition hover:border-strip-accent/30;
+  }
+
+  .dash-card-glow {
+    @apply pointer-events-none absolute inset-x-0 top-0 h-px;
+  }
+
+  .filter-panel {
+    @apply rounded-lg border border-strip-border/60 bg-strip-bg/50 p-4;
+  }
+
+  .kpi-card {
+    @apply relative overflow-hidden rounded-xl border border-strip-border/80 bg-gradient-to-br from-strip-surface to-strip-bg p-5 shadow-md;
+  }
+
+  .kpi-card::before {
+    content: "";
+    @apply absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-strip-accent via-strip-signal to-transparent;
+  }
+
+  .segment-btn {
+    @apply rounded-md border border-strip-border px-3 py-1.5 font-data text-[10px] uppercase tracking-wider text-strip-muted transition hover:border-strip-accent/50 hover:text-strip-text;
+  }
+
+  .segment-btn-active {
+    @apply border-strip-accent bg-strip-accent/15 text-strip-accent shadow-sm shadow-strip-accent/10;
+  }
+
+  .range-slider {
+    @apply h-1.5 cursor-pointer appearance-none rounded-full bg-strip-border accent-strip-accent;
+  }
+
+  .range-slider::-webkit-slider-thumb {
+    @apply h-4 w-4 appearance-none rounded-full border-2 border-strip-accent bg-strip-surface shadow-md shadow-strip-accent/30 transition hover:scale-110;
+  }
+
+  .range-slider::-moz-range-thumb {
+    @apply h-4 w-4 rounded-full border-2 border-strip-accent bg-strip-surface shadow-md;
+  }
+
+  .nav-link {
+    @apply relative text-strip-muted transition hover:text-strip-text;
+  }
+
+  .nav-link-active {
+    @apply text-strip-accent;
+  }
 }

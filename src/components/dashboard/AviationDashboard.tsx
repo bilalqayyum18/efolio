@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Bar, BarChart, CartesianGrid, Cell, Legend, Line, LineChart,
   ResponsiveContainer, Tooltip, XAxis, YAxis,
@@ -7,6 +7,7 @@ import {
   AirlineYAxisTick,
   CHART_TOOLTIP_STYLE,
   DashCard,
+  DashboardErrorBoundary,
   DATA_YEAR_MAX,
   DATA_YEAR_MIN,
   InactiveBadge,
@@ -654,9 +655,11 @@ function YearlyRankingsExplorer({
                               fontSize={tickSize}
                             />
                           ) : (
-                            <text x={props.x} y={props.y} dy={4} textAnchor="end" fill="#c5d4e8" fontSize={10} fontFamily="JetBrains Mono">
-                              {props.payload?.value}
-                            </text>
+                            <g transform={`translate(${props.x},${props.y})`}>
+                              <text dy={4} x={-6} textAnchor="end" fill="#c5d4e8" fontSize={10} fontFamily="JetBrains Mono">
+                                {props.payload?.value}
+                              </text>
+                            </g>
                           )
                         )}
                       />
@@ -900,6 +903,14 @@ function AirlineCagrChart({
 }
 
 export default function AviationDashboard() {
+  return (
+    <DashboardErrorBoundary>
+      <AviationDashboardInner />
+    </DashboardErrorBoundary>
+  );
+}
+
+function AviationDashboardInner() {
   const [summary, setSummary] = useState<Summary | null>(null);
   const [trends, setTrends] = useState<YearlyTrend[]>([]);
   const [seasonality, setSeasonality] = useState<SeasonalityRow[]>([]);
@@ -930,6 +941,9 @@ export default function AviationDashboard() {
   const [sectionAirports, setSectionAirports] = useState<AirportRow[]>([]);
   const [sectionAirlines, setSectionAirlines] = useState<AirlineRow[]>([]);
   const [trendsKpis, setTrendsKpis] = useState<{ passengers: number; cargo: number } | null>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [duckError, setDuckError] = useState<string | null>(null);
+  const duckQueryLock = useRef(Promise.resolve());
 
   const filterTrends = useCallback((rows: YearlyTrend[], segment: Segment, yearRange: [number, number]) =>
     rows.filter(
@@ -994,6 +1008,10 @@ export default function AviationDashboard() {
       setAirlineYearly(aly);
       setMonthlyBreakdown(monthly);
       setAirlineMeta(meta);
+      setLoadError(null);
+    }).catch((err) => {
+      console.error("Dashboard data load failed:", err);
+      setLoadError("Could not load aviation data files. Try refreshing the page.");
     });
   }, []);
 
@@ -1008,6 +1026,12 @@ export default function AviationDashboard() {
     if (airlinesSegment === "domestic") return airlineRankings.domestic.by_passengers.slice(0, 15);
     return airlineRankings.international.by_passengers.slice(0, 15);
   }, [airlineRankings, airlinesSegment]);
+
+  const runDuckQuery = useCallback((task: () => Promise<void>) => {
+    duckQueryLock.current = duckQueryLock.current
+      .then(task)
+      .catch((err) => console.error("DuckDB query failed:", err));
+  }, []);
 
   const querySection = useCallback(async (
     segment: Segment,
@@ -1050,20 +1074,25 @@ export default function AviationDashboard() {
   const initDuckDB = useCallback(async () => {
     if (duckReady || duckLoading) return;
     setDuckLoading(true);
+    setDuckError(null);
     try {
       const duckdb = await import("@duckdb/duckdb-wasm");
-      const bundle = await duckdb.selectBundle(duckdb.getJsDelivrBundles());
+      const bundles = duckdb.getJsDelivrBundles();
+      const bundle = await duckdb.selectBundle(bundles);
       const worker = new Worker(bundle.mainWorker!);
       const db = new duckdb.AsyncDuckDB(new duckdb.ConsoleLogger(), worker);
-      await db.instantiate(bundle.mainModule, bundle.pthreadWorker);
+      await db.instantiate(bundle.mainModule, bundle.pthreadWorker ?? undefined);
       const conn = await db.connect();
-      const buf = new Uint8Array(await (await fetch("/data/aviation/traffic.parquet")).arrayBuffer());
+      const res = await fetch("/data/aviation/traffic.parquet");
+      if (!res.ok) throw new Error(`Parquet fetch failed (${res.status})`);
+      const buf = new Uint8Array(await res.arrayBuffer());
       await db.registerFileBuffer("traffic.parquet", buf);
       await conn.query("CREATE TABLE traffic AS SELECT * FROM read_parquet('traffic.parquet')");
       setDuckConn(conn);
       setDuckReady(true);
     } catch (e) {
       console.error("DuckDB init failed:", e);
+      setDuckError("Live SQL unavailable — using cached JSON data.");
     } finally {
       setDuckLoading(false);
     }
@@ -1072,25 +1101,24 @@ export default function AviationDashboard() {
   useEffect(() => {
     const el = document.getElementById("aviation-dashboard");
     if (!el) return;
-    const obs = new IntersectionObserver(([entry]) => { if (entry.isIntersecting) initDuckDB(); }, { threshold: 0.1 });
-    obs.observe(el);
-    return () => obs.disconnect();
+    const timer = window.setTimeout(() => { void initDuckDB(); }, 1500);
+    return () => window.clearTimeout(timer);
   }, [initDuckDB]);
 
   useEffect(() => {
     if (!duckReady) return;
-    querySection(trendsSegment, trendsYearRange, setTrendsKpis, () => {}, () => {});
-  }, [duckReady, querySection, trendsSegment, trendsYearRange]);
+    runDuckQuery(() => querySection(trendsSegment, trendsYearRange, setTrendsKpis, () => {}, () => {}));
+  }, [duckReady, querySection, trendsSegment, trendsYearRange, runDuckQuery]);
 
   useEffect(() => {
     if (!duckReady) return;
-    querySection(airportsSegment, airportsYearRange, () => {}, setSectionAirports, () => {});
-  }, [duckReady, querySection, airportsSegment, airportsYearRange]);
+    runDuckQuery(() => querySection(airportsSegment, airportsYearRange, () => {}, setSectionAirports, () => {}));
+  }, [duckReady, querySection, airportsSegment, airportsYearRange, runDuckQuery]);
 
   useEffect(() => {
     if (!duckReady) return;
-    querySection(airlinesSegment, airlinesYearRange, () => {}, () => {}, setSectionAirlines);
-  }, [duckReady, querySection, airlinesSegment, airlinesYearRange]);
+    runDuckQuery(() => querySection(airlinesSegment, airlinesYearRange, () => {}, () => {}, setSectionAirlines));
+  }, [duckReady, querySection, airlinesSegment, airlinesYearRange, runDuckQuery]);
 
   const exportCsv = async (segment: Segment, yearRange: [number, number]) => {
     if (!duckConn) return;
@@ -1123,12 +1151,19 @@ export default function AviationDashboard() {
     </div>
   );
 
+  if (loadError) {
+    return <div className="dash-card border border-red-500/40 p-8 text-center font-data text-red-300">{loadError}</div>;
+  }
+
   if (!summary) {
     return <div className="dash-card p-8 text-center font-data text-strip-muted">Loading dashboard data…</div>;
   }
 
   return (
     <div id="aviation-dashboard" className="space-y-8">
+      {duckError && (
+        <p className="rounded-lg border border-strip-warn/30 bg-strip-warn/10 px-4 py-2 font-data text-xs text-strip-warn">{duckError}</p>
+      )}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <div className="kpi-card">
           <p className="strip-label">{segmentLabel(trendsSegment)} Passengers</p>

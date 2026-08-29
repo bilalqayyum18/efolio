@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { Component, type ReactNode } from "react";
 
 export const DATA_YEAR_MIN = 2006;
 export const DATA_YEAR_MAX = 2026;
@@ -19,6 +19,36 @@ export const CHART_TOOLTIP_STYLE = {
 
 export function segmentLabel(segment: Segment): string {
   return segment === "all" ? "Combined" : segment.charAt(0).toUpperCase() + segment.slice(1);
+}
+
+export class DashboardErrorBoundary extends Component<
+  { children: ReactNode },
+  { error: Error | null }
+> {
+  state: { error: Error | null } = { error: null };
+
+  static getDerivedStateFromError(error: Error) {
+    return { error };
+  }
+
+  render() {
+    if (this.state.error) {
+      return (
+        <div className="dash-card border border-red-500/40 bg-red-950/20 p-6">
+          <p className="font-display font-bold text-red-300">Dashboard could not render</p>
+          <p className="mt-2 font-data text-sm text-strip-muted">{this.state.error.message}</p>
+          <button
+            type="button"
+            className="strip-btn mt-4 text-xs"
+            onClick={() => this.setState({ error: null })}
+          >
+            Retry
+          </button>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
 }
 
 export function InactiveBadge({ compact = false }: { compact?: boolean }) {
@@ -255,6 +285,8 @@ export function AirlineYAxisTick({
   const item = items.find((d) => d.name === payload?.value);
   const fullName = item?.fullName ?? payload?.value ?? "";
   const inactive = showInactive && metaMap.get(fullName)?.inactive;
+
+  if (!payload?.value) return null;
 
   return (
     <g transform={`translate(${x},${y})`}>

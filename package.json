@@ -9,7 +9,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "deploy": "wrangler pages deploy dist --project-name=e-folio",
+    "deploy": "wrangler pages deploy dist --project-name=bilal-efolio",
     "astro": "astro"
   },
   "dependencies": {

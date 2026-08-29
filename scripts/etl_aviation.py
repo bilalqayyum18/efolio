@@ -254,6 +254,54 @@ def yearly_top_entities(df: pd.DataFrame, top_n: int = 15) -> dict:
     return result
 
 
+def _entity_rows_from_agg(agg: pd.DataFrame) -> list[dict]:
+    return [
+        {
+            "name": k,
+            "passengers": int(r.passengers),
+            "cargo_tons": round(float(r.cargo_tons), 2),
+            "flights": int(r.flights),
+        }
+        for k, r in agg.iterrows()
+    ]
+
+
+def _airport_agg_for_group(ygrp: pd.DataFrame, segment: str) -> pd.DataFrame:
+    if segment == "international":
+        return (
+            ygrp.groupby("pk_airport")
+            .agg(passengers=("passengers", "sum"), cargo_tons=("cargo_tons", "sum"), flights=("passengers", "count"))
+            .sort_values("passengers", ascending=False)
+        )
+    dep = ygrp.groupby("dep_airport").agg(
+        passengers=("passengers", "sum"), cargo_tons=("cargo_tons", "sum"), flights=("passengers", "count")
+    )
+    arr = ygrp.groupby("arr_airport").agg(
+        passengers=("passengers", "sum"), cargo_tons=("cargo_tons", "sum"), flights=("passengers", "count")
+    )
+    return dep.add(arr, fill_value=0).groupby(level=0).sum().sort_values("passengers", ascending=False)
+
+
+def period_entity_rankings(df: pd.DataFrame) -> dict:
+    """Per year-month entity rankings for dashboard period slicers (no row cap)."""
+    result: dict = {"airlines": {"international": {}, "domestic": {}}, "airports": {"international": {}, "domestic": {}}}
+
+    for segment in ("international", "domestic"):
+        seg = df[df["segment"] == segment]
+        for (year, month), ygrp in seg.groupby(["year", "month"]):
+            key = f"{int(year)}-{int(month)}"
+            aln = (
+                ygrp.groupby("airline")
+                .agg(passengers=("passengers", "sum"), cargo_tons=("cargo_tons", "sum"), flights=("passengers", "count"))
+                .sort_values("passengers", ascending=False)
+            )
+            apt = _airport_agg_for_group(ygrp, segment)
+            result["airlines"][segment][key] = _entity_rows_from_agg(aln)
+            result["airports"][segment][key] = _entity_rows_from_agg(apt)
+
+    return result
+
+
 def airline_yearly_passengers(df: pd.DataFrame) -> dict:
     """Yearly passenger totals per airline — used for CAGR calculations in the dashboard."""
     result: dict = {"international": [], "domestic": []}
@@ -268,6 +316,64 @@ def airline_yearly_passengers(df: pd.DataFrame) -> dict:
     for seg in result:
         result[seg].sort(key=lambda r: (r["year"], r["airline"]))
     return result
+
+
+INACTIVE_PATTERNS = [
+    "SHAHEEN", "SERENE", "AERO ASIA", "BHoja", "AIR INDUS", "RAYA",
+    "SAFE AIR", "SAHARA", "TABA", "ORIENT", "CAMBATA",
+]
+
+
+def is_inactive_airline(name: str, last_year: int) -> bool:
+    upper = name.upper()
+    if any(p in upper for p in INACTIVE_PATTERNS):
+        return True
+    return last_year < 2023
+
+
+def airline_metadata(df: pd.DataFrame) -> dict:
+    """Per-airline coverage and inactive status for dashboard labels."""
+    records = []
+    for airline, grp in df.groupby("airline"):
+        years = sorted(int(y) for y in grp["year"].unique())
+        last_year = years[-1]
+        records.append({
+            "airline": airline,
+            "first_year": years[0],
+            "last_year": last_year,
+            "years_active": len(years),
+            "inactive": is_inactive_airline(airline, last_year),
+        })
+    return {"airlines": sorted(records, key=lambda r: r["airline"])}
+
+
+def monthly_airline_breakdown(df: pd.DataFrame, top_n: int = 3) -> list[dict]:
+    """Top airlines per year/month/segment for heatmap tooltips."""
+    records = []
+    for (year, month, segment), grp in df.groupby(["year", "month", "segment"]):
+        total = int(grp["passengers"].sum())
+        top = (
+            grp.groupby("airline")["passengers"].sum().sort_values(ascending=False).head(top_n)
+        )
+        records.append({
+            "year": int(year),
+            "month": int(month),
+            "segment": segment,
+            "passengers": total,
+            "top_airlines": [{"airline": k, "passengers": int(v)} for k, v in top.items()],
+        })
+    # Combined segment rows for heatmap "all" view
+    for (year, month), grp in df.groupby(["year", "month"]):
+        total = int(grp["passengers"].sum())
+        top = grp.groupby("airline")["passengers"].sum().sort_values(ascending=False).head(top_n)
+        records.append({
+            "year": int(year),
+            "month": int(month),
+            "segment": "all",
+            "passengers": total,
+            "top_airlines": [{"airline": k, "passengers": int(v)} for k, v in top.items()],
+        })
+    return records
 
 
 def write_json(path: Path, data) -> None:
@@ -370,7 +476,10 @@ def main() -> None:
     write_json(OUTPUT_DIR / "data_dictionary.json", data_dictionary)
     write_json(OUTPUT_DIR / "insights.json", insights)
     write_json(OUTPUT_DIR / "yearly-top-entities.json", yearly_top_entities(combined))
+    write_json(OUTPUT_DIR / "period-entity-rankings.json", period_entity_rankings(combined))
     write_json(OUTPUT_DIR / "airline-yearly-passengers.json", airline_yearly_passengers(combined))
+    write_json(OUTPUT_DIR / "monthly-airline-breakdown.json", monthly_airline_breakdown(combined))
+    write_json(OUTPUT_DIR / "airline-metadata.json", airline_metadata(combined))
     combined[export_cols].to_parquet(OUTPUT_DIR / "traffic.parquet", compression="zstd", index=False)
 
     manifest = {

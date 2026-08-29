@@ -1,0 +1,438 @@
+{
+  "airlines": [
+    {
+      "airline": "Aero Asia",
+      "first_year": 2006,
+      "last_year": 2007,
+      "years_active": 2,
+      "inactive": true
+    },
+    {
+      "airline": "Aero Nomad Airlines",
+      "first_year": 2023,
+      "last_year": 2026,
+      "years_active": 4,
+      "inactive": false
+    },
+    {
+      "airline": "Air Arabia",
+      "first_year": 2007,
+      "last_year": 2026,
+      "years_active": 20,
+      "inactive": false
+    },
+    {
+      "airline": "Air Arabia Abu Dhabi",
+      "first_year": 2021,
+      "last_year": 2026,
+      "years_active": 6,
+      "inactive": false
+    },
+    {
+      "airline": "Air Blue",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 21,
+      "inactive": false
+    },
+    {
+      "airline": "Air China",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 21,
+      "inactive": false
+    },
+    {
+      "airline": "Air Indus",
+      "first_year": 2013,
+      "last_year": 2015,
+      "years_active": 3,
+      "inactive": true
+    },
+    {
+      "airline": "Air Sial",
+      "first_year": 2020,
+      "last_year": 2026,
+      "years_active": 7,
+      "inactive": false
+    },
+    {
+      "airline": "Airasiax",
+      "first_year": 2025,
+      "last_year": 2026,
+      "years_active": 2,
+      "inactive": false
+    },
+    {
+      "airline": "Ariana Afghan",
+      "first_year": 2006,
+      "last_year": 2025,
+      "years_active": 7,
+      "inactive": false
+    },
+    {
+      "airline": "Azerbaijan Airlines",
+      "first_year": 2017,
+      "last_year": 2026,
+      "years_active": 9,
+      "inactive": false
+    },
+    {
+      "airline": "Biman Bangladesh",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 8,
+      "inactive": false
+    },
+    {
+      "airline": "British Airways",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 11,
+      "inactive": false
+    },
+    {
+      "airline": "Cargolux Airlines",
+      "first_year": 2006,
+      "last_year": 2015,
+      "years_active": 10,
+      "inactive": true
+    },
+    {
+      "airline": "Cathay Pacific",
+      "first_year": 2006,
+      "last_year": 2014,
+      "years_active": 9,
+      "inactive": true
+    },
+    {
+      "airline": "Chamwing Airlines",
+      "first_year": 2021,
+      "last_year": 2024,
+      "years_active": 4,
+      "inactive": false
+    },
+    {
+      "airline": "China Southern",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 21,
+      "inactive": false
+    },
+    {
+      "airline": "Dhl Aviation",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 20,
+      "inactive": false
+    },
+    {
+      "airline": "Emirates Airlines",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 21,
+      "inactive": false
+    },
+    {
+      "airline": "Ethiopian Airlines Corporation",
+      "first_year": 2023,
+      "last_year": 2026,
+      "years_active": 4,
+      "inactive": false
+    },
+    {
+      "airline": "Etihad Airways",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 21,
+      "inactive": false
+    },
+    {
+      "airline": "Fly Adeal Airlines",
+      "first_year": 2025,
+      "last_year": 2026,
+      "years_active": 2,
+      "inactive": false
+    },
+    {
+      "airline": "Fly Baghdad",
+      "first_year": 2021,
+      "last_year": 2024,
+      "years_active": 4,
+      "inactive": false
+    },
+    {
+      "airline": "Fly Dubai",
+      "first_year": 2010,
+      "last_year": 2026,
+      "years_active": 17,
+      "inactive": false
+    },
+    {
+      "airline": "Fly Jinnah",
+      "first_year": 2022,
+      "last_year": 2026,
+      "years_active": 5,
+      "inactive": false
+    },
+    {
+      "airline": "Fly Nas",
+      "first_year": 2011,
+      "last_year": 2026,
+      "years_active": 13,
+      "inactive": false
+    },
+    {
+      "airline": "Gulf Air",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 21,
+      "inactive": false
+    },
+    {
+      "airline": "Iran Air",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 21,
+      "inactive": false
+    },
+    {
+      "airline": "Iranair Tours Co.",
+      "first_year": 2025,
+      "last_year": 2026,
+      "years_active": 2,
+      "inactive": false
+    },
+    {
+      "airline": "Iraqi Airways",
+      "first_year": 2018,
+      "last_year": 2026,
+      "years_active": 9,
+      "inactive": false
+    },
+    {
+      "airline": "Jazeera Airways",
+      "first_year": 2018,
+      "last_year": 2026,
+      "years_active": 9,
+      "inactive": false
+    },
+    {
+      "airline": "Kam Air",
+      "first_year": 2016,
+      "last_year": 2026,
+      "years_active": 11,
+      "inactive": false
+    },
+    {
+      "airline": "Kish Air",
+      "first_year": 2016,
+      "last_year": 2026,
+      "years_active": 6,
+      "inactive": false
+    },
+    {
+      "airline": "Kuwait Airways",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 21,
+      "inactive": false
+    },
+    {
+      "airline": "Mahan Air",
+      "first_year": 2007,
+      "last_year": 2026,
+      "years_active": 12,
+      "inactive": false
+    },
+    {
+      "airline": "Malaysian Airlines",
+      "first_year": 2006,
+      "last_year": 2012,
+      "years_active": 7,
+      "inactive": true
+    },
+    {
+      "airline": "Malindo Air",
+      "first_year": 2016,
+      "last_year": 2026,
+      "years_active": 10,
+      "inactive": false
+    },
+    {
+      "airline": "Mihin Lanka",
+      "first_year": 2016,
+      "last_year": 2016,
+      "years_active": 1,
+      "inactive": true
+    },
+    {
+      "airline": "Oman Air",
+      "first_year": 2007,
+      "last_year": 2026,
+      "years_active": 20,
+      "inactive": false
+    },
+    {
+      "airline": "Pakistan International",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 21,
+      "inactive": false
+    },
+    {
+      "airline": "Pegasus Airlines",
+      "first_year": 2017,
+      "last_year": 2026,
+      "years_active": 8,
+      "inactive": false
+    },
+    {
+      "airline": "Qatar Airways",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 21,
+      "inactive": false
+    },
+    {
+      "airline": "Rak Airways",
+      "first_year": 2011,
+      "last_year": 2013,
+      "years_active": 3,
+      "inactive": true
+    },
+    {
+      "airline": "Royal Jordanian",
+      "first_year": 2024,
+      "last_year": 2026,
+      "years_active": 3,
+      "inactive": false
+    },
+    {
+      "airline": "Safi Airways",
+      "first_year": 2014,
+      "last_year": 2016,
+      "years_active": 3,
+      "inactive": true
+    },
+    {
+      "airline": "Salam Air",
+      "first_year": 2017,
+      "last_year": 2026,
+      "years_active": 10,
+      "inactive": false
+    },
+    {
+      "airline": "Saudi Arabian",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 21,
+      "inactive": false
+    },
+    {
+      "airline": "Saudia Gulf",
+      "first_year": 2018,
+      "last_year": 2020,
+      "years_active": 3,
+      "inactive": true
+    },
+    {
+      "airline": "Scat Airlines",
+      "first_year": 2023,
+      "last_year": 2024,
+      "years_active": 2,
+      "inactive": false
+    },
+    {
+      "airline": "Serene Air",
+      "first_year": 2017,
+      "last_year": 2025,
+      "years_active": 9,
+      "inactive": true
+    },
+    {
+      "airline": "Sf Airline",
+      "first_year": 2025,
+      "last_year": 2026,
+      "years_active": 2,
+      "inactive": false
+    },
+    {
+      "airline": "Shaheen Air International",
+      "first_year": 2006,
+      "last_year": 2018,
+      "years_active": 13,
+      "inactive": true
+    },
+    {
+      "airline": "Singapore Airlines",
+      "first_year": 2006,
+      "last_year": 2009,
+      "years_active": 4,
+      "inactive": true
+    },
+    {
+      "airline": "Somon Air",
+      "first_year": 2024,
+      "last_year": 2025,
+      "years_active": 2,
+      "inactive": false
+    },
+    {
+      "airline": "Srilankan Airlines",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 21,
+      "inactive": false
+    },
+    {
+      "airline": "Syrian Arab",
+      "first_year": 2006,
+      "last_year": 2008,
+      "years_active": 3,
+      "inactive": true
+    },
+    {
+      "airline": "Taban Airline",
+      "first_year": 2016,
+      "last_year": 2026,
+      "years_active": 11,
+      "inactive": true
+    },
+    {
+      "airline": "Taban Airlines",
+      "first_year": 2015,
+      "last_year": 2016,
+      "years_active": 2,
+      "inactive": true
+    },
+    {
+      "airline": "Thai Airways",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 21,
+      "inactive": false
+    },
+    {
+      "airline": "Turkish Airlines",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 21,
+      "inactive": false
+    },
+    {
+      "airline": "Uzbekistan Airways",
+      "first_year": 2006,
+      "last_year": 2026,
+      "years_active": 15,
+      "inactive": false
+    },
+    {
+      "airline": "Virgin Atlantic Airways",
+      "first_year": 2020,
+      "last_year": 2023,
+      "years_active": 4,
+      "inactive": false
+    }
+  ]
+}

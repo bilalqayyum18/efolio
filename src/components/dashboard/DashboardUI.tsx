@@ -155,47 +155,6 @@ export function SegmentToggle({ value, onChange }: { value: Segment; onChange: (
   );
 }
 
-export function FilterTargetToggle({
-  airports,
-  airlines,
-  onAirportsChange,
-  onAirlinesChange,
-}: {
-  airports: boolean;
-  airlines: boolean;
-  onAirportsChange: (v: boolean) => void;
-  onAirlinesChange: (v: boolean) => void;
-}) {
-  const toggle = (target: "airports" | "airlines") => {
-    if (target === "airports") {
-      if (airports && !airlines) return;
-      onAirportsChange(!airports);
-    } else {
-      if (airlines && !airports) return;
-      onAirlinesChange(!airlines);
-    }
-  };
-
-  return (
-    <div className="flex gap-1.5">
-      <button
-        type="button"
-        onClick={() => toggle("airports")}
-        className={`segment-btn flex-1 ${airports ? "segment-btn-active" : ""}`}
-      >
-        Airports
-      </button>
-      <button
-        type="button"
-        onClick={() => toggle("airlines")}
-        className={`segment-btn flex-1 ${airlines ? "segment-btn-active" : ""}`}
-      >
-        Airlines
-      </button>
-    </div>
-  );
-}
-
 export function PeriodFilterControls({
   segment,
   onSegmentChange,
@@ -453,7 +412,7 @@ export const AirlineYAxisTick = memo(function AirlineYAxisTick({
   fontSize?: number;
   showInactive?: boolean;
 }) {
-  const item = items.find((d) => d.name === payload?.value);
+  const item = items.find((d) => d.fullName === payload?.value || d.name === payload?.value);
   const fullName = item?.fullName ?? payload?.value ?? "";
   const inactive = showInactive && metaMap.get(fullName)?.inactive;
 
@@ -470,7 +429,7 @@ export const AirlineYAxisTick = memo(function AirlineYAxisTick({
         fontSize={fontSize}
         fontFamily="JetBrains Mono, monospace"
       >
-        {payload?.value}
+        {item?.name ?? shortDisplay(payload.value)}
         {inactive && (
           <tspan fill="#f87171" fontSize={fontSize - 1} fontWeight={600}> · Inactive</tspan>
         )}
@@ -478,3 +437,7 @@ export const AirlineYAxisTick = memo(function AirlineYAxisTick({
     </g>
   );
 });
+
+function shortDisplay(name: string, max = 20): string {
+  return name.length > max ? `${name.slice(0, max - 2)}…` : name;
+}

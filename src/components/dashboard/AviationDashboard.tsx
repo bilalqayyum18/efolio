@@ -28,7 +28,7 @@ import {
 type Summary = {
   international: { passengers: number; cargo_tons: number };
   domestic: { passengers: number; cargo_tons: number };
-  combined: { passengers: number; cargo_tons: number; year_range: number[] };
+  combined: { passengers: number; cargo_tons: number; year_range: number[]; rows?: number };
 };
 
 type YearlyTrend = {
@@ -41,16 +41,12 @@ type YearlyTrend = {
 };
 
 type EntityRow = { name: string; passengers: number; cargo_tons: number; flights: number };
-type YearlyTopEntities = {
-  airlines: Record<string, Record<string, EntityRow[]>>;
-  airports: Record<string, Record<string, EntityRow[]>>;
-};
 type PeriodEntityRankings = {
   airlines: Record<string, Record<string, EntityRow[]>>;
   airports: Record<string, Record<string, EntityRow[]>>;
 };
 type AirlineYearRow = { year: number; airline: string; passengers: number };
-type SeasonalityRow = { year: number; month: number; segment: string; passengers: number };
+type SeasonalityRow = { year: number; month: number; segment: string; passengers: number; cargo_tons: number };
 type MonthlyCell = {
   year: number; month: number; segment: string; passengers: number;
   top_airlines: { airline: string; passengers: number }[];
@@ -90,13 +86,6 @@ function tooltipFormatter(value: number, name: string) {
   return [label, name];
 }
 
-function sqlPeriodWhere(period: PeriodSelection): string {
-  const clauses: string[] = [];
-  if (period.selectedYear !== "all") clauses.push(`year = ${period.selectedYear}`);
-  if (period.selectedMonth !== "all") clauses.push(`month = ${period.selectedMonth}`);
-  return clauses.length ? clauses.join(" AND ") : "1=1";
-}
-
 function formatPeriodLabel(period: PeriodSelection): string {
   if (period.selectedYear === "all") {
     return period.selectedMonth !== "all"
@@ -108,6 +97,33 @@ function formatPeriodLabel(period: PeriodSelection): string {
     : `${period.selectedYear}`;
 }
 
+function escapeCsvCell(value: unknown): string {
+  const s = String(value ?? "");
+  if (/[",\n\r]/.test(s)) return `"${s.replace(/"/g, '""')}"`;
+  return s;
+}
+
+function aggregateSeasonalityCargo(
+  rows: SeasonalityRow[],
+  keyFn: (r: SeasonalityRow) => number,
+  labelFn: (key: number) => string,
+): Record<string, number | string>[] {
+  const byKey = new Map<number, { intl: number; dom: number }>();
+  for (const r of rows) {
+    const key = keyFn(r);
+    const cur = byKey.get(key) ?? { intl: 0, dom: 0 };
+    if (r.segment === "international") cur.intl += r.cargo_tons;
+    else if (r.segment === "domestic") cur.dom += r.cargo_tons;
+    byKey.set(key, cur);
+  }
+  return [...byKey.entries()].sort(([a], [b]) => a - b).map(([key, v]) => ({
+    period: labelFn(key),
+    intlCargo: v.intl,
+    domCargo: v.dom,
+    cargo: v.intl + v.dom,
+  }));
+}
+
 function buildCargoChartData(
   trends: YearlyTrend[],
   seasonality: SeasonalityRow[],
@@ -116,50 +132,35 @@ function buildCargoChartData(
 ): { data: Record<string, number | string>[]; xKey: string } {
   const segMatch = (s: string) => segment === "all" || s === segment;
 
+  // Specific year + specific month → single-period bar(s)
+  if (period.selectedYear !== "all" && period.selectedMonth !== "all") {
+    const rows = seasonality.filter(
+      (d) => d.year === period.selectedYear && d.month === period.selectedMonth && segMatch(d.segment),
+    );
+    const data = aggregateSeasonalityCargo(rows, () => 0, () => formatPeriodLabel(period));
+    return { data, xKey: "period" };
+  }
+
+  // Specific year, all months → monthly bars
   if (period.selectedYear !== "all" && period.selectedMonth === "all") {
-    const rows = seasonality
-      .filter((d) => d.year === period.selectedYear && segMatch(d.segment))
-      .sort((a, b) => a.month - b.month);
-    const byMonth = new Map<number, { intl: number; dom: number }>();
-    for (const r of rows) {
-      const cur = byMonth.get(r.month) ?? { intl: 0, dom: 0 };
-      if (r.segment === "international") cur.intl += r.cargo_tons;
-      else cur.dom += r.cargo_tons;
-      byMonth.set(r.month, cur);
-    }
-    const data = [...byMonth.entries()].sort(([a], [b]) => a - b).map(([month, v]) => ({
-      period: MONTHS[month - 1],
-      intlCargo: v.intl,
-      domCargo: v.dom,
-      cargo: v.intl + v.dom,
-    }));
-    return { data, xKey: "period" };
+    const rows = seasonality.filter((d) => d.year === period.selectedYear && segMatch(d.segment));
+    return {
+      data: aggregateSeasonalityCargo(rows, (r) => r.month, (m) => MONTHS[m - 1]),
+      xKey: "period",
+    };
   }
 
+  // All years, specific month → that month across years
   if (period.selectedYear === "all" && period.selectedMonth !== "all") {
-    const rows = seasonality
-      .filter((d) => d.month === period.selectedMonth && segMatch(d.segment))
-      .sort((a, b) => a.year - b.year);
-    const byYear = new Map<number, { intl: number; dom: number }>();
-    for (const r of rows) {
-      const cur = byYear.get(r.year) ?? { intl: 0, dom: 0 };
-      if (r.segment === "international") cur.intl += r.cargo_tons;
-      else cur.dom += r.cargo_tons;
-      byYear.set(r.year, cur);
-    }
-    const data = [...byYear.entries()].sort(([a], [b]) => a - b).map(([year, v]) => ({
-      period: String(year),
-      intlCargo: v.intl,
-      domCargo: v.dom,
-      cargo: v.intl + v.dom,
-    }));
-    return { data, xKey: "period" };
+    const rows = seasonality.filter((d) => d.month === period.selectedMonth && segMatch(d.segment));
+    return {
+      data: aggregateSeasonalityCargo(rows, (r) => r.year, String),
+      xKey: "period",
+    };
   }
 
-  const yearly = trends.filter((t) => {
-    const yearOk = period.selectedYear === "all" || t.year === period.selectedYear;
-    return yearOk && segMatch(t.segment);
-  });
+  // All years, all months → yearly totals
+  const yearly = trends.filter((t) => segMatch(t.segment));
   const years = [...new Set(yearly.map((t) => t.year))].sort();
   const data = years.map((year) => {
     const intl = yearly.find((t) => t.year === year && t.segment === "international");
@@ -172,6 +173,10 @@ function buildCargoChartData(
     };
   });
   return { data, xKey: "period" };
+}
+
+function shortLabel(name: string, max = 20): string {
+  return name.length > max ? `${name.slice(0, max - 2)}…` : name;
 }
 
 function computeCagr(start: number, end: number, years: number): number | null {
@@ -241,7 +246,6 @@ function Heatmap({
   });
 
   const years = [...new Set(filtered.map((d) => d.year))].sort();
-  const maxPax = Math.max(...filtered.map((d) => d.passengers), 1);
 
   const getCellPax = (year: number, month: number) => {
     const key = `${year}-${month}`;
@@ -249,6 +253,11 @@ function Heatmap({
     if (cell) return cell.passengers;
     return filtered.filter((d) => d.year === year && d.month === month).reduce((s, d) => s + d.passengers, 0);
   };
+
+  const maxPax = Math.max(
+    1,
+    ...years.flatMap((year) => MONTHS.map((_, mi) => getCellPax(year, mi + 1))),
+  );
 
   const hoverCell = hover ? cellLookup.get(`${hover.year}-${hover.month}`) : null;
   const hoverPax = hover ? getCellPax(hover.year, hover.month) : 0;
@@ -403,26 +412,6 @@ function aggregatePeriodRankingsJson(
   return mergeEntityRows(rows);
 }
 
-function aggregateYearlyTopJson(
-  yearlyTop: YearlyTopEntities,
-  entityType: EntityType,
-  segment: Segment,
-  years: number[],
-): EntityRow[] {
-  const bucket = entityType === "airline" ? yearlyTop.airlines : yearlyTop.airports;
-  const rows: EntityRow[] = [];
-  for (const year of years) {
-    if (segment === "all") {
-      const intl = bucket.international?.[String(year)] ?? [];
-      const dom = bucket.domestic?.[String(year)] ?? [];
-      rows.push(...intl, ...dom);
-    } else {
-      rows.push(...(bucket[segment]?.[String(year)] ?? []));
-    }
-  }
-  return mergeEntityRows(rows);
-}
-
 type DuckConn = { query: (sql: string) => Promise<{ toArray: () => Record<string, unknown>[] }> };
 
 async function queryEntityRankings(
@@ -493,13 +482,11 @@ async function queryEntityRankings(
 }
 
 function YearlyRankingsExplorer({
-  yearlyTop,
   periodRankings,
   metaMap,
   duckConn,
   duckReady,
 }: {
-  yearlyTop: YearlyTopEntities | null;
   periodRankings: PeriodEntityRankings | null;
   metaMap: Map<string, AirlineMeta>;
   duckConn: unknown;
@@ -519,19 +506,12 @@ function YearlyRankingsExplorer({
   const [rankingsLoading, setRankingsLoading] = useState(false);
   const [rankingsError, setRankingsError] = useState<string | null>(null);
 
-  const needsPeriodData = selectedMonth !== "all" || selectedYear === "all";
-
   const loadFromJson = useCallback(() => {
-    if (needsPeriodData) {
-      if (!periodRankings) return null;
-      return aggregatePeriodRankingsJson(
-        periodRankings, entityType, segment, yearRange, selectedYear, selectedMonth,
-      );
-    }
-    if (!yearlyTop) return null;
-    const years = [selectedYear as number];
-    return aggregateYearlyTopJson(yearlyTop, entityType, segment, years);
-  }, [needsPeriodData, periodRankings, yearlyTop, entityType, segment, selectedYear, selectedMonth]);
+    if (!periodRankings) return null;
+    return aggregatePeriodRankingsJson(
+      periodRankings, entityType, segment, yearRange, selectedYear, selectedMonth,
+    );
+  }, [periodRankings, entityType, segment, selectedYear, selectedMonth]);
 
   useEffect(() => {
     let cancelled = false;
@@ -566,14 +546,10 @@ function YearlyRankingsExplorer({
         if (jsonRows) {
           setEntityData((prev) => {
             const next = jsonRows.sort((a, b) => b.passengers - a.passengers);
-            if (prev.length === next.length && prev.every((r, i) => r.name === next[i]?.name && r.passengers === next[i]?.passengers)) {
-              return prev;
-            }
+            if (entityRowsEqual(prev, next)) return prev;
             return next;
           });
-        } else if (needsPeriodData && !periodRankings) {
-          setEntityData([]);
-        } else if (!needsPeriodData && !yearlyTop) {
+        } else if (!periodRankings) {
           setEntityData([]);
         }
       }
@@ -581,7 +557,7 @@ function YearlyRankingsExplorer({
 
     load();
     return () => { cancelled = true; };
-  }, [yearlyTop, periodRankings, entityType, segment, selectedYear, selectedMonth, duckConn, duckReady, loadFromJson, needsPeriodData]);
+  }, [periodRankings, entityType, segment, selectedYear, selectedMonth, duckConn, duckReady, loadFromJson]);
 
   const toggleMetric = (key: MetricKey) => {
     setMetrics((prev) => {
@@ -600,13 +576,17 @@ function YearlyRankingsExplorer({
     selectedYear === "all"
       ? `${yearRange[0]}–${yearRange[1]}${selectedMonth !== "all" ? ` · ${MONTHS[selectedMonth - 1]}` : ""}`
       : `${selectedYear}${selectedMonth !== "all" ? ` · ${MONTHS[selectedMonth - 1]}` : ""}`;
-  const duckPending = !duckReady && needsPeriodData && !periodRankings;
+  const duckPending = !duckReady && !periodRankings;
 
   return (
     <DashCard
       label="Period Rankings"
       title="Top Airlines & Airports by Period"
-      description="Sorted highest to lowest. Flight legs = individual movement records per CAA reporting (one row per leg)."
+      description={
+        entityType === "airport"
+          ? "International uses the Pakistani endpoint (Arr/Dep). Domestic counts both ends of each leg (dep + arr), so passenger totals are throughput, not unique travelers. Flight legs = CAA movement records."
+          : "Sorted highest to lowest. Flight legs = individual movement records per CAA reporting (one row per leg)."
+      }
       accent="signal"
       filters={
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
@@ -674,12 +654,17 @@ function YearlyRankingsExplorer({
       {rankingsError && (
         <p className="mt-4 font-data text-xs text-strip-partial">{rankingsError}</p>
       )}
+      {entityType === "airport" && segment === "all" && (
+        <p className="mt-3 font-data text-[10px] text-strip-partial">
+          Combined airport totals mix international (once per leg) with domestic (both endpoints). Prefer a single segment for like-for-like comparison.
+        </p>
+      )}
 
       <div className={`mt-8 grid gap-6 ${activeMetrics.length > 1 ? "lg:grid-cols-2" : ""}`}>
         {activeMetrics.map((metric) => {
           const sorted = [...entityData].sort((a, b) => b[metric.key] - a[metric.key]);
           const chartData = sorted.map((r) => ({
-            name: r.name.length > 20 ? `${r.name.slice(0, 18)}…` : r.name,
+            name: shortLabel(r.name, entityType === "airline" ? 20 : 18),
             fullName: r.name,
             value: r[metric.key],
           }));
@@ -704,7 +689,7 @@ function YearlyRankingsExplorer({
                       <XAxis type="number" tick={{ fill: "#8fa3bf", fontSize: 10 }} tickFormatter={metric.format} />
                       <YAxis
                         type="category"
-                        dataKey="name"
+                        dataKey="fullName"
                         width={yAxisWidth}
                         tick={(props) => (
                           entityType === "airline" ? (
@@ -717,7 +702,7 @@ function YearlyRankingsExplorer({
                           ) : (
                             <g transform={`translate(${props.x},${props.y})`}>
                               <text dy={4} x={-6} textAnchor="end" fill="#c5d4e8" fontSize={10} fontFamily="JetBrains Mono">
-                                {props.payload?.value}
+                                {shortLabel(String(props.payload?.value ?? ""), 18)}
                               </text>
                             </g>
                           )
@@ -756,7 +741,7 @@ function AirlineCagrChart({
   metaMap: Map<string, AirlineMeta>;
 }) {
   const [cagrYearRange, setCagrYearRange] = useState<[number, number]>([2007, 2025]);
-  const [cagrSegment, setCagrSegment] = useState<"international" | "domestic" | "both">("both");
+  const [cagrSegment, setCagrSegment] = useState<"international" | "domestic" | "all">("all");
   const [compareSegment, setCompareSegment] = useState<"international" | "domestic">("international");
   const [compareAirlines, setCompareAirlines] = useState<string[]>([]);
   const [comparePick, setComparePick] = useState("");
@@ -781,7 +766,7 @@ function AirlineCagrChart({
       return results;
     };
 
-    if (cagrSegment === "both") {
+    if (cagrSegment === "all") {
       const byAirline = new Map<string, Map<number, number>>();
       for (const rows of [airlineYearly.international, airlineYearly.domestic]) {
         for (const r of rows) {
@@ -807,7 +792,7 @@ function AirlineCagrChart({
 
   const barData = useMemo(() =>
     cagrResults.map((d) => ({
-      name: d.airline.length > 20 ? `${d.airline.slice(0, 18)}…` : d.airline,
+      name: shortLabel(d.airline, 20),
       fullName: d.airline,
       cagr: Math.round(d.cagr * 10) / 10,
       segment: d.segment,
@@ -856,7 +841,7 @@ function AirlineCagrChart({
       }
       const calc = calcCagrForAirline(yearMap, cagrYearRange[0], cagrYearRange[1]);
       return {
-        name: airline.length > 20 ? `${airline.slice(0, 18)}…` : airline,
+        name: shortLabel(airline, 20),
         fullName: airline,
         cagr: calc ? Math.round(calc.cagr * 10) / 10 : null,
         inactive: metaMap.get(airline)?.inactive ?? false,
@@ -895,14 +880,14 @@ function AirlineCagrChart({
           <div>
             <p className="mb-2 font-data text-[10px] uppercase tracking-wider text-strip-muted">Segment</p>
             <div className="flex flex-wrap gap-1.5">
-              {(["international", "domestic", "both"] as const).map((s) => (
+              {(["international", "domestic", "all"] as const).map((s) => (
                 <button
                   key={s}
                   type="button"
                   onClick={() => setCagrSegment(s)}
                   className={`segment-btn capitalize ${cagrSegment === s ? "segment-btn-active" : ""}`}
                 >
-                  {s}
+                  {s === "all" ? "Combined" : s}
                 </button>
               ))}
             </div>
@@ -921,7 +906,7 @@ function AirlineCagrChart({
             <XAxis type="number" tick={{ fill: "#a8bdd8", fontSize: 12 }} tickFormatter={(v) => `${v}%`} />
             <YAxis
               type="category"
-              dataKey="name"
+              dataKey="fullName"
               width={200}
               tick={(props) => (
                 <AirlineYAxisTick {...props} items={barData} metaMap={metaMap} fontSize={13} />
@@ -1054,7 +1039,7 @@ function AirlineCagrChart({
                   <XAxis type="number" tick={{ fill: "#a8bdd8", fontSize: 11 }} tickFormatter={(v) => `${v}%`} />
                   <YAxis
                     type="category"
-                    dataKey="name"
+                    dataKey="fullName"
                     width={200}
                     tick={(props) => (
                       <AirlineYAxisTick {...props} items={compareCagrData} metaMap={metaMap} fontSize={12} />
@@ -1096,7 +1081,6 @@ function AviationDashboardInner() {
   const [summary, setSummary] = useState<Summary | null>(null);
   const [trends, setTrends] = useState<YearlyTrend[]>([]);
   const [seasonality, setSeasonality] = useState<SeasonalityRow[]>([]);
-  const [yearlyTop, setYearlyTop] = useState<YearlyTopEntities | null>(null);
   const [periodRankings, setPeriodRankings] = useState<PeriodEntityRankings | null>(null);
   const [airlineYearly, setAirlineYearly] = useState<{ international: AirlineYearRow[]; domestic: AirlineYearRow[] } | null>(null);
   const [monthlyBreakdown, setMonthlyBreakdown] = useState<MonthlyCell[]>([]);
@@ -1124,6 +1108,7 @@ function AviationDashboardInner() {
   const [loadError, setLoadError] = useState<string | null>(null);
   const [duckError, setDuckError] = useState<string | null>(null);
   const duckQueryLock = useRef(Promise.resolve());
+  const duckInitAttempted = useRef(false);
 
   const filterTrends = useCallback((rows: YearlyTrend[], segment: Segment, yearRange: [number, number]) =>
     rows.filter(
@@ -1168,17 +1153,15 @@ function AviationDashboardInner() {
       fetch("/data/aviation/yearly-trends.json").then((r) => r.json()),
       fetch("/data/aviation/monthly-seasonality.json").then((r) => r.json()),
       fetch("/data/aviation/insights.json").then((r) => r.json()),
-      fetch("/data/aviation/yearly-top-entities.json").then((r) => r.json()),
       fetch("/data/aviation/period-entity-rankings.json").then((r) => r.json()),
       fetch("/data/aviation/airline-yearly-passengers.json").then((r) => r.json()),
       fetch("/data/aviation/monthly-airline-breakdown.json").then((r) => r.json()),
       fetch("/data/aviation/airline-metadata.json").then((r) => r.json()),
-    ]).then(([s, t, seas, ins, ytop, period, aly, monthly, meta]) => {
+    ]).then(([s, t, seas, ins, period, aly, monthly, meta]) => {
       setSummary(s);
       setTrends(t);
       setSeasonality(seas);
       setInsights(ins.findings);
-      setYearlyTop(ytop);
       setPeriodRankings(period);
       setAirlineYearly(aly);
       setMonthlyBreakdown(monthly);
@@ -1213,7 +1196,8 @@ function AviationDashboardInner() {
   }, [duckConn, duckReady]);
 
   const initDuckDB = useCallback(async () => {
-    if (duckReady || duckLoading) return;
+    if (duckReady || duckInitAttempted.current) return;
+    duckInitAttempted.current = true;
     setDuckLoading(true);
     setDuckError(null);
     try {
@@ -1237,7 +1221,7 @@ function AviationDashboardInner() {
     } finally {
       setDuckLoading(false);
     }
-  }, [duckReady, duckLoading]);
+  }, [duckReady]);
 
   useEffect(() => {
     const el = document.getElementById("aviation-dashboard");
@@ -1254,14 +1238,23 @@ function AviationDashboardInner() {
   const exportCsv = async (segment: Segment, yearRange: [number, number]) => {
     if (!duckConn) return;
     const segFilter = segment === "all" ? "" : `AND segment = '${segment}'`;
+    const exportLimit = 50_000;
     const r = await (duckConn as { query: (sql: string) => Promise<{ toArray: () => Record<string, unknown>[] }> })
-      .query(`SELECT year, month, airline, segment, passengers, cargo_tons FROM traffic WHERE year BETWEEN ${yearRange[0]} AND ${yearRange[1]} ${segFilter} LIMIT 5000`);
+      .query(`SELECT year, month, airline, segment, passengers, cargo_tons FROM traffic WHERE year BETWEEN ${yearRange[0]} AND ${yearRange[1]} ${segFilter} LIMIT ${exportLimit}`);
     const rows = r.toArray();
     if (!rows.length) return;
+    const headers = Object.keys(rows[0]);
+    const lines = [
+      headers.map(escapeCsvCell).join(","),
+      ...rows.map((row) => headers.map((h) => escapeCsvCell(row[h])).join(",")),
+    ];
     const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob([[Object.keys(rows[0]).join(","), ...rows.map((row) => Object.values(row).join(","))].join("\n")], { type: "text/csv" }));
+    a.href = URL.createObjectURL(new Blob([lines.join("\n")], { type: "text/csv;charset=utf-8" }));
     a.download = "aviation-export.csv";
     a.click();
+    if (rows.length >= exportLimit) {
+      window.alert(`Export capped at ${exportLimit.toLocaleString()} rows. Narrow the year range or segment for a complete extract.`);
+    }
   };
 
   const displayTrendsKpis = trendsKpis ?? trendsJsonKpis;
@@ -1307,7 +1300,7 @@ function AviationDashboardInner() {
         </div>
         <div className="kpi-card">
           <p className="strip-label">Records</p>
-          <p className="mt-2 font-data text-2xl font-semibold text-strip-text">173K+</p>
+          <p className="mt-2 font-data text-2xl font-semibold text-strip-text">{(summary.combined.rows ?? 173845).toLocaleString()}</p>
           <p className="mt-1 font-data text-[10px] text-strip-muted">Flight legs in dataset</p>
         </div>
         <div className="kpi-card">
@@ -1367,7 +1360,6 @@ function AviationDashboardInner() {
       </DashCard>
 
       <YearlyRankingsExplorer
-        yearlyTop={yearlyTop}
         periodRankings={periodRankings}
         metaMap={metaMap}
         duckConn={duckConn}

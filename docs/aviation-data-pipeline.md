@@ -332,7 +332,13 @@ When pointing a new app at the **same Excel file**:
 8. **CAGR** — use endpoint years only; document gaps in UI if showing growth rates.
 9. **Inactive airlines** — use `airline-metadata.json` or replicate `INACTIVE_PATTERNS` + `last_year < 2023` rule.
 
-### Minimal files to ship with a new project
+### Insights note
+
+Narrative findings in `insights.json` must match validated rankings:
+
+- **International airports:** Islamabad leads (after BBIAP/Chaklala + IIAP merge), not Karachi.
+- **Domestic airports:** Karachi leads throughput (narrowly over Islamabad).
+- Do not claim “Karachi hub dominance” for international passenger traffic.
 
 If token budget is tight, attach at minimum:
 
